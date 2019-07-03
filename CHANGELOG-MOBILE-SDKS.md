@@ -1,5 +1,24 @@
 # Mobile SDKs Changelog
 
+# 2.2.1 (2019-07-03)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.2.1)
+
+## Changes
+
+### Android
+
+- Fix threading issue on hangup
+- Fix deadlock
+
+Relevant native dependencies:
+
+- react-native 0.59.8
+- okhttp: 3.12.1
+- android-support: 28.0.0
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.2.0...android-sdk-2.2.1)
+
 # 2.2.0 (2019-06-28)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.2.0)
