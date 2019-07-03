@@ -1,5 +1,17 @@
 # Mobile apps Changelog
 
+# 19.2.1 (2019-07-03)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.2.1)
+
+## Changes
+
+### Android
+
+- Fix critical stability issues
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.2.0...android-19.2.1)
+
 # 19.2.0 (2019-07-02)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.2.0)
@@ -29,7 +41,7 @@
 - Enter PiP mode when pressing the back button
 - Fix entering PiP mode when the permissions alert is shown
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.1.0...ios-19.2.0)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.1.0...android-19.2.0)
 
 ### iOS
 
