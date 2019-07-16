@@ -1,5 +1,23 @@
 # Mobile SDKs Changelog
 
+# 2.2.2 (2019-07-16)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.2.2)
+
+## Changes
+
+### Android
+
+- Fix crash if UserInfo is not passed
+
+Relevant native dependencies:
+
+- react-native 0.59.8
+- okhttp: 3.12.1
+- android-support: 28.0.0
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.2.1...android-sdk-2.2.2)
+
 # 2.2.1 (2019-07-03)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.2.1)
