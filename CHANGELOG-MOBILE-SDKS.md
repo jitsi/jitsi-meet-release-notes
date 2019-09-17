@@ -1,5 +1,45 @@
 # Mobile SDKs Changelog
 
+# 2.3.0 (2019-09-17)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.3.0)
+
+## Changes
+
+### Common
+
+- Add low bandwidth mode
+- Add logging APIs
+- Updated WebRTC to M75
+- Hide invite button if the functionality is not available
+- Update default color scheme
+- Show prompt when device permissions are denied
+- Enable the proximity sensor only when the audio device is set to earpiece
+- Update UI for the invite dialog
+- Fix loading welcome page if no config could be fetched
+
+### Android
+
+- Migrated to AndroidX
+- Fix crash on certain devices when starting a foreground service
+- Audio quality improvements
+- Fix crashes on bogus calendar entries on certain devices
+
+Relevant native dependencies:
+
+- react-native 0.60.5
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.2.2...android-sdk-2.3.0)
+
+### iOS
+
+- Fix crash when processing certain calendar events
+- Fix CallKit muted state in latest iOS version
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.2.0...ios-sdk-2.3.0)
+
 # 2.2.2 (2019-07-16)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.2.2)
