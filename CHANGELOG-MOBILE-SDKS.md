@@ -1,5 +1,22 @@
 # Mobile SDKs Changelog
 
+# 2.3.1 (2019-09-20)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.3.1)
+
+## Changes
+
+### Android
+
+- Fix missing thumbnails and broken conference state
+
+Relevant native dependencies:
+
+- react-native 0.60.5
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.3.0...android-sdk-2.3.1)
+
 # 2.3.0 (2019-09-17)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.3.0)
