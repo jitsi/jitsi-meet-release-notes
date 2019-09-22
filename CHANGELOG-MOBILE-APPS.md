@@ -1,5 +1,37 @@
 # Mobile apps Changelog
 
+# 19.3.0 (2019-09-20)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-19.3.0)
+
+## Changes
+
+### Common
+
+- Add low bandwidth mode
+- Hide invite button if the functionality is not available
+- Update default color scheme
+- Show prompt when device permissions are denied
+- Enable the proximity sensor only when the audio device is set to earpiece
+- Update UI for the invite dialog
+- Fix initial load if no config could be fetched
+
+### Android
+
+- Audio quality improvements
+- Fix crash on certain devices when starting a foreground service
+- Fix crashes on bogus calendar entries on certain devices
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.2.1...android-19.3.0)
+
+### iOS
+
+- Fix crash when processing certain calendar events
+- Fix CallKit muted state in latest iOS version
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-19.2.0...ios-19.3.0)
+
 # 19.2.1 (2019-07-03)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.2.1)
