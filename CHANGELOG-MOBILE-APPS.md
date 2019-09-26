@@ -1,5 +1,17 @@
 # Mobile apps Changelog
 
+# 19.3.1 (2019-09-26)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.3.1)
+
+## Changes
+
+### Android
+
+- Stability fixes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.3.0...android-19.3.1)
+
 # 19.3.0 (2019-09-20)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.3.0)
