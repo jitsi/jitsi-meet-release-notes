@@ -12,6 +12,12 @@
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.3.0...android-19.3.1)
 
+### iOS
+
+- Stability fixes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-19.3.0...ios-19.3.1)
+
 # 19.3.0 (2019-09-20)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.3.0)

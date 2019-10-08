@@ -34,6 +34,13 @@ Relevant native dependencies:
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.3.0...android-sdk-2.3.1)
 
+### iOS
+
+- Disable H.264 on iOS 10 devices (avoids a crash)
+- Fix crashes when WebRTC restarts the AudioUnit
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.3.0...ios-sdk-2.3.1)
+
 # 2.3.0 (2019-09-17)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.3.0)
