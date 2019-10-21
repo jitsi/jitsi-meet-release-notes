@@ -1,5 +1,41 @@
 # Mobile SDKs Changelog
 
+# 2.4.0 (2019-10-21)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.4.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.4.0)
+
+## Changes
+
+### Common
+
+- Private messages support
+- Shared document editing support
+- Update React Native to version 0.61
+- Indicate recording initiator in notification
+- Harden loading the configuration
+
+### Android
+
+- Throw exception if room is set in default conference options
+- Fix several crashes in specific devices
+
+Relevant native dependencies:
+
+- react-native 0.61.1
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.3.2...android-sdk-2.4.0)
+
+### iOS
+
+- Build SDK with Xcode 11
+- Disable H.264 for P2P on iOS 10 devices due to crashes
+- Fix bottom sheet "shaking"
+- Fix crash on call end
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.3.1...ios-sdk-2.4.0)
+
 # 2.3.2 (2019-09-26)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.3.2)
