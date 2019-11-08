@@ -1,5 +1,34 @@
 # Mobile apps Changelog
 
+# 19.4.0 (2019-11-08)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.4.0)
+
+## Changes
+
+### Common
+
+- Private messages support
+- Shared document editing support
+- Indicate recording initiator in notification
+- Harden loading the configuration
+- Add advanced settings section
+- Update React Native to version 0.61.3
+
+### Android
+
+- Stability improvements
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.3.1...android-19.4.0)
+
+### iOS
+
+- Disable H.264 on iOS 10 devices due to crashes
+- Fix bottom sheet "shaking"
+- Stability improvements
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-19.3.1...ios-19.4.0)
+
 # 19.3.1 (2019-09-26)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.3.1)
