@@ -1,5 +1,66 @@
 # Mobile SDKs Changelog
 
+# 2.4.2 (2019-11-08)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.4.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.4.2)
+
+## Changes
+
+### Common
+
+- N/A
+
+### Android
+
+- Fix crash with room names containing some Unicode characters
+- Fix share document showing "unsupported browser"
+- Fix audio device handling regressions
+
+Relevant native dependencies:
+
+- react-native 0.61.3
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.4.1...android-sdk-2.4.2)
+
+### iOS
+
+- Switch to the "new" Xcode build system
+- Enabled Swift modules stability
+- SDK compiled with Xcode 11.2.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.4.1...ios-sdk-2.4.2)
+
+# 2.4.1 (2019-10-31)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.4.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.4.1)
+
+## Changes
+
+### Common
+
+- Add advanced settings section
+- Update React Native to version 0.61.3
+
+### Android
+
+- Refactor audio device handling
+
+Relevant native dependencies:
+
+- react-native 0.61.3
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.4.0...android-sdk-2.4.1)
+
+### iOS
+
+- Disable H.264 on iOS 10 devices due to crashes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.4.0...ios-sdk-2.4.1)
+
 # 2.4.0 (2019-10-21)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.4.0)
