@@ -1,5 +1,27 @@
 # Mobile apps Changelog
 
+# 19.4.1 (2019-11-13)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.4.1)
+
+## Changes
+
+### Common
+
+- N/A
+
+### Android
+
+- Stability improvements
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.4.0...android-19.4.1)
+
+### iOS
+
+- Fix not showing text color in settings when Dark Mode is used
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-19.4.0...ios-19.4.1)
+
 # 19.4.0 (2019-11-08)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.4.0)
