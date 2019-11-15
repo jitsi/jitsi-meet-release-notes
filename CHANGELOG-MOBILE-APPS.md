@@ -3,6 +3,7 @@
 # 19.4.1 (2019-11-13)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.4.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-19.4.1)
 
 ## Changes
 
@@ -25,6 +26,7 @@
 # 19.4.0 (2019-11-08)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.4.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-19.4.0)
 
 ## Changes
 
