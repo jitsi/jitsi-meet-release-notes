@@ -1,5 +1,39 @@
 # Mobile SDKs Changelog
 
+# 2.5.0 (2019-12-13)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.5.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.5.0)
+
+## Changes
+
+### Common
+
+- Allow for userInfo and token to be set at the same time
+- Refactored bottom sheet menu
+- Chat UX improvements
+
+### Android
+
+- Fix crash on old devices using the Camera1 API
+- Fix selecting the Bluetooth route on some devices
+- Improve audio device management
+
+Relevant native dependencies:
+
+- react-native 0.61.3
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.4.2...android-sdk-2.5.0)
+
+### iOS
+
+- Drop support for iOS 10
+
+NOTE: due to a build issue this version was released as 2.5.1 on CocoaPods.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.4.2...ios-sdk-2.5.0)
+
 # 2.4.2 (2019-11-08)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.4.2)
