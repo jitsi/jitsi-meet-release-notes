@@ -30,7 +30,7 @@ Relevant native dependencies:
 
 - Drop support for iOS 10
 
-NOTE: due to a build issue this version was released as 2.5.1 on CocoaPods.
+NOTE: due to a build issue this version was released as 2.5.2 on CocoaPods.
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.4.2...ios-sdk-2.5.0)
 
