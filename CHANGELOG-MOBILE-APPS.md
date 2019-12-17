@@ -1,5 +1,29 @@
 # Mobile apps Changelog
 
+# 19.5.0 (2019-12-13)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.5.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-19.5.0)
+
+## Changes
+
+### Common
+
+- Refactored bottom sheet menu
+- Chat UX improvements
+
+### Android
+
+- Improve audio device management
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.4.1...android-19.5.0)
+
+### iOS
+
+- Drop support for iOS 10
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-19.4.1...ios-19.5.0)
+
 # 19.4.1 (2019-11-13)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.4.1)
