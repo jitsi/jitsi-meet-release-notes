@@ -1,9 +1,39 @@
 # Mobile SDKs Changelog
 
+# 2.5.1 (2020-01-09)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.5.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.5.3)
+
+## Changes
+
+### Common
+
+- N/A
+
+### Android
+
+- Handle ConnectionService failures more resiliently
+
+Relevant native dependencies:
+
+- react-native 0.61.3
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.5.0...android-sdk-2.5.1)
+
+### iOS
+
+- Fix opening datachannels
+
+NOTE: due to a build issue this version was released as 2.5.3 on CocoaPods.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.5.2...ios-sdk-2.5.3)
+
 # 2.5.0 (2019-12-13)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.5.0)
-- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.5.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.5.2)
 
 ## Changes
 
@@ -32,7 +62,7 @@ Relevant native dependencies:
 
 NOTE: due to a build issue this version was released as 2.5.2 on CocoaPods.
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.4.2...ios-sdk-2.5.0)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.4.2...ios-sdk-2.5.2)
 
 # 2.4.2 (2019-11-08)
 
