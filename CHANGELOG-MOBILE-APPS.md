@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# 19.5.1 (2020-01-10)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.5.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-19.5.1)
+
+## Changes
+
+### Common
+
+- N/A
+
+### Android
+
+- Improve stability when using ConnectionService
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.5.0...android-19.5.1)
+
+### iOS
+
+- Fix data channels not opening
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-19.5.0...ios-19.5.1)
+
 # 19.5.0 (2019-12-13)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.5.0)
