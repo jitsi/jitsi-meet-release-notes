@@ -1,5 +1,30 @@
 # Mobile apps Changelog
 
+# 20.0.0 (2020-02-20)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.0.0)
+
+## Changes
+
+### Common
+
+- Add conference timer
+- Fix connecting on custom deployments on a non-sstandard HTTPS port
+- Fix not displaying Dropbox storage text
+
+### Android
+
+- Turn on HW video decoder
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-19.5.1...android-20.0.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-19.5.1...ios-20.0.0)
+
 # 19.5.1 (2020-01-10)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-19.5.1)
