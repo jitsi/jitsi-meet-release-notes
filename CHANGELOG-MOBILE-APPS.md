@@ -1,5 +1,22 @@
 # Mobile apps Changelog
 
+# 20.0.1 (2020-02-10)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.0.1)
+
+## Changes
+
+### Common
+
+- N/A
+
+### Android
+
+- Disable HW accelerated decoding on Samsung
+- Disable ConnectionService integration
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.0.0...android-20.0.1)
+
 # 20.0.0 (2020-02-20)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.0.0)
