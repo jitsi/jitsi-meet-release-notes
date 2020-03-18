@@ -1,5 +1,29 @@
 # Mobile apps Changelog
 
+# 20.0.3 (2020-02-14)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.0.3)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.0.3)
+
+## Changes
+
+### Common
+
+- Add a "more options" button to the bottom sheet menu
+
+### Android
+
+- Revert to sotware decoding
+- Fix not re-entering full-screen after dialog is shown
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.0.2...android-20.0.3)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.0.0...ios-20.0.3)
+
 # 20.0.2 (2020-02-11)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.0.2)
