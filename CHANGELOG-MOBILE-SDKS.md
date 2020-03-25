@@ -1,5 +1,37 @@
 # Mobile SDKs Changelog
 
+# 2.7.0 (2020-03-25)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.7.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.7.0)
+
+## Changes
+
+### Common
+
+- Add ability to eassily invite others when alone
+- Refactor in-conference menu
+- Updated translations
+
+### Android
+
+- Disable HW video decoder
+- Fix crashes with AudioManager
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- hermes-engine 0.2.1
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.6.0...android-sdk-2.7.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.6.0...ios-sdk-2.7.0)
+
 # 2.6.0 (2020-02-07)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.6.0)
