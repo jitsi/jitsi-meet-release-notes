@@ -1,5 +1,31 @@
 # Mobile apps Changelog
 
+# 20.1.0 (2020-03-27)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.1.0)
+
+## Changes
+
+### Common
+
+- Add ability to eassily invite others when alone
+- Refactor in-conference menu
+- Fix usability problems in the settings view
+- Updated translations
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.0.3...android-20.1.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.0.3...ios-20.1.0)
+
 # 20.0.3 (2020-02-14)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.0.3)
