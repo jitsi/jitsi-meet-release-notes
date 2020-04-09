@@ -1,5 +1,31 @@
 # Mobile apps Changelog
 
+# 20.1.0 (2020-04-07)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.2.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.2.0)
+
+## Changes
+
+### Common
+
+- Added share button to "add people" dialog
+- Fixed displaying room names with unicode characters
+- Improved room lock prompt
+- Improved translations
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.1.0...android-20.2.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.1.0...ios-20.2.0)
+
 # 20.1.0 (2020-03-27)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.1.0)
