@@ -17,7 +17,7 @@ Full changelogs are available in each project's release page.
 
 ### Changes
 
-- hhttps://github.com/jitsi/jitsi-meet/releases/download/stable%2Fjitsi-meet_4384/jitsi-meet_1.0.3969_CHANGELOG.txt
+- https://github.com/jitsi/jitsi-meet/releases/download/stable%2Fjitsi-meet_4384/jitsi-meet_1.0.3969_CHANGELOG.txt
 
 Full changelogs are available in each project's release page.
 
