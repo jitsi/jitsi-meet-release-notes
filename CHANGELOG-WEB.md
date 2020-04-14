@@ -1,5 +1,49 @@
 # Web Changelog
 
+## 1.0.3992 (2020-04-10)
+
+- [Jitsi Meet](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4416)
+
+### Changes
+
+- https://github.com/jitsi/jitsi-meet/releases/download/stable%2Fjitsi-meet_4416/jitsi-meet_1.0.3992_CHANGELOG.txt
+
+Full changelogs are available in each project's release page.
+
+
+## 1.0.3969 (2020-04-03)
+
+- [Jitsi Meet](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4384)
+
+### Changes
+
+- hhttps://github.com/jitsi/jitsi-meet/releases/download/stable%2Fjitsi-meet_4384/jitsi-meet_1.0.3969_CHANGELOG.txt
+
+Full changelogs are available in each project's release page.
+
+
+## 1.0.3962 (2020-04-03)
+
+- [Jitsi Meet](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4376)
+
+### Changes
+
+- https://github.com/jitsi/jitsi-meet/releases/download/stable%2Fjitsi-meet_4376/jitsi-meet_1.0.3962_CHANGELOG.txt
+
+Full changelogs are available in each project's release page.
+
+
+## 1.0.3928 (2020-04-01)
+
+- [Jitsi Meet](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4335)
+
+### Changes
+
+- https://github.com/jitsi/jitsi-meet/releases/download/stable%2Fjitsi-meet_4335/jitsi-meet_1.0.3928_CHANGELOG.txt
+
+Full changelogs are available in each project's release page.
+
+
 ## 4101 (2019-11-26)
 
 - [Jitsi Meet](https://github.com/jitsi/jitsi-meet/releases/tag/stable/jitsi-meet_4101)
