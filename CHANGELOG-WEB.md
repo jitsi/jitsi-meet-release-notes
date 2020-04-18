@@ -4,7 +4,7 @@
 
 - [Jitsi Meet](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4416)
 - [Jicofo](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_4416)
-- [Jitis Videobridge](https://github.com/jitsi/jitsi-videobridge/releases/download/stable%2Fjitsi-meet_4416/jitsi-videobridge__CHANGELOG.txt)
+- [Jitis Videobridge](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_4416)
 
 ### Changes
 
@@ -17,7 +17,7 @@ Full changelogs are available in each project's release page.
 
 - [Jitsi Meet](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4384)
 - [Jicofo](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_4384)
-- [Jitis Videobridge](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_4376)
+- [Jitis Videobridge](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_4384)
 
 ### Changes
 
