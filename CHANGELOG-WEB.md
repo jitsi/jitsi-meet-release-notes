@@ -6,14 +6,14 @@ Full changelogs are available in each project's release page: click on one of th
 
 - [Jitsi Meet 1.0.3992](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4416)
 - [Jicofo 1.0-544](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_4416)
-- [Jitis Videobridge 4416 (?),](https://github.com/jitsi/jitsi-videobridge/releases/download/stable%2Fjitsi-meet_4416/jitsi-videobridge__CHANGELOG.txt)
+- [Jitis Videobridge 4416 (?)](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_4416)
 
 
 ## 2020-04-03
 
 - [Jitsi Meet 1.0.3969](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4384)
 - [Jicofo 1.0-541](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_4384)
-- [Jitis Videobridge 2.1-164](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_4376)
+- [Jitis Videobridge 2.1-164](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_4384)
 
 
 ## 2020-04-02
