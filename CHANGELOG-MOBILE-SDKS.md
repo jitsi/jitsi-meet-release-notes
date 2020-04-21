@@ -1,6 +1,6 @@
 # Mobile SDKs Changelog
 
-# 2.7.0 (2020-04-21)
+# 2.8.0 (2020-04-21)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.8.0)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.8.0)
