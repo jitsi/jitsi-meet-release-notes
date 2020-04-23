@@ -1,6 +1,6 @@
 # Mobile apps Changelog
 
-# 20.1.0 (2020-04-07)
+# 20.2.0 (2020-04-07)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.2.0)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.2.0)
