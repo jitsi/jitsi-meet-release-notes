@@ -1,5 +1,30 @@
 # Mobile apps Changelog
 
+# 20.2.3 (2020-04-30)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.2.3)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.2.3)
+
+## Changes
+
+### Common
+
+- Fix not being able to send private chat messages.
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.2.2...android-20.2.3)
+
+### iOS
+
+- N/A
+
+NOTE: There was no 20.2.2 release on iOS.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.2.1...ios-20.2.3)
+
 # 20.2.2 (2020-04-16)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.2.2)
