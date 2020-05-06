@@ -1,6 +1,70 @@
 # Mobile apps Changelog
 
-# 20.1.0 (2020-04-07)
+# 20.2.3 (2020-04-30)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.2.3)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.2.3)
+
+## Changes
+
+### Common
+
+- Fix not being able to send private chat messages.
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.2.2...android-20.2.3)
+
+### iOS
+
+- N/A
+
+NOTE: There was no 20.2.2 release on iOS.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.2.1...ios-20.2.3)
+
+# 20.2.2 (2020-04-16)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.2.2)
+
+## Changes
+
+### Common
+
+- N/A
+
+### Android
+
+- Fix keyboard misbehavior in settingss view
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.2.1...android-20.2.2)
+
+# 20.2.1 (2020-04-09)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.2.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.2.1)
+
+## Changes
+
+### Common
+
+- Add new URL parameters: config.disableInviteFunctions, config.doNotStoreRoom and userInfo.displayName
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.2.0...android-20.2.1)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.2.0...ios-20.2.1)
+
+# 20.2.0 (2020-04-07)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.2.0)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.2.0)

@@ -1,5 +1,78 @@
 # Mobile SDKs Changelog
 
+# 2.8.1 (2020-04-29)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.8.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.8.1)
+
+## Changes
+
+### Common
+
+- Fix on-screen keyboard overlapping dialog boxes
+- Fix opening private messages dialog
+- Fix detecting sysstem language
+- Add new feature flags for disabling buttons
+
+### Android
+
+- N/A
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- hermes-engine 0.2.1
+- okhttp: 3.12.1
+
+NOTE: Androidd got a quick follow-up 2.8.2 release fixing a botched 2.8.1.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.8.0...android-sdk-2.8.2)
+
+### iOS
+
+- N/A
+
+Built with Xcode 11.4.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.8.0...ios-sdk-2.8.1)
+
+# 2.8.0 (2020-04-21)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.8.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.8.0)
+
+## Changes
+
+### Common
+
+- Add column layout to settings fields
+- Use random room name generator on the welcome page
+- Fix accented room name display
+- Add share button to add people dialog
+- Add feature-flag to disable close captions
+- Improve text for room lock prompt
+- Accessibility fixes
+- Updated translations
+
+### Android
+
+- Parcel the serverURL in JitsiMeetConferenceOptions
+- Disable PiP button on Android < 26
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- hermes-engine 0.2.1
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.7.0...android-sdk-2.8.0)
+
+### iOS
+
+- Built with Xcode 11.4.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.7.0...ios-sdk-2.8.0)
+
 # 2.7.0 (2020-03-25)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.7.0)
