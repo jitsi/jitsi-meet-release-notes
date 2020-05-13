@@ -8,11 +8,13 @@ Full changelogs are available in each project's release page: click on one of th
 - [Jicofo 1.0-567](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_4548)
 - [Jitis Videobridge 2.1-197-g38256192](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_4548)
 
+
 ##  4546 (2020-05-01)
 
 - [Jitsi Meet 1.0.4073](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4546)
 - [Jicofo 1.0-566](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_4546)
 - [Jitis Videobridge 2.1-197](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_4546)
+
 
 ##  4468 (2020-04-17)
 
