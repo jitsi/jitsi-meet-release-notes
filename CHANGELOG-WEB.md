@@ -2,6 +2,12 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  4627 (2020-05-26)
+
+- [Jitsi Meet 1.0.4127](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4627)
+- [Jicofo 1.0-589](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_4627)
+- [Jitis Videobridge 2.1-202-g5f9377b9](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_4627)
+
 ##  4548 (2020-05-01)
 
 - [Jitsi Meet 1.0.4074](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4548)
