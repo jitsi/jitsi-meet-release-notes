@@ -1,5 +1,41 @@
 # Mobile SDKs Changelog
 
+# 2.9.1 (2020-07-14)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.9.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.9.1)
+
+## Changes
+
+### Common
+
+- Add ability to override resolution using a feature flag
+- Update WebRTC engine to M84
+- Add share YouTube video
+- Add lobby mode
+- Fix toolbox displaying in Picture-in-Picture mode
+- Introduce unsafe room name warning indicator
+
+### Android
+
+- Add serverURL configuration for MDM/EMM environments
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- hermes-engine 0.2.1
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.9.0...android-sdk-2.9.1)
+
+### iOS
+
+- N/A
+
+Built with Xcode 11.4.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.9.0...ios-sdk-2.9.1)
+
 # 2.9.0 (2020-05-28)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.9.0)
