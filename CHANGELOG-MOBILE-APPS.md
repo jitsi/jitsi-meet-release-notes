@@ -1,5 +1,39 @@
 # Mobile apps Changelog
 
+# 20.3.0 (2020-07-14)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.3.0)
+
+## Changes
+
+### Common
+
+- Improved performance by adjusting the send / receive video quality
+- Added lobby mode
+- Added YouTube video sharing feature
+- Added unsafe room name warning
+- Added ability to disable crash reporting
+- Internationalization improvements
+- Fixed incorrect text when locking a room with a password
+- Fixed Picture-in-Picture window showing conference controls
+- Fixed language detection to take region into account
+- Fixed opening private chat messages
+- Fixed on-screen keyboard overlapping certain dialogs
+
+### Android
+
+- Allow use of user trust store
+- Disables PiP on Android < 26
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.2.3...android-20.3.0)
+
+### iOS
+
+- Try to leave the meeting when the app is terminating
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.2.3...ios-20.3.0)
+
 # 20.2.3 (2020-04-30)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.2.3)
