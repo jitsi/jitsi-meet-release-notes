@@ -1,5 +1,36 @@
 # Mobile SDKs Changelog
 
+# 2.9.2 (2020-07-17)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.9.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.9.2)
+
+## Changes
+
+### Common
+
+- Fix ghost participants after kicking them
+
+### Android
+
+- Fix crash when refreshing calendar under certain circumstances
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- hermes-engine 0.2.1
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.9.1...android-sdk-2.9.2)
+
+### iOS
+
+- N/A
+
+Built with Xcode 11.4.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.9.1...ios-sdk-2.9.2)
+
 # 2.9.1 (2020-07-14)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.9.1)
