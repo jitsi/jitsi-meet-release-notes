@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# 20.3.0 (2020-07-20)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.3.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.3.1)
+
+## Changes
+
+### Common
+
+- Fix ghost participant when kicking
+
+### Android
+
+- Fix crash when refreshing calendar entries on some devices
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.3.0...android-20.3.1)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.3.0...ios-20.3.1)
+
 # 20.3.0 (2020-07-14)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.3.0)
