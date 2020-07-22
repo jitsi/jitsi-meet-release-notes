@@ -1,6 +1,29 @@
 # Mobile apps Changelog
 
-# 20.3.0 (2020-07-20)
+# 20.3.2 (2020-07-22)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.3.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.3.2)
+
+## Changes
+
+### Common
+
+- Fix overriding custom server URL
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.3.1...android-20.3.2)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.3.1...ios-20.3.2)
+
+# 20.3.1 (2020-07-20)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.3.1)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.3.1)

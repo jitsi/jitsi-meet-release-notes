@@ -1,5 +1,36 @@
 # Mobile SDKs Changelog
 
+# 2.9.3 (2020-07-22)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.9.3)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.9.3)
+
+## Changes
+
+### Common
+
+- Fix overriding custom server URL
+
+### Android
+
+- N/A
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- hermes-engine 0.2.1
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.9.2...android-sdk-2.9.3)
+
+### iOS
+
+- N/A
+
+Built with Xcode 11.4.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.9.2...ios-sdk-2.9.3)
+
 # 2.9.2 (2020-07-17)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.9.2)
