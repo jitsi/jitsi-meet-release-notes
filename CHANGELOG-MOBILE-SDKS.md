@@ -1,5 +1,46 @@
 # Mobile SDKs Changelog
 
+# 2.10.0 (2020-09-15)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.10.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.10.0)
+
+## Changes
+
+### Common
+
+- Add feature flag to enable / disable conference timer
+- Add flag to show/hide video share button
+- Add grant moderator functionality
+- Add screen-sharing indicator to thumbnails
+- Fix chat issues
+- Fix starting native call integration multiple times
+- Avoid logging error log when there are no analytics handlers
+- Show lonely experience only after joining
+- Tile view UI/UX improvements
+- Updated translations
+
+### Android
+
+- Disable PiP on Android Go devices
+- Bump minimum API level to 23 and target API level to 29
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- hermes-engine 0.2.1
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.9.3...android-sdk-2.10.0)
+
+### iOS
+
+- Specify the correct keyboard type and content
+
+Built with Xcode 11.4.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.9.3...ios-sdk-2.10.0)
+
 # 2.9.3 (2020-07-22)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.9.3)
