@@ -1,5 +1,34 @@
 # Mobile apps Changelog
 
+# 20.4.0 (2020-09-15)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.4.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.4.0)
+
+## Changes
+
+### Common
+
+- Add screen-sharing indicator to thumbnails
+- Fix chat issues
+- Show lonely experience only after joining
+- Tile view UI/UX improvements
+- Updated translations
+
+### Android
+
+- Bump minimum API level to 23 and target API level to 29
+- Make app movable to SD card
+- Bring back activity to the foreground when exiting PiP
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.3.2...android-20.4.0)
+
+### iOS
+
+- Specify the correct keyboard type and content
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.3.2...ios-20.4.0)
+
 # 20.3.2 (2020-07-22)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.3.2)
