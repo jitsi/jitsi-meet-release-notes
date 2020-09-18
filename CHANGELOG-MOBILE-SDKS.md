@@ -1,5 +1,17 @@
 # Mobile SDKs Changelog
 
+# 2.10.2 (2020-09-18)
+
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.10.2)
+
+## Changes
+
+### iOS
+
+Built with Xcode 12
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.10.0...ios-sdk-2.10.2)
+
 # 2.10.0 (2020-09-15)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.10.0)
