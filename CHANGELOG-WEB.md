@@ -11,22 +11,6 @@ Full changelogs are available in each project's release page: click on one of th
 		- fix(LargeVideoManager): large video resizing
 		- fix(iframe): Use largeVideo video element for screenshot. Get the existing HTMLVideoElement for large video instead of creating a new video element for capturing the screenshot. This should prevent the video player from getting displayed on mobile Safari.
 
-
-	lib-jitsi-meet
-	- New features:
-
-	- Fixes:
-
-- [jicofo 1.0-636](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_5076)
-	- New features:
-
-	- Fixes:
-
-- [jitsi-videobridge 2.1-351-g0bfaac1c](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_5076)
-	- New features:
-
-	- Fixes:
-
 ##  2.0.5073 (20-09-23)
 - [jitsi-meet 1.0.4425](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5073)
 	- New features:
