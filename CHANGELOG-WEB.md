@@ -112,8 +112,6 @@ Full changelogs are available in each project's release page: click on one of th
 		- Updates log messages around dominant speaker and sctp.
 		- Fixes #1412 NoClassDefFoundError JdkDeserializers
 
-Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
-
 ##  2.0.4966 (22-09-01)
 - [jitsi-meet 1.0.4370](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4966)
 	- New features:
