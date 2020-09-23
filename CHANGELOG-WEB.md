@@ -2,6 +2,15 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.5076 (20-09-23)
+- [jitsi-meet 1.0.4428](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5076)
+	- New features:
+
+	- Fixes:
+		- fix(mediaDeviceHelper): fix typo in dispatch
+		- fix(LargeVideoManager): large video resizing
+		- fix(iframe): Use largeVideo video element for screenshot. Get the existing HTMLVideoElement for large video instead of creating a new video element for capturing the screenshot. This should prevent the video player from getting displayed on mobile Safari.
+
 ##  2.0.5073 (20-09-23)
 - [jitsi-meet 1.0.4425](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5073)
 	- New features:
