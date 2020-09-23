@@ -2,7 +2,7 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
-##  2.0.4966 (01-09-22)
+##  2.0.4966 (22-09-01)
 - [jitsi-meet 1.0.4370](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4966)
 	- New features:
 		- feat(prejoin): Show warning if audio device does not receive data
