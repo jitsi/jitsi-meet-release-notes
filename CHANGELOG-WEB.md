@@ -2,6 +2,116 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.5073 (20-09-23)
+- [jitsi-meet 1.0.4425](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5073)
+	- New features:
+		- Throttle out call attempts to the max number per minute (#7742)
+		- feat(stats): Add the ability to enable callStats for certain % of confs
+		- feat(iFrame): Add a method for capturing screenshot of the large video (#7717)
+		- feat(iFrame): Add a method for resizing large video container from iFrame
+		- feat(iFrame): add a method for getting the participants info
+		- feat(loggin) forward logs to external api
+		- feat(external_api): Add method for displaying participant on large video
+		- feat(external_api): Add cmd for selecting a user to be displayed in large video
+		- feat(video-quality): add iframe event and getter.
+		- feat(video-quality): persist.
+		- Allows jvb to control DTLS/SRTP protection profile. (#7626)
+		- feat(vpaas) disable deeplinking page
+		- Whitelist option to hide lobby button.
+		- Adds interface config to hide lobby button. (#7619)
+		- Automatically copy invite URL after creating a room (#7581)
+		- feat(vpaas): Add endpoint counter & remove branding on vpaas meetings
+
+	- Fixes:
+		- fix(UI): Re-compute large-video width only once if the chat window is open. Deduct the chat window width from large-video width only once if we keep toggling between stage view and grid view while the chat window is open.
+		- fix(build) reduce bundle size by about 700K
+		- fix(iFrame): Make resizeLargeVideo only available on web
+		- fix(ios,version) versions must match
+		- fix(SmallVideo) screen-sharing indicator
+		- fix(config) remove unused options (#7723)
+		- fix(branding): Fix dynamic logo display
+		- fix(ios) add local network usage description for iOS 14
+		- fix(config) remove no longer valid option
+		- fix(android,calendar) avoid crash
+		- fix(background-blur) refactor to improve performance
+		- fix(embed): remove legacy attribute from embed meeting code
+		- Fix ws reconnect piling up previd param.
+		- fix(embed) fix embed meeting code
+		- Updates docs and verification to halt joining process.
+		- fix(ifarme-api): set-video-quality to use redux.
+		- fix(RN): crash on undefined state['features/dynamic-branding']
+		- enable token_verification during installation of jitsi-meet-tokens (#7630)
+		- keep plugin_paths while removing jitsi-meet-tokens (#7632)
+		- disable token_verification while removing jitsi-meet-tokens (#7631)
+		- added libssl1.0-dev to the dependencies of jitsi-meet-tokens (#7629)
+		- jitsi-meet-tokens - the first installation check (#7618)
+		- fix(close3): Add close3.js
+		- fix(vpaas): Fix billing counter auth (#7595)
+		- fix(vpaas): Fix tenant typo
+		- fix(iframe-api): setDevice.
+		- fix(settings): store url display name and email.
+
+	- Translation updates:
+		- fix Dutch dialog.kickTitle
+		- update Korean translation
+		- update French translation
+		- update kabyle translations
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(stats): Add the ability to enable callStats only on a certain % of conferences
+		- Allows jvb to control DTLS/SRTP protection profile. (#1300)
+		- feat(xmpp): resume the connection when online
+		- detect broken XMPP WebSocket using ping
+		- feat(video-quality): Implement max bitrates for video on p2p sessions Calculate the bitrate based on the sender video constraint applied on the track and the bitrates specified for different resolutions.
+		- send conference.left analytics event
+		- feat(chrome|safari): stop the video for maxFrameHeight 0
+		- restart Jingle session on ICE failed
+
+	- Fixes:
+		- Fix ws reconnect piling up previd param.
+		- Do not negotiate H264 when E2EE is enabled
+		- fix(video-quality): make sure the LD stream is enabled even when requested resolution is lower This should fix the case when camera is started with 1080p and LD simulcast stream's resolution is 270p but the requested resolution is 180p.
+		- update token doc for tenant details, new prosody (#1316)
+		- fix(RTCUtils): system audio share multiple desktop
+		- fix(RTCUtils): Cannot read property 'find' of undefined
+		- Only advertise opus-red if the browser supports it.
+		- fix(video-quality): Fix a typo, max. bitrates are always applied on unified plan clients
+		- fix(XmppConnection.connected): check the underlying websocket
+		- fix(XmppConnection): sendIQ2 pass the 'timeout'
+		- fix(tests): source maps for Karma
+		- fix(xmpp/Caps): features for a user without caps support
+		- fix(TCPUtils): set 'sendrecv' only for the local track
+		- crash in Safari on unmute
+		- Scale down localVideo which is already smaller than requested resolution
+
+- [jicofo 1.0-636](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_5073)
+	- New features:
+		- Passes room bare jid to conference IQ. (#585)
+
+	- Fixes:
+		- Escape the display name. (#593)
+
+- [jitsi-videobridge 2.1-351-g0bfaac1c](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_5073)
+	- New features:
+		- Avoid benchmarking srtp engines, and make srtp engine configurable. (#1457)
+		- Support GCM for DTLS/SRTP. (#1450)
+		- Adds an option to pass extra label for the version string (#1437)
+		- Support for RED streams. (#1401)
+		- Updates jitsi-stats intorducing SiteID.  (#1413)
+		- Optimize bwe calculations (#1405)
+
+	- Fixes:
+		- minor followup improvements to bandwidth probing fix (#1449)
+		- don't over-send bandwidth probing, and send bandwidth probing even when no sources can be sent. (#1447)
+		- Fix serialization of the "last-n endpoints" message. (#1446)
+		- Fix redirects for /colibri/debug/stats/*. (#1424)
+		- JMT update: enumerate encodings, not layers, in MediaStreamSources debug. (#1431)
+		- jvb overloaded state stat string (#1428)
+		- Updates log messages around dominant speaker and sctp.
+		- Fixes #1412 NoClassDefFoundError JdkDeserializers
+
 ##  2.0.4966 (22-09-01)
 - [jitsi-meet 1.0.4370](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_4966)
 	- New features:
