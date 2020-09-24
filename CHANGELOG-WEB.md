@@ -4,8 +4,6 @@ Full changelogs are available in each project's release page: click on one of th
 
 ##  2.0.5076 (20-09-23)
 - [jitsi-meet 1.0.4428](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5076)
-	- New features:
-
 	- Fixes:
 		- fix(mediaDeviceHelper): fix typo in dispatch
 		- fix(LargeVideoManager): large video resizing
