@@ -2,6 +2,99 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.5142 (20-10-14)
+- [jitsi-meet 1.0.4466](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5142)
+	- New features:
+		- feat(pwa) add pwa specifics
+		- feat(prejoin) show connection status in exported prejoin screen
+		- feat(prejoin) improve ux
+		- Adds more debug information in the GSM bars popover (#7627)
+		- feat(external-local-storage): support
+		- feat(android) revert to JSC as our JS engine
+		- Enable bridge websockets by default for new installs (#7781)
+		- feat(iFrame): Add method for pinning a participant on stage view
+
+	- Fixes:
+		- fix(vpaas): Count endpoint only when there are 2 or more participants
+		- fix(VideoLayout) make thumbnail iteration more resilient
+		- fix(prejoin) allow libs loaded in prejoin.html to be cached
+		- fix(build) increase external_api bundle size
+		- fix(ios) fix not rendering images on iOS 14
+		- fix(video-quality-dialog): Initial value.
+		- fix(native) add missing function
+		- Show focus indicator only when navigating via keyboard
+		- fix(video-quality): Add the ability to request Ultra HD resolutions Change the preferredVideoQuality and maxReceiverVideoQuality values to Ultra HD resolutions. The requested resolution can be as high as 4K to facilitate VPaaS customers to request 4K. The sender video resolution will always max out at the value specified in the video constraints from config.js settings.
+		- fix(misc) update update-ljm script commit message
+		- fix(config) drop useStunTurn
+		- fix(android) - separates the invocation of the gradle tasks. It was noticed on some configurations that the publish task was executed before assembleRelease finished
+		- fix(android) - adds the import for the VersionName, since on some configurations it is not automatically imported
+		- Makes the code more defensive to prevent an error. (#7837)
+		- fix(android) excludes hermes related libs from the apk
+		- fix(e2ee) handle Olm initialization error
+		- fix(lang) update Slovak translation
+		- fix(lang) update turkish translation
+		- fix(lang) add basic support for serbian
+		- fix(rn,config) increase config load timeout to 10 seconds
+		- fix(android) increase gradle JVM heap size
+		- fix(presenter): Do not change the video mute state on presenter mute. This fixes the issue where the local preview appears muted when presenter camera is turned on and then off while screenshare is in progress.
+		- fix(crashlytics) add missing dependency
+		- fix(android) update Gradle and the plugin to the latest versions
+		- fix(lang) update French translation
+		- fix(lang) typo in German translation
+		- fix(chat) prevent homograph attacks
+		- fix(analytics) clarify log line
+		- fix(analytics) make handler loading more resilient
+		- fix(analytics) make sure rtcstats is not enabled on mobile
+		- fix(analytics) avoid Amplitude initialization failure on mobile
+		- fix(vpaas) hide embed meeting for vpaas users
+		- fix(vpaas) fix vpaas redirect
+		- fix(callstats): Use callStatsThreshold for % of users instead of conferences
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(precallTest):disable if callstats is disabled
+		- feat(e2ee) publish olm id key in presence
+		- feat(e2ee) emit PARTICIPANT_E2EE_CHANNEL_READY also for the initiator
+		- feat(xmpp) drop the useStunTurn option
+		- feat(RTC): force cursor of ScreenObtainer to be always captured
+		- Adds a method that finds the SSRC of a JitsiTrack (#1338)
+		- feat(external-storage): Support.
+		- feat(video-quality): Add a log message for max. height message received from JVB
+		- feat(TPC): add p2p rtcstats meta info to tpc (#1331)
+
+	- Fixes:
+		- fix(TPC): maxBitratesVideo break screenshare
+		- fix(e2ee) add more documentation
+		- fix(updateDevices): On enumerateDevices.
+		- fix(audio-levels): Reset audio level to 0 when remote user is muted. When using getSynchornizationSources on the audio receiver to gather audio levels for remote tracks, browser reports last known audio levels even when the remote user is audio muted, we need to reset the value to zero here so that the audio levels are cleared.
+		- fix(safari): Remove old remote tracks when a new track is received for an endpoint. On Safari, MediaStream.onremovetrack is not fired when a remote desciption with a removed MSID is applied. As a result, new remote tracks for the same endpoint are not created causing issues where the video is not updated on Safari. Also, make sure local tracks on pc are updated when devices are changed while the user is in muted state.
+		- Disable RTX on Firefox. Disable RTX on FF as we are seeing video freezes on FF80 and later - https://bugzilla.mozilla.org/show_bug.cgi?id=1668028
+		- disable google conference flag for screenshare
+		- fixed incorrect kick() with kickParticipant() in doc/API.md
+		- fix(karma): After adding 2nd webpack configuration
+		- fix(callstats): Go back to enabling callstats on % of users rather than conferences
+
+- [jicofo 1.0-644](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_5142)
+	- New features:
+
+	- Fixes:
+		- Handle Jibri errors on initial request (#603)
+
+- [jitsi-videobridge 2.1-376-g9f12bfe2](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_5142)
+	- New features:
+		- Port AWS harvester config (update ice4j). (#1486)
+		- Enable bridge websockets by default for new installs (#1462)
+		- Add loss stats based on total number of packets. (#1455)
+
+	- Fixes:
+		- Fix PingManager being disabled after a temporary failure (jicoco)
+		- Increase the T3 threshold to 1500. (#1485)
+		- publishing stats to callstats, add loss stats. (#1480)
+		- JMT bump: fix double buffer return; link srtp with openssl 1.1.x. (#1477)
+		- NullPointerException if conferenceName is not defined.
+		- always assume 3 temporal layers (#1472)
+
 ##  2.0.5076 (20-09-23)
 - [jitsi-meet 1.0.4428](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5076)
 	- Fixes:
