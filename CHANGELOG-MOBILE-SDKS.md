@@ -1,5 +1,47 @@
 # Mobile SDKs Changelog
 
+# 2.11.0 (2020-11-17)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.11.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.11.0)
+
+## Changes
+
+### Common
+
+- Add mute everyone / (else) capabilities
+- Replace swipe options with long-press sheet in recents list
+- Increase config load timeout to 10 seconds
+- Prevent homograph attacks in chat
+- Fix error when reloading a failed conference
+- UI/UX improvements
+- Update translations
+
+### Android
+
+- Add screen-sharing support
+- Update AndroidX core library dependencies
+- Fix crash when requesting permissions in certain cases
+- Avoid crash when fetching calendar entries
+- Update Gradle and the plugin to the latest versions
+- Revert to JSC as our JS engine
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- android-jsc r245459/
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.10.0...android-sdk-2.11.0)
+
+### iOS
+
+- Fix not rendering images on iOS 14
+
+Built with Xcode 12.2
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.10.2...ios-sdk-2.11.0)
+
 # 2.10.2 (2020-09-18)
 
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-2.10.2)
