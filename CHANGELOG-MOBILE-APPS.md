@@ -1,5 +1,37 @@
 # Mobile apps Changelog
 
+# 20.5.0 (2020-11-17)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.5.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.5.0)
+
+## Changes
+
+### Common
+
+- Add mute everyone / (else) capabilities
+- Replace swipe options with long-press sheet in recents list
+- Increase config load timeout to 10 seconds
+- Fix error when reloading a failed conference
+- UI/UX improvements
+- Update translations
+
+### Android
+
+- Add screen-sharing support
+- Fix crash when requesting permissions in certain cases
+- Fix crash when fetching calendar entries
+- Reduce app size
+- Reduce app startup time
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.4.2...android-20.5.0)
+
+### iOS
+
+- Fix not rendering images on iOS 14
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.4.0...ios-20.5.0)
+
 # 20.4.0 (2020-09-15)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.4.0)
