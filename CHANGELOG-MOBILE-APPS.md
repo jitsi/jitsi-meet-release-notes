@@ -1,5 +1,32 @@
 # Mobile apps Changelog
 
+# 20.6.0 (2020-12-23)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.6.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.6.0)
+
+## Changes
+
+### Common
+
+- Add connection information to participants contextual menu
+- Fixed not always receiving screen shares when in low bandwidth mode
+- Updated WebRTC engine to version 87
+- Stability fixes and improvements
+- Update translations
+
+### Android
+
+- Fix volume buttons not controlling meeting volume on some devices
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.5.0...android-20.6.0)
+
+### iOS
+
+- Fix (not) joining a meeting when the app was closed
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.5.0...ios-20.6.0)
+
 # 20.5.0 (2020-11-17)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.5.0)
