@@ -2,6 +2,269 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.5390 (21-01-12)
+- [jitsi-meet 1.0.4628](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5390)
+	- New features:
+		- feat(jaas) allow tile view to be disabled
+		- feat(jaas) add config for displaying participants stats and conference subject
+		- Skip p2p when the participant is jigasi.
+		- emit raise hand event to external API (#8312)
+		- feat(analytics) unify Amplitude handlers across web and mobile
+		- feat(stats) add stats for mobile
+		- feat(analytics): Adds metric for SS issues.
+		- feat(ios) rename SDK target to JitsiMeetSDK
+		- Update spanish translation (#8023)
+		- feat(ios) added ability to use an external CXProvider and CXCallController
+		- feat(tile-view) optimize for less margins
+		- Update the Czech translation (#8133)
+		- feat(analytics): Add tenant.
+		- Exposes a method for checking is remote track received and played/testing. (#8186)
+		- Add option to force pc to use turn relay candidates. Helps with testing turn relay cases.
+		- feat(ConferenceTimer): Add config option to hide.
+		- Remove the min-participants config.
+		- feat(rn) switch to XCFramework and WebRTC M87
+		- Makes it possible to hide the "Save Logs" link. (#8143)
+		- Include "Latvian" in the languages list (#8129)
+		- feat(avatar) add ability to customize Gravatar base URL
+		- Skips the default tile view when jibri is loading.
+		- Drops filmStripOnly mode. (#8074)
+		- feat(rn) add mute everyone / (else) capabilities
+		- feat(external_api) drop support for noSSL option
+		- feat(BrowserCapabilities) drop supportsVideo
+		- Drop enableUserRolesBasedOnToken and isGuest.
+		- Show cc button for ongoing transcribed meetings for guests
+		- Drop lockRoomGuestEnabled.
+		- Drop HIDE_KICK_BUTTON_FOR_GUESTS setting.
+		- Drop buttons tooltips specific to guests.
+		- Profile tab does not depend on isGuest.
+		- Drops SHOW_JITSI_WATERMARK_FOR_GUESTS and SHOW_WATERMARK_FOR_GUESTS.
+		- feat(welcome_page): Redesign welcome page
+		- feat(android) add screen-sharing support
+		- feat(misc) automatically assign feature-request tag to issues
+		- Reduce pings and adds xmpp ping config.
+		- feat(prejoin): Add name from jwt to prejoin screen
+		- feat(vpaas): Track vpaas conference join
+		- feat(iFrame): Add recording options for RTMP streaming. Add methods for start/stop recording in addition to the commands that we already have.
+		- feat(pwa) update TWA Android project
+		- feat(pwa) do not display chrome extension banner for TWA
+		- feat(pwa) add fastlane integration for building TWA APK
+		- feat(pwa) update mask icon
+		- feat(presenter): apply 'text' contentHint
+		- feat(pwa) update generated Android project
+		- feat(pwa) move twa manifest to twa/
+		- feat(pwa) update twa manifest with new (old) colors and manifest path
+		- feat(pwa) use current icons
+		- feat(pwa) add TWA generated files
+		- feat(mobile) add splash screen
+		- feat(prejoin): handle disabled precall test.
+
+	- Fixes:
+		- fix(JitsiStreamPresenterEffect): frozen on Safari
+		- fix(filmstrip) fix button not considering interface config settings
+		- fix(ios) fix drag handle not rendering with latest react-native-svg
+		- fix(ios) fix crash on startup on iOS 11
+		- fix(setAudioOutputDeviceId): check if supported
+		- Process pre-existing participants properties.
+		- Fixes showing phone icon for jigasi participants.
+		- fixed admin check for token verification
+		- fix(jitsi-meet-web-config.postinst) allow cert and key pre-selection (#8319)
+		- fix(lang) update zhCN translation
+		- fix(lang) update German translation
+		- fix(tile-view) allow watermark to be covered
+		- fix(tile-view) reduce margins, take 2
+		- fix(ios,fastlane) adjust scheme name after rename
+		- fix(android) avoid crashes if view is null
+		- fix(jaas) update recording label and hide option for jaas users
+		- fix(password): Fix add password button on Safari
+		- fix(branding): Use config url for dynamic branding
+		- fix(script) add commits list to update LJM message
+		- Skip sending multiple times disco-info to jicofo.
+		- fix(welcome-page) fix .insecure-room-name-warning margin
+		- fix(main-ko) add keyboardShortcuts videoQuality (#8264)
+		- fix(main-ko.json) Update some korean spelling & words (#8253)
+		- #8095 (#8101)
+		- fix(remote-control) skip on mobile
+		- fix(ios) fix joining a meeting when the app was closed
+		- fix(conference.js): 2 tracks of the same media type
+		- Skip sending unnecessary signalling for raise hand.
+		- fix(LoginDialog) added missing double quotes
+		- Start p2p only when we have received all presences.
+		- fix(video):Always show avatar if video is inactive
+		- the user placeholder translation issue #8219 (#8233)
+		- Fixes VP9 support on Chrome. chore(deps) lib-jitsi-meet@latest
+		- Fixes detecting websocket disconnect by using xmpp pings.
+		- fix(lang) fix a few typos in Italian translation
+		- fix(config) remove openBridgeChannel
+		- fix(tracks): Do not add a second audio track.
+		- fix(lang) typo
+		- fix(android) set stream type hardware buttons should control
+		- fix(android) reset audio route after audio focus was lost
+		- fix(android) use modern API for requesting audio focus
+		- fix(lang) update Italian translation
+		- fix(android) disables the RNWebViewFileProvider
+		- fix(TPC): Do not scale down desktop track in p2p/non-simulcast cases. chore(deps) lib-jitsi-meet@latest
+		- fix(deps) update logger
+		- fix(connection-status): action
+		- fix(avatar) revert back to defaulting to Gravatar
+		- fix(lastN): select screenshare endpoint always when auto pinning. When trying to auto pin screenshare, always select the endpoint even though it happens to be the large video participant in redux. The auto pin screenshare logic kicks in after the track is added.  If the screenshare endpoint is not among the forwarded endpoints from the bridge, it needs to be selected again.
+		- fix(lastN): Do not override channelLastN value. If limitLastN values are specified and channelLastN < limitLastN, configure channelLastN on the conference.
+		- Fixes 404 page link when base is used.
+		- fix(UI): Add method for returning the video type of remote participants. This is needed for the torture clients to determine the video type for the remote participants when testing desktop share.
+		- fix(jaas) replace only the first slash in a pathname
+		- fix(screenshare): do not reconfigure encodings for simulcast SS chore(deps) lib-jitsi-meet@latest
+		- fix(chat) stop using nicknames
+		- get subdomain function
+		- fix(Toolbox) Maintain overflow button visible at all times
+		- fix(welcome_page): Fix background image url path
+		- fix(safari): Ensure simulcast stream resolutions don't change. Safari 14.1 has a bug where it returns 720p for every simulcast stream when RTCRtpSender.getParameters is called even though the stream resolutions are different. By using the encodings config used when source was added, on every RTCRtpSender.setParameters call, we ensure that simulcast stream resolutions don't change. chore(deps) lib-jitsi-meet@latest
+		- fix(welcome_page): Add max width to welcome card
+		- fix(vpaas): Make user media permission message more generic
+		- fix(lang) update Japanese translations
+		- Fix module allowners and moderated rooms.
+		- fix(password) set input type to "password"
+		- fix(welcome_page): Update header to latest design & use generic key name
+		- fix(lang) update Russian translation
+		- fix(build) fix webpack-dev-server on Windows
+		- fix(external_api) replace special chars in roomName before constructing URL
+		- fix(lang) update Italian translation
+		- fix(lang) update Italian translation
+		- fix(lang) update German translation
+		- fix(lang) update for Occitan
+		- fix(lang) improve Spanish translations
+		- fix(lang) fix rendering accented characters in Italian
+		- fix(welcome_page): Fix mobile version
+		- fix(CalendarList): calendar.svg path.
+		- fix(screenshare): Fixes for the blurry desktop share issues. Do not resize the desktop share to 720p by default when the desktop track resolution is higher than 720p. This is causing bluriness when presenter is turned on. Remove the 'detail' contentHint setting for the desktop+presenter canvas stream as it forcing chrome to send only 5 fps stream for high resolution desktop tracks. Move the desktop resizing logic behind a config.js option - videoQuality.resizeDesktopForPresenter.
+		- Optimizes hot paths in prosody modules, string comparisons.
+		- Hide copy password if it is not available. Fixes #7783
+		- Show livestream button only for moderators.
+		- fix(jaas) fix double slash for branded invite urls
+		- Prosody modules - drop unused and duplicate code and drop chatty debug statements (#8027)
+		- fix(rn, screen-sharing) don't render own screen-share in large view
+		- fix(conference) remove no longer needed code
+		- Avoids storing lobby room instance in the main room object.
+		- fix(lang): update fr translation
+		- fix(lang) update ptBR translation
+		- fix(vpaas) fix invite url flicker for jaas users
+		- fix(StatusIndicators): Improve isScreenSharing check
+		- fix(logging): Add more details to onerror and onunhandledrejection errors.
+		- fix(screenshare): bring back 'x-google-flag:conference' flag in remote description for SS. chore(deps) lib-jitsi-meet@latest
+		- fix(video-quality): set lastN to 1 when screenshare is added to call in audio-only mode. This fixes an issue where lastN is not bumped to 1 on an audio-only client when a screenshare source is added to the call.
+		- fix(deviceChange):Dont create video track if muted
+		- fix(conference): start muted values on initial GUM
+		- fix(iFrame): capturScreenshot - check if the remote participant has a track attached. Participants that join video muted do not have video tracks attached. Fixes https://github.com/jitsi/jitsi-meet/issues/7942.
+		- fix(pwa) move manifest to the root
+		- fix(pwa) remove no longer used file
+		- fix(xmpp): Update previd value when trying to resume connection. lib-jitsi-meet@latest
+		- fix(android) fix runtime WebRTC issue
+		- fix(prejoin): Fix moving content when device status bar is toggled
+		- fix(pwa) fix PWA worker script origin
+		- fix(pwa) fix auto-generated TWA icons
+		- fix(pwa) fix loading the service worker
+		- speakerstats_component, attempt to index (a nil value)
+		- fix(thumbnail): cleanup unused hover properties.
+		- fix(avatar) remove participant's "avatarID"
+		- fix(pwa) move logic for registering pwa worker
+		- fix(pwa) remove window.load event handler for pwa registrator
+		- fix(flow): ignore contentHint
+		- fix(pwa) bypass loading in electron. ensure same origin with registrator
+		- fix(UI): Do not re-compute the container width when chat window is closed. Since the external API now sets preferredWidth/preferredHeight for resizing the large video, we don't need to add chat width to the computed window width when the chat window is closed. Fixes https://github.com/jitsi/jitsi-meet/issues/7889
+		- fix(pwa) improve upon pwa specs
+		- fix(avatars) refactor preloading
+		- fix(rn) use a RN-friendly URL polyfill
+		- fix(rejoin) fix adding track parameters to rejoin URL
+		- fix(prejoin) guard case for locationUrl being falsy in prejoin screen
+		- fix(deps) update react-native to fix iOS 14 icons
+
+	- Translation updates:
+		- Updating and uniforming italian translation (#8288)
+		- update French translation (#7725)
+		- * languages-ka.json
+		- Update Arabic translation
+		- * lang:New translation malayalam(ml-in)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Skip p2p when the participant is jigasi.
+		- feat(stats) migrate RN to new stats
+		- Add option to force pc to use turn relay candidates.
+		- Remove the min-participants config. (#1418)
+		- Log the jvb version. (#1410)
+		- feat(BrowserCapabilities) drop supportsVideo
+		- feat(RTC) bump minimum supported Chromium version to 72
+		- Reduce pings and adds xmpp ping config (#1389)
+		- feat(rn) support getDisplayMedia
+		- feat(twa) add TWA check function
+		- feat(e2ee) log Olm version
+
+	- Fixes:
+		- fix(stats) fix parsing codec in new stats
+		- Skip sending multiple times disco-info to jicofo.
+		- Maybe start p2p only when we have received all presences.
+		- Implement the encodings workaround only on Safari. Explicitly check if all the encodings report the same scaleResolutionDownBy value before trying to ensure they match the expected values. This makes Chrome VP9 work again.
+		- Fixes ping options usage.
+		- fix(XMPP): Get the correct domain for XMPP ping.
+		- Updates ping logic around detecting xmpp activity.
+		- add `getParticipants` to JitsiConference docs
+		- Always query the main domain for features. Fixes jitsi/jitsi-meet#8173 (#1428)
+		- fix(TPC): Do not scale down desktop track in p2p mdoe.
+		- fix(deps) update logger to 1.0.0
+		- fix(last-n): Do not let Jicofo initialize last-n for the whole conference. The plan is to move the lastNLimits logic to bridge. The clients will be able to override(lower) the bridge limits through the bridge channel only. Also, this lets us configure last-n per receiver and not set the last-n value for the whole conference the way Jicofo sets it currently.
+		- fix(TPC): do not update encodings for simulcast desktop tracks. Fixes https://github.com/jitsi/jitsi-meet/issues/8094.
+		- typos
+		- typos on comments
+		- fix(TPC): Do not update encodings for non-simulcast sources.
+		- fix(TPC): Ensure encodings resolutions match configured values. On every call to RTCRtpSender.setParameters(), ensure that the resolution configured for the encoding matches that of the value configured on the RTCRtpSender when the source was added to the peerconnection. This should prevent us from overriding the default values if the browser returns erroneous values when RTCRtpSender.getParameters is used for getting the encodings info. This fixes the issue on recent versions of Safari where the 'scaleResolutionDownBy' value comes back as 1 for all encodings even though the encoding resolution is different from the stream capture resolution.
+		- fix(video-quality): Fix p2p desktop share quality. In p2p mode, 'scaleResolutionDownBy' is used for downscaling a stream when needed, i.e. when the user receives a receive constraint of 360p because the other participant is in tile view. When desktop share is started, the encoding config has to be scaled back up so that the other participant starts receiving HD resolution for the share as desktop shares are autopinned. Therefore, encodings have to enabled/disabled for desktop shares as well. Earlier it was done only for camera tracks.
+		- fix(stun) update default list of STUN servers
+		- fix(rn) release audioVideo stream after creating new MediaStream
+		- fix(audio-recorder) remove no longer needed code
+		- fix(RTC): Fix log formatting
+		- fix(video-quality): do not disable encodings when sender constraints are not configured on the conference. Fixes https://github.com/jitsi/lib-jitsi-meet/issues/1333 in applications that use lib-jitsi-meet and do not have layer suspension enabled.
+		- Add the x-google-conference flag on RD when screensharing. Add the conference flag back since the bridge is able to handle the case where more than 1 temporal layers are received even when only 1 ssrc is signaled.
+		- fix(xmpp): Update previd value when trying to resume connection.
+		- fix(JingleSession) log initialization error
+
+- [jicofo 1.0-690](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_5390)
+	- New features:
+		- Adds conference property in the presence for terminate-restart. (#658)
+		- Add config to enable/disable Octo. Remove client-side config. (#640)
+		- Move minParticipants to local config (not configured by the client). (#638)
+
+	- Fixes:
+		- Don't treat Jibri busy response as transient error (#659)
+		- Fixes sending last seen presence. (#662)
+		- Skip sending duplicate identical presences.
+		- Fix attempt to cast.
+		- Fix the REST interface. (#653)
+		- Do not start the nonexistent VersionActivator bundle. (#637)
+		- reading the "enabled" property from legacy config. (#628)
+		- Fixes checkstyle (#627)
+		- Fix stat names (put ice_failed and request_restart under participant_notifications as intended). (#618)
+		- Remove non-operational bridges and add stats. (#614)
+		- Do not immediately move conferences away (#612)
+
+- [jitsi-videobridge 2.1-416-g2f43d1b4](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_5390)
+	- New features:
+		- bump jmt: stats improvements. (#1534)
+		- Announce version in ServerHello (optionally). (#1528)
+		- Add oversending time stat (#1514)
+		- Increase bucket size for rate trackers (decrease memory usage). (#1460)
+
+	- Fixes:
+		- sending an "active=true" message when an endpoint is connects after being recreated. (#1538)
+		- Included the bridge version in ServerHello sent over WS. (#1536)
+		- Suppress sending SenderVideoConstraints(height=0) (#1533)
+		- Fix getting mediaSource for OctoEndpoint. (#1531)
+		- Fix serializing when version==null. (#1529)
+		- Fix raw type warnings (reduce use of generics, use List instead of array). (#1512)
+		- Adapt to new Jetty version deprecations; fix compilation warnings. (#1511)
+		- Avoid IllegalStateException when StatsCollector is disabled (#1507)
+		- Fix failures to re-login to XMPP and reload config (jicoco) (#1501)
+		- Fix resetting lastPresenceSent (jicoco). (#1493)
+		- move jvb ice4j overrides to application.conf so they are respected (#1490)
+
 ##  2.0.5142 (20-10-14)
 - [jitsi-meet 1.0.4466](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5142)
 	- New features:
