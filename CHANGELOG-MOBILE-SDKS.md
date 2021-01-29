@@ -1,5 +1,53 @@
 # Mobile SDKs Changelog
 
+# 3.0.0 (2021-01-22)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.0.0)
+
+## Changes
+
+### Common
+
+- New hangup, mute audio native APIs
+- New participant joined left native events
+- Added connection stats (long press on participant tile)
+- Stop using nicknames in chat
+- Updated WebRTC to M87
+- Unified Amplitude handlers across web and mobile
+- Stop room name generator when field is focused
+- New feature flags to control tile-view, notifications, toolbox, filmstrip
+- UI/UX improvements
+- Update translations
+
+### Android
+
+- Add BroadcastService based APIs for native events / actions
+- Disable the RNWebViewFileProvider
+- Set stream type hardware buttons should control
+- Reset audio route after audio focus was lost
+- Use modern API for requesting audio focus
+- Prevent crashes when destroying the Fragment
+- Set compile/target SDK versions to 30
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- android-jsc r245459
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-2.11.0...android-sdk-3.0.0)
+
+### iOS
+
+- BREAKING: SDK name changed to JitsiMeetSDK to fix a Swift compiler bug
+- BREAKING: SDK is now released in XCFramework format
+- Added ability to use an external CXProvider and CXCallController
+
+Built with Xcode 12.2
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.11.0...ios-sdk-3.0.0)
+
 # 2.11.0 (2020-11-17)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-2.11.0)
