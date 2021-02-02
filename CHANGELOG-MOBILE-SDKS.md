@@ -46,6 +46,8 @@ Relevant native dependencies:
 
 Built with Xcode 12.2
 
+**NOTE:** Due to some publishing issues this version was released as 3.0.2 in CocoaPods.
+
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-2.11.0...ios-sdk-3.0.0)
 
 # 2.11.0 (2020-11-17)
