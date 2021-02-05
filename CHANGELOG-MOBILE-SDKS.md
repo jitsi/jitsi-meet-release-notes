@@ -1,5 +1,41 @@
 # Mobile SDKs Changelog
 
+# 3.1.0 (2021-02-05)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.1.0)
+
+## Changes
+
+### Common
+
+- Add feature flags for audioMute, videoMute and overflowMenu
+- Add ability to retrieve participantsInfo array
+- Add ToggleScreenShare event and action.
+- Implement aggressive layer suspension
+- Update translations
+
+### Android
+
+- Add ability to disable the use of requestFocus
+- Add ability to localize notification actions strings
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- android-jsc r245459
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.0.0...android-sdk-3.1.0)
+
+### iOS
+
+- N/A
+
+Built with Xcode 12.2
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.0.0...ios-sdk-3.1.0)
+
 # 3.0.0 (2021-01-22)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.0.0)
