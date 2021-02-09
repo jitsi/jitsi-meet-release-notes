@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# 20.6.2 (2021-01-14)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.6.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-20.6.2)
+
+## Changes
+
+### Common
+
+- Fix incorrect bitrate calculations
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.6.0...android-20.6.2)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.6.0...ios-20.6.2)
+
 # 20.6.0 (2020-12-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.6.0)
@@ -24,6 +47,8 @@
 ### iOS
 
 - Fix (not) joining a meeting when the app was closed
+
+NOTE: A 20.6.1 released quickly followed fixing a crash on startup on iOS 11 devices.
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.5.0...ios-20.6.0)
 
