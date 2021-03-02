@@ -1,5 +1,39 @@
 # Mobile SDKs Changelog
 
+# 3.2.0 (2021-03-02)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.2.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.2.0)
+
+## Changes
+
+### Common
+
+- Add actions and events for the chat
+- Add feature flag for help button
+- Make sure the lobby enable dialog follows the theme color
+- Update translations
+
+### Android
+
+- N/A
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- android-jsc r245459
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.1.0...android-sdk-3.2.0)
+
+### iOS
+
+- Change the participantInfo completion handler reference to strong
+
+Built with Xcode 12.4
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.1.0...ios-sdk-3.2.0)
+
 # 3.1.0 (2021-02-05)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.1.0)
