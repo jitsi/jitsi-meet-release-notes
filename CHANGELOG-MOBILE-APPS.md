@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# 21.0.0 (2021-03-31)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.0.0)
+
+## Changes
+
+### Common
+
+- TODO
+
+### Android
+
+- TODO
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.6.2...android-21.0.0)
+
+### iOS
+
+- TODO
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.6.2...ios-21.0.0)
+
 # 20.6.2 (2021-01-14)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-20.6.2)
