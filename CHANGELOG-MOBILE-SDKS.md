@@ -1,5 +1,43 @@
 # Mobile SDKs Changelog
 
+# 3.3.0 (2021-04-01)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.3.0)
+
+## Changes
+
+### Common
+
+- Add fullscreen.enabled flag
+- Add actions and events for the chat opening/closing
+- Add feature flag for help button
+- Add ToggleScreenShare event and action
+- Adaptive toolbar
+- Brand new in-meeting UI
+- Update translations
+
+### Android
+
+- Add ability to localize notification actions strings
+- Apply flags when launching activity from non-activity context
+
+Relevant native dependencies:
+
+- react-native 0.61.5
+- android-jsc r245459
+- okhttp: 3.12.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.2.0...android-sdk-3.3.0)
+
+### iOS
+
+- N/A
+
+Built with Xcode 12.4
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.2.0...ios-sdk-3.3.0)
+
 # 3.2.0 (2021-03-02)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.2.0)
