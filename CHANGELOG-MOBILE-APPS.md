@@ -9,17 +9,26 @@
 
 ### Common
 
-- TODO
+- Adaptive toolbar
+- Brand new in-meeting UI
+- Fix not focusing on single input dialogs
+- Allow to toggle tile view even while alone
+- Fix not showing alert when permission is not granted
+- Implement aggressive layer suspension
+- Fix incorrect bitrate calculation on mobile
+- Stop room name generator when the room field is focused
+- Other UI fixes
+- Updated translations
 
 ### Android
 
-- TODO
+- Set compile/target SDK versions to 30
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-20.6.2...android-21.0.0)
 
 ### iOS
 
-- TODO
+- Screen sharing support
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.6.2...ios-21.0.0)
 
@@ -42,7 +51,7 @@
 
 ### iOS
 
-- N/A
+- Add support for screen sharing (iOS >= 14)
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-20.6.0...ios-20.6.2)
 
