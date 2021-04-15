@@ -2,6 +2,391 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.5765 (21-04-15)
+- [jitsi-meet 1.0.4900](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5765)
+	- New features:
+		- feat(screenshare): Audio only screenshare (#8922)
+		- feat(rn,security) add security dialog
+		- feat(virtual-background) add slight blur option
+		- feat(Labels): Redesign labels on mobile & web
+		- Adds an option to preset in localstorage key for locked rooms.
+		- feat(ios): adds ios screensharing enabled flag
+		- feat(premeeting-screen) add virtual background functionality
+		- feat(e2ee): auto turns on e2ee when one participant enabled it
+		- feat(sipcall) implement sip invite
+		- feat(virtual-background) persist settings
+		- feat(e2ee): adds sounds for e2ee enabling/disabling
+		- feat(rn): makes InputDialog textInput autoFocus
+		- feat(external_api): Add command for toggling localFlipX
+		- feat(external_api): Add command for toggling camera on mobile web
+		- feat(virtual-backgrounds) add ability to upload custom images
+		- feat(rn,polyfill): Add a polyfill for Promise.allSettled.
+		- feat(tile-view) allow to toggle tile view while alone
+		- feat(authentication) refactor auth dialogs to use React
+		- feat(iFrame): Emit event when recording status changes, including errors (#7973)
+		- feat(background alpha) Set background transparency
+		- feat(external_api): add videoMuted event and action (#8862)
+		- (external-api) Add command for setting tile view mode
+		- feat(toolbox): Adaptive toolbar on mobile
+		- feat(rn,ui) update in-meeting colors
+		- feat(rn,conference) new UI for conference name duration
+		- feat(rn,ui) get rid of the gradients
+		- feat(flags) add feature flag for audio-only button
+		- feat(jwt) log jwt validation errors
+		- feat(InviteMore): Relocate invite prompt for mobile friendliness.
+		- feat(config): Add config option to allow unsetting local video flip
+		- feat(Chat): Revamp design.
+		- feat(ToggleCamera): Implement for web.
+		- feat(android): adds timer to OngoingNotification
+		- feat(build,rnnoise) don't use an external bundle for the effect
+		- feat(build,virtual-background) don't use an external bundle for the effect
+		- feat(virtual-backgrounds) add virtual background support
+		- feat(toolbox): Redesign mobile toolbox
+		- Fixes filtering not needed presences.
+		- feat(Toolbar): Redesign web toolbar
+		- feat(config): Add useHostPageLocalStorage
+		- Move checks for moderator in pre-join and filter extra presences.
+		- feat(rn,flags) add fullscreen.enabled flag
+		- feat(browser-support): Add support for WKWebview based browsers.
+		- feat(iOS): screensharing support
+		- feat(ci) fail CI if package-lock wasn't updated
+		- Only show more numbers link if multiple numbers are available (#8702)
+		- feat(shared-video) refactor dialog to use React
+		- Add a new setting to remove individual sharing features from UI (#8660)
+		- feat(external_api): allow clipboard-write
+		- Added mute video moderation feature (#8630)
+		- feat(sip): Added auto-knocking for sip gateway if lobby is enabled
+		- feat(Chat) Improve responsive behaviour further.
+		- feat(load-test): Fixes audio senders.
+		- Add 'useNewBandwidthAllocationStrategy' to config.js.
+		- feat(load-test): Load test startmuted (#8629)
+		- feat(blur) replace BodyPix with TFLite
+		- feat(mobile) adds actions and events for the chat
+		- refactors the chat flow so it has open and close functions
+		- (external_api) add command for kick participant
+		- feat(flags) add feature flag for help button
+		- feat(embed-meeting) add autoplay permission to iframe sample
+		- feat(external_ap) add api call to get live stream url
+		- feat(vpaas): Send billing id to prosody
+		- feat(rn) update SDK version to 3.1.0
+		- feat(dev) bind to 0.0.0.0 on the dev server by default
+		- feat(android) adds ability to disable the requestFocus on Android
+		- feat(conference): Enable forced reload of client on bridge failure.
+		- add ipados to list of Platform.OS (#8205)
+		- feat(mobile) adds feature flags for audioMute, videoMute and overflow… (#8537)
+		- feat(mobile) adds ability to retrieve participantsInfo array
+		- feat(rtcstats): send meeting uuid to rtcstats (#8526)
+		- feat(mobile) adds ToggleScreenShare event and action.
+		- feat(Dialog): Make dialog close button more mobile friendly.
+		- feat(external_api) allow dropbox option to be overwritten
+		- Allow star for room in moderated tenants.
+		- feat(external_api) add event for chat updates (unread counter, open state)
+		- Adds option to set ws keepalive url through config. (#8487)
+		- feat(ui) update AtlasKit components
+		- feat(tiles): Add responsive behaviour. * Enforce fixed column number at various width breakpoints. * Bring back the filmstrip at small sizes but hide it. * Change default maximum columns to 7.
+		- Implement aggressive layer suspension on RN. RN doesn't support RTCRtpSender yet. Therefore, media is suspended on RN by changing the media direction in the SDP whenever the client receives an ideal height of 0 for sender constraints on the bridge channel. LJM update - https://github.com/jitsi/lib-jitsi-meet/compare/3570339360763fa0911d92c5ae7c270860b6934b...be18ff34bedf38c7475fe4953074c7959000e15f.
+		- feat(mobile) adds more feature flags (#8450)
+		- Uses mod_external_services supporting urn:xmpp:extdisco:2. (#8455)
+		- feat(android) set compile/target SDK versions to 30
+		- feat(android) update native dependencies
+		- feat(mobile) adds ability to send and receive text messages (#8425)
+		- Detects shard changed when using websockets.
+		- Add new codec selection mechanism.     When an endpoint that doesn't support the preferred codec (VP9) joins a conference, all the other endpoints fallback to VP8 until the endpoint leaves the call.
+		- feat(overflow): Add responsive drawer at small screen width.
+		- feat(external-api) set `privateMessage` flag on `incoming-message`
+		- feat(external_api) allow shortcuts to be disabled
+		- feat(external_api) add command and event listener for CS
+		- feat(chat): Improve responsiveness.
+		- feat(external_api) allow initial gUM requests to be disabled
+		- feat(external_api) set and cancel private chat through external API
+		- feat(external_api) allow notifications to be configured
+		- feat(recording) - Show recording started notification to the initiator (#8359)
+
+	- Fixes:
+		- fix(toolbar) restore security button backwards compat
+		- fix(virtual-background) keep selected state on dialog
+		- fix(rn,full-screen) make sure immersive mode respects the fullscreen flag
+		- fix(debian) don't include package{-lock}.json files
+		- fix(settings): Make language dropdown wider
+		- fix(virtual-backgrounds) add segmentation model license information
+		- fix(sip-invite) fix sip invite jwt not being sent correctly
+		- fix(ios) keyboard no longer covers message board and input
+		- fix(Toolbar, rn): Button overflow in landscape orientation
+		- fix(MoreTab): Fix languages not being scrollable on mobile
+		- (lang): update french and canadian french i18n
+		- Adds Portuguese to listed languages
+		- fix(lang) Differentiate prejoin and lobby better in German translation
+		- fix(virtual-background): Hide scrollbar on loading action.
+		- Correct some missing comas in config.js.
+		- used deprecated onmousewheel event
+		- fix(lobby): Knocking participants list for small widths
+		- fix(captions): Lift captions upper when invite box is shown & fix icon
+		- fix(virtual-background): Fixes upload virtual background on Firefox
+		- fix(large-video): Always pin screenshare to large-video if it exists.
+		- Fixes lobby when allowners is enabled.
+		- fix(lang) update Dutch translation
+		- fix(lang) fix typo in Russian translation
+		- fix(lang) update Dutch translation
+		- fix(interfaceConfig) mark as deprecated
+		- fix(lang) fix typo in Russian translation
+		- fix(toolbox): Add missing lang key for video settings
+		- fix(overflow-menu): Don't change state on hover for disabled items
+		- fix(menu): Pop menu icons & background
+		- Refactor client width computation.
+		- fix(welcome): Align meeting list at the top when no footer
+		- fix(rn, toolbox): Change button appearing order
+		- fix(load-test): Fixes unmuting loadtest client. (#8849)
+		- fix(toolbar): Re-add "mute everyone's video" button
+		- fix(android) apply flags when launching activity from non-activity context
+		- fix(chore) fix typo
+		- fix(config, docs) document feedbackPercentage
+		- fix(misc) follow-up typos
+		- fix(android) remove leftover package
+		- fix(rn,labels) don't add extra margin in tile view
+		- fix(rn,labels) top-align with room name field
+		- fix(filmstrip) make sure it's not rendered outside of a safe area
+		- fix(rn,filmstrip) simplify thumbnail height calculations
+		- fix(rn,conference) remove no longer needed margin
+		- fix(rn,filmstrip) simplify visibility calculation
+		- fix(rn,toolbox) fill gap underneath Toolbox
+		- fix(rn,ui) move top labels to navbar component
+		- fix(icons) never specify fill
+		- fix(startMuted): Fix unmute on mobile when it is muted by Jicofo on join.
+		- fix(Chat): Fix modals displaying improperly due to chat.
+		- fix(toolbox): Fix overflow menu & button background
+		- fix(virtual-background) fix tainted canvas when using the CDN
+		- fix(toolbox): Fix mic disabled icon
+		- fix(android) changes the property name for the manifestOutputDirectory
+		- fix(jaas) hide support link in invite error for jaas users
+		- fix(prejoin): Use localFlipX on prejoin screen
+		- fix(misc) typos
+		- fix(toolbox): Fix always on top toolbar
+		- fix(virtual-background) use a DOM element for storing the image
+		- fix(rn,bottomsheet) limit width
+		- fix(toolbox): Constrain toolbox width on large mobile device
+		- fix(toolbox): Background of disabled settings button & tileview button
+		- fix(toolbox): Fix buttons size in minified mode
+		- fix(vpaas) send jitsiMeetId instead of billingId
+		- fix(screenshare): audio screen share muted state (#8785)
+		- fix(virtual-background) use tighter edge smoothing
+		- fix(toolbox): Restructure items order for desktop & mobile
+		- fix(icons): No hardcoded colors for some svgs
+		- fix(chat) hides send private chat button when enable.chat flag is false.
+		- fix(toolbar): Update overflow menu according to review
+		- fix(toolbar): Small changes according to design review
+		- fix(UI): Add playsinline attribute for remote video. For the video to play on Safari mobile browser, the playsInline attribute needs to be set to true. Set the mute attribute as well which was accidentally removed in code refactor.
+		- fix(useVideoStream): error handling & add logs.
+		- fix(prejoin): Don't overwrite display name with ''
+		- fix(ios,build) make sure the correct broadcast extension ID is set
+		- fix(ios) make sure broadcast extension version matches
+		- fix(ios) move extension to a path without spaces
+		- Fixes filtering lobby presences.
+		- fix(config) fix syntax error in commented code
+		- fix(responsive): Fix tiles not recomputing when jumping between screen sizes
+		- fix(ios) the broadcast extension'd bundle ID must match the app's
+		- fix(tracks): Do not signal muted audio tracks.
+		- fix(rn,tracks) fix not showing alert when permission is not granted
+		- fix(deps) sync package-lock
+		- fix(copyText) use a helper library
+		- date util localization (#8723)
+		- fix(live-stream-section): Use await for copyText
+		- fix(copyText): in iframe for chrome<85
+		- fix(ios) sync podfile
+		- fix(blur) disable blur button if camera is off
+		- fix(deps) bump lodash
+		- fix(blur-effect) enable blur effect on all platforms supporting canvas filters
+		- fix(lint-run-command)
+		- improved copy text helper function (#8677)
+		- fix(LargeVideo): Fix large video not resizing when closing chat.
+		- fix(gum) add event handling for SLOW_GET_USER_MEDIA
+		- fix(blur) check model response status and catch errors
+		- fix(blur) fix model paths
+		- TypeError: Cannot read property 'isAudioTrack' of undefined
+		- fix(lang) update Italian translation
+		- fix(load-test): Fixes keepalive url when using load-test.
+		- fix(rn,lobby) make sure the enable dialog follows the theme color
+		- fix(load-test): Always create local audio track. (#8612)
+		- fix(popups): covered by labels.
+		- fix(load-test): Create local tracks and then join.
+		- fix(avatar) refactor preloading to avoid CORS issues
+		- fix(load-test): Uses websocket if available and adds room param to the connection url.
+		- fix(external_api) add autoplay capabilities to created iframe
+		- Add GUM timeout & improve device permissions
+		- fix(AudioSlider): removed when volume is 0
+		- fix(lang) update Russian translation
+		- fix(tests): Add more checks so that test don't error out.
+		- fix(Safari): Fix mobile double tapping for toolbar and overflow.
+		- suspicious URL on Persian localization file
+		- fix(lang)  update korean translation
+		- fix(android) add ability to localize notification actions strings
+		- fix(test): Make sure test doesn't error out.
+		- fix(recents-list): Order recents by last used
+		- fix(Filmstrip): Prevent Toolbox from being shown indefinitely when hovering filmstrip
+		- fix(docs) add JaaS link to README
+		- fix(Safari): Fix zoomed in mobile interface and cropped tile
+		- fix(conference.js): crash on undefined
+		- fix(debian): Improves handling db_get.
+		- Adds luasec as dependency.
+		- fix(debian): Fixes enforce_apache option.
+		- Use internal_hashed everywhere. (#8485)
+		- fix(misc) typo
+		- fix(lang) update Dutch translation
+		- Lobby display name set when preJoin is disabled. Fixes #8415.
+		- Fixed Turkish translation issues
+		- fix(lang) corrected Dutch translation of toggleCamera
+		- fix(vpaas): Store billing id in parent lolcaStorage on Safari
+		- join label in pt-br
+		- fix(subject) remove gradient if no info in topbar
+		- fix(Toolbox): Fix toolbox display when accessing it via keyboard
+		- fix(rn,stats) fix incorrect bitrate calculation on mobile
+		- Fix broken postinst reported by @wsldankers.
+		- fix(tile-view) avoid covering the logo
+		- Fixes #8396, wrong ssi includes in offline static page.
+		- fix(settings) remove legacy compatibility code
+		- fix(menu) do not display overflow menu button if no items
+		- fix(jaas) disable directory integration
+		- fix(Thumbnail): volume & audioLevel default values
+		- fix(filmstrip): Import from base/tracks.
+		- fix(Thumbnail): Improve naming.
+		- fix(AudioTrack):Add check for NaN value for volume
+		- fix(Thumbnail): imports.
+		- fix(SmallVideo): computeDisplayModeInput
+		- fix(rn) stop room name generator when field is focused
+		- fix(twa) update template
+		- fix(libre-build) skip spurious Firebase and GCM dependencies
+		- fix(libre-build) update react-native-device-info to 8.0.0
+
+	- Translation updates:
+		- Update korean translation (#8879)
+		- Update main-da.json (#8642)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(RTC): Signal video type and availability to bridge.
+		- feat(stats): Add a new bridge message "EndpointStats" for stats. Use the new Colibri message "EndpointStats" for broadcasting the local stats. The bridge then will be able to filter the endpoint stats and send them only to the interested parties instead of broadcasting it to all the endpoints in the call.
+		- feat(e2ee): makes olm sessions initialisation lazy
+		- feat(e2ee) update to SFrame draft -02
+		- feat(stats): Get audio levels for the top 5 speakers only.
+		- Consider absence of A/V muted from presence as muted.
+		- Moderator can revoke moderator role to others and himself (#1532)
+		- participant kick reason add
+		- feat(jwtError): Send explicit error on auth failed with invalid jwt
+		- Remove ssrcs on leave
+		- feat(ReceiveVideoController): Add the ability to send constraints in the new format. Add the ability to send the bridge messages for the receiver video constraints in the new format directly.
+		- feat(dominantSpeaker): Add previous speaker list.
+		- feat(browser-support): Add support for WKWebview based browsers. Apple added getUserMedia support for WkWebview based browsers like chrome and Firefox on iOS 14.3. These browsers behave as Safari does on iOS. Therefore, extend the Safari checks to these webkit based browsers as well.
+		- Added mute video moderation feature (#1496)
+		- Use the new bridge signaling format.
+		- Reuse billingId from localstorage as jitsiMeetId.
+		- feat(docs) mvoe API documentatrion to the handbook
+		- feat(GUM): timeout.
+		- Send billing id to prosody on join presence
+		- Add the ability to configure max. bitrates for VP9. The max bitrate for VP9 is enforced by adding the b=AS:<limit> line in the SDP since there is no way to configure the max. bitrates for the individual SVC streams using RTCRtpSender.setParameters.
+		- expose MEETING_ID_SET event (#1484)
+		- Adds option to set ws keepalive url through config.
+		- Implement aggresive layer suspension on RN. RN doesn't support RTCRtpSender yet. Therefore, media is suspended on RN by changing the media direction in the SDP whenever the client receives an ideal height of 0 for sender constraints on the bridge channel.
+		- Support the urn:xmpp:extdisco:2 namespace specified by XEP-0215 (#1472)
+		- Changes ws default keepalive interval.
+		- Detects shard changed when using websockets. (#1462)
+		- Add codec selection mechanism. Determine the preferred codec for a given endpoint based on the config.js settings and the codecs supported by the endpoint. The preferred codec is published in presence and then used by the other endpoints in the call during join/leave to determine if the codec needs to be changed on the fly. Different codecs can be configuered for p2p/jvb connections. The preferredCodec/disabledCodec settings under videoQuality will have precedence over the older settins like preferH264/disableH264.
+
+	- Fixes:
+		- fix(rtc) Fix setting effects while not in a conference.
+		- Fixes error for undefined error, on happening on p2p kick.
+		- fix(receiveVideoController): Do a deep copy of constraints for comparsion.
+		- fix(codec-selection): Fix codec selection for unified plan browsers.
+		- fix(receiveVideoController): Do not send redundant video constraints to the bridge.
+		- fix(e2ee) update docs after dropping signatures
+		- Dial-out after setting password in the meeting.
+		- fix(caps): features update event is not emitted.
+		- fix(TPC): get ssrc info per ssrc and not per mline.
+		- fix(JingleSession): Avoid renegotiation when user with no sources leaves the call.
+		- fix(deps) update webrtc-adapter to v7.7.1
+		- fix(screenshare): audio screen share muted state
+		- fix(modificationQueue): error handling & logs
+		- fix(lastN): Return the correct lastN value for the conference.
+		- fix(conference): Do not signal muted tracks on join. Do not add the muted audio/video tracks to the peerconnection on join. The tracks will be added when the user unmutes for the first time. This reduces the number of remote sources that will be added when a participant joins a large call where everyone joins muted (startAudioMuted/startVideoMuted setting).
+		- Checks presence editing and make sure we send only on change.
+		- fix(RTCUtils): Init availableDevices.
+		- fix(RTC) fix device selection not being available
+		- fix(TPCUtils): undefined is not an object (evaluating 'this.tpcUtils.replaceTrack(e,t).then')
+		- fix(TPC): Remove the existing track instead of overwriting. When a second remote track of the same mediatype is received for an endpoint, remove the existing track before creating the new remote track.
+		- fix(e2ee) fix disabling E2EE
+		- fix(e2ee) fix key index after ratchetting
+		- Drop caps handling (#1495)
+		- fix(SendVideoController): Apply the sender constraint only when it changes. There were cases where the bridge was sending the same constraint multiple times causing redundant calls to getParameters/setParameters on the RTCRtpSender.
+		- fix(gum) update permissions prompt detection
+		- Save guards _features to be always empty and nver undefined. (#1493)
+		- fix(GUM-permissions): cache permissions on init.
+		- fix(example) simplify
+		- fix(GUM): improve permissions logic.
+		- fix(ice-restart): Force client reloads when call is migrated.
+		- VADAudioAnalyser: catch error
+		- Restore local connection status. After ICE failure and subsequent recovery of the media connection to the bridge using session-terminate, the local connection status needs to updated when ICE connection is established on the new peerconnection. The local connectivity status will be shown as Lost otherwise.
+		- return default codec if local desc is not available. Fixes https://github.com/jitsi/lib-jitsi-meet/issues/1466
+		- Skip header checking for ws and shard when not configured. Fixes #1465.
+		- fix(RTX): Re-enable RTX on Firefox.
+		- unit tests and some clean-up
+		- Disabling lobby when using tenant.
+
+- [jicofo 1.0-740](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_5765)
+	- New features:
+		- Do not send source-remove when a participant leaves. (#719)
+		- Adds a ping to the healthcheck. (#721)
+		- Add .editorconfig to enforce max_line_length (#720)
+		- Code coverage with JaCoCo and Codecov. (#706)
+		- Propagate the meetingId from the MUC to colibri. (#700)
+		- Added mute video moderation feature (#695)
+		- Read average_participant_stress from bridge stats. (#697)
+
+	- Fixes:
+		- Adds a nullcheck fixes NPE. (#722)
+		- Do not block the smack thread waiting for a response from jibri. (#718)
+		- Skips sending empty video content on source-add.
+		- Fixes blocking receiver thread (#716)
+		- Don't propagate sources if octo is disabled. (#713)
+		- Disables octo by default (sync with the bridge). (#712)
+		- Graceful Graceful shutdown (#705)
+		- Fix room name in log context. (#692)
+		- Fix logging (update jicoco). (#691)
+		- Fix reading PENDING_TIMEOUT from legacy config. (#688)
+		- Fix the client-proxy property name. (#685)
+		- Fire events async. (#682)
+		- Read the original sender's JID when used with client_proxy. (#674)
+		- Fix leaking JitsiMeetConferenceImpl insatnces. (#673)
+		- Remove jicofo.conf on purge. (#664)
+
+- [jitsi-videobridge 2.1-478-gc6da57bd](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_5765)
+	- New features:
+		- Remove the config flag to enable/disable stats, always enabled. (#1616)
+		- Code coverage with JaCoCo and Codecov. (#1607)
+		- Read and expose meetingId. (#1599)
+		- Send a limited speaker history with DS changes (#1597)
+		- Handle Colibri requests asynchronously. (#1590)
+		- Add an average_participant_stress stat. (#1572)
+		- Add debug logs for bandwidth allocation. (#1571)
+		- Implement lastN limits based on conference size. (#1556)
+		- Add a stat for the number of endpoints with high loss. (#1553)
+
+	- Fixes:
+		- Shut down ice4j harvester thread pool properly. (Bump ice4j). (#1629)
+		- switch up to HD quickly when resuming a layer-suspended source.  (Bump JMT.) (#1628)
+		- Bump JMT: Fix the check for "active video" in the initial grace period. (#1621)
+		- Avoid spinning in DTLS handshake. (#1619)
+		- Dot not serialize unneeded fields. (#1617)
+		- Propagate EndpointConnectionStatusMessage from octo to local endpoints. (#1615)
+		- Fix previousSpeakers message. (#1603)
+		- Do not aggregate per-SSRC stats (fix a leak). (JMT). (#1600)
+		- Remove the code clearing ice4j properties. (#1594)
+		- Fix detecting allocation changes. (#1589)
+		- Re-use the ObjectMapper when serializing. (#1588)
+		- Fix bitrate stats (fixes #1583). (#1584)
+		- Fix jitsi-utils dependency (update jicoco). (#1581)
+		- scenario where endpoint connection status can get stuck on 'inactive' (#1567)
+		- Fix layer selection with the legacy API. (#1561)
+		- Fix the logging "programname", remove obsolete properties. (#1549)
+
 ##  2.0.5390 (21-01-12)
 - [jitsi-meet 1.0.4628](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5390)
 	- New features:
