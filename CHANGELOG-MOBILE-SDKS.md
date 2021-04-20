@@ -1,5 +1,37 @@
 # Mobile SDKs Changelog
 
+# 3.4.0 (2021-04-20)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.4.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.4.0)
+
+## Changes
+
+### Common
+
+- Add security dialog
+- Make sure immersive mode respects the fullscreen flag
+- Redesign labels
+- Button overflow in landscape orientation
+- Implement sip invite
+- Always pin screenshare to large-video if it exists
+- Update the translations
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.3.0...android-sdk-3.4.0)
+
+### iOS
+
+- Detect orientation when screen sharing
+- Fixes typo on JitsiMeetViewDelegate method
+- Adds ios screensharing enabled flag
+- Keyboard no longer covers message board and input
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.3.0...ios-sdk-3.4.0)
+
 # 3.3.0 (2021-04-01)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.3.0)
