@@ -1,6 +1,6 @@
 # Mobile apps Changelog
 
-# 21.1.0 (2021-04-14)
+# 21.1.0 (2021-04-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.1.0)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.1.0)
@@ -22,6 +22,12 @@
 - Detect orientation when screen sharing
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.0.0...ios-21.1.0)
+
+### Android
+
+- Adjust resolution to screen rotation when screen sharing
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.0.0...android-21.1.0)
 
 # 21.0.0 (2021-03-31)
 
