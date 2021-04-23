@@ -16,18 +16,18 @@
 - Always pin screenshare to large-video if it exists
 - New and updated translations
 
+### Android
+
+- Adjust resolution to screen rotation when screen sharing
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.0.0...android-21.1.0)
+
 ### iOS
 
 - Keyboard no longer covers message board and input
 - Detect orientation when screen sharing
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.0.0...ios-21.1.0)
-
-### Android
-
-- Adjust resolution to screen rotation when screen sharing
-
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.0.0...android-21.1.0)
 
 # 21.0.0 (2021-03-31)
 
