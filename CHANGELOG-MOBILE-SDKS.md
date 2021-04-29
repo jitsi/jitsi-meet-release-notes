@@ -1,5 +1,31 @@
 # Mobile SDKs Changelog
 
+# 3.5.0 (2021-04-29)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.5.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.5.0)
+
+## Changes
+
+### Common
+
+- Remove old LoginDialog.js file, fixed redirection to the external auth and created actions.any.js
+
+### Android
+
+- Catch exception thrown when media projection is stopped
+- Fix screen rotation when screen-sharing
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.4.0...android-sdk-3.5.0)
+
+### iOS
+
+- Fix building with Xcode 12.5
+- Add ability to set CallKit options for incoming calls
+- Fix leaving the meeting when screen-sharing
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.4.0...ios-sdk-3.5.0)
+
 # 3.4.0 (2021-04-20)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.4.0)
