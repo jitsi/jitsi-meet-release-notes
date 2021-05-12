@@ -2,6 +2,125 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.5870 (21-05-12)
+- [jitsi-meet 1.0.4985](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5870)
+	- New features:
+		- feat(virtual-background) add virtual background preview
+		- feat(themes): Add style tokens and web theme
+		- feat(ios) add ability to set CallKit options for incoming calls
+		- feat(iOS): screensharing extension swift implementation
+		- feat(last-n): Implement startLastN and make last-n configurable through UI. (#9093)
+		- feat(settings) removed openTwoButtonDialog from UI module and created react LogoutDialog component
+		- feat(aot): improve AOT UI/UX
+		- feat(participants-pane) implement participants pane
+		- feat(sip-invite) add room password for sip invite requests
+		- feat(HDAudio): Initial implementation.
+		- feat(virtual-background) Virtual background UI changes
+		- feat(build,ios) add lane to update dSYMs on Crashlytics
+		- feat(rtcstats): switch to rtcstats v3 protocol (#8989)
+
+	- Fixes:
+		- fix(dev) make sure each bundle analysis report gets its own file
+		- fix(dev) disable performance hints when doing bundle analysis
+		- fix(premeeting): "Don't show screen" button hover state
+		- fix(participants-pane): Resize video layout when closing or opening
+		- fix(Thumbnail): Display mode typo.
+		- fix(dialogs-style): Remove box shadow from header and footer
+		- fix(premeeting) drop gradient
+		- Fixes welcome page add calendar link. Fixes #9132
+		- fix(video-layout): Fix video-layout when a SS participant leaves.  Unpin the screenshare when the screensharing participant leaves. Switch to tile view if no other participant was pinned before screenshare was auto-pinned, pin the previously pinned participant otherwise.
+		- fix(jwt-validation): validate `kid` value only for JaaS
+		- fix(rn, Labels): Place picture-in-picture button on the left
+		- fix(Video.js): prevent DOMException: The play() request was interrupted by a new load request
+		- (external-api): fix notify video mute changed when presenting
+		- fix(Labels): Recording label background color
+		- fix(external_api) fixed misspelled api command
+		- fix(lang) update French translation
+		- fix(patch) remove unneeded hunks from RN patch
+		- fix(ios) fix building with Xcode 12.5
+		- fix(sip-invite) fix baseurl case sensitive replacement
+		- fix(toolbox): hide toolbox when mouse outside toolbox area
+		- fix(screenshare): remove redundant event / only show on supported env (#9100)
+		- fix(ios) fix leaving the meeting when screen-sharing
+		- fix(lang) update Italian translation
+		- fix(UI) removed unused methods
+		- fix(config): Deprecate capScreenshareBitrate.
+		- Updates jiconop2 to drop custom type.
+		- fix(sip-invite) remove hash params
+		- fix(presenter): Do not resize the desktop track on FF by default. Resizing of the desktop track on Firefox is not needed anymore since the browser now reports the correct resolution of the desktop track after the fix here - https://github.com/jitsi/lib-jitsi-meet/commit/ada0f5e537b8e8102cc99cf8982236e4aa6223d9. Fixes https://github.com/jitsi/jitsi-meet/issues/8519
+		- fix(authentication): removed old LoginDialog.js file, fixed redirection to the external auth and created actions.any.js (#9049)
+		- fix(participants-pane): Consider reducer/state being unavailable on native
+		- fix(config) drop ancient backwards compatibility options
+		- fix(config) avoid using legacy config options
+		- fix(android): catch exception thrown when media projection is stopped
+		- fix(android) fix screen rotation when screen-sharing
+		- fix(audio-share): Show button only when supported by browser. Show the audio share button only when its supported. For example, mobile browsers do not support getDisplayMedia yet.
+		- fix(sip-invite) add minor fixes to sip invite flow
+		- fix(jaas) fix recorder and sip gateways not detecting vpaas meetings
+		- fix(aot): fix aot buttons size
+		- fix(ios) detect orientation when screen sharing
+		- fix(virtual-background): Check if virtual background is disabled on premeeting.
+		- fix(prejoin) fix background selection not being available for 3rd party apps
+		- fix(video-layout): Unpin SS when the screensharing participant leaves.
+		- fix(rn,config) update to new configuration for codec selection
+		- fix(config): Add missing config.js settings. Add missing enforcePreferredCodec, bitrates for H264 and fix an issue with missing comma.
+		- fix(invite) fix mailto links not working on Brave for iOS
+		- fix(toolbox): Fix toolbox not auto-hiding. (#9002)
+		- fix(icons): CC, invite, user & virtual-background
+		- fix(ios) use app_store_connect_api_key for Fastlane builds
+		- fix(sip-invite) do not send query params on sip invite request
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(HDAudio): Initial implementation.
+
+	- Fixes:
+		- fix(JingleSession): Add a unique identifier for source on Firefox.
+		- Drops unused nick from messages. Fixes #1592
+		- fix(RTC): Fix screenshare with audio on Electron.
+		- fix(conference): Enable p2p for unified plan clients.
+		- fix(TPC): Use addTrack instead of addStream in Unified-plan impl.
+		- fix(RTC) drop the "old gUM" flow
+		- fix(SDP): Move all SDP related files to a different dir. SDP utility classes are spread across RTC and XMPP directories now, moving these class files to a 'sdp' directory.
+		- fix(stats): Return promise for getStats. Switch to returning a Promise for getStats. Reset frame rate stat to 0 when video is suspended as a result of endpoint falling out of last-n.
+		- sysMessageHandler not deleted (#1590)
+		- fix(quality-control): Send the new constraint on join. Fixes the case where the old format height constraint is sent on join for a jvb media session.
+		- fix(quality-control): Switch to new receiver constraints by default. Use the new receiver constraints unless it is explicitly disabled through config.js.
+		- Drops the sys message handler after used or connected.
+		- fix(RTC): Specify default width of 1280px for video. Fixes https://github.com/jitsi/lib-jitsi-meet/issues/1571.
+		- fix(ReceiverVideoController): Cache the new receiver constraints.
+		- fix(screenshare): Disable SS simulcast based on fps requested. Disable simulcast for low fps screenshare and enable it for high fps screenshare. testing.capScreenshareBitrate config.js setting has now been deprecated.
+		- Fixes sending initial disco info on attaching connection.
+		- high CPU on Chrome with low fps screen sharing (#1570)
+		- fix(JingleSession): Increase the ICE candidate gathering timeout to 150ms. This will reduce the numbers of transport-info IQs sent by the client.
+		- fix(TPC): Fix error handling for getStats.
+		- fix(stats): Use promise-based getStats on all browsers. Get rid of the browser specific keys and use the standard spec-compliant fields for stats. Get the resolution/fps for remote streams from 'inbound-rtp' stats. Use the 'track' stats for the local resolution/fps since these take the active simulcast streams into account.
+		- fix(SS): Implement a 2500Kbps limit for VP9 SS.
+		- fix(RTC): Remove stream effect before disposing the track. Remove the effect instead of stopping it so that the original stream is restored on both the local track and on the peerconnection. Fixes issues when a stream with effect applied is replaced on the pc after it is muted, also fixes https://github.com/jitsi/lib-jitsi-meet/issues/1537.
+		- Drops unused config.
+		- fix(connection-quality): Calculate target bps based on videoQuality settings.
+		- Adds back removed method used by jibri. (#1561)
+
+- [jicofo 1.0-747](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_5870)
+	- New features:
+		- Allow to use the Service XMPP connection for jibri. (#732)
+
+	- Fixes:
+		- Use a sync IQRequesstHandler for jibri. (#726)
+
+- [jitsi-videobridge 2.1-492-g5edaf7dd](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_5870)
+	- New features:
+		- Log a message when endpoints are suspended due to bwe. (#1645)
+
+	- Fixes:
+		- Catch exceptions that occur when handling octo packets. (#1650)
+		- Make "source" nullable, as Octo uses "null". (#1649)
+		- ReceiverConstraints map and processing messages in order (#1647)
+		- fix bug calculating removed video endpoints in constraints. (#1643)
+		- Bring back logs for SENT colibri responses. (#1641)
+		- Fix unnecessary thread contention pushing to packet queues.  (Bump jitsi-utils.) (#1632)
+
 ##  2.0.5765 (21-04-15)
 - [jitsi-meet 1.0.4900](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5765)
 	- New features:
