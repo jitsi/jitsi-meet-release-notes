@@ -1,5 +1,38 @@
 # Mobile SDKs Changelog
 
+# 3.6.0 (2021-05-31)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.6.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.6.0)
+
+## Changes
+
+### Common
+
+- Allow both regex and normal check for the room name
+- Remove listener for native events when app unmounts
+- Hide screen share button when audioOnly mode
+- Add capability for sharing any direct link video
+- Knocking participant name in participants list
+- Add flag for controlling security options button visibility
+- Fix displaying mute everyone buttons for non-moderators
+- Fix notifications for phone invites
+- Introduce react-native-paper
+- Place picture-in-picture button on the left
+- Show full participant thumbnails in tile view
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.5.0...android-sdk-3.6.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.5.0...ios-sdk-3.6.0)
+
 # 3.5.0 (2021-04-29)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.5.0)
