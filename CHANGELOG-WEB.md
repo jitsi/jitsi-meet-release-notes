@@ -2,6 +2,135 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.5963 (2021-06-10)
+- [jitsi-meet 1.0.5056](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5963)
+	- New features:
+		- feat(e2ee): shows E2EESection only when user is moderator
+		- feat(e2ee): broadcast e2ee disabled
+		- feat(virtual-background): Desktop share as virtual background
+		- feat(virtual-background): Desktop share as virtual background
+		- feat(virtual-background): Desktop share as virtual background
+		- feat(virtual-background): Desktop share as virtual background
+		- feat(virtual-background): Desktop share as virtual background
+		- feat(virtual-background): Desktop share as virtual background
+		- feat(virtual-background): Desktop share as virtual background
+		- feat(virtual-background): Desktop share as virtual background wip
+		- feat(virtual-background): Desktop share as virtual background wip
+		- feat(virtual-background): Desktop share as virtual background wip
+		- feat(virtual-background): Desktop share as virtual background wip
+		- Adds new module to unlimit jicofo and jvb connections.
+		- feat(AudioTrack): retries for play()
+		- feat(share-video) Add capability for sharing any direct link video
+		- more user friendly default device label
+		- feat(rn, security) added flag for controlling security options button visibility
+		- jitsi_session: extracts URL parameters from BOSH or WS into session
+		- feat(AddPeopleDialog): Add config option to overwrite invite subject app name
+		- A/V moderation (prosody module) (#9106)
+		- feat(virtual-background): Add placeholder on virtual background preview
+
+	- Fixes:
+		- Fixes playing muted youtube video.
+		- Fixes selecting screen share when shared video stopped.
+		- Fixes import warnings.
+		- Stops auto pinning if shared video is playing.
+		- fix(participants) do not preload gravatars if config is empty
+		- Escapes some keys when parsing input.
+		- Skips check on domain verification disabled. Fixes #9313.
+		- prosody: token alg is checked before public key is used
+		- Fixes typo. (#9315)
+		- fix(video-filmstrip): Place filmstrip videos over toolbar
+		- fix(feedback): don't wait for feedback submission on leave meeting
+		- fix(virtual-background): Responsive virtual background preview.
+		- Fixes av moderation logic when granting moderator.
+		- fix(config): Add config for enabling unified-plan support on chromium.
+		- fix(ScreenShare): remove listener for native events when app unmounts
+		- fix(authentication): removed cancel event from overlay effect (#9274)
+		- fix(AudioTrack): _play promise chain
+		- fix(SharedVideo): Ensure shared video takes filmstrip into account
+		- fix(vpaas): Avoid url blipping on invite dialog
+		- Drops unused config, fixes jitsi/lib-jitsi-meet#1620.
+		- fix(virtual-background): Fix delete virtual background icon position.
+		- fix(sip) remove sip text from invite
+		- fix(virtual-background): Responsive virtual background dialog
+		- fix(lang) Update Turkish Translation
+		- Drops extra message sent on leave.
+		- fix(ci) fix checking if the git repository is clean
+		- fix(FocusLock): Stop stealing focus when embedded
+		- fix(participants): Knocking participant name in participants list
+		- fix(lang) update German translation for participants pane
+		- fix(participants-pane) enable translation of invite button
+		- fix(config) remove reference to interface_config.js
+		- fix(participants-pane): Use selector for displaying chat context item
+		- fix(sip) allow sip invites to contain phone numbers
+		- Fixes handling tenant in util and lobby.
+		- fix(toolbox) fix displaying mute everyone buttons for non-moderators
+		- fix(virtual-background) fix track leak in preview
+		- fix(deploymentUrls): Disable help and download apps buttons for JaaS
+		- fix(invite) fix notifications for phone invites
+		- fix(participants-pane): Use selector for displaying names
+		- fix(quality-control): Send the new receiver constraints on state changes.
+		- fix(RN, Toolbox): Show full participant thumbnails in tile view
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(TPC): Enable unified-plan support for Chromium based browsers. This can be controlled through the config.js  option 'enableUnifiedOnChrome'.
+		- Audio/Video moderation. (#1581)
+
+	- Fixes:
+		- fix(RTC): Adjust the media direction for p2p conn. For p2p connections, the media direction needs to be adjusted after every source-add/source-remove is processed based on the availability of local sources.
+		- fix(RTC): Use a enum for media direction.
+		- fix(JingleSessionPC): Disable unified-plan for p2p. Disable cross browser p2p using unified plan until all the issues are fixed.
+		- fix(moderation): Unmuting after av moderation and no track.
+		- fix(moderation): Fixes detecting av moderation approved.
+		- fix(Sdp): Fix maxaveragebitrate typo
+		- fix(LocalSdpMunger): Fix unit test.
+		- fix(CodecSelection): Call RTCRtpTransceiver#setCodecPreferences before renegotiation. Call RTCRtpTransceiver#setCodecPreferences with the preferrred codec order before every createOffer/createAnswer. This ensures that the codec preference is enforced even when there is no local description available yet while the preferred codec is being set immediately after media session creation.
+		- fix(JingleSessionPC): Add a workaround for chrome issue. The 'signalingstatechange' event for 'stable' is fired after the 'iceconnectionstatechange' event for 'completed' is fired on chrome in Unified plan. This prevents the client from switching the media connection to the p2p connection once the ice connection for p2p gets established.
+		- fix(Logging): Log enhancements. Add a preifx to logs for idenitifying the type of TPC/jingleSessionPC.
+		- fix(TPC): Do not configure encodings on Safari until reneg. Avoid configuring the encodings on Chromium/Safari until simulcast is configured for the newly added track using SDP munging which happens during the renegotiation.
+		- fix(TPC): Do not configure encodings on chromium immediately after replace track. Avoid configuring the encodings on chromium immediately after replace track since the encoding params are read-only until the renegotation is done.
+		- send json message (#1180)
+		- fix(SDP): Add missing msid for p2p sources.
+		- fix(TPC): Don't convert plan-b<->unified-plan SDPs for p2p.
+		- fix(JingleSessionPC): Do not try to re-use inactive mid for new remote ssrcs. The direction was marked as 'inactive' only on Firefox as Safari had audio issues when an inactive mid is re-used. Chrome (in unified-plan) needs the direction of the mid in remote desc to be set to 'inactive' for a 'removetrack' to be fired on the associated media stream whenever a remote source is removed.
+		- fix(SDP): Drop SSRCs whenever the transceiver direction is 'inactive' or 'recvonly'. This is needed only for JVB connections. Add unit tests for LocalSdpMunger.
+		- Ignore startAudioMuted/startVideoMuted for p2p. The tracks will not be added when the call switches from jvb to p2p for an endpoint that joins muted by focus.
+		- fix(RTC): Do not suppress the source updates on Firefox. If the msid attribute is missing, then remove the ssrc from the transformed description so that a source-remove is signaled to Jicofo. This happens when the direction of the transceiver (or m-line) is set to 'inactive' or 'recvonly' on Firefox. Not signaling these source updates creates issues with remote track handling on the other endpoints in the call.
+		- fix(RTC): Set transceiver direction after RTCRtpSender#replaceTrack. This fixes the issue where TRACK_REMOVED event is not fired when a remote track is removed from the peerconnection. Fixes https://github.com/jitsi/lib-jitsi-meet/issues/1612 and https://github.com/jitsi/jitsi-meet/issues/8482.
+		- fix(caps): Disable TCC on Firefox. There is a known issue with Firefox where the BWE gets halved on every renegotiation causing the low upload bitrates from the Firefox clients.
+		- Drops unused config, fixes jitsi/lib-jitsi-meet#1620.
+		- fix(e2ee): destroys olm session on disabling e2ee
+		- fix(RTC): Disable simulcast for SS when using H.264. Fixes https://github.com/jitsi/docker-jitsi-meet/issues/1048
+		- fix(TPC): Return default codec if the local sdp is not available. Get the correct media type when generating the source identifier.
+		- fix(vad): enable VAD on supported browsers (#1613)
+		- fix(JingleSession): Move the ssrc identifier generation to LocalSdpMunger.
+		- fix(logger): Logging enhancements. Get rid of noisy logs related to SDP transformations which are redundant. Fix formatting and add missing information.
+		- fix(quality-control): Propagate the height constraints to p2p session. If the application is using the new receiver constraints, propagate the height constraint to the p2p session as well.
+		- fix(quality-control): fix constraints sent on channel initialization. Do not send old format constraints if no constraints are set before the channel is initialized.
+
+- [jicofo 1.0-756](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_5963)
+	- New features:
+		- Deprecates the reservation system.
+		- Add stats for jigasi, improve logs, shutdown IQ handler (#737)
+		- A/V moderation (#734)
+
+	- Fixes:
+		- jigasi iq handler (#744)
+		- Video muting, fixes jitsi/jitsi-meet#9238.
+
+- [jitsi-videobridge 2.1-508-gb24f756c](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_5963)
+	- New features:
+		- Log the jvb version on startup. (#1659)
+
+	- Fixes:
+		- "unknown endpoint" warning sending EndpointStats. (#1666)
+		- Bump Jitsi-SRTP (via JMT).  Hopefully fixes crash due to GC of native objects. (#1663)
+		- Log using logger, remove leftover print. (#1660)
+		- Fix VideoTypeMessage.TYPE, use it. (#1644)
+		- bump versions of some dependencies. (#1653)
+		- markdown syntax in debugging.md. (#1652)
+
 ##  2.0.5870 (21-05-12)
 - [jitsi-meet 1.0.4985](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5870)
 	- New features:
