@@ -1,5 +1,35 @@
 # Mobile apps Changelog
 
+# 21.2.0 (2021-06-23)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.2.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.2.0)
+
+## Changes
+
+### Common
+
+- Disable screen share when audioOnly mode
+- Add capability for sharing any direct link video
+- Fix displaying mute everyone buttons for non-moderators
+- Show full participant thumbnails in tile view
+- Place picture-in-picture button on the left
+- Fix video-layout when a screen-sharing participant leaves
+- New and updated translations
+
+### Android
+
+- Fix screen rotation when screen-sharing
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.1.0...android-21.2.0)
+
+### iOS
+
+- Detect orientation when screen sharing
+- Fix leaving the meeting when screen-sharing
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.1.0...ios-21.2.0)
+
 # 21.1.0 (2021-04-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.1.0)
