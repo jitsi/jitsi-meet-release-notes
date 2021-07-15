@@ -1,5 +1,34 @@
 # Mobile SDKs Changelog
 
+# 3.7.0 (2021-07-15)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.7.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.7.0)
+
+## Changes
+
+### Common
+
+- Optimizes speaker stats to skip occupants with 0 talk time
+- Add replaceParticipant feature-flag
+- Place filmstrip videos over toolbar
+- Enable deeplinking
+- LocaleDetector should consider the language tag
+- Include support for translated string resources at device permission dialog because it contains hardcoded english strings
+- Update the translations
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.6.0...android-sdk-3.7.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.6.0...ios-sdk-3.7.0)
+
 # 3.6.0 (2021-05-31)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.6.0)
