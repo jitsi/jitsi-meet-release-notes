@@ -1,5 +1,37 @@
 # Mobile SDKs Changelog
 
+# 3.8.0 (2021-08-13)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.8.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.8.0)
+
+## Changes
+
+### Common
+
+- Add a participants panel
+- Add "1on1" mode, which hides the remote thumbnail while in a 1-1 call
+- Add the ability to share direct video links (mp4, etc.)
+- Add the ability to override any configuration option
+- Update WebRTC to M92
+- Update the translations
+
+### Android
+
+- Fix install error on application compiled against Android S while targeting S+
+- Fix crash in certain devices when the configuration is saved while in the background
+- UI, dark mode, bottom sheets
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.7.0...android-sdk-3.8.0)
+
+### iOS
+
+- Skip sending newlines in the invite email
+- Add the ability to destroy & reinitialize the React Native bridge
+- Skip exitPictureInPicture() call from resetBounds in PiPViewCoordinator
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.7.0...ios-sdk-3.8.0)
+
 # 3.7.0 (2021-07-15)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.7.0)
