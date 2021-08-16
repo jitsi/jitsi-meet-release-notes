@@ -2,6 +2,280 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.6173 (2021-08-16)
+- [jitsi-meet 1.0.5211](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6173)
+	- New features:
+		- Rises the stanza limit for unlimited jids (jicofo).
+		- feat(transcribing): configurable transcription language (#9684)
+		- feat(rn,filmstrip) add 1on1 mode
+		- feat(toolbox) updated menu items order, dividers for mobile
+		- feat(share-video) Allow sharing direct video links (mp4 etc) on mobile (#9511)
+		- feat(participants-pane) changed to standard header
+		- feat(ios) support for destroying & reinitializing the react native bridge
+		- feat(participants-pane) hide admit all if less than 2 participants
+		- feat(participants-pane) context menu ui fixes
+		- feat(participants-pane) updates
+		- feat(participants-pane) removed getIsParticipantAudioMuted
+		- feat(Filmstrip): Collapse filmstrip to avoid toolbar overlap on mobile
+		- feat(native-participants-pane) removed everyonemoderator from footer context menu
+		- feat(native-participants-pane) updated slider volume private prop
+		- feat(native-participants-pane) rebase, resolved conflicts pt. 2
+		- feat(native-participants-pane) rebase, resolved conflicts pt. 1
+		- feat(native-participants-pane) rebase and Podfile.lock file updates
+		- feat(native-participants-pane) implemented review remarks pt.4
+		- feat(native-participants-pane) fixed lint errors
+		- feat(native-participants-pane) implemented review remarks pt. 3
+		- feat(native-participants-pane) slider ui fixes
+		- feat(native-participants-pane) updated podfile
+		- feat(native-participants-pane) volume level state fix
+		- feat(native-participants-pane) volume slider refactoring
+		- feat(native-participants-pane) updated translations and added throttle for slider
+		- feat(native-participants-pane) review remarks pt 2 volume slider
+		- feat(native-participants-pane) fixed comment typos and reworks on volume slider
+		- feat(native-participants-pane) implemented review remarks pt. 1
+		- feat(native-participants-pane) resolved rebase conflicts and updated import paths
+		- feat(native-participants-pane) removed console.log
+		- feat(native-participants-pane) removed unused prop and added onPress condition
+		- feat(native-participants-pane) dialog for blocking audio/video
+		- feat(native-participants-pane) Updated comments
+		- feat(native-participants-pane) participants pane open/close fixed
+		- feat(native-participants-pane) open/close pane native actions
+		- feat(native-participants-pane) fixed slider error on android
+		- feat(native-participants-pane) fixed lint errors
+		- feat(native-participants-pane) removed mock data
+		- feat(native-participants-pane) ui fixes
+		- feat(native-participants-pane) fixed lint error
+		- feat(native-participants-pane) created admitAll action
+		- feat(native-participants-pane) fixed slider and hid dialog when chat is open
+		- feat(native-participants-pane) added action dialogs for context menu participant details and native community slider
+		- feat(native-participants-pane) context menu for meeting participant
+		- feat(native-participants-pane) fixed import order lint error
+		- feat(native-participants-pane) context menu for more btn and reject lobby participant
+		- feat(native-participants-pane) rendered participant name
+		- feat(native-participants-pane) simplified props for hiding header with navigation
+		- feat(native-participants-pane) fixed mute all content styles and added doInvitePeople action
+		- feat(native-participants-pane) token updates and added mute all event
+		- feat(native-participants-pane) updated styles for meeting participant list
+		- feat(native-participants-pane) created meeting participant list
+		- feat(native-participants-pane) ui fixes
+		- feat(native-participants-pane) admit/reject all buttons
+		- feat(native-participants-pane) ui updates for participant item
+		- feat(native-participants-pane) first lobbyparticipantlist steps
+		- feat(native-participants-pane) fixed lint errors
+		- feat(native-participants-pane) removed button component, fixed icons inside paper button component and reverted actions.js files
+		- feat(native-participants-pane) reverted podfile changes
+		- feat(native-participants-pane) fixed lint errors
+		- feat(native-participants-pane) separated native actions from web actions and created any actions for the common ones
+		- feat(native-participants-pane) updated styles for button component and participant item related components
+		- feat(native-participants-pane) added showHeaderWithNavigation prop to JitsiModal and created close button
+		- feat(native-participants-panel) renamed ParticipantsPanel to ParticipantsPane and created modal
+		- feat(native-participants-panel) created participants panel overflowmenu button
+		- feat(DominantSpeakerName): Implement
+		- feat(branding): Add custom avatar backgrounds
+		- feat(sound-settings) Added ability to control sounds
+		- feat(billing-counter) Removed iframe billing-counter callbacks (#9537)
+		- feat(reactions-webhook) Added reactions backend call for webhook (#9534)
+		- feat(reactions) Added Reactions (#9465)
+		- Participants optimisations (#9515)
+		- feat(JaaS-JWT) Get JWT for JaaS (#9512)
+		- feat(toolbox) allow any toolbox button to be displayed in main toolbar (#9488)
+		- Enable unified plan support for p2p chrome calls.
+		- feat(audio-screen-share): improved ux flow (#9411)
+		- feat(thumbnails) Add changes to mobile context menu
+		- feat(api) expose follow me method (#9486)
+		- feat(config) Added option to remove Show More link from GSM popover
+		- Change the screenshare capture fps from UI. (#9438)
+		- feat(jaas) display messages about features that are disabled for jaas… (#9448)
+		- feat(external-api): Add send chat message command
+		- request video only for visible thumbnails.
+		- feat(Filmstrip): Pagination.
+		- UI part for A/V moderation. (#9195)
+		- feat(did-page) Handle SIP number on did info page
+		- Optimizes speaker stats to skip occupants with 0 talk time.
+		- feat(vpaas, recording): Show recording link to recording initiator (#9362)
+		- feat(replace-participant): Add replaceParticipant feature-flag
+		- feat(replace-participant): Replace participant with same jwt in the conf
+		- feat(external_api) Expose command for toggling background dlg
+		- feat(api) allow always hiding remote videos for 1-1 calls
+		- feat(api) expose event for mouse movements inside the iframe
+		- Make Jitsi WCAG 2.1 compliant (#8921)
+		- feat(api) allow filmstrip autohide to be configurable
+		- feat(participants-pane): Add 'admit all' knocking participants button
+
+	- Fixes:
+		- fix(lang) update Brazilian Portuguese translations
+		- Adds a null check in mod_limits_exceptions.
+		- fix(ios) remove exitPictureInPicture() call from resetBounds(bounds:)
+		- fix(lang) update portuguese translation
+		- fix(av-moderation): Fixes approving and dismissing the notification.
+		- fix(logging): Set the log level to debug again. Plan is to make the Strophe logs more restrictive. Revert "fix(logging) reduce overly vebose logging"
+		- fix(misc) fix typeof comparison to undefined
+		- fix(rn,video-quality) fix not selecting any endpoint on mobile
+		- fix(recording-label) fix recording label behavior
+		- fix(notifications) Fix hiding audio/video lost notification
+		- fix(twa) update masked icon
+		- Fix av moderation enable-disable sequence.
+		- fix(conference) unify conference options
+		- fix(rn,bottom-sheet) fixed  surface color
+		- fix(lang) update German translation
+		- fix(config) comment out enabledReactions
+		- fix(shared-video,video-menu) add ability to stop shared video from video menu
+		- fix(Filmstrip): Send only visible endpoints to jvb
+		- fix(external-api): persist audio output device
+		- fix(Toolbar): Fix toolbar not hiding on mobile
+		- fix(logging) reduce overly vebose logging
+		- fix(lang) update portuguese translaation
+		- fix(prejoin): disposed track was added to the conference
+		- fix(deps,rn) bump @react-native-async-storage/async-storage
+		- fix(rn,polyfills) remove no longer needed hack
+		- fix(config) add missing buttons to default constants
+		- fix(dropbox-recording) Prevent start recording when no dropbox token
+		- fix(virtual-background): Refactor CSS to accommodate smaller screens
+		- fix(ShareDesktopButton): typo.
+		- fix(toolbox) add back toggle camera button
+		- fix(toolbar-buttons) Attempt fix Meet in integration
+		- fix(ShareDesktopButton): getParticipants reference
+		- fix(reactions) Moved reactions behind feature flag
+		- Normalize the tenant part of the URL. (#9577)
+		- fix(recording-label) Make REC label visible at all times (#9578)
+		- fix(Thumbnail, Drawer): Remove hover state; Prevent outside propagation
+		- recording for public access (#9584)
+		- fix(reactions) Batch events before sending
+		- fix(jaas) do not deeplink jaas users on default 8x8 app scheme
+		- fix(jaas) fix vpaas condition
+		- fix(support-url): Hide contact support button when SUPPORT_URL is empty
+		- fix(iOS-mailto): Send no new line invite on default email
+		- fix(jaas) hide chrome banner regardless of jwt (#9565)
+		- fix(virtual-background): Add logs on virtual background actions.
+		- fix(AOT): participant selection.
+		- Fix speakerstats reports.
+		- fix(aot): Remove dependency to translate from StatelessAvatar.js
+		- fix(android): Fix install error on application compiled against Android S - Targeting S+ (version 10000 and above) requires that an explicit value for android:exported be defined when intent filters are present
+		- fix*(jaas) redirect to plan limit page on connection failed
+		- fix(reactions) Updated list of reactions & disabled incoming message sound (#9550)
+		- fix(jaas) always hide chrome banner (#9546)
+		- fix(css) moved to the left moderation text
+		- fix(jaas) fix jaas customer details endpoint (#9542)
+		- fix(virtual-background): Prevent memory leak when desktop share as a virtual background is applied.
+		- Fixed (#9533)
+		- fix(virtual-background): Set x scale to default value on desktop share as a virtual background deactivation.
+		- fix(share-youtube-video): Validate youtube url.
+		- fix(av-moderation): Fixes sending wrong whitelist in json.
+		- fix(virtual-background): Style adjustments on virtual background dial… (#9484)
+		- fix(settings): imports that break mobile.
+		- fix(connection-indicator) Fix detecting local/remote participant
+		- fix(virtual-background): Fix mirror behavior for remote participants.
+		- fix(tile-view): when iAmRecorder=true.
+		- fix(Filmstrip): Fix scrollbars around filmstrip (#9519)
+		- fix(feedback-dialog) Removed mouseover on mobile
+		- fix(config) document useRoomAsSharedDocumentName
+		- fix(av-moderation) added optional chaining for moderation enabling
+		- fix(css) fix various layout issues on small screen sizes (#9464)
+		- fix(external-api): update settings on api device change
+		- fix(build) split jaas actions
+		- fix(build) add missing file for native builds (#9461)
+		- fix(virtual-background): Fix resize action and prevent mirror behavio… (#9441)
+		- fix(chat) removed unread msgs counter on chat open
+		- fix(i18n): LocaleDetector should consider the language tag
+		- fix(pagination): keys
+		- fix(vpaas): Don't show recording link to initiator if saving on dropbox
+		- fix(keyboardshortcut) spacebar release mutes participant (#9434)
+		- fix(lobby) disable invite from lobby screen fix #9209 (#9417)
+		- Clear prosody utils and removes a debug statement.
+		- fix(VirtualBackgroundDialog): SS on electron.
+		- fix(virtual-background): Prevent virtual background selection if it h… (#9414)
+		- fix(wasm-support): WebAssembly browser support. (#9410)
+		- Checks all parts while parsing config params.
+		- fix(toolbox) Copying with Ctrl+C toggles the chat. Fixes #9380
+		- fix(api) invert filmstrip autohide flag
+		- fix(authentication) language display problem resolved #9385 (#9390)
+		- fix(share-video) fix backwards compatibility issue
+		- fix(rn): adds check for blur function on currentTarget
+		- `Thailand` to `Thai`
+		- fix(vpaas) enable deeplinking
+		- fix(participants-pane): Don't show 'grant moderator' action if already moderator
+		- fix(DeviceSelection): Remove video from mobile Safari
+
+	- Translation updates:
+		- Update of the translation to portuguese language (#9432)
+		- Update of the translation to portuguese language (#9392)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(transcribing): configurable transcription language
+		- feat(non-participant-messages) Add a new JitiConferenceEvent for messages ignored by ENDPOINT_MESSAGE_RECEIVED
+		- feat(BridgeChannel): Signal a new videoType for high fps screenshare. This lets the bridge adjust the bitrate allocation for this source so that layers with higher fps are prioritized over layers with higher resolution. As a result, endpoints with restricted downlink will receive a high fps low resolution share as opposed to a high resolution low fps screenshare.
+		- feat(JingleSessionPC): Enable unfied plan by default for chrome p2p.
+		- Switch to unified plan on chrome by default unless explicitly disabled.
+		- feat(RTC): Add the ability to change desktop share fps. Provide a method for changing the capture fps for desktop tracks during the call. These changes to the lib are needed for making it configurable from the UI.
+		- feat(replace-participant): Replace participant with same jwt in the conf
+
+	- Fixes:
+		- fix(ProxyConnection) add new required stubs
+		- fix(tpc) fix extracting ssrc map when using single stream
+		- fix(transcribing): send transcripton_language only when necessary (#1677)
+		- Fix av moderation n.filter is not a function.
+		- fix(ConnectionQuality): Do not show red/yellow GSM bars on join. When the user first unmutes their video, the connection quality is shown as poor until the local stats are available. Calculate the connection quality only after the stats are available, i.e., assume 100% until pcStatsInterval has elapsed.
+		- fix(precall) respect custom callstats script url for precall test
+		- fix(log) lower severity of overly verbose logs (2)
+		- fix(log) lower severity of overly verbose logs
+		- fix(JingleSessionPC): Fix startMuted cases for p2p unified plan. Chrome doesn't create a decoder for ssrc in the remote description when there is no local source and the endpoint is offerer. Initiating a renegotiation with the endpoint as a responder fixes this issue. Add a workaround until Chrome fixes this bug.
+		- Missed SSRCs in Unified Plan with several "ssrc-group:FID" groups. (#1658)
+		- fix(TPC): Fix the screenshare issue when user starts video muted on chrome. Munge 3 ssrcs in the SDP for chrome in unified plan always for the simulcast case.
+		- fix(JingleSessionPC): Disable unified-plan for p2p chrome. Do not enable unified plan for p2p chrome by default until StartMutedTest is fixed. Fix media direction for case when there are no local and remote sources, should be set to 'inactive' in that case.
+		- fix(codec-selection): Fix VP9 codec switching issue in Chrome unified-plan. Munge only the m-line that corresponds to the source that the browser will be sending. Do not select VP9 on Firefox. Detect support for RTCRtpTransceiver#setCodecPreferences correctly.
+		- fix(RTC): In unified-plan mode, disable the low resolution streams for low fps SS. In unified plan impl, it is not possible to enable/disable simulcast during the call since the same sender is re-used for all local video tracks. Therefore, disable the low resolution simulcast streams for low fps screensharing so that the bridge forwards only the highest resolution stream which is important for low fps screensharing.
+		- fix(JingleSessionPC): Do not check if the ssrc already exists in the RD when adding a ssrc-group from source-add.
+		- fix(VADAudioAnalyser): NPE error evaluating this._vadEmitter.on (#1652)
+		- fix(TPC): Do not remove ssrcs from remote desc for p2p. In unified plan, re-use of m-line (i.e., adding an SSRC, removing it and then adding it back) causes the browser to not render the media on Chrome and Safari. The WebRTC spec is not clear as to how browsers have to behave, this doesn't cause any issues on Firefox. As a workaround, only change the media direction and leave the ssrc in the remote desc. This automatically triggers a 'removetrack' event on the associated MediaStream and the track can be removed from the UI.
+		- fix(VAD): Do not enable VAD on Chrome on iOS.
+		- fix(RTC): Do not overwrite other constraints when resolution option is used. When the resolution option was being used, all the other constraints like frameRate and facing mode were being overwritten.
+		- Send videoType bridge message for mute/unmute on FF. (#1642)
+		- fix(TPC): Filter ssrcs differently while extracting the SSRC map from SDP. Use 'msid' for plan-b clients and 'cname' for unified-plan clients.
+		- fix(TPC): fix local resolution/fps stats. Browsers do not generate a 'msid' attribute for ssrcs in unified plan mode, use mediaType as a key for the TrackSSRCInfo map.
+		- fix(recording): Send participant id when recording starts/stops (#1632)
+		- fix(connectivity): Fix video freezes on Safari when ep goes out of last-n.
+
+- [jicofo 1.0-786](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_6173)
+	- New features:
+		- added support for requesting MID header extensions (#770)
+		- Use synchronized Map for AV moderation.
+		- Fire ChatRoomImpl events asynchronously. (#754)
+		- Only recognize jibri members from trusted domains. (#751)
+
+	- Fixes:
+		- Do not remove octo sources twice. (#782)
+		- the accepted sources from source-add. (#781)
+		- Fix the way source-add/source-remove are queued before the session is established. (#779)
+		- Do not add injected sources in jingle. (#780)
+		- exceptions (#776)
+		- Fix updating octo sources. (#775)
+		- Fix debian postinst when sip-communicator.properties is missing. (#774)
+		- Fix a NPE when chatRoom is null. (#769)
+		- Increase the conference queue executor queue size. (#765)
+		- Fixes using non-thread safe JSONParser.
+		- Fixes jitsi/jitsi-meet#9502 reload of authenticated users.
+		- Synchronize access to pendingTimeoutTask (#757)
+		- Catch exceptions in IQ handlers. (#742)
+		- Fix the chat room member count. (#752)
+
+- [jitsi-videobridge 2.1-538-g062e9f56](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_6173)
+	- New features:
+		- Support signaling forr high fps screensharring. (#1696)
+		- Add /colibri/muc-client/list endpoint (#1680)
+		- Only forward audio packets of the loudest speakers in a conference. (#1677)
+		- Implements tracking of the aimd bwe expirations. (#1670)
+
+	- Fixes:
+		- Fix effective constraints calculation. (#1695)
+		- forwarding of VP9 screenshare (#1674)
+		- Tracks the total (instead of current) aimd bwe expirations. (#1675)
+		- Bump JMT: Expire RtpPacketCache objects after 15 seconds. (#1673)
+		- Do not require the --apis cmd line argument (fix #1592). (#1625)
+		- Update speech activity endpoints when video type changes. (#1668)
+		- Fix property names (ice4j). (#1667)
+
 ##  2.0.5963 (2021-06-10)
 - [jitsi-meet 1.0.5056](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_5963)
 	- New features:
