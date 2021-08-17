@@ -1,5 +1,35 @@
 # Mobile apps Changelog
 
+# 21.3.0 (2021-08-17)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.3.0)
+
+## Changes
+
+### Common
+
+- Add a participants panel
+- Add "1on1" mode, which hides the remote thumbnail while in a 1-1 call
+- Add the ability to share direct video links (mp4, etc.)
+- Improve in-meeting options panel
+- Update WebRTC to M92
+- UI improvements
+- Update the translations
+
+### Android
+
+- Fix install error on application compiled against Android S while targeting S+
+- Fix crash in certain devices when the configuration is saved while in the background
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.2.0...android-21.3.0)
+
+### iOS
+
+- Skip sending newlines in the invite email
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.2.0...ios-21.3.0)
+
 # 21.2.0 (2021-06-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.2.0)
