@@ -13,14 +13,16 @@
 - Add "1on1" mode, which hides the remote thumbnail while in a 1-1 call
 - Add the ability to share direct video links (mp4, etc.)
 - Add the ability to override any configuration option
+- Refactored bottom sheets for UI consistency
+- Improve in-meeting options panel
 - Update WebRTC to M92
+- UI improvements
 - Update the translations
 
 ### Android
 
 - Fix install error on application compiled against Android S while targeting S+
 - Fix crash in certain devices when the configuration is saved while in the background
-- UI, dark mode, bottom sheets
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.7.0...android-sdk-3.8.0)
 
