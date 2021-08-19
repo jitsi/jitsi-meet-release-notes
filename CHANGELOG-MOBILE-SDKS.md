@@ -1,5 +1,18 @@
 # Mobile SDKs Changelog
 
+# 3.8.1 (2021-08-19)
+
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.8.1)
+
+## Changes
+
+### iOS
+
+- Fix deadlock when selecting audio device
+- Fix conference failing when proximity sensor is near
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.8.0...ios-sdk-3.8.1)
+
 # 3.8.0 (2021-08-13)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.8.0)
