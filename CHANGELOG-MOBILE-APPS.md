@@ -1,5 +1,18 @@
 # Mobile apps Changelog
 
+# 21.3.1 (2021-08-19)
+
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.3.1)
+
+## Changes
+
+### iOS
+
+- Fix deadlock when selecting audio device
+- Fix conference failing when proximity sensor is near
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.3.0...ios-21.3.1)
+
 # 21.3.0 (2021-08-17)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.3.0)
