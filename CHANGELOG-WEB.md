@@ -2,6 +2,168 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.6293 (2021-09-10)
+- [jitsi-meet 1.0.5307](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6293)
+	- New features:
+		- Turn on enableLayerSuspension option by default. (#9894)
+		- feat(config): Add config option for e2ee label
+		- feat(rtcstats): send dominant speaker stats (#9883)
+		- feat(notifications) skip join notifications when meetings grow large
+		- feat(ios) update dropbox authentication to PKCE flow
+		- Prints an error log for errors in child components render methods.
+		- feat(filmstrip-pagination): mobile support.
+		- Drops old prosody dependency (0.10...).
+		- feat(branding) Add premeeting background image overwrite
+		- feat(VideoContainer) add option to avoid cropping focused video
+		- feat(errors) Expose errors through Iframe API (#9801)
+		- feat(e2ee) add support for WebRTC Encoded Transform
+		- feat(lobby) Add sound for participant knocking
+		- Updates i18n-iso-countries to latest. Fixes #9792.
+		- Allow AV moderation for p2p users.
+		- Always show AV moderation.
+		- Show footer context menu in p2p.
+		- feat(reaction-sounds) Added sounds for reactions (#9775)
+		- feat(xmpp) remove clientNode config option
+		- feat(Filmstrip): Reorder the visible participants in the filmstrip. (#9707)
+		- feat(toolbox) added android screen share flag
+		- feat(callstats) Add `callStatsConfigParams` config
+		- feat(av-moderation) id and aria-label updates for av-moderation test (#9592)
+		- feat(polls) Ability to create polls inside Jitsi (#9166)
+		- Add search to speaker stats (#9510)
+		- feat(rn,sdk) add setConfigOverride to JitsiMeetConferenceOptions
+
+	- Fixes:
+		- fix(prejoin) Fix buttons positioning for 3rd party
+		- fix(toolbox): Show dominant speaker name only when in conference
+		- fix(android): renames amplitudereactnative project to use react-native- pattern
+		- fix(external-api): Avoid naming event 'error'
+		- fix(lang,notifications) make join notification text more generic
+		- fix(notifications) throttle join notifications for 2 seconds
+		- fix(rn,ParticipantPane) optimize
+		- fix(sounds) fix reaction sound names
+		- fix(rn,filmstrip) simplify code
+		- fix(rn,filmstrip) avoid fast scroll trigggering visibility notifications
+		- fix(rn,external_api) skip participant notifications when not in a meeting
+		- fix(rn,logging) skip some logs on mobile
+		- fix(lastn) debounce updating last N
+		- fix(notifications) skip participant joined notifications before we join
+		- fix(video-layout) fix getMaxColumnCount on mobile
+		- fix(rn,humbnail) add key prop to array items
+		- fix(toolbox) fix warning due to missing key prop
+		- fix(tracks) Fix mobile safari issue with startMuted. On mobile Safari, when a user joins both audio and video muted, browser doesn't playout the remote audio because of a webkit bug. As a workaround, always add the audio track to peerconnection and then mute the track if needed.
+		- fix(reactions) fix reactions bugs
+		- fix(toolbar-buttons) Hide/show invite button based on toolbarButtons
+		- fix(config): add av-moderation notifications to config whitelist (#9774)
+		- fix(filmstrip): sort alphabetically.
+		- fix(mobile-pagination):incorrect number of columns
+		- fix(mobile-pagination): Disable bounce effect.
+		- fix(mobile-pagination): address PR review comments
+		- fix(config) add enableReactions to whitelist
+		- Fixes default values in speakerstats and conf duration modules.
+		- fix(prosody): av_moderation_component default val
+		- fix(filmstrip): Always sort the participants alphabetically. Reorder the sub-groups (shares, speakers and rest of the participants) always on dominant speaker changes and when participants join or leave.
+		- fix(filmstrip): Move thumbnails reordering behind a config.js flag. enableThumbnailReordering flag (enabled by default) will be used to check if the thumbnails needs to be reodred in the UI.
+		- fix(KeyboardShortcut): pin the correct participants when number keys are used.
+		- fix(rn,reactions) fix copying sounds to app bundles
+		- fix(android) avoid exception in onHostPause
+		- fix(virtual-background) upload bkg image on poor connection
+		- fix(lang) update Polish translations
+		- fix(lang) update Japanese translations
+		- fix(chat) avoid emojifying URLs
+		- fix(local-storage) use local storage on WebKit when not in an iframe
+		- fix(rn) enable reactions by default
+		- fix(lang) update Portuguese translation
+		- fix(pre-meeting) Hide invite button for JaaS
+		- fix(TileView): not showing all participants.
+		- Fixes undefined errors in MeetingParticipant - Item and ContextMenu.
+		- Fixes showing awaiting AV moderation after grant moderator.
+		- fix(authentication) fixed close on cancel click
+		- fix(notifications) Add timeout for video/audio lost notifs
+		- fix(iframe) don't register service worker when in an iframe
+		- Fixes AV moderation used in tenants.
+		- Fixes reloads after enabling AV moderation.
+		- fix(drawer-menu) Allow scroll on drawer menu items
+		- fix(rn,amplitude) update Amplitude SDK on RN
+		- fix(lang) update Portuguese translation
+		- fix(jaas) do not redirect to plan limit page on auth errors (#9746)
+		- fix(moderation) fix ui styles for advanced moderation context menu (#9758)
+		- fix(e2ee) fix showing not supported warning when alone
+		- fix(e2ee) show entire content at all times
+		- fix(e2ee) update E2EE warning message
+		- fix(ios) fix conference failing when proximity sensor is near
+		- fix(moderation) highlight dominant speaker (#9750)
+		- fix(AudioRoutePickerDialog) add proper margin
+		- fix(ios) fix deadlock when selecting audio device
+		- fix(moderation) hide status icons on hover (#9747)
+		- fix(lang) update portuguese translation
+		- Fixes dot shown left of logo.
+		- fix(participants-pane) fixed participants pane button toggled state
+		- fix(prosody) fix username not being set in mod_auth_jitsi-anonymous
+		- fix(prosody) fix typo in filename
+		- fix(moderation) display green mic icon only for active speaker (#9744)
+		- fix(participants) sort participants alphabetically (#9741)
+		- fix(share-video) fix links not being trimmed (#9740)
+		- Fixes an error with configuration without analytics.
+		- fix(rn,sidebar) fix not appearing on RTL languages
+		- fix(video-menu) fixed position for horizontal filmstrip view
+		- fix(rn): import React from react package
+		- fix(screen-share): never mute audio screen share track #9725
+		- fix(lang) update Spanish translation
+
+	- Translation updates:
+		- Update main-sv.json (#9862)
+		- Update i18n Occitan (#9853)
+		- Added and edited translations for vi (#9850)
+		- Update portuguese translation (#9836)
+
+
+	lib-jitsi-meet
+	- New features:
+		- JSON encoded sources. (#1695)
+		- feat(e2ee) add support for WebRTC Encoded Transform
+		- feat(xmpp) remove clientNode config option
+		- enable config callstats configParams (#1672)
+		- feat(docs): Add a note that token context doesn't accept number or null
+		- feat(docs): add restart service instruction to tokens doc
+
+	- Fixes:
+		- fix(quality) Enable layer suspension by default. This is needed for screensharing to work as expected on chrome in unified plan.
+		- fix(LocalSdpMunger): do not fake video sdp when screen sharing
+		- fix(JitsiConference) avoid extra processing if the room was left
+		- fix(moderator) remove unneeded log
+		- fix(browser-support): Add audio track to pc always on mobile Safari. On mobile Safari, if a user joins audio and video muted, the browser doesn't decode the incoming audio. Workaround is to always add the audio track to pc and mute it if needed.
+		- fix(replace-track) Add not null check for newTrack (#1698)
+		- Updates shard value in XmppConnection on new value from xmpp. (#1699)
+		- fix(docs): copy&paste error for setIsReplaced
+		- fix(JitsiConference) skip AudioOutputProblemDetector on disableAudioLevels
+		- fix(docs): issuer documentation
+		- fix(docs): correct the grammar in token docs
+		- fix(RTC): typo in variable name
+
+- [jicofo 1.0-798](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_6293)
+	- New features:
+
+	- Fixes:
+		- Signaling source removal in COLIBRI. (#799)
+		- fix(#796): Fix handling IQs for for SIP Jibri. (#798)
+		- Fix encoding sources to Jingle. (#797)
+		- Return XMPP error on unsupported Jingle action. (#791)
+		- Escape text content as text in XML. (#790)
+		- Adds dependency of jq when installing. Fixes #788. (#789)
+		- Fixes marking trusted jibri domain in config on upgrade.
+		- swapped descriptions in comment. (#786)
+
+- [jitsi-videobridge 2.1-551-g2ad6eb0b](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_6293)
+	- New features:
+		- Adds checkstyle module. (#1685)
+		- Make the number of recent speakers configurable. (#1707)
+		- Support mapping a specific port (update ice4j). (#1705)
+
+	- Fixes:
+		- a race stopping a connectivity check client. (ice4j#237). (#1713)
+		- Do not keep a reference to Endpoint in SourceAllocation. (#1712)
+		- removing ICE listeners. (#1711)
+
 ##  2.0.6173 (2021-08-16)
 - [jitsi-meet 1.0.5211](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6173)
 	- New features:
