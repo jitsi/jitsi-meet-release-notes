@@ -1,5 +1,52 @@
 # Mobile SDKs Changelog
 
+# 3.9.1 (2021-09-06)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.9.1)
+
+## Changes
+
+### Android
+
+- Fixed build due to new Amplitude SDK package name
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.9.0...android-sdk-3.9.1)
+
+# 3.9.0 (2021-09-02)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.9.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.9.0)
+
+## Changes
+
+### Common
+
+- Add ability to create polls
+- Add reactions
+- Significant performance improvements for large meetings
+- Fix crash on shared video URLs with spaces
+- Skip join notifications when meetings grow large
+- Skip participant notifications when not in a meeting
+- Skip participant joined notifications before we join
+- Update Dropbox logic to retrieve refresh token
+- Update Amplitude SDK
+- UI fixes to bottom sheets
+- Updated translations
+
+### Android
+
+- Avoid exception in onHostPause
+- Added android screen share flag
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.8.0...android-sdk-3.9.0)
+
+### iOS
+
+- Fix conference failing when proximity sensor is near
+- Fix deadlock when selecting audio device
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.8.0...ios-sdk-3.9.0)
+
 # 3.8.1 (2021-08-19)
 
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.8.1)
