@@ -1,5 +1,37 @@
 # Mobile SDKs Changelog
 
+# 3.10.0 (2021-09-22)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.10.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.10.0)
+
+## Changes
+
+### Common
+
+- Add advanced moderation capabilities
+- Add an invite button on the top navbar
+- Fix filmstrip rendering when thumbnail reordering is disabled
+- Enable XMPP WebSocket on mobile (behind a flag)
+- Fix counting fake participants when checking if lonely meeting
+- Fix crash in share-video when using a bogus URL
+- Disable PiP while authorizing Dropbox
+- Small UI tweaks
+- Updated translations
+
+### Android
+
+- Fix initializing soloader from Activity context
+- Expose notification channel ids
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.9.0...android-sdk-3.10.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.9.0...ios-sdk-3.10.0)
+
 # 3.9.1 (2021-09-06)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.9.1)
