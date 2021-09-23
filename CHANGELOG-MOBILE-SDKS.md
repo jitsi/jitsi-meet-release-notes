@@ -1,5 +1,17 @@
 # Mobile SDKs Changelog
 
+# 3.10.1 (2021-09-23)
+
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.10.1)
+
+## Changes
+
+### iOS
+
+- Fix black screen when using Bluetooth devices
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.10.0...ios-sdk-3.10.1)
+
 # 3.10.0 (2021-09-22)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.10.0)
