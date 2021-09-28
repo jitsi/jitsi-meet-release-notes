@@ -1,5 +1,17 @@
 # Mobile SDKs Changelog
 
+# 3.10.2 (2021-09-24)
+
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.10.2)
+
+## Changes
+
+### iOS
+
+- Fix fist audio unmute not working on iOS 15.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.10.1...ios-sdk-3.10.2)
+
 # 3.10.1 (2021-09-23)
 
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.10.1)
