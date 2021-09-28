@@ -1,5 +1,38 @@
 # Mobile apps Changelog
 
+# 21.4.0 (2021-09-23)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.4.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.4.0)
+
+## Changes
+
+### Common
+
+- Added advanced moderation capabilities
+- Added ability to make polls
+- Added support for reactions
+- Added invite button to top navbar
+- Added support for XMPP WebSocket connections (behind a flag)
+- Performance improvements for large meetings
+- Fixed shared-video placeholder not being translated
+- Fixed crash on invalid shared-video URLs
+- Fixed sidebar not appearing on RTL languages
+- Fixed not counting "fake" participants when joining a conference
+- Updated translations
+
+### Android
+
+- Disable PiP when login into Dropbox
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.3.0...android-21.4.0)
+
+### iOS
+
+- Fixes for iOS 15 compatibility
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.3.0...ios-21.4.0)
+
 # 21.3.1 (2021-08-19)
 
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.3.1)
