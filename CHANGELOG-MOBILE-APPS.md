@@ -1,5 +1,41 @@
 # Mobile apps Changelog
 
+# 21.4.2 (2021-10-01)
+
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.4.2)
+
+## Changes
+
+### iOS
+
+- More fixes for iOS 15 compatibility
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.4.1...ios-21.4.2)
+
+# 21.4.1 (2021-09-29)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.4.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.4.1)
+
+## Changes
+
+### Common
+
+- N/A
+
+### Android
+
+- Disable uncompressed native libs usage
+- Fix crash in WebRTC view handling
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.4.0...android-21.4.1)
+
+### iOS
+
+- Fixed crash on WebSocket connection errors
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.4.0...ios-21.4.1)
+
 # 21.4.0 (2021-09-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.4.0)
