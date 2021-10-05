@@ -14,9 +14,16 @@
 
 # 3.10.2 (2021-09-24)
 
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.10.2)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.10.2)
 
 ## Changes
+
+### Android
+
+- Targets Android 12
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.10.1...android-sdk-3.10.2)
 
 ### iOS
 
@@ -26,9 +33,16 @@
 
 # 3.10.1 (2021-09-23)
 
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-3.10.1)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.10.1)
 
 ## Changes
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.10.0...android-sdk-3.10.1)
 
 ### iOS
 
