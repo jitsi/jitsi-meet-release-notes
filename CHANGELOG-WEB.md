@@ -2,6 +2,179 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.6433 (2021-10-07)
+- [jitsi-meet 1.0.5415](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6433)
+	- New features:
+		- feat(config): Add config option for making display name read only
+		- feat(screenshot-capture) Updated screensharing screenshot capture
+		- feat(android) extract notification channel name
+		- Simplify AV moderation participant approve/remove message and fix array usage. (#10062)
+		- feat(android) target sdk 31
+		- feat(external-api) add data-channel-open event
+		- feat(ios) drop support for iOS 11
+		- feat(lang) add helper script for manual translations
+		- feat(rtcstats): remove SDP transmission #10054
+		- feat(av-moderation) Ask to Unmute and remove from Whitelist (#10043)
+		- feat(dynamic-branding): Add branding option for virtual backgrounds
+		- feat(rn,av-moderation) updated advanced moderation on Native
+		- feat(api): Expose event used for sending browser support
+		- feat(e2ee) disable e2ee when large number of participants
+		- feat(conference-info-header) Make conference info header configurable. (#9638)
+		- feat((rn,config) add a/b test flag to enable XMPP WebSockets on mobile
+		- feat(rn,connection) enable XMPP WebSocket on mobile
+		- feat(rn,conference) show invite button on the top navbar
+		- feat(android) expose channels ids
+		- feat(toolbar-buttons): Add event for notify overwritten toolbar buttons
+		- Whitelists enableUnifiedOnChrome.
+		- feat(av-moderation) Updated Advanced moderation (#9875)
+		- feat(external_api): Command to set participant volume
+		- Additional setting to order participants in speaker stats (#9751)
+		- Add configuration to disable chat emoticons #9889 (#9899)
+		- Add configuration to disable removing raised hand on dominant speaker (#9641)
+		- new prosody module to report census of all rooms (#9901)
+		- feat(doc) revamp README
+		- feat(config) Add config for disabled sound id's
+		- Dynamically limit the number of participants in a room (#9880)
+		- feat(responsive-ui): Keep aspect ratio for filmstrip self view on mobile web (#9848)
+		- feat(config) add connection indicators flags
+		- feat(rn) add polyfill for the performance API
+
+	- Fixes:
+		- fix(tracks) Always add audio track on Safari. This fixes an issue where Safari users cannot hear remote audio if they join audio/video muted. The browser throws the following error when the application tries to execute play on the audio element: 'NotAllowedError: The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.' This started happening in Safari 15.
+		- fix(av-moderation) Update function that calculates quick action button
+		- fix(av-moderation) Fix Ask to Unmute
+		- fix(av-moderation) Show Mute button when participant is unmuted (#10090)
+		- fix(reactions) Remove vpaas check for reactions webhook (#10089)
+		- fix(config, reactions) Added config option to disable reaction sounds (#10046)
+		- Skips setting language for transcriptions if not enabled.
+		- fix(av-moderation) Check for moderation support
+		- Fixes displaying country names which has multiple names listed.
+		- fix(rn,conference) fix unmute when "everyone starts muted" is set
+		- Fixes #9869 Lobby and wrong password case.
+		- fix(prejoin): Prevent double joining conference.
+		- fix(Prejoin): Join click before conference.init()
+		- fix(ios) fix crash on WebSocket errors
+		- fix(chore): Don't show react "unique key" warning
+		- fix(logging) Remove logs that are very chatty. The receiver video constraints that are actually sent to the bridge are logged in LJM and need not be logged in the application.
+		- fix(lang) sample run of the translations updating script
+		- Fix speaker stats search dependency and remove duplicate logic #9751 (#10045)
+		- fix(invite) fix video rooms not being displayed in invite search
+		- fix(android) disables uncompressed native libs usage
+		- fix(config) fix prejoin throwing a TypeError due to late config initialization (#10041)
+		- fix(lang) update Occitan translation
+		- fix(android) removes unnecessary parcel processing
+		- fix(av-moderation) Improve advanced moderation (#10004)
+		- Fixes errors in prosody about string formatting and nil values. (#10037)
+		- fix(av-moderation) Stop screensharing and video on moderation start
+		- fix(lang) update french translation
+		- Speaker stats search fix #9751 (#10019)
+		- fix(toolbar) Fix toolbar always visible; refactors
+		- fix(av-moderation) Only stop screensharing on Stop everyone's video
+		- fix(subject): Keep subject centered when chat panel is open
+		- fix(chat): Hide scroll bar on chat input
+		- fix(ios) create audio track early
+		- fix(lang) update occitan translation
+		- fix(rn) add default value when retrieving e2ee redux state
+		- fix(ios) fix black screen when using Bluetooth in iOS 15
+		- fix(toolbox) don't mix web and native actions on the same file
+		- fix(lobby) don't mix web and native actions on the same file
+		- fix(participants-pane) bring back lobby reject button
+		- stop everyone's video
+		- fix(av-moderation) - Mute/ stop video except no longer change moderation status
+		- fix(av-moderation) Display Allow Video instead of Ask to Unmute (#9991)
+		- fix(reactions) Reactions improvements (#9964)
+		- fix(config,notifications) fix rendering moderator notifications (#9986)
+		- fix(responsive-ui): Shrink self view when in portrait mode on mobile web
+		- fix(notifications) Fix recording start notif not disappearing
+		- fix(jaas) do not show overriden unsupported browser page for jaas users (#9962)
+		- fix(lang) update Russian translation
+		- fix(recorder): tile view
+		- Fixes undefined error causing to stop reloads.
+		- fix(prejoin) implement ux improvements for mobile (#9939)
+		- fix(Filmstrip) fix not being able to scroll
+		- fix(device-selection) Do not create preview when mic selection is disabled. This fixes an issue on mobile Safari when audio is lost after the user opens the device selection menu.
+		- fix(context-menus) Don't show volume slider on iOS web
+		- fix(filmstrip) Fix filmstrip on RN when thumbnail reordering is disabled.
+		- fix(feedback): Scroll to the top when opening feedback dialog
+		- fix(rn,conference) show underlay when tapping navbar buttons
+		- fix(av-moderation) Advanced moderation improvements (#9935)
+		- fix(conference.js): add tracks to the conference
+		- fix(rn,conference) count fake participants when checking if lonely meeting
+		- fix(rn,shared-video) validate URLs to avoid crashes on the native side
+		- fix(shared-video) make placeholder translatable
+		- fix(rn) disable pip while authorising dropbox
+		- fix(context-menus) Fix participant context menus/toolbar overflow menu
+		- Add different text when disablePolls is enabled/disabled (#9900)
+		- fix(context-menu) Hide toolbars when participant context menu opened (#9842)
+		- fix(rn,shared-video,invite-dialog) fix placehoolder text color to be visible
+		- fix(prejoin): Change avatar color to match in-meeting one
+		- fix(settings) Disable mic/camera selection on mobile safari. Creating a preview of the same audio/video track kills the tracks that is already being shared in the conference. Therefore, disable camera/mic selection in the settings dialog while the user is in the call. The devices are selectable from the prejoin screen settings dialog.
+		- fix(notifications): Added  user join notification keys
+		- fix(rn,polyfills) fix Performance polyfill
+		- fix(config): Add separate entries for the e2ee labels
+
+	- Translation updates:
+		- added and translated all missing keys on turkish translation (#10050)
+		- Update main-it.json (#10088)
+		- minor fix in russian localization (#10027)
+		- Update main-ar.json (#10034)
+		- update German translation (#9921)
+		- Complete translation to Portuguese (#9871)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(av-moderation) Remove from moderation whitelist functionality (#1729)
+
+	- Fixes:
+		- Avoids sending empty nick in presence.
+		- fix(JitsiConference) make sure isE2EEEnabled() returns a boolean
+		- fix(loggging) fix exceptions on mobile
+		- fix(xmpp): disable RTX for Firefox < 93, because it results in random SSRC order
+		- fix(Jingle): stop reverting the SSRCs from Firefox
+		- fix(browser-support) fix detecting iOS browsers correctly
+		- fix(JitsiConference):2 instances for the same room
+		- fix(Jingle) Log the extracted info from Jingle IQ.
+		- fix(logging) Log only the imp events on remote tracks. Log only the important events that we care about on the HTMLMediaElement that the remote tracks are attached to.
+		- fix(chore corrected typo in log message
+		- fix(e2ee) replace nullish coalescing with or
+		- fix(e2ee) restore initial key when RATCHET_WINDOW_SIZE reached
+		- fix(JitsiConference) Check for room before calling isFocus method on the room object.
+		- fix(Jingle) Reverse the order of ssrcs signaled for Firefox. This fixes an issue where the bridge doesn't forward the HD stream from Firefox to other users in the call. The order of the ssrcs produced by the browser is from Highest resolution to lowest whereas the bridge assumes it to be from lowest to highest as is the case in Chrome and Safari.
+		- fix(codec-selection): Impose VP9 bitrates only when VP9 is the negotiated codec. If Jicofo doesn't offer VP9 but the client expresses a preference for VP9, VP9 bitrates were being imposed before.
+		- Reads shard name and from disco-info if available.
+		- fix(replaceTrack):  Don't wrap Error in Error.
+		- fix(RTCUtils) Return false for device change checks on mobile Safari.
+
+- [jicofo 1.0-813](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_6433)
+	- New features:
+		- advertise source names (#806)
+		- Add a stat for "lost bridges". (#811)
+		- When AV moderation is enabled mute all.
+
+	- Fixes:
+		- Fix avoiding a log message when disconnected. (#814)
+		- Avoid a race in Smack 4.4.3 which causes
+		- bump jitsi-xmpp-extensions. (#809)
+		- Fix inviting jigasi (#807)
+		- compiler warnings (#773)
+		- Signal REMB when TCC is not supported.
+		- Make ChatRoomImpl.leave() async. (#803)
+
+- [jitsi-videobridge 2.1-570-gb802be83](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_6433)
+	- New features:
+		- Add "endpoints" and "local_endpoints" stats. (#1742)
+		- add source name to MediaSourceDesc
+		- Expose stats for endpoints that sent REMB when it wasn't signaled. (#1733)
+
+	- Fixes:
+		- bump jitsi-xmpp-extensions. (#1740)
+		- WS closing due to an exception. (#1735)
+		- debug stats and kfr stats (#1732)
+		- Do not send preempttive kf requests in tile view. (#1731)
+		- Signaling recent speakers fixes. (#1729)
+		- "flickering" issues (use BWE threshold when BWE increases). (#1727)
+
 ##  2.0.6293 (2021-09-10)
 - [jitsi-meet 1.0.5307](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6293)
 	- New features:
