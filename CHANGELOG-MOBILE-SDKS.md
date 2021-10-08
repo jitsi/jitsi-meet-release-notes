@@ -1,5 +1,17 @@
 # Mobile SDKs Changelog
 
+# 3.10.4 (2021-10-08)
+
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.10.4)
+
+## Changes
+
+### iOS
+
+- iOS 15 fixes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.10.3...ios-sdk-3.10.4)
+
 # 3.10.3 (2021-10-01)
 
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.10.3)
