@@ -1,5 +1,57 @@
 # Mobile SDKs Changelog
 
+# 4.0.0 (2021-12-03)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-4.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-4.0.0)
+
+## BREAKING changes
+
+This SDK update introduces breakout rooms and with it a very significant change: a new
+"ready to close" event which signals the SDK is done and it's safe to hide the view.
+
+Users should rely on this event / delegate method to destroy the Jitsi Meet SDK view
+instead of the conference terminated event.
+
+Some deprecated options in JitsiMeetConferenceOptions were removed.
+
+Support for iOS 11 has been dropped.
+
+## Changes
+
+- Added breakout rooms
+- Added speaker stats
+- Added search in participants list
+- Revamped UI of the top conference bar
+- Revamp all screens to use smooth transitions
+- Coalesce participant left and raised hand notifications
+- Send AUDIO_MUTED_CHANGED event only when value changed
+- Update WebRTC engine to M94
+- Introduce a "ready to close" event
+- Show raised hand indicators in the participants pane
+- Drop deprecated option enableWelcomePage
+- Drop deprecated color scheme option
+- Fix not displaying a reload dialog when the conference fails
+- Advanced moderation improvements
+- Updated translations
+
+### Android
+
+- Remove unnecessary parcel processing
+- Fix initializing SoLoader with the proper context
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-3.10.2...android-sdk-4.0.0)
+
+### iOS
+
+- Fixed RCTBridge not being released under certain circumstances
+- Expose activating/deactivating audio session events
+- Avoid creating CXProvider objects when CallKit is disabled
+- Disable QuickType bar on iOS15 when not using autocorrect
+- Drop support for iOS 11
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-3.10.4...ios-sdk-4.0.0)
+
 # 3.10.4 (2021-10-08)
 
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-3.10.4)
