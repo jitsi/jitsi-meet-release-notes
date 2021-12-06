@@ -2,6 +2,317 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.6689 (2021-12-06)
+- [jitsi-meet 1.0.5638](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6689)
+	- New features:
+		- (moderate-reaction-sounds) enable moderator to mute reaction sounds
+		- feat(breakout-rooms) add notification when joining rooms
+		- feat(tile-view): allow disabling thumbnail enlargement
+		- feat(notifications) coalesce participant left and raised hand notifications
+		- (speaker-stats) fix refresh and minor refactoring
+		- feat(conference) Implement audio/video mute disable when sender limit is reached.
+		- Add disableBeforeUnloadHandlers option
+		- Enables muc rate limit for lobby and breakout muc components.
+		- feat(config) defaultLocalDisplayName and defaultRemoteDisplayName
+		- feat(rtcstats): send facial expressions to rtcstats-server (#10461)
+		- feat(lint) treat warnings as errors
+		- feat(branding) added native extension to updateTheme helper
+		- (speaker-stats) add speaker stats feature to native
+		- feat(conference) UI updates for mobile navigation bar (#10437)
+		- feat(load-test): Unmute video.
+		- feat(notifications) revisit timeouts and make them configurable
+		- feat)rn,sdk) introduce a "ready to close" event
+		- feat(ui) reverted tokens updates
+		- feat(ui) updateTheme helper for client branding
+		- feat(video-quality): Always prioritize SS in tile view.
+		- feat(breakout-rooms) add breakout-rooms
+		- feat(Lobby): Adding autoknock feature as a config  (#10366)
+		- feat(facial-expressions): add the facial expression feature and display them in speakerstats (#10006)
+		- feat(welcome) added WelcomePage React Nav bottom tabs
+		- feat(tokens) Added more colors to theme (#10381)
+		- feat(chat/native) removed keyboard dismiss from JitsiKeybAvView
+		- feat(chat/native) fixed scroll inside chat room
+		- feat(e2ee) add externally managed key mode
+		- feat(dynamic-branding): Add custom theme branding (#10335)
+		- feat(rn,welcome) React Navigation drawer
+		- Handle recording already started error
+		- Filters moderators presence in lobby room. (#10316)
+		- feat(connection-indicator): Add config option to disable indicator popover
+		- feat(app-notifications): Remove device notifications in the prejoin screen.
+		- feat(polls) fix spacing and send answer identifier
+		- feat(polls): trigger events for poll created and answered (#10249)
+		- feat(ci) use Node 16 / npm 8 for testing
+		- feat(misc) add .nvmrc
+		- feat(Polls): Display creator name for polls
+		- feat(virtual-bg) Added config to disable screen sharing as virtual bg
+		- (video-thumbnail) add permanent video participant name to thumbnail (#10242)
+		- feat(reactions) Added metrics for disable reaction sounds
+		- (video-thumbnail) add permanent participant name to video thumbnail
+		- (video-thumbnail) add permanent participant name to video thumbnail
+		- feat(external-api): Add recording download link available event (#10229)
+		- feat(iOS) expose activating/deactivating audio session functionality
+		- feat(participants-pane) Added search in participants list (#9975)
+		- feat(polls) added padding to the buttons container
+		- feat(raised-hand) Change `raisedHand` to a timestamp instead of boole… (#10167)
+		- feat(external-api): add knocking event and approve/reject command (#10210)
+		- feat(conference) added React Navigation
+		- Adds a prosody module limiting the join rate in a room.
+		- feat(dialogs): Redesign Video Quality dialog & change dialog background color
+		- feat(Labels): Redo video quality label
+		- feat(polls): Add analytics for polls
+		- Hides prejoin screen on conference in progress event. (#10175)
+		- feat(rtc-stats) Whitelist `rtcstatsEnabled`
+		- feat(notifications) Changed notifications stack to be full height
+		- feat(build) update build toolchain to Node 14 / npm 7 (#10145)
+		- feat(raise-hand): Change raise hand indicator background color
+		- feat(avatar-background): Change default colors for avatar backgrounds
+		- Whitelist all of videoQualitty, not just "persist". (#10133)
+		- feat(build) migrate to Webpack 5
+		- feat(external-api) Expose deployment info through API
+		- feat(android) adds initializer for SoLoader.init
+		- feat(external_api) Exposed AV Moderation to the iFrame API
+		- feat(context-menu) Show participants context menu overlaid in a portal
+		- feat(large-video): Switch to tile view on large video double tap
+
+	- Fixes:
+		- fix(screen-sharing, picture-in-picture) re-enables PIP after stopping screen-share
+		- fix(rn,navbar) fix invalid boolean check
+		- fix(rn,conference) hide timer until it has started
+		- fix(breakout-rooms) mark function as async
+		- fix(lang) update french translation + fix 2 existing translations
+		- fix(rn,external-api) remove dead code
+		- fix(rn,breakout-rooms) wait for the room to be left
+		- fix(dropbox): OAuth to use postMessage.
+		- fix(breakout-rooms) make sure participants in breakout rooms have a display name
+		- fix(etherpad) fix Etherpad closing when dominant speaker changes
+		- fix(participants) fix unpinning when switching conferences
+		- fix(etherpad) fix loading Etherpad on web
+		- fix(conference) fix broken dispatch on mobile
+		- fix(modal) remove dead code
+		- fix(breakout-rooms) fix when using tenants
+		- fix(lang) update German translation
+		- fix(gravatar): Add crossOrigin attribute.
+		- Fixes correct state in lobby screen on wrong password.
+		- fix(breakout-rooms) fix no video when coming back to main room
+		- fix(breakout-rooms) disable recording and live-streaming
+		- fix(breakout-rooms) disable lobby in breakout rooms
+		- fix(conference) simplify code
+		- fix(conference) remove dead code
+		- fix(share-video): stop video from the participant list
+		- fix(breakout-rooms) fix checking if a user is in a room
+		- fix(rn,settings) only show "disable call integration" on Android
+		- fix(breakout-rooms) fix operations when inside a breakout room
+		- fix(external-api) send AUDIO_MUTED_CHANGED event only when value changed
+		- fix(ios) avoid creating CXProvider objects when CallKit is disabled
+		- fix(lint) fix all eslint warnings
+		- fix(lang) update Polish translation
+		- fix(lang) update Polish translation
+		- fix(breakout-rooms) Improve breakout rooms
+		- fix(breakout-rooms) make sure the default name is monotonically increasing
+		- fix(config) add transcribingEnabled to whitelist
+		- fix(android) set facebook groupId for all react-native dependencies
+		- fix(lang) update German translation
+		- fix(lang) update translations for Catalan
+		- fix(breakout-rooms) cleanup code
+		- fix(breakout-rooms) avoid accessing invalid room objects
+		- fix(breakout-rooms) simplify code
+		- fix(breakout-rooms) fix error in case main room is no longer available
+		- fix(android) fixes error in BroadcastEvent
+		- fix(TileViewButton) fix on mobile
+		- fix(rn, participants-pane) Show raised hand indicator (#10424)
+		- fix(filmstrip) remove border from filmstrip (#10367)
+		- Updates the default value of rtcstatsEnabled to match the code. (#10425)
+		- fix(linguistics) Use 'email' instead of 'e-mail'
+		- fix(rn,sdk) drop deprecated option enableWelcomePage
+		- fix(rn,sdk) remove deprecated color scheme prop
+		- fix(Avatar): Display correctly any emoji/special character in a avatar initials
+		- fix(rn,welcome-page) don't create video track unnecessarily
+		- fix(prejoin) Fix prejoin app
+		- fix(lang) update Russian translation
+		- fix(lang) update Occitan translation
+		- fix(lang) update Arabic translation
+		- fix(lang) update German translation
+		- fix(lang) update french translation
+		- fix(config) fix incorrect option name and whitelist it
+		- fix(build) fix make dev with facial recognition worker
+		- fix(rn,remote-video-menu) fix import after refactor
+		- fix(facial-expressions): some markdowns in the README.md for licence
+		- fix(notify-button-clicked) Fix crash on mobile browsers
+		- fix(toolbox): enable fullscreen button on Android mobile browsers
+		- fix(responsive-ui): Make modal full screen & fix prejoin layout on mobile landscape
+		- fix(speaker-stats): Fix stats search position on narrow screens
+		- fix(dynamic-branding) Fix bogus mUI dependency on mobile (#10375)
+		- fix(av-moderation) Don't stop local screensharing on mute all
+		- fix(Prejoin): Make prejoin name noneditable only when taken from jwt
+		- fix(screenshot-capture) Update data sent to backend (#10364)
+		- fix(Chat): Fix private message reply button not working
+		- fix(participants-list) Show participants with empty names (#10353)
+		- fix(lang) Fix typos in german translation
+		- fix(prejoin): Add audio tracks on Safari always. This fixes a bug where remote audio is not being played out if the user joins audio and video muted from pre-join screen.
+		- fix(devices): Fixes a JS error when no audio/video is selected and there is a device update.
+		- fix(recorder): "already started" notification
+		- fix(lint) remove warning in eslint-plugin-react
+		- fix(analytics) Fix analytics event names (#10332)
+		- fix(config): Move 'disableDetails' flag to connectionIndicators config
+		- fix(large-video) Call play() whenever a new stream is attached to large-video. This fixes an issue on Safari where black video is rendered sometimes whenever a new stream is attached to the large video container.
+		- incompatible effect instance (#10311)
+		- fix(raise-hand): Remove participant left from raised hand queue
+		- fix(reactions) Updated sounds (#10321)
+		- fix(Avatar): Display special characters in avatar initials
+		- fix(Avatar): Calculate avatar color based on display name
+		- fix(tracks) Use duration from JitsiTrack (#10304)
+		- fix(lang) update portuguese translation of "highestQuality" (#10317)
+		- fix(lang) update Portuguese Translation
+		- fix(reactions) Remove auth header if there's no JWT
+		- fix(av-moderation) Fix text on stop video dialog
+		- fix(av-moderation) Fix text on stop video dialog
+		- fix(lang) update french translation
+		- fix(lang) update Russian translation
+		- fix(Drawer): Close drawer on item click
+		- fix(conference): store user selected device from Firefox prompt
+		- fix(speaker-stats): calculate total dominant speaker time if user is dominant and has no previous speaker time
+		- fix(Chat): Place Chat pane above Participants pane on mobile web
+		- fix(Polls): Fix polls pane on Firefox
+		- fix(connection-indicator): Hide indicator circle when ghost icon is hidden.
+		- fix(Slider): Fix slider appearance on Firefox
+		- Fixes upgrading component to muc prosody config.
+		- fix(lobby) Added data-testid and aria-label used for testing
+		- fix(iframe) Keep URL params on iframe reload
+		- fix(av-moderation) Stop screensharing on video mute on native
+		- fix(reactions) Updated payload sent to backend
+		- fix(Chat): Use proper 'aria-label' attr on tab menu
+		- fix(av-moderation) Fix Ask to Unmute on native
+		- fix(av-moderation) Fix ask to unmute after allow video
+		- fix(tileview) Enlarge tiles to fill whole space (#10201)
+		- fix(toolbar): Hide/Show toolbar on tap on mobile web.
+		- fix(conference) avoid double prompts in Firefox after choosing non-default device.
+		- fix(lang): update French translation (#10239)
+		- fix(lang): update German translation (#10188)
+		- fix(translation) Reverted changes to translation parameter
+		- fix(video-thumbnail) Fixed name for remote participants
+		- fix(iOS) fix missing headers
+		- fix(dominant-speaker): Lower hand through xmpp for dominant speaker (#10220)
+		- fix(screenshare) Add timestamp to desktop track
+		- fix(prejoin) fix incorrect alignment of alternative join options (#10218)
+		- Fixes kick when allowners is enabled.
+		- fix(video-menu): match size of local and remote video menu icons
+		- fix(polls): Fix scroll not working on mobile web polls pane
+		- fix(webpack): ignore optional canvas dependency in resemblejs
+		- fix(virtual-backgrounds) cache wasm and model (#10190)
+		- fix(polls): Keep the original height for options when moving it up and down
+		- fix(polls): Fix 'Skip' button functionality
+		- fix(lang) updated pr-BR translation
+		- fix(polls): Update ux according to design
+		- Fixes correct ljm version.
+		- fix(prejoin) Hide prejoin screen on init join conference
+		- fix(ios) sync Podfile.lock
+		- fix(ios) Fixes RCTBridge not being released when JitsiMeet is trying to destroy its bridge on some OS versions
+		- fix(lang) update Portuguese translation
+		- fix(lang) update Kabyle translation
+		- fix(rn, polls): Fix vote percentage alignment
+		- fix(rn, polls): Display 'Chat and Polls' as heading when polls enabled
+		- fix(lang) updated Spanish translation
+		- fix(lang) update Slovenian translations
+		- fix(polls): Disable submit button if no answers have been chosen
+		- fix(polls): Don't let poll question and option text overflow
+		- fix(FIlmstrip): disable default overscrolling
+		- fix(notification) Edit reason for forced reload of the client. It is triggered by both local ICE failure and because of call getting migrated to a different bridge.
+		- fix(jaas): Get dynamic branding url from config file
+		- fix(toolbox): prevents filmstrip scrolling.
+		- fix(config) remove deprecated useRoomAsSharedDocumentName parameter
+		- fix(participants-pane) Place Dominant Speaker first in participants list
+		- fix(doc) fix typo in README
+		- fix(ios) disable QuickType bar on iOS15 when not using autocorrect
+		- fix(Prejoin): Make prejoin avatar match the other avatars
+
+	- Translation updates:
+		- Update German translation
+		- fixes for German
+
+
+	lib-jitsi-meet
+	- New features:
+		- Handle disableBeforeUnloadHandlers option.
+		- feat(conference) Implement audio/video mute disable when sender limit is reached. Jicofo sends a presence when the audio/video sender limit is reaced in the conference. The client can then proceed to disable the audio and video mute buttons when this occurs.
+		- Enables the moderator to {dis/en}able bridge-side rtcstats. (#1789)
+		- feat(breakout-rooms) introduce breakout rooms
+		- add facial-expressions in speaker stats (#1724)
+		- SourceVideoTypeMessage message
+		- feat(recording): Add unexpected-request error
+		- use source names in presence
+		- Delays deployment info stats till we get update from backend. (#1770)
+		- Adds to JitsiConferenceEvents CONFERENCE_JOIN_IN_PROGRESS. (#1754)
+		- feat(CodecSelection) Disable VP9 on Safari. (#1752)
+		- feat(build) update build toolchain to Node 14 / npm 7
+		- feat(e2ee) add ExternallyManagedKeyHandler
+		- feat(build) migrate to webpack 5
+		- feat(flow) drop Flow integration
+		- feat(identity): add region identity parsing
+		- generates source names (#1725)
+
+	- Fixes:
+		- fix(JitsiConference) properly handle leave() errors
+		- fix(ChatRoom) make sure we wait for all promises on leave()
+		- fix(ChatRoom) make sure EMUC is destroyed
+		- fix(JitsiConference) make sure RTC is always destroyed
+		- fix(log) don't log full stanzas
+		- fix(avmoderation,breakout-rooms) dispose handlers when leaving
+		- fix(breakout-rooms) send whole payload on update event
+		- fix(TPC): Select 1 as the default scale factor for p2p. This fixes an issue where a user is not able to unmute their video if the MediaStreamTrack associated with the camera stream returns a null value for the track height.
+		- fix(SignalingLayerImpl): Log an error when only the ssrc owner gets overwritten with a diff ep id.
+		- fix(TPC): Force reneg when user unmutes the first time. This ensures that the source signaling is sent before the mute state is sent in presence. Jicofo relies on mute state from presence to check if the sender limit has been reached.
+		- fix(browser) Mark safari <14 as unsupported
+		- fix(e2ee) disable p2p when e2ee is enabled
+		- fix(e2ee) fix race condition when restarting media sessions
+		- fix(p2p) fix error if p2p session is stopped while accepting it
+		- fix(e2ee) removed no longer needed code
+		- fix(e2ee): fix loading web worker when using a relative path inside a blob for the E2EE context
+		- * fix(sdp): provide SCTP streams, because the XMPP parser expects them
+		- fix(xmpp): use RTX with Firefox from 96 on only
+		- fix(sdp): update data channel to RFC format
+		- fix(tracks) Add metadata to jitsi tracks (#1777)
+		- fix(presence) Send presence on mute state change.
+		- fix(TPC) change the tranceiver dir to recvonly when track is removed. This fixes occasional failures of MuteTest.MuteAfterJoinCanShareAndUnmute torture test and also the case on Safari where user stopping the screenshare doesn't stop showing the screensharing indication on the thumbnail.
+		- Avoid sending two presences if start muted and then screen share. (#1771)
+		- fix(TPC) add muted tracks to TPC but not to the RTCPeerConnection.
+		- fix(av-moderation) Fix remove from whitelist to match prosody changes
+		- fix(SS): missing.
+		- fix(layer-suspension) Do not ignore maxHeight=0 sender constraint. This fixes https://github.com/jitsi/lib-jitsi-meet/issues/1759.
+		- fix(TPC) Remove video track from pc on mute for Firefox. We do not want Firefox sending video when its video muted. https://bugzilla.mozilla.org/show_bug.cgi?id=1735951
+		- fix(connectionstatus) Increase the rtc mute timeout for p2p. Increase the RTC mute timeout from 500ms to 2500ms for p2p connections. This fixes an issue with Chrome tab sharing where the application keeps switching between the avatar and the share contnuously because of a chrome bug https://bugs.chromium.org/p/chromium/issues/detail?id=1258034
+		- fix(deps) update js-utils
+		- fix(IceFailedHandling) force client reload when ICE fails locally.
+		- fix(iOS15) fix not being able to unmute if "everyone starts muted" is set
+		- logger calling wrong function typo
+
+- [jicofo 1.0-830](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_6689)
+	- New features:
+		- Add an enable-rtcstats field to ColibriConferenceIQ. (#830)
+		- feat(breakout-rooms) add breakout rooms support
+		- Updates smack to 4.4.4.
+		- Allow moderators to unmute without being in the whitelist.
+
+	- Fixes:
+		- Fix deadlock in bridge selector. (#822)
+		- Fix the construction of QName for an extension. (#839)
+		- jibri selection issues (#828)
+		- Fix error message when a jibri session already exists. (#826)
+
+- [jitsi-videobridge 2.1-592-g1e2879e0](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_6689)
+	- New features:
+		- Add an enable-rtcstats field to ColibriConferenceIQ. (#1758)
+		- implement SourceVideoTypeMessage (#1752)
+		- Add histogram of initial RTT sliced by harvester name. (#1743)
+
+	- Fixes:
+		- BitrateControllerTest2 (#1766)
+		- use dummy values for raddr and rport instead of dropping them. (#1759)
+		- Delay shutdown in graceful mode. (#1756)
+		- exception when no recent speakers (#1754)
+		- Slow initial convergence in RateTracker (jitsi-utils). (#1755)
+		- typo in log message. (#1747)
+		- Bump jmt: fix throw on VP9 simulcast. (#1746)
+
 ##  2.0.6433 (2021-10-07)
 - [jitsi-meet 1.0.5415](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6433)
 	- New features:
