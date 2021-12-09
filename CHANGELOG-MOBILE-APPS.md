@@ -1,5 +1,38 @@
 # Mobile apps Changelog
 
+# 21.5.0 (2021-12-03)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.5.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.5.0)
+
+## Changes
+
+### Common
+
+- Added breakout rooms
+- Added speaker stats
+- Added search in participants list
+- Revamped UI of the top conference bar
+- Revamp all screens to use smooth transitions
+- Coalesce participant left and raised hand notifications
+- Update WebRTC engine to M94
+- Show raised hand indicators in the participants pane
+- Advanced moderation improvements
+- Stop displaying local video on the welcome page
+- Updated translations
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.4.1...android-21.5.0)
+
+### iOS
+
+- Don't show "disable call integration" on the settings page, it's not implemented on iOS
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.4.2...ios-21.5.0)
+
 # 21.4.2 (2021-10-01)
 
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.4.2)
