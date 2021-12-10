@@ -76,7 +76,7 @@ Full changelogs are available in each project's release page: click on one of th
 
 	- Fixes:
 		- Fix the single-layer check to account for TS with only base layer frames. (#1772)
-		- Bumps jitsi-stats. (pulls in log4j 2.15.0). Fixes [CVE-2021-44228] (https://github.com/advisories/GHSA-jfh8-c2jp-5v3q)
+		- Bumps jitsi-stats (pulls in log4j 2.15.0). Fixes [CVE-2021-44228] (https://github.com/advisories/GHSA-jfh8-c2jp-5v3q)
 
 ##  2.0.6689 (2021-12-06)
 - [jitsi-meet 1.0.5638](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6689)
