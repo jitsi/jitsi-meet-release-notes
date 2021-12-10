@@ -2,6 +2,81 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.6726 (2021-12-10)
+- [jitsi-meet 1.0.5675](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6726)
+	- New features:
+		- feat(media) Disable desktopshare when the video sender limit is reached.
+		- feat(security) created SecurityOptions React Navigation screen (#10509)
+		- feat(index.html): Add fonts.html SSI.
+		- feat(tracks) Clean up the track if a source addition is rejected. (#10562)
+		- feat(chat) keyboard covering input on android fix
+		- feat(self-view) Added ability to hide self view
+		- feat(end-meet-for-all) Trigger notifyReadyToClose event on end meetin… (#10549)
+		- feat(prejoin) Add possibility to hide extra join options buttons (#10434)
+		- feat(external-api): enhance recordingLinkAvailable to provide ttl info
+
+	- Fixes:
+		- fix(breakout-rooms) ensure we use the same media types when joining
+		- fix(rn,breakout-rooms) create desired local tracks when joining rooms
+		- fix(tracks) fix disposing of local tracks
+		- fix(disableSelfView) Fix issue with remote participant video (#10582)
+		- fix(rn,breakout-rooms) fix not rendering display names
+		- fix(notifications) Adjust the timeout for unmute blocked notifications.
+		- fix(shortcuts) Ignore keyboard shortcuts when the button are disabled.
+		- fix(breakout-rooms) cleanup local tracks when a conference is left.
+		- fix(lang) update Catalan translation
+		- fix(notifications) Create web middleware (#10568)
+		- fix(browser-compatibility) hide launch in web for unsupported mobile browsers (#10569)
+		- fix(android) fix NoClassDefFoundError for Landroid/graphics/ColorSpace
+		- fix(screenshot-capture) Use feature on web only
+		- fix(breakout-rooms) cleanup remote tracks when a conference is left
+		- fix(rn) join conference if started by moderator
+		- fix(breakout-rooms) fix non-functional context menu
+		- fix(overflow-drawer) Only use overflow drawer on mobile
+		- fix(screenshot-capture) Update screenshot capture feature (#10443)
+		- fix(virtual-backgrounds) make error message translatable
+		- fix(virtual-backgrounds) fix error if we failed to load the model
+		- fix(participants-list): Avoid ui moving on input focus
+		- fix(lang) update sv translation
+		- fix(lang) update Traditional Chinese (Taiwan) translation
+		- fix(lang) update Portuguese translation
+		- fix(facial-expressions) load worker as a blob
+		- fix(lang) update Arabic translation
+		- fix(media) dispatch the unmute blocked action irrepective of the muted state. This fixes an issue where the user muted by focus is able to unmute themselves even when the sender limit has been reached.
+		- fix(breakout,av-moderation): support non-ascii tenant names
+		- fix(breakout,av-moderation): support non-ascii room names
+		- fix(breakout-rooms) fix not waiting to leave the room
+		- fix(rn,chat): Fix chat and polls title
+		- fix(lang) update french translation
+		- fix(lang) update German translation
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(JingleSessionPC) Handle source-add rejects by Jicofo.
+
+	- Fixes:
+		- Fixes set effect and correct presence state.
+		- fix(presence): Do not sent presence if there is no active media session.
+		- server-side callstats is never enabled (#1823)
+		- fix(JitsiConference) squelch bogus p2p session end error
+		- fix(tpc) disable ulpfec on chrome 96 (#1816)
+		- Fixes call to _setTrackMuteStatus.
+		- fix(browser-capabilities) expose supported mobile browsers
+
+- [jicofo 1.0-832](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_6726)
+	- New features:
+
+	- Fixes:
+		- logger context. (#845)
+
+- [jitsi-videobridge 2.1-595-g3637fda4](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_6726)
+	- New features:
+		- Ignore the max oversend limit for non-scalable streams (#1770)
+
+	- Fixes:
+		- Fix the single-layer check to account for TS with only base layer frames. (#1772)
+
 ##  2.0.6689 (2021-12-06)
 - [jitsi-meet 1.0.5638](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6689)
 	- New features:
