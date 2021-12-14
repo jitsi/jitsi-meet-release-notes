@@ -1,5 +1,34 @@
 # Mobile SDKs Changelog
 
+# 4.1.0 (2021-12-14)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-4.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-4.1.0)
+
+## Changes
+
+- Created SecurityOptions React Navigation screen
+- Fixed issue where last participant is shown as inactive when the self view is hidden
+- Fixed not rendering display names in breakout-rooms
+- Adjust the timeout for unmute blocked notifications
+- Fixed the issue where the user muted by focus is able to unmute themselves even when the sender limit has been reached
+- Fixed chat and polls title
+- Re-enables PIP after stopping screen-share
+- Updated translations
+
+### Android
+
+- Fixed keyboard covering input on chat
+- Fixed NoClassDefFoundError for Android L/graphics/ColorSpace
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-4.0.0...android-sdk-4.1.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-4.0.0...ios-sdk-4.1.0)
+
 # 4.0.0 (2021-12-03)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-4.0.0)
