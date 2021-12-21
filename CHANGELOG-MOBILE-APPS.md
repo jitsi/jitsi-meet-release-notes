@@ -1,5 +1,30 @@
 # Mobile apps Changelog
 
+# 21.6.0 (2021-12-021)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.6.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.6.0)
+
+## Changes
+
+### Common
+
+- Re-enables PIP after stopping screen-share
+- Updated translations
+- Bug fixes and improvements
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.5.0...android-21.6.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.5.0...ios-21.6.0)
+
 # 21.5.0 (2021-12-03)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.5.0)
