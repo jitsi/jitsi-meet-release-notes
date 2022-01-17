@@ -147,6 +147,7 @@ Full changelogs are available in each project's release page: click on one of th
 	- Fixes:
 		- fix(#1714): Remove tossed-packets-energy from jvb statistics. (#1795)
 		- fix(ChannelShim): do not throw for empty sources (#1793)
+ 		- Remove all use of log4j. (#1786)
 		- Fix exception when the speakers list is empty. (#1778)
 		- fix(JMT): Fix RED with DTX, fix noice when muted with DTX, add VAD stats. (#1777)
 
