@@ -2,6 +2,154 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.6826 (2022-01-17)
+- [jitsi-meet 1.0.5764](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6826)
+	- New features:
+		- feat(rn,overflow-menu) remove duplicated buttons from overflow menu
+		- feat(title-bar) Updated title bar (#10752)
+		- feat(participants-pane) added style comments
+		- feat(participants-pane) separated participants into collapsible lists
+		- Updates reload reason.
+		- feat(rn) update React Native to version 0.63
+		- feat(participants-pane) updated styles for add breakout and invite buttons
+		- feat(conference) centered header navigation button
+		- feat(filmstrip) fixed context menus for thumbnail
+		- feat(participants-pane) hide admit all if knocking part < 2
+		- feat(virtual-backgrounds) use new Open Source model
+		- feat(toolbar-button-clicked) Enhance toolbar buttons with notify click
+		- Skips notifications for messages from history (the messages on join).
+		- Edits messages display name on breakout info received. Fixes #10671.
+		- Adds internal action for editing chat messages.
+		- Adds id to chat messages internal state.
+		- Drop unused constants.
+		- feat(facial-expressions): send facial expressions to webhook endpoint (#10585)
+		- feat(conference-info) Updated title bar (#10670)
+		- feat(config): add flag to hide the participant display name (#10650)
+		- feat(raise-hand) Update raised hand design (#10651)
+		- feat(Avatar): CORS mode support.
+		- feat(chat/settings) - add ephemeral chat notifications with user settings support (#10617)
+		- feat(external-api): add local subject command (#10636)
+		- Update video receiver constraints to use source names (#10527)
+		- feat(thumbnail) Video thumbnails redesign and refactor (#10351)
+		- feat(profile-settings): Hide email field under profile settings
+		- feat(i18n): Allow label rewrite via advanced branding
+
+	- Fixes:
+		- fix(raised-hand) Preserve raised hand order for active speaker
+		- fix(lang) update German translation
+		- fix(filmstrip) don't display filmstrip toggle in Jibri
+		- fix(thumbnail) Fixed screensharing indicator tooltip (#10780)
+		- fix(config) Update comment for disableTileEnlargement (#10779)
+		- fix(thumbnail) Fix screenshare indicator (#10774)
+		- fix(build) exit with error if any CSS step fails
+		- fix(toolbox) hide volume meter when audio levels are disabled
+		- fix(rn) await for the promise in the _init object
+		- fix(android) restore executable flag on gradlew
+		- fix(android) disables windows preview
+		- fix(jaas) log settings error
+		- fix(rn,welcome) use native driver for opacity animation
+		- fix(lint) tame Flow
+		- still show menu to toggle self view if disableLocalVideoFlip (#10751)
+		- fix(disableSelfView) Config overwrites settings (#10750)
+		- fix(thresholds) adjust thresholds for smaller width integrations (#10749)
+		- Fixes start A/V muted received by focus in case of slow gUM.
+		- Fixes startWithAudioMuted on quickly moving away from pre-join screen.
+		- fix(rn, web) await initialisation before dispatching appWillMount
+		- fix(rn,audio) fix playback after API change
+		- fix(toolbox) Disable screensharing button on mobile for video sender limit. Also, ignore the toggle screenshare shortcut when the video sender limit is reached.
+		- fix(rn,android) adjust changed package names
+		- fix(lang) update Portuguese translation
+		- fix(lang) update Catalan translation
+		- fix(polls) use medium timeout for poll notifications
+		- fix(rn, recording) adds _toggleScreenshotCapture function to AbstractStopRecordingDialog
+		- fix(lang) update French translation
+		- fix(lang) update Portuguese Translation
+		- fix(aot) Let jitsi-meet-electron-sdk do the close (#10679)
+		- fix(participants-pane) fix search value clear when closing pane
+		- fix(lang) update German translation
+		- fix(lang) update Occitan translation
+		- fix(breakout-rooms): Adds few nil checks in lua code.
+		- Fixes muted state for moderators when login (secure-domain).
+		- fix(title-bar) Updated animation duration (#10688)
+		- fix(lang) make fr language file format consistent
+		- Add ipv6 networks to coturn's deny list.
+		- fix(lang) update french translation
+		- fix(lang) updated Russian translation
+		- Fixes showing user region.
+		- Generates correct join error for lobby.  (#10673)
+		- fix(base) fixed text going out of share meeting container
+		- fix(participants-pane) Make search work with breakout rooms (#10668)
+		- fix(prejoin) Consider user selection for prejoin only on mount
+		- fix(thumbnail) Update tile resizing constraints (#10645)
+		- fix(speaker-stats): responsiveness of facial expressions (#10664)
+		- fix(rn, tileview) Add SafeAreaView to Tile View (#10642)
+		- fix(rn, recording) adds _toggleScreenshotCapture function to AbstractStartRecordingDialog
+		- fix(breakout-rooms): Fix polls usage.
+		- fix(lang) updated Arabic translation
+		- fix(theme) Update colors (#10649)
+		- fix(breakout-rooms): close option shown to non-moderators (#10648)
+		- fix(breakout-rooms): Adds a check for missing room.
+		- fix(lang) update Spanish translation
+		- Fixes emitting conference left event in iframeAPI.
+		- fix(tile-view) fix screensharing size in self view (#10634)
+		- Fixes destroying main room when breakout rooms are enabled.
+		- participant join notifications
+		- default values for hideConferenceSubject/-Timer
+		- fix(lang) update Portuguese translation
+		- fix(lang) update Dutch translations
+		- Use default remote display name in speaker stats when one is missing.
+		- Respects disable reactions moderation flag for popups.
+		- fix(overflow-menu) Use fixed height only on drawer (#10612)
+		- fix(config.js) Added missing participant left notification key.
+		- fix(Prejoin): Allow changing 'Enable pre meeting screen' option while prejoin screen visible
+		- fix(Avatar): Fix initials when avatar contains multiple special characters
+		- Fixes disable moderation sounds in meeting. (#10604)
+		- fix(speaker-stats): prevent search from closing when enter pressed and from keeping previous state (#10597)
+		- fix(overflow-menu) Pin reactions on menu bottom on mobile web (#10599)
+		- fix(Polls): Calculate vote percentage based on total number of votes
+		- fix(rn) fix broken mobile build
+		- fix(lang) update German translation
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(misc) add stalebot
+		- Adjust setReceiverConstraints to use new format (#1813)
+
+	- Fixes:
+		- use correct jsdoc types for params and methods
+		- fix(logging) Log all the ssrcs present in the source signaling. Since the order of the ssrcs in the json-encoded message is not guaranteed to be in the correct SIM/FID order, log all the ssrcs.
+		- ensure mucNickname
+		- fix(TPC): Implode the simulcast group only after toUnifiedPlan conversion. This fixes a regression introduced by the previous commit.
+		- fix(tpc) extend ulpfec workaround to all versions
+		- check if chrome version > 95 instead
+		- issue number for rtx ulpfec workaround
+		- fix(tpc) disable ulpfec on chrome 97
+		- Drop unused region info from presence.
+		- Reads lobby jid from correct location in the error. (#1830)
+		- fix(xmpp): fix race in p2p set codecs
+
+- [jicofo 1.0-840](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_6826)
+	- New features:
+		- Add a debug HTTP interface. (#860)
+		- Remove the reservation system. (#852)
+
+	- Fixes:
+		- null references (#853)
+		- Fix expiring colibri channels. (#850)
+
+- [jitsi-videobridge 2.1-607-g153f7e4e](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_6826)
+	- New features:
+		- source name based forwarded sources (#1781)
+		- source name based receiver constraints (#1780)
+		- forward multiple sources
+
+	- Fixes:
+		- fix(#1714): Remove tossed-packets-energy from jvb statistics. (#1795)
+		- fix(ChannelShim): do not throw for empty sources (#1793)
+		- Fix exception when the speakers list is empty. (#1778)
+		- fix(JMT): Fix RED with DTX, fix noice when muted with DTX, add VAD stats. (#1777)
+
 ##  2.0.6726 (2021-12-10)
 - [jitsi-meet 1.0.5675](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6726)
 	- New features:
