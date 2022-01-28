@@ -2,6 +2,75 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.6865-2 (2022-01-28)
+- [jitsi-meet 1.0.5818](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6865)
+	- New features:
+		- feat(lobby) removed native lobby enable/disable dialogs
+		- feat(shared-video): show  invalid URL error.
+		- feat(lobby,notifications) refactor lobby notifications
+		- feat(rn,build) drop confusing commands
+		- feat(lint) drop Flow
+		- feat(rn) update React Native to version 0.66
+		- feat(filmstrip) Updated filmstrip design (#10791)
+
+	- Fixes:
+		- fix(lang) update Occitan translation
+		- fix(lang) update french translation
+		- fix(security-dialog) fix form event propagation after migrating to React 17
+		- fix(screenshot-capture) Add initial state (#10827)
+		- fix(android) drop jcenter
+		- fix(rn,build) fix use of "bare" relative path
+		- fix(raised-hand) lower raised hand by local audio level changes when participant is dominant
+		- fix(screen-capture): disable.
+		- fix(ios) fix build with Xcode 13
+		- fix(lang) fix default language selection
+		- fix(video-quality) fix not registering reducer on mobile
+		- fix(rn) remove no longer needed hack
+		- fix(rn, conference): dispatch auth status changed in base/conference
+		- Japanese translations
+		- Add min width to volume slider (#10808)
+		- fix(iframeAPI): startShareVideo command.
+		- fix(virtual-background): Prevent buttons repositioning on click action.
+		- fix(breakout-rooms) joining room with hand raised bug Joining a room while hand is raised caused the local raised hand total to be wrong. This is because when the local participant id changes, the old id is not cleared from the raisedHandQueue.
+
+	- Translation updates:
+		- fix(lang) update Japanese translation
+		- sort json keys
+		- Typo in lang pl
+		- * lang fix syntax errors
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(ts) add hand-crafted type definitions
+		- feat(ts) add auto-generated type declarations
+		- feat(ts) introduce TypeScript
+		- feat(RTC) added DTLS transport monitoring
+
+	- Fixes:
+		- fix(ts) adjust syntax so TSC doesn't complain
+		- fix(RTC) added safety checks before getSenders() calls
+		- fix(RTC) skip DtlsTransport init if getSenders is missing
+		- fix(TPC) Do not change the tranceiver dir when the connection is not active. Fixes https://github.com/jitsi/jitsi-meet/issues/10754.
+
+- [jicofo 1.0-846](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_6865)
+	- New features:
+		- Colibri2 and secure octo  (#855)
+
+	- Fixes:
+		- Fix counting "lost" bridges. (#869)
+		- removing sources for octo (#868)
+
+- [jitsi-videobridge 2.1-617-ga8b39c3f](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_6865)
+	- New features:
+		- Add http API for drain state. (#1794)
+		- Colibri2 and secure octo (#1763)
+
+	- Fixes:
+		- wantsStatsFrom, by fixing isRankedSpeaker. (#1803)
+		- Allow colibri1 to create multiple conferences with the same meetingId. (#1797)
+		- Bump JMT: Fix RtpEncodingDesc.copy() when there are no layers. (#1796)
+
 ##  2.0.6826 (2022-01-17)
 - [jitsi-meet 1.0.5764](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6826)
 	- New features:
