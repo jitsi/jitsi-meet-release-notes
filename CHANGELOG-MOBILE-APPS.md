@@ -1,6 +1,38 @@
 # Mobile apps Changelog
 
-# 21.6.0 (2021-12-021)
+# 22.0.0 (2022-03-02)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.0.0)
+
+## Changes
+
+### Common
+
+- Consistent coloring across the UI
+- Reworked all dialogs
+- Navigation improvements
+- Layout improvements in tile view
+- Fix echo issue in some scenarios
+- Fix losing screen-share under certain circumstances
+- Updated translations
+- Bug fixes and improvements
+
+### Android
+
+- Fix crash due to EGL context leaks
+- Fix white "flash" when loading
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-21.6.0...android-22.0.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-21.6.0...ios-22.0.0)
+
+
+# 21.6.0 (2021-12-21)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-21.6.0)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-21.6.0)
