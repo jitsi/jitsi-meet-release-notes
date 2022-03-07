@@ -2,6 +2,211 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.7001 (2022-03-07)
+- [jitsi-meet 1.0.5913](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7001)
+	- New features:
+		- feat(external-api): expose config for breakout rooms (#11055)
+		- feat(filmstrip/toolbox) mobile ui updates (#11051)
+		- Passing the url to conference mapper (#11013)
+		- feat(filmstrip/toolbox) mobile ui undo changes
+		- feat(screenshare) Allow desktop sharing in audioOnly mode on web.
+		- feat(ios) Add support to the iOS SDK for the Simulator on M1
+		- feat(filmstrip) Make filmstrip user resizable (#10884)
+		- feat(multi-stream-support) Replace participant connection status logic with track streaming status (#10934)
+		- feat(rn) drop incoming call handling
+		- feat(android) make application more akin to a greenfield RN app
+		- feat(welcome) updated mobile ui styles
+		- Handles hidden-from-recorder from jwt. (#10973)
+		- feat(thumbnails, rn) Native thumbnails redesign (#10954)
+		- feat(navigation) two actions screen header buttons ui updates
+		- feat(dialog) refinaments
+		- feat(dialog) start recording/live stream screens, new AlertDialog
+		- feat(dialog) change description text color
+		- feat(toolbox) removed unused BetaTag component and styles
+		- feat(dialog) updated LoginDialog
+		- feat(external-api) add commands to open/close the participants pane
+		- feat(external-api) expose breakout rooms actions
+		- feat(dialog) new native InputDialog
+		- feat(dialog) removed native CustomDialog
+		- feat(external-api) notify conference joined with room type flag
+		- feat(dialog) added react-native-dialog dep and updated ConfirmDialog
+		- feat(notifications) reset same type notification timeout
+		- feat(tileView): Display 3 participants in 1 row
+		- feat(speaker-stats) new design for web and mobile
+		- feat(welcome) blur room name input onListContainerPress
+		- feat(app) fix navigation from external link
+		- feat(config) add ability to hide dominant speaker badge
+		- feat(disableSelfView) Toggle self view on native (#10871)
+		- feat(build) use lib-jitsi-meet release tarballs
+		- feat(notification-button-testid): Add testid to notification buttons.
+		- feat(notification-button-testid): Add testid to notification buttons.
+		- feat(rn,app) unified navigators
+		- feat(rn) use the TSC generated lib-jitsi-meet bundle
+		- feat(ts) introduce TypeScript
+
+	- Fixes:
+		- Fixes recording dialog web rendering.
+		- fix(receiver constraints): source name not found
+		- fix(WaitForOwnerDialog) simplify code
+		- Fixes loading web on mobile browser.
+		- fix(filmstrip) Fix resizable filmstrip (#11025)
+		- fix(lobby-notifications): Prevent lobby notification to remain on scr… (#11054)
+		- fix(screenshare) Add and then mute the camera track after SS stops instead of not adding the track. This is a follow up for https://github.com/jitsi/lib-jitsi-meet/pull/1944. This is needed to avoid sending a soure-remove followed by a source-add for the same ssrc. This happens when a users mutes camera->starts SS->stops SS->turns on camera on a p2p connection in Unified plan mode. Chrome fails to render the media if the same SSRC is removed and added back to the same m-line.
+		- fix(external-api): dismiss lobby notification after handling the knocking participant (#11049)
+		- fix(video-devices) Fix video devices not scrollable
+		- fix(thumbnail) Fix pinned participant in the resizable filmstrip (#11042)
+		- fix(i18n) fix some country names
+		- initial volume value if value is 0
+		- fix(ios) fix for building for simulator on M1
+		- fix(filmstrip/toolbox) mobile ui adjustments
+		- fix(facial-recognition) avoid image data conversion
+		- fix(lint) don't check for Flow types on files without the annotation
+		- fix(thumbnails, rn) Hide empty indicators container on native (#11019)
+		- fix(rn,filmstrip) fix local participant location
+		- fix(mobile-ui) ui fixes
+		- fix(lang) update sv translation
+		- fix(mobile-ui) patch for native dialog container, fixed switch track color
+		- fix(thumbnails) Revert local tile ratio (#11009)
+		- fix(calendar-sync) fixed pull to refresh on Calendar List mobile
+		- fix(rn,display-name) don't show display name for local user
+		- fix(toolbox) fixed toolbox safeareaview on mobile
+		- fix(android) initialize the fatal exception handler early
+		- fix(ios) make sure arm64 sim is not excluded
+		- fix(speaker-stats): labels spearator line fixed and remove footer space
+		- fix(ios) rework RN build workaround
+		- Fixes nil error while processing wrong jwt value. Fixes #10970
+		- Fixes param in spanish translation.
+		- fix(context-menu) Add max height (#10965)
+		- fix(breakout-rooms) Hide non-working options inside breakout rooms (#10959)
+		- fix(video-quality-label) Open dialog also on audio-only mode (#10957)
+		- fix(breakout-rooms) close room before removing it (#10956)
+		- fix(lang) update German translation
+		- Fixes reconnecting on pre-join screen in case of max users error.
+		- Fixes script with correct commit message.
+		- fix(lang) update french translation
+		- fix(dialog) fixed translations
+		- fix(lang) update Dutch translation
+		- fix(load-test) update package-lock.json to npm8
+		- fix(shared-video) use more space on recorders
+		- fix(toolbox) never show the toolbox for recorders
+		- fix(app) fix member count to filter out hidden participants
+		- fix(facial-expressions): set screen size in worker and add constants for worker message types (#10678)
+		- fix(lang) update sq translation
+		- fix(thumbnail): mouse enter is not triggered
+		- fix(lang) update Arabic translation
+		- Restarts jvb after prosody on initial install.
+		- fix(title-bar) Fix native titlebar (#10882)
+		- fix(config) document missing notification
+		- fix(lang) update Dutch translation
+		- fix(lang) update Dutch translation
+		- fix(calendar-sync) remove unneeded function
+		- Fixes #10796 authentication in conference. (#10848)
+		- fix(util) never mark UUID room names as insecure
+		- fix(lang) update Spanish translation
+		- fix(lang) update Dutch translation
+		- fix(screenshot-capture) Updated feature (#10865)
+		- fix(iAmRecorder): middleware bug
+		- fix(thumbnails) Change local thumbnail aspect ratio (#10861)
+		- fix(screenshot-capture) Add initial call for region selection (#10818)
+		- fix(lang) update Japanese translation
+		- fix(overflow-menu) hide "more moderation controls" option if moderator settings tab disabled
+		- fix(notifications): support html descriptions
+		- fix(tools) adapt update-ljm.sh to new ljm release mode
+		- fix(lang, shared-video): Reference to YouTube
+		- lint errors
+		- broken redirect for url with params when welcome page disable
+		- fix(media) Deprecate startScreenSharing config option for web browsers. This is no longer supported as per the w3c spec for getDisplayMedia.
+		- fix(rn,navigation) fix navigating back to the welcome page
+		- fix(rn,settings-drawer) allow for more width
+		- fix(config): use hide display name flag for dominant speaker (#10839)
+		- fix(build) remove double slashes
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(ts) TypeScript version of rtcevents
+		- feat(ts) TypeScript convesion of AnalyticsEvents
+		- feat(ts) TypeScript conversion of DetectionEvents
+		- feat(ts) convert MediaType and its usages
+		- feat(ts) TypesScript enum for XMPPEvents
+		- feat(ts) TypeScript enum for ConnectionQualityEvents
+		- feat(ts) TypeScript enum for proxyconnection constants
+		- feat(ts) TypeScript enum for VideoSIPGWConstants
+		- feat(ts) TypeScript enum for JingleSessionState
+		- feat(multi-stream-support) Add track streaming status (#1855)
+		- feat(ts) TypeScript enum for xmpp MediaSessionEvents
+		- feat(ts) TypeScript enum for E2ePingEvents
+		- feat(ts) TypeScript enum for SignalingEvents
+		- feat(ts) TypeScript enum for statistics Events
+		- feat(ts) TypeScript enum for JitsiConferenceEvents
+		- feat(ts) TypeScript enum for JitsiConnectionErrors
+		- feat(ts) TypeScript enum for JitsiConnectionEvents
+		- feat(ts) TypeScript enum for JitsiMediaDevicesEvents
+		- feat(ts) TypeScript enum for JitsiTranscriptionStatus
+		- feat(ts)  TypeScript enum for JitsiConferenceErrors
+		- feat(test) add tests to monitor regressions in the TypeScript conversion
+		- feat(ts) migrate JitsiTrackErrors to typescript enum
+		- feat(doc) add plan for the TypeScript conversion process
+		- Adds a property to JitsiParticipant is hidden from recorder. (#1889)
+		- feat(multi-stream-support) Adjust presence and videoType bridge message. (#1887)
+		- feat(multi-stream-support) Configure the senders based on SenderVideoConstraintsV2. The encodings for local video tracks are confiugured based on the SenderVideoConstraintsV2 constraints received from the bridge. The constraints are sourceName based. Also ignore enableLayerSuspension flag since it has been deprecated and layer suspension has been enabled by default. Also having it off makes screensharing on Chrome in unified plan not work as expected.
+		- feat(multi-stream-support) Add the support for multiple local video streams.
+		- feat(lobby): lobby chat messaging
+		- feat(multi-stream-support) Handle SDP munging for multiple local/remote streams per ep. (#1868)
+		- feat(multi-stream-support) Do not assume a single local or remote track/mediaType.
+		- feat(build) don't build library on postinstall
+
+	- Fixes:
+		- fix(TPC) Avoid renegotiations for p2p for mute/unmute.
+		- fix(TPC) Do not force renegotiations for p2p. Chrome doesn't render media when the SSRC is added back to the m-line after removing it because of source-remove->source-add from peer. Avoid renegotiations so that these source removes and adds are not sent to the peer after the track is replaced.
+		- fix(JingleSessionPC) Remove the ssrc lines in remote desc sdp on source removal. In P2P and unified mode, Chrome does not render the media if an SSRC is removed and the same one is added back (happens when the sender is camera muted->starts SS->stops SS->turns camera on). That is why SSRC was not being removed. However, mobile endpoints that are running in plan-b generate a new SSRC when the client switches between camera and screenshare. This will cause issues on a p2p receiver that is running in unified mode. Fixes https://github.com/jitsi/jitsi-meet/issues/11010.
+		- fix(TPCUtils): Check for the track mute state before looking up the transceiver. This fixes an issue where replaceTrack fails when a muted track is being replaced with another track in Unified plan.
+		- fix(ts) clean-up TS tests where conversion is complete
+		- fix(JitsiConference) fix exceptions which occur after leaving the conference
+		- fix(rtc) reject getUserMedia with JitsiTrackError
+		- fix(doc) update building
+		- fix(JingleSessionPC) Do not recycle m-lines when sources leave and join. Recycling the m-line by rejecting it and then re-using is causing issues where sometimes the track addition fails. When a new ssrc is added to an m-line that was rejected and port is changed back to the default port, sometimes the remote sdp returned by browser wouldn't contain the newly added ssrcs and the track addition fails as a result. Error: No SSRC lines found in remote SDP for remote stream[msid=854882f8-audio-1,type=audio]     at Ca._remoteTrackAdded (https://web-cdn.jitsi.net/meetjitsi_5885.2601/libs/lib-jitsi-meet.min.js?v=5885.2601:2:439103)     at Ca._usesUnifiedPlan.onTrack (https://web-cdn.jitsi.net/meetjitsi_5885.2601/libs/lib-jitsi-meet.min.js?v=5885.2601:2:432207)     at RTCPeerConnection.r (https://web-cdn.jitsi.net/meetjitsi_5885.2601/libs/lib-jitsi-meet.min.js?v=5885.2601:2:680736) .
+		- fix(rn,JingleSessionPC) remove aggressive layer suspension in RN
+		- realDeviceId match by label and deviceId (#1919)
+		- fix(JingleSessionPC) fix "echo" on mobile
+		- fix(qualitycontrol) SenderVideoConstraintsV2 changed to SenderSourceConstraints. The colibri class name for the source name sender constraints changed from SenderVideoConstraintsV2 to SenderSourceConstraints. The new format is {colibriClass: 'SenderSourceConstraints', sourceName: 'b6746083-v0', maxHeight: 180}
+		- fix(presence) Change the default videoType assumed in presence to camera. The client doesn't add videoType to presence if the videoType is CAMERA since it is the default type. Fixes https://github.com/jitsi/lib-jitsi-meet/issues/1649
+		- fix(quality-control) Configure encodings for all sources on media session creation. When multi-stream-support is enabled, configure the encodings on all the local video sources.
+		- fix(qualitycontrol) Throw errors if sourceName is missing in constraints when multi-stream-support is enabled. Also, configure all the video tracks when the user changes the quality settings from UI.
+		- Cleans up rooms after failure to join.
+		- Adds missing ts files.
+		- Adds missing checks for clean repo.
+		- fix(TPC) add muted tracks if p2p is disabled (fix #1851)
+		- fix(JingleSessionPC) Do not force track removal at pc level on user leave. When a user leaves, the ssrcs associated with the ep are removed from the remote description and a renegotiation is forced. The browser then fires 'removetrack' event on the associated MediaStream when sRD is called with ssrcs removed. The remote track is then disposed of in the event handler. Therefore, there is no need to delete the tracks at the TPC level before renegotiation. This also prevents the 'Removed track not found for stream' events from showing up in the browser console log.
+		- Fixes version while building.
+		- fix(ProxyConnection) set signaling layer
+		- fix(build) add more missing files to the dist tarball
+		- fix(build) fix not packaging all files
+		- fix(ci) use Node 16
+
+- [jicofo 1.0-862](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_7001)
+	- New features:
+		- Take into account region groups for selection. (#879)
+		- Add SCTP with colibri2. (#877)
+		- Add jigasi and jibri to debug state. (#872)
+
+	- Fixes:
+		- Properly handle the case when the bridge conference has expired. (#876)
+		- Fix ConcurrentModiciationException. (#874)
+		- inviting jigasi with colibri2 (#873)
+		- fix(multi-stream): generate source name (#862)
+
+- [jitsi-videobridge 2.1-634-gff8609ad](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_7001)
+	- New features:
+		- Send release ID in bridge statistics. (#1814)
+		- source name based sender constraints (#1782)
+		- Handle SCTP with colibri2. (#1811)
+		- Include a colibri2 error extension in error responses. (#1809)
+
+	- Fixes:
+		- issue where Relays' SrtpTransformers were closed while still in use.  Bump JMT. (#1821)
+		- Sequence numbers of dropped audio packets. (#1810)
+
 ##  2.0.6865-2 (2022-01-28)
 - [jitsi-meet 1.0.5818](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_6865)
 	- New features:
