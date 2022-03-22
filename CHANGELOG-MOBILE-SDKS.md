@@ -1,5 +1,51 @@
 # Mobile SDKs Changelog
 
+# 5.0.0 (2022-03-02)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-5.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-5.0.0)
+
+## BREAKING Changes
+
+- Removed unused code for incoming call view on Android
+- Update React Native to version 0.66
+
+## Changes
+
+- Fix echo issue in some scenarios
+- Fix losing screen-share under certain circumstances
+- Tile view layout improvements
+- Use native dialogs
+- Navigation improvements
+- Move all moderation functionality to the participants pane
+- New in-conference header
+- Update base UI colors
+- Redesigned Thumbnails
+- Revamped speaker stats UI
+- Revamped security dialog
+- Revamped recording screen
+- Updated translations
+
+### Android
+
+- Fix EGL context leak
+- Fix white "flash" when loading
+- Drop jcenter
+
+Relevant native dependencies:
+
+- react-native: 0.66.4
+- android-jsc: 250230.2.1
+- okhttp: 4.9.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-4.1.0...android-sdk-5.0.0)
+
+### iOS
+
+- Add support for the simulator on Apple Silicon processors
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-4.1.0...ios-sdk-5.0.0)
+
 # 4.1.0 (2021-12-14)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-4.1.0)
