@@ -1,5 +1,31 @@
 # Mobile apps Changelog
 
+# 22.1.0 (2022-03-22)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.1.0)
+
+## Changes
+
+### Common
+
+- Recording UI updates
+- Navigation improvements
+- Updated translations
+- Bug fixes and improvements
+
+### Android
+
+- Fix crash when showing dialogs on certain devices
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-22.0.0...android-22.1.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-22.0.0...ios-22.1.0)
+
 # 22.0.0 (2022-03-02)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.0.0)
