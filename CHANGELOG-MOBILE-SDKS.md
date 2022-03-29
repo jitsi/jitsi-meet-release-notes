@@ -1,5 +1,18 @@
 # Mobile SDKs Changelog
 
+# 5.0.2 (2022-03-29)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-5.0.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-5.0.2)
+
+## Changes
+
+- Fix back button handling on Android
+- Fix joining breakout rooms
+- Fix lobby not showing up on subsequent tries
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-5.0.1...android-sdk-5.0.2)
+
 # 5.0.1 (2022-03-28)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-5.0.1)
