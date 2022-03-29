@@ -1,5 +1,18 @@
 # Mobile SDKs Changelog
 
+# 5.0.1 (2022-03-28)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-5.0.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-5.0.1)
+
+## Changes
+
+- Fix broken recording dialog
+- Fix not showing meeting participants by default in the pane
+- Fix bottom color glitch when navigating from the connecting screen
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-5.0.0...android-sdk-5.0.1)
+
 # 5.0.0 (2022-03-02)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-5.0.0)
