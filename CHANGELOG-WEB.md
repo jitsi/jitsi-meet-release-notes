@@ -2,6 +2,227 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.7210 (2022-04-18)
+- [jitsi-meet 1.0.6091](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7210)
+	- New features:
+		- feat(reactions) Open reactions menu on hover instead of click (#11364)
+		- feat(participants-pane/native) adjusted styles for when local p is not a moderator (#11349)
+		- feat(rtc-stats) add timestamp to face landmarks when sending to rtc stats
+		- feat(face-landmarks) add API event for providing face landmark data (#11347)
+		- feat(chat/web) fixed 2 byte char duplication (#11332)
+		- feat(conference/native) - hide label in one to one meeting
+		- feat(rn,deps) update React Native to 0.67
+		- feat(stage-filmstrip) Added user configurable max (#11324)
+		- feat(multi-stream) Whitelist config flags for multi-stream.
+		- feat(multi-stream) Add fake participant tile for screen share.
+		- feat(face-landmarks) merge face expressions and face centering (#11283)
+		- feat(participants-pane/native) adjusted styles for participants container
+		- feat(multi-stream) Update config.js.
+		- feat(polls/web) fixed issue with duplicating value to next input on keypress
+		- feat(android) use JitsiMeetView instead of JitsiMeetFragment
+		- feat(rn, thumbnail) Updated indicators on native (#11280)
+		- feat(ios) enable Dropbox recording
+		- feat(gif, rn) Added GIPHY integration on native (#11236)
+		- Updates external-services.lua to latest.
+		- feat(participants/native) - fix joining breakout room
+		- feat(stage) Add stage filmstrip (multiple participants on stage) (#11145)
+		- Adds a hint for cors headers in default prosody config.
+		- feat(participants/native) - updated container styles
+		- feat(reservations) add integration with mod_muc_max_occupants
+		- feat(external-api) Add grantModerator command (#11199)
+		- Use same recommendedBrowsers page for IE and browsers marked in interface_config.js (#10923)
+		- patch for muc_owner_allow_kick in prosody 0.12 (#11142)
+		- feat(filmstrip): Don't reorder in small meetings.
+		- feat(multi-stream-support) Add screenshare as a second video track to the call.
+		- feat(tile-view): Optimize grid dimnsions.
+		- feat(remote-participant-menu) Enhance remote participant menu:
+		- feat(recording) allow highlighting meeting recording moments (#10981)
+		- feat(toolbar) add flag for autohiding while chat open (#11104)
+		- feat(gif) Added GIF support (GIPHY integration) (#11021)
+		- feat(recording) mobile and web ui updates
+		- feat(display-name) remove DisplayNameLabel web
+		- feat(salesforce) - link resources to the current session (#10992)
+		- feat(face-centering) implement centering of faces in a video
+		- Lobby chat (#10847)
+
+	- Fixes:
+		- fix(stageFilmstrip) Disable stage filmstrip by default.
+		- fix(start-silent) Disable AOT mic and unmute notif when start silent
+		- fix(lang) update Italian translation
+		- Skips clearing tracks on conference failed.
+		- fix(multi-stream) update screenshare display name (#11376)
+		- fix(security) hide button if the enabled flag is set to false
+		- fix(rn,config) fix loading config due to broken import
+		- fix(stage-filmstrip) Fix issues (#11360)
+		- Adds testId for context menu items and ids to some components.
+		- fix(avatar): add ZWNJ between initials of letter avatars
+		- fix(lang) update German translation
+		- fix(multi-stream) use highest video quality for screenshare
+		- fix(multi-stream) fix screenshare auto pin bug
+		- fix(ios) fix not marking speaker as a selected device
+		- fix(ios) avoid reapplying config when audio category doesn't change
+		- fix(ios) fix not showing the CarPlay audio interface
+		- fix(android) fix crash when starting foreground service
+		- fix(multi-stream) only create local ss particpant with multi-stream enabled
+		- fix(ios,broadcast-extension) remove unused import
+		- fix(face-landmarks): get face models from node_modules instead of having resoruces folder (#11326)
+		- fix(speaker-stats): get realtime local face expressions (#11334)
+		- fix(rn) remove no longer needed hack
+		- fix(rn,polyfills) remove no longer needed polyfill
+		- Adds undefined check to avoid error.
+		- leaking listeners while waiting on auth dialog (#11288)
+		- fix(lang) update Portuguese Translation
+		- fix(multi-stream) support screenshare tile in stage filmstrip
+		- fix(lang) update Russian translation
+		- fix(follow-me) Make follow me work with stage filmstrip (#11306)
+		- fix(conference) Do not add audio track from screenshare to redux. In audio-only screenshare mode when there is no local audio track from mic present, do not add the audio track from screenshare to redux. Adding the track to redux will sync the track mute state to that of /base/media and show that the mic is unmuted even when that is not the case. Fixes https://github.com/jitsi/jitsi-meet/issues/10706.
+		- fix(filmstrip) Fix resizing on chat toggle (#11305)
+		- fix(highlights) allow highlighting moments if recording is running (#11301)
+		- fix(lang) updated Arabic translation
+		- fix(lang): update french translation
+		- Fixes for highlights mobile (#11209)
+		- fix(large-video) Show the pinned participant on large-video when stage filmstrip is disabled. Fixes an issue where a non-screenshare participant cannot be pinned on stage with filmstrip on stage feature disabled.
+		- fix(salesforce) use salesforce only in the main room (#11245)
+		- fix(ci) make the "dirty git tree" CI failure clearer
+		- fix(thumbnails) Fix recalculate tile dimensions on client resize (#11267)
+		- fix(ios) cycle in dependancies with Xcode 13.3
+		- fix(notifications) Change moderation notifications to medium (#11262)
+		- fix(gif) Keep showing GIF on hover (#11266)
+		- fix(context-menu) Don't overwrite hidden prop (#11265)
+		- fix(background-alpha) Fix setting background opacity
+		- fix(video-layout) fix incorrect import of isStageFilmstripEnabled
+		- fix(rn,lobby) fix lobby not showing up on subsequent tries
+		- fix(settings-dialog) Add back CSS classes used by tests
+		- fix(android,back-button) rework back button handling on Android
+		- fix(rn) Fix native after stage filmstrip merge (#11247)
+		- fix(redux) fix not working with Redux Devtools
+		- fix(debian) support installing the prosody-0.12 upstream package
+		- fix(face-centering) fix face centering on browsers with no offscreencanvas support (#11234)
+		- fix(lang): update french translation
+		- fix(rn,recording) fix recording dialog state not updating
+		- fix(highlight) set highlight button visibility based on record button… (#11215)
+		- fix(highlight) implement custom notification for highlight start recording (#11217)
+		- fix(facial-expressions): base url for models (#11218)
+		- fix(lang) update Dutch translation
+		- fix(rn,recording) fix start button not being enabled
+		- fix(overlay) fix not showing the correct gUM helper text
+		- fix(lobby) display the entire message in the reject notification
+		- fix(mobile/navigation) - fixed bottom color glitch
+		- fix(chat) Fix iOS web chat (#11193)
+		- fix(mobile,navigation) remove end meeting page
+		- fix(mobile/navigation/sdk) - simplified check for sdk
+		- fix(settings-dialog) Fix crash (#11191)
+		- fix(shared-video): Can't click controls issue
+		- removed platformColor  from styles
+		- fix(highlight) fix notifications not disappearing (#11183)
+		- fix(recording) fix incorrect condition for recording notification message (#11167)
+		- fix(highlight) display option to start recording (#11146)
+		- fix(config): add missing toolbar button config (#11165)
+		- fix(css) remove no longer used AUI classes
+		- fix(mobile/navigations) added LoadConfigOverlay to RootNavigator (#11067)
+		- fix(ios,build) use epoch seconds for build number
+		- fix(video-constraints) Fix calculations (#11161)
+		- fix(salesforce): send link notes and default to empty string (#11160)
+		- fix(resziable-filmstrip) Update video constraints on filmstrip resize (#11150)
+		- fix(premeeting): fix undefined breakpoint in media query (#11148)
+		- fix(premeeting): call hooks before any conditional block in ConnectionStatus (#11136)
+		- fix(config) add missing notify.hostAskedUnmute
+		- fix(resizable-filmstrip): grid view paddings.
+		- fix(lang) update french translation
+		- fix(screenshot-capture): send remote participant id instead of jid (#11132)
+		- fix(lang) update Arabic translation
+		- fix(highlight) fix allowing disabled button to execute handler (#11128)
+		- Hides ask to unmute when participant is audio unmuted.
+		- Hides ask to unmute when av mod is disabled. Fixes #11057.
+		- fix(filmstrip) Fix resizable filmstrip with shared video (#11124)
+		- fix(lang) update Portuguese translation
+		- broken link in README.md to the handbook
+		- fix(lang) update Arabic translation
+		- fix(letsencrypt) avoid using hardcoded path
+		- fix(prejoin) Fix layout on reduced height
+		- fix(screensharing) Fix screensharing container width (#11089)
+		- Updates token verification hooks priority. (#11105)
+		- fix(dynamic-branding) fix permissions screen not accounting for custom backgrounds (#11097)
+		- fix(language) Add lang API option
+		- fix(conference) Disable audio-only mode when user switches to screenshare. Make the behavior consistent with enabling camera when the user is audio-only mode. Also fixes an issue where the screenshare preview doesn't appear if it is enabled while the user is in audio-only mode.
+		- fix(lang) update German translation
+		- fix(video-layout):Screenshares not updated on time
+		- fix(dominant-label) Fix dominant speaker stage view label (#11071)
+		- fix(rn,dialogs,auth) fix not showing authentication dialogs
+		- fix(premeeting): Improve pre-meeting responsiveness for screens less than 1000px
+		- fix(popper): resolve @atlaskit/popper to an unbuggy version
+		- fix(dynamic-branding): Extract fqn from public meeting
+
+	- Translation updates:
+		- * language(typescript) actionTypes.js -> actionTypes.ts (#10940)
+
+
+	lib-jitsi-meet
+	- New features:
+		- End-to-end ping updates (#1961)
+		- feat(ts) typescript conversion of MediaDirection
+		- feat(ts) convert service/statistics/constants to typescript
+
+	- Fixes:
+		- Cleanups JitsiConference on reservation and max user failures.  @damencho (#1986)
+		- fix(video-quality) Update frame heights in content-modify for p2p. (#1983)
+		- fix(BridgeChannel): re-send constraints and videoType message after every re-connect. This fixes an issue where the receiver constraints and video type messages are sent on the bridge channel only the first time the ws conn gets re-established.
+		- p2p reject reason (#1840)
+		- fix(presence) Only apply default videoType on video tracks
+		- fix(presence): send presence update when a local track is removed. When a screenshare track is removed in the legacy mode, presence needs to be sent with the muted state and videoType so the remote gets updated.
+		- fix(presence) Parse peer presence in legacy format correctly. When source-name signaling is enabled, get correct peermedia info when the peer sends presence in the legacy format. This fixes an issue where Jigasi users cannot be heard by endpoints that have source-name signaling enabled.
+		- fix(BreakoutRooms) fix checking for isBreakoutRoom early
+		- fix(multi-stream) fix p2p issues with secondary video sources.
+		- fix(SDP) fix unit test for LocalSdpMunger.
+		- fix(conference) Disable p2p between eps running in different SDP modes. Disable p2p between endpoints that are not running in the same SDP mode. The source-add/source-remove handlers assume the mids to follow the same pattern on both self and peer but the mids generated in plan-b mode are different from unified plan mode. Fixes https://github.com/jitsi/jitsi-meet/issues/11100.
+		- fix(multi-stream) Update the <ssrc, source-name> map for p2p as well.
+		- fix(SDP) Always modify the streamId part of msid when source-name signaling enabled. Do this even if the browser provides a non '-' string for streamId since we rely on this to generate the source name.
+		- Set affiliation. (#1966)
+		- fix(multi-stream) Handle source-name based presence updates. Handle presence updates for multiple sources per remote endpoint.
+		- fix(multi-stream) Add default presence for camera tracks in source-name signaling. Also switch to using signalingLayer.getPeerSourceInfo during remote track creation when source-name signaling is used.
+		- fix(multi-stream) Reject m-lines associated with removed sources. We do not want the client to re-use the inactive transceivers that are associated with m-lines for removed remote tracks. Rejecting a m-line on source-remove clears it from the list of available transceivers.
+		- fix(SDP) Extract the stream id from msid for source-name generation.
+		- fix(multi-stream) Do not init ParticipantConnectionStatusHandler when source-name signaling is enabled.
+		- fix(TPC) Send presence before signaling for SS tracks. This is needed for the track to be identified as a desktop track on the remote peer when the JitsiRemoteTrack is created. Fixes https://github.com/jitsi/lib-jitsi-meet/issues/1649.
+		- fix(multi-stream) Add video tracks sequencially. If there are more than one video track at pc creation time, add them sequencially to avoid renegotiation loop.
+		- fix(TPC) Update the local SSRC cache when a track is replace with another. Fixes an issue where the local stats are not emitted in Unified plan after a track replace.
+		- fix(multi-stream) Check if the flags config options is defined.
+		- fix(multi-stream-support) Support muting of desktop track.
+		- fix(build) use path.join in webpack-shared.config
+		- fix(build,ts) clean before building
+
+- [jicofo 1.0-874](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_7210)
+	- New features:
+		- feat(ColibriV2): source names capability (#894)
+		- Add an option to use presence instead of sending health checks. (#897)
+		- Default to strip-simulcast=true. (#887)
+
+	- Fixes:
+		- Reorder the java dependencies in control file.
+		- granting ownership (#896)
+		- fix(source names): default name format (#890)
+
+- [jitsi-videobridge 2.1-665-g3a90ccdc](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_7210)
+	- New features:
+		- feat(multi-stream): endpoint ID compatibility (#1842)
+		- Add health status to presence. (#1839)
+
+	- Fixes:
+		- Add statsId missing in logs (colibri2). (#1865)
+		- Catch exceptions parsing RED, log details (JMT) (#1862)
+		- timestamp handling in generic projection. (#1843)
+		- cache video type separately (#1861)
+		- Fixes for JSON serialization
+		- Log and return an error if a Relay is used without websockets configured. (#1853)
+		- Reorder the java dependencies in control file.
+		- Read relayId from config directly. (#1841)
+		- Closing the relay WS immediately upon initial connection. (#1840)
+		- Endpoint.wantsStatsFrom in multi-stream mode. (#1834)
+		- Fix usage of ByteBuffer on JRE8 (when build on 9+) (#1830)
+		- Take relay packet rate into account for stress. (#1825)
+		- Fix ConcurrentModificationExceptions in the pipeline (update JMT). (#1824)
+		- Fix NPE (update ice4j). (#1823)
+
 ##  2.0.7001 (2022-03-07)
 - [jitsi-meet 1.0.5913](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7001)
 	- New features:
