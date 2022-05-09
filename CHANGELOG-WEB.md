@@ -2,6 +2,116 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.7287 (2022-05-09)
+- [jitsi-meet 1.0.6155](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7287)
+	- New features:
+		- feat(load-test) split to a separate repository
+		- feat(load-test) make it possible to start multiple load-test clients from the same tab
+		- Adds a prosody config for JaaS customers, disabled by default.
+		- feat(welcome) update background
+		- feat(local-recordings) drop old "local recordings" implementation
+		- feat(rn,ui) use dark gray for screen headers
+		- feat(external-api) add breakout room configs to hide auto assign and footer menu buttons (#11443)
+		- feat(deps,rn) update React Native to version 0.68.1
+		- Drops nginx dependency for turnserver config.
+		- feat(config) add testing.setScreenSharingResolutionConstraints to config.js
+		- feat(lobby/native) LobbyScreen and LobbyChatScreen
+		- feat(external-api): add toggle subtitles command (#10070)
+		- feat(jwt) refactor token authentication plugin to use new luajwtjitsi version
+		- feat(tile-vew): Calculate maxColumns dynamically
+
+	- Fixes:
+		- fix(rn,reactions) don't show raise hand button in menu if disabled
+		- fix(ios) download WebRTC with bitcode when making an SDK release
+		- Stage filmstrip (#11495)
+		- Updates cloud-api.swagger phoneNumberList endpoint.
+		- Updates cloud-api.swagger phoneNumberList endpoint.
+		- fix(participant-pane) Do not show virtual SS as a separate participant.
+		- fix(large-video) Fix an infinite loop with source name signaling enabled (#11486)
+		- fix(recording) use generic icon for cloud recording
+		- fix(screenshare) use selector for getting screenshare owner display name (#11478)
+		- fix(ios) build SDK releases with bitcode
+		- fix(rn,dialin-summary) simplify navigation
+		- fix(rn,screen-sharing) don't disable button when in audio-only mode
+		- fix(audio-only) Do not create a new track for audio-only changes. Now that screenshare is permitted when a user is in audio-only mode, do not create a new video track if it doesn't exist when audio-only mode is automatically disabled. New tracks should only be prompted by user action such a camera unmute or start screenshare. Fixes https://github.com/jitsi/jitsi-meet/issues/11460.
+		- fix(lang) update Spanish translation
+		- fix(rn,lobby) use a header for the main lobby screen
+		- fix(rn,lobby) match button style
+		- fix(rn,speakerstats) fix not rendering stats
+		- Fixes loading recommendedBrowsers page. (#11465)
+		- fix(auth) fix WaitForOwnerDialog not vanishing
+		- fix(ios) sync Podfile.lock
+		- fix(giphy,privacy) remove custom dynamic fonts
+		- fix(giphy,privacy) disable pingback
+		- fix(dialog) remove obsolete prop no longer used in web
+		- fix(virtual-background) don't treat timeout as fatal failure
+		- Fix(multi-stream)  fix an issue where avatar shows up occasionally.
+		- Fixes breaks apache2.
+		- fix(config) add a link to config options docs
+		- fix(breakout-rooms) reset rooms when conference is left or failed (#11447)
+		- fix(tile-view):Recalculate on window height change
+		- fix(lang) update Russian translation
+		- fix(avatar) Center phone icon in participants pane avatars (#11440)
+		- disabled connectStatusIndicatorIcon cause video not displayed (#11377)
+		- Fixes let's encrypt for latest ubuntu versions. (#11434)
+		- fix(premeeting) Detach premeeting toolbar buttons visibility - if hiddenPremeetingButtons is undefined, toolbarButtons overwrite decides what buttons to show - if hiddenPremeetingButtons is empty array, all buttons are show on premeeting screen regardless of toolbarButtons - if hiddenPremeetingButtons hides some buttons, only those buttons will be hidden regardless of toolbarButtons overwrite
+		- fix(always-on-top) Fix audio mute button disabled status
+		- Fixes Let's Encrypt script. (#11430)
+		- fix(device-selection) Enable device selection on mobile Safari. (#11427)
+		- fix(lastN) fix last N getting stuck on 1
+		- fix(lang) update Traditional Chinese translation
+		- fix(lang) update Arabic translation
+		- import and naming
+		- Fixes
+		- fix(lang) update Turkish translation
+		- fix(prejoin):Disable device selection on iosSafari
+		- fix(video-layout): functions imports.
+		- fix(debian) make sure we install the latest version of luajwtjitsi
+		- fix(debian) update Prosody related dependencies
+		- fix(hangup-button) Add to notify toolbar button clicked
+		- fix(multi-stream) add screenshare display name to i18n
+		- fix(multi-stream) Do not show join notifications for SS tiles.
+
+
+	lib-jitsi-meet
+	- New features:
+		- add AV1 mime type (#1990)
+		- feat(ssrc-rewriting) Add a flag to signal support for ssrc re-writing to Jicofo.
+		- Add an option to set bogus resolution constraints for getDisplayMedia. (#1991)
+
+	- Fixes:
+		- fix(stats) Emit stats using source name as key (#1996)
+		- fix(presence) Send a presence update on every track replace operation. Removing and adding a track back to the conference doesn't generate new source signaling all the time so presence needs to be updated every single time. Fixes https://community.jitsi.org/t/screen-share-doesnt-work-a-second-time-on-p2p/114024 and possibly https://github.com/jitsi/lib-jitsi-meet/issues/1997.
+		- fix(multi-stream) Set the source name of replaced track before configuring it. With just source-name enabled, set the source name of the replaced track before configuring the encodings, this fixes an issues where the sender constraints are not applied on the p2p connection because the source name is undefined.
+		- fix(RTC) Add AV1 to CodecMimeType unit test
+		- fix(BrowserCapabilities) Fallback to plan-b for Electron clients that have chromium ver < 96.
+		- fix(multi-stream) Inject multiple SIM groups on Firefox when multiple sources are added.
+		- fix(browser-support) Enable device selection in mobile Safari. With https://bugs.webkit.org/show_bug.cgi?id=179363 being fixed, we should now be able to switch between devices in call.
+		- Cleanups chat room on destroy.
+		- fix(multi-stream) Send the initial session-accept and then add the secondary video tracks when a session is re-created (#1987)
+
+- [jicofo 1.0-877](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_7287)
+	- New features:
+		- Add option to disable jvb version match. (#911)
+
+	- Fixes:
+		- Prevent jetty from trying to register ShibbolethLogin (#914)
+		- ChatRoomRoleManager's debugState. (#908)
+		- Clears ChatRoom instance on destroy. Fixes #905.
+		- Makes destroy reason optional.
+
+- [jitsi-videobridge 2.1-681-g3544ed05](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_7287)
+	- New features:
+		- Updates dependencies(jitsi-srtp) and support libssl3, drops java8. (#1874)
+
+	- Fixes:
+		- Bumps jitsi-media-transform, BC 1.70 and fix support for DTLS 1.0.
+		- Fix shutting down with no participants. (#1883)
+		- Support null values in custom EndpointMessage fields. (#1880)
+		- Include feedback sources with every "create endpoint" response (#1877)
+		- Increase default health check timeout. (#1872)
+		- and add more docs for octo. (#1869)
+
 ##  2.0.7210 (2022-04-18)
 - [jitsi-meet 1.0.6091](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7210)
 	- New features:
