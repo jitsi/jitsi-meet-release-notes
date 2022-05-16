@@ -1,5 +1,53 @@
 # Mobile SDKs Changelog
 
+# 5.1.0 (2022-05-16)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-5.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-5.1.0)
+
+## Changes
+
+- Add Car Mode
+- Added GIPHY integration
+- Revamp lobby UI
+- Update React Native to version 0.68.1
+- Update WebRTC to version M100
+- Stop reordering tiles in small meetings
+- Don't show raise hand button in menu if disabled
+- Don't disable screen-sharing button when in audio-only mode
+- Hide display name label in one to one meeting
+- Updated UI for thumbnail indicators
+- Fix last N getting stuck on 1
+- Fix private chat messages getting stuck
+- Fix navigation getting stuck in the connecting state
+- Fix lobby not showing up on subsequent tries
+- Fix joining breakout rooms
+- Fix participant list not taking enough space
+- Fix recording start button not being enabled
+- UI tweaks and fixes
+- Updated translations
+
+### Android
+
+- Fix crash when starting foreground service
+- JitsiMeetActivity now uses JitsiMeetView instead of JitsiMeetFragment
+- Fix back button behavior
+
+Relevant native dependencies:
+
+- react-native: 0.68.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-5.0.2...android-sdk-5.1.0)
+
+### iOS
+
+- Build SDK releases with bitcode
+- Fix not marking speaker as a selected device
+- Fix not showing the CarPlay audio interface
+- Fix cycle in dependencies with Xcode 13.3
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-5.0.2...ios-sdk-5.1.0)
+
 # 5.0.2 (2022-03-29)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-5.0.2)
