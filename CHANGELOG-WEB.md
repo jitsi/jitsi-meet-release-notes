@@ -2,6 +2,326 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.7416 (2022-06-16)
+- [jitsi-meet 1.0.6239](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7416)
+	- New features:
+		- feat(navigation) style updates
+		- feat(mobile/navigation) - updated shared doc animation
+		- feat(mobile/navigation) - removed stack dependency and updated animation options
+		- feat(mobile/navigation) - updated to native stack navigators
+		- feat(deployment-urls): Whitelist deploymentUrls; remove JaaS restriction
+		- Fix display name in prejoin stealing focus.
+		- Fix luajwtjitsi deependencies.
+		- feat(local-video-recording) Allow users to record the meeting locally (#11338)
+		- feat(build) make sure we error out if patch-package fails
+		- feat(prejoin) allow disabling prejoin display name editing (#11575)
+		- feat(dynamic-branding) add initial mobile SDK customization
+		- feat(undock) expose buttons for docking / undocking iframe (#11560)
+		- feat(toolbox) drop MuteEveryoneButton and MuteEveryonesVideoButton
+		- Add name overwrite API (#11543)
+		- feat(react) removed unused native components
+		- feat(notifications) add ability to disable specific notifications
+		- feat(mobile/navigation) changed navigation container background color
+		- enable audio settings menu for Firefox (#11522)
+		- Moves luajwtjitsi in jitsi-meet. (#11501)
+		- feat(config) add gravatar config object (#11509)
+		- feat(face-landmarks): integrate human library
+		- feat(RN-filmtrip) stop reordering small meetings
+		- feat(carmode) Add carmode screen
+		- feat(tile-view): expand tiles from last row.
+
+	- Fixes:
+		- fix(local-recordings) fix for browsers not supporting MediaRecorder
+		- fix(lobby/native) removed nav button overwrite
+		- fix(lobby/native) style updates and local video fix
+		- fix(face-landmarks): filter face detections based on detection score (#11658)
+		- fix(prejoin) fix avatar centering (#11655)
+		- Speaker stats are not delivered for the breakout rooms (#11644)
+		- fix(presenter): Broken stop SS + presenter.
+		- fix(lang): logout question asks to stop the conference A minor wording change to prevent confusion: On logout one is asked whether to stop the conference but the conference is only left by the participant.
+		- fix(ios, pip) make initialPositionInSuperView property public
+		- fix(prejoin) fix styling of avatar (#11629)
+		- fix(rn, chat): localize the chat button label
+		- fix(lang) update Arabic translation
+		- fix(local-recording) Fix native (#11622)
+		- fix(android) fix incorrect colors on MIUI devices
+		- fix(multi-stream) RN Add listeners for track streaming status updates on large-video.
+		- fix(giphy-integration) Fix input issues (#11601)
+		- fix(lang) update Portuguese translation
+		- fix(prejoin,config) move hidePrejoinDisplayName to the prejoin section
+		- fix(face-landmarks): human helper tensor disposal and async functions (#11596)
+		- fix(ios) fix not using the loudspeaker by default
+		- fix(recording/native) Button import missing
+		- fix(lang) update Catalan translation
+		- fix(raise-hand) Fix multiple raise hand from notification (#11586)
+		- fix(filmstrip) Add handlers for track streaming status on RN. (#11584)
+		- fix(deviceSelection):prejoin-update current device
+		- fix(device-selection): Handle properly on prejoin
+		- fix(device-selection): disable preview for ios
+		- fix(device-selection):iOS Safari disable previews
+		- fix(app) fix broken import
+		- fix(recent-list) do not store room when inside an iframe
+		- fix(ios) fix PiP resizing and positioning
+		- fix(self-view) Add Show self view button in overflow menu (#11568)
+		- fix(multi-stream): Add a virtual SS tile on RN. Add a second virtual SS tile on RN when a remote participant that has multi-stream mode enabled starts a screenshare.
+		- fix(mutli-stream): Use the default display name if none is available. This fixes an issue where the virual SS tile is not created if the user sharing the screen doesn't have a display name set.
+		- fix(multi-stream): fix virtual screenshare participant's thumbnail. Add a screenshare status indicator at the bottom. Fix the font and size of the resolution/fps stats so that it matches with that of the other thumbnails.
+		- fix(av-moderation,breakout-rooms) disable controls on breakout rooms
+		- fix(participants-pane,video-menu) fix incorrect selector usage
+		- fix(av-moderation) mark as unsupported while in a breakout room
+		- fix(face-landmarks): dispose tensors to avoid memory leaks
+		- fix(native-notifications) Show notifications on max 2 lines
+		- fix(filmstrip) Do not render filmstrip on prejoin/lobby
+		- fix(tile-view): scrollbar size.
+		- fix(chat/native) we need to dispatch close and open chat
+		- fix(face-landmarks) set explicit model paths
+		- fix(chat/native) private message replies (#11521)
+		- fix(video-menu/native) wrong import path
+		- fix(stage-filmstrip): resize.
+		- fix(stats) split stats for camera and screenshare in multi-stream mode (#11475)
+		- fix(audio-share): mix newly created audio track with screen audio (#11325)
+		- fix(lang) update Arabic translation
+		- fix(lang) update main.json Syntax Correction (#11511)
+		- fix(stage-tile-view): crash when pinning
+		- fix(notifications) remove unused isDismissAllowed prop
+		- fix(rn,navigation) wait until the root navigator is initialized
+		- fix(av-moderation) use a consistent UID for ask to unmute notifications
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(RTC) drop no longer supported PC media constraints
+		- Updates deployment info key for release and push to analytics.
+		- Handles release number coming from backend.
+		- Adds a flag runInLiteMode useful for testing.
+
+	- Fixes:
+		- fix(SignalingLayer): Skip checking for last presence if the client doesn't join muc.
+		- fix(TPC) Stop munging remote desc for imploding the SIM groups. Jicofo by default now strips the simulcast SSRCs and sends only the primary SSRC and RTX to all the receiving endpoints in the call. Therefore remote SDP munging is not required on the clients anymore.
+		- fix(presense) don't lose prev presenceChanged value
+		- fix(docs) improve documentation that jwt works on websocket
+		- fix(JitsiConference) log a warning instead of an error is p2p fails
+		- fix(types) remove setSuspendVideo declaration
+		- fix(docs) Added docs on how to define tokens (#2018)
+		- fix(deployment-info) Prevent error when setting shard and region (#2017)
+		- fix(RTC): Add function declaration to JitsiTrack. RN clients throw a function undefined error otherwise.
+		- fix(device-change): enable on iOS Safari < 15.4
+		- fix(SDP): Reset sources to MSID map for plan-b clients. When source-name signaling is enabbled on plan-b clients, the sources to MSID map needs to be cleared after every transformation since browser in plan-b mode produces a new set of SSRCs and trackID when a track is removed and new track is added to the peerconnection. This fixes an issue where the track index in the source-name gets incremented after a track replace operation.
+		- fix(multi-stream): Fix local SSRC cache to include multiple video streams. (#2006)
+		- fix(device-selection) Support multiple audio inputs in Firefox 101 (#1988)
+		- fix(rtc): fix local track removeTrack promise conference check (#1797)
+
+- [jicofo 1.0-899](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_7416)
+	- New features:
+		- Re-invite participants when a bridge goes to SHUTTING_DOWN. (#935)
+		- Add health status to stats. (#919)
+		- Update Jetty to Jetty 11 and Jersey to Jersey 3. (#918)
+
+	- Fixes:
+		- Do not re-invite participants when the selected bridge is unavailable. (#933)
+		- typo - adminsitrator -> administrator (#932)
+		- Fail early and log when selection results in using octo with relay-id=null. (#930)
+		- colibri2 error response handling (jitsi-xmpp-extensions, jicoco). (#924)
+		- Fix a deadlock when CSM calls bridgeRemoved. (#929)
+		- Reduce the core size of the scheduled pool to 3. (#926)
+		- Fix broken Colibri2SessionManager state. (#925)
+		- Fix detection of audio mute support. (#920)
+
+- [jitsi-videobridge 2.2-8-g3c9d3c52](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_7416)
+	- New features:
+		- Add a stat for endpoints with suspended sources. (#1910)
+		- Add the source's video type to debugState. (#1907)
+		- Handle colibri2 "expire conference" requests. (#1891)
+		- Update Jetty to Jetty 11 and Jersey to Jersey 3. (#1889)
+		- Upgrade to BC 1.70 and fix support for DTLS 1.0 (#413)
+		- Add stats for number of packets with VAD. (#387)
+		- Add mediaType to IncomingSsrcStats.
+		- Keep track of "active duration" per SSRC.
+		- Expose VideoParser stats via TransceiverStats, reorganize.
+		- add VideoType to MediaSourceDesc (#379)
+		- Expose EndpointConnectionStatsListener from Transceiver. (#364)
+		- feat(MediaSourceDesc): add source name
+		- Make RtpLayerDesc#hasZeroBitrate open. (#358)
+		- Keep track of sent packet counts by media type. (#356)
+		- Add more stats to VideoBitrateCalculator. (#338)
+		- Code coverage with JaCoCo and Codecov. (#89)
+		- Code coverage with JaCoCo and Codecov. (#335)
+		- add TransceiverStats.toJson(). (#316)
+		- Keep track of packet loss per endpoint. (#302)
+		- Increase bucket size for rate trackers (decrease memory use).' (#305)
+		- Add and use BitrateTracker. (#299)
+		- Add an option to simulate packet loss. (#292)
+		- Negotiate GCM for DTLS/SRTP. (#290)
+		- Support for RED streams. (#288)
+		- Add support for RED (RFC2198) packets. (#85)
+		- Add a feedbackComplete interface to BandwidthEstimator. (#291)
+		- Adds payload verification.
+		- Adds a pli builder.
+		- Aggregates Node stats.
+		- Exposes the bandiwdth estimator stats.
+		- Replaces MediaFormat with a native PayloadType.
+		- Checks the remote DTLS certificate against the fingerprints fro… (#1)
+
+	- Fixes:
+		- Expire RelayedEndpoint when removing it. (#1909)
+		- Fallback to bind-address if relay-id is missing. (#1908)
+		- local endpoint count (prevent premature shutdown). (#1906)
+		- Call exitProcess() when done. (#1627)
+		- Add colibri2 error inside the "error" element. (#1897)
+		- reading relay (#1895)
+		- Count secure-octo conferences as octo conferences. (#1896)
+		- Don't generate 65535 NACKs when re-receiving the highest sequence number. (#415)
+		- Do not fail health when queried immediately after init (jicoco). (#1886)
+		- fixed proper DTLS 1.0 handshake for client & server side (#414)
+		- RED exception. (#101)
+		- ktlint errors.
+		- Catch RED exceptions, log details.
+		- ByteArray.toHex (do not read past the end of the array) (#100)
+		- Fix a ConcurrentModificationException
+		- Fix ConcurentModificationException
+		- types in Instant methods, for Java 8 compatibility. (#394)
+		- construction of TCC packets from Instants. (#392)
+		- RtpEncodingDesc.copy() when there are no layers. (#390)
+		- ConcurrentAccessException in RemoteBandwidthEstimator. (#388)
+		- fix(red): Do not encode packets with an invalid timestamp offset (#385)
+		- fix(red): Throw when encoding packets with an invalid timestamp offset (#98)
+		- Fix accessing stats for RR generation. (#381)
+		- Use the clock instead of System.currentTimeMillis. (#380)
+		- fix(MediaSourceDesc.copy): include source name (#377)
+		- fix throw on VP9 simulcast (#376)
+		- Read the "supportsTcc" flag at packet processing time. (#372)
+		- warnings: use refernce equality for comparing buffers, use Kotlin foreach not Java. (#371)
+		- Fixes to avoid generating overly-large RTCP packets. (#368)
+		- Fixes to avoid generating overly-large RTCP packets. (#97)
+		- Add missing syncronizations to PacketCache. (#360)
+		- some Kotlin 1.5 deprecations and warnings. (#95)
+		- Expire the first incoming estimate after a period of inactivity. (#353)
+		- Bump jitsi-srtp version. (#348)
+		- an IllegalStateException in ResumableStreamRewriter. (#347)
+		- VP9PayloadDescriptor.getSize (#344)
+		- outdated comment on PacketInfoQueue. (#343)
+		- Fix the check for "active video" in the initial grace period. (#337)
+		- Do not aggregate per-SSRC stats (fix a leak).
+		- Synchonize access to the packet cache.
+		- Do not cache packets unless the RED payload type is set.
+		- DtlsStack threading when actAsServer()/actAsClient() is called after start(). (#312)
+		- Bump jitsi-srtp: link with openssl 1.1.x. (#307)
+		- Fix double return of buffers to the pool. (#306)
+		- Precision fixes (#230)
+		- correctly handle RtpPacket.padding = 0. (#86)
+		- enumerate encodings, not layers, in MediaStreamSources debug. (#295)
+		- a race where DTLS application data packets could get "stuck" temporarily. (#293)
+		- Use the correct RetransmissionRequester. (#274)
+		- MediaSourceDesc.getBitrateBps. (#269)
+		- various buffer pool leaks (#251)
+		- tcc generation (#212)
+		- the header length calculation (#72)
+		- ktlint (#181)
+		- Fixes setMediaStreamTracks. (#180)
+		- RateUtils.howMuchCanISendAtRate for fractional durations. (#177)
+		- Fixes getTL0PICIDX. (#168)
+		- Fixes updating the RTT (s -> ms). (#160)
+		- RtpHeader.setMarker not to clobber payload type. (#51)
+		- bandwidth plusAssign. (#158)
+		- referring to stats before it's been assigned (#138)
+		- Fixed NPE due to String! to String conversion. (#136)
+		- reversed logic disabling send-side replay protection.
+		- typo
+		- issue with extracting pli/fir packet
+		- linter error
+		- fixes for test harness
+		- a bug in rtx sending, add unit test
+		- Fixes generating TCC feedback.
+		- Fixes TCC sequence number wrapping
+		- license headers. (#98)
+		- license headers.
+		- Saves the latest timestamp.
+		- Runs the bandwidth estomators periodically.
+		- Fix saving the highest seq num.
+		- fixes sequence number handling around the boundary
+		- fixes misleading log
+		- Fixes the num_cached_packets stat.
+		- fixes regression in encoding bitrate calculation (#79)
+		- redundant let usage
+		- Compare expected values as packets.
+		- comparing Packet contents.
+		- Fix reading the SRTCP index.
+		- a bug when updating the last extended high seq num
+		- comments
+		- redundant let usage
+		- fixes rounding bug
+		- fixes a warning
+		- fixes typo
+		- fixes stats snapshot handling and fraction lost computation
+		- Take offset into account. (#75)
+		- Don't use an instance field for the logger.
+		- Retain the CertificateInfo in DtlsStack.
+		- fixes warnings
+		- Increments counters.
+		- Fixes reading the source SSRC for keyframe requests.
+		- and use FCI_OFFSET, set media source SSRC to 0 per the spec
+		- Building PLI packets
+		- Fixes warnings, removes unused code.
+		- Fixes shiftPayloadRight.
+		- fixes video padding packets (#61)
+		- Fixes stripping of receiver reports from SRs.
+		- fixes style
+		- fixes style
+		- Fixes rtcp handling (#54)
+		- Does not access the header while the offset is not up to date.
+		- style issue
+		- Fixes the offset in cloneBuffer(), brings back a comment.
+		- Fixes klint errors.
+		- tcc rollover issues in tccgenerator
+		- bugs in padding packet
+		- totalDelay calculation (addEvent already does the subtraction).
+		- some compiler recommendations
+		- Fixes the merging of tracks.
+		- packet type in SrtpSample
+		- bug in shiftPayloadRight, get rid of incorrect shiftPayloadLeft, fix RtxPacket implementation
+		- check for padding packets
+		- ext parsing
+		- Fix parsing compound RTCP when offset!=0.
+		- Takes the base offset into account when parsing Sender Info.
+		- Takes the buffer header into account in RtcpByePacket.
+		- Fixes setVersion (clears the bits before applying "or").
+		- not taking baseOffset into account in RtpHeader
+		- bug in shiftPayloadRight (and typo)
+		- Fixes setting the packet quality index. (#18)
+		- 2 bugs related to nack packets:
+		- the criteria for sending a tcc feedback packet:
+		- senderssrc setter
+		- a bug in calculating TCC deltas
+		- some issues with exposing bytebuffers.  we need to make sure to duplicate when we expose them so that the positions (as the buffers are read, etc.) don't conflict with others calls.
+		- exclusivepathdemuxertest to work with new packetpredicate
+		- a bug in isNextAfter
+		- the PacketHandler interface (make it simpler)
+		- an incorrect cast
+		- a bug when creating an FIR packet
+		- compilation with latest nlj
+		- a bug in safeShutdown executor helper
+		- log level in downlinkstreamstats
+		- some issues with SRs:
+		- a bug in detecting seqnum rollover
+		- to nack packets
+		- a concurrent modification issue
+		- fixes related to translation between RawPacket and Packet in encrypt/decrypt nodes
+		- 'accessing non-final member in ctor' issue
+		- exception used in bitbuffer
+		- an issue with updating the last sr timestamp.  add logic to shutdown the rr generator when the receiver is stopped
+		- fixes for RR packets
+		- fixes for bandwidth estimation
+		- fixes to rtcpiterator test
+		- incorrect interpretation of audio level extension
+		- a bug in RtxPacket#getBuffer
+		- an incorrect assumption about FIR packets, fix the payload type used for FIRs, fix some size calculation issues. FIRs now being sent successfully to chrome.
+		- a bug with setting the FCI information in an rtcpfb packet (it was being written at the wrong offset)
+		- a bug in tcc packets (disagreement in the amount of deltas between size and getBuffer)
+		- the getMbps helper calculation to allow better granularity.  fix a concurrent modification issue when accessing stats.
+		- an issue with tcc extension uri comparison
+		- the way we create RawPacket from buf in srtp modules
+		- an issue in rtp receiver where we'd busy-poll on the incoming queue forever if it was empty
+
 ##  2.0.7287 (2022-05-09)
 - [jitsi-meet 1.0.6155](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7287)
 	- New features:
