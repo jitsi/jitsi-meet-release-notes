@@ -2,6 +2,58 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.7439 (2022-06-17)
+- [jitsi-meet 1.0.6260](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7439)
+	- New features:
+		- feat(mobile/navigation) updated screens that have footer
+		- feat(prejoin) native prejoin screen and other navigation updates
+		- feat(rn) send isAudioMuted on conferenceEvent
+		- feat(extension-banner) Show edge extension when edge browser detected
+		- feat(RTC): report conference start timestamp through rtcstats (#11646)
+		- feat(rn,dynamic-branding) add support for didPageUrl and inviteDomain
+		- feat(mobile/navigation): added screen orientation based on Platform
+		- feat(welcome/native): updated settings name placeholder example text
+
+	- Fixes:
+		- Fixes navigating back to welcome page after clicking cancel on login window.
+		- Hides pre join screen in few login window cases.
+		- fix(pinning) Fix pinning (#11693)
+		- fix(carmode) Force potrait mode, add connection indicator
+		- When adding a room param to urls check for previous params. (#11607)
+		- fix(face-landmarks): work only when one face is detected (#11661)
+		- fix(android) parse initial isAudioMuted when starting JitsiMeetOngoingConferenceService
+		- fix(local-recording) Don't use setCaptureHandle when in iframe (#11687)
+		- fix(keyboard-shortcut) Fix error on number keypress (#11680)
+		- fix(rn,dynamic-branding) filter out gradients
+		- fix(local-recording) Add framerate
+		- fix(rn,bottom-sheet) fix styling after refactor
+		- fix(tile-view, rn) Fix landscape mode tile view
+		- fix(video-layout) fix usage of disableTileView
+		- fix(rn,bottom-sheet) fix scroll
+
+
+	lib-jitsi-meet
+	- New features:
+
+	- Fixes:
+		- fix(SS):Don't send source-remove/add for FF
+		- fix(SS): missing remote screenshare
+		- fix(breakout-rooms) Change callstats confID for breakout rooms
+		- fix(ts) rebuild to fix types after jsdoc changes
+		- fix(e2ee) adds promise to map when sending key onParticipantPropertyChanged
+		- fix(e2ee) keeps the initial key when decryption error
+
+- [jicofo 1.0-900](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_7439)
+	- New features:
+
+	- Fixes:
+		- Do not count bridges SHUTTING_DOWN as lost. (#938)
+
+- [jitsi-videobridge 2.2-9-g8cded16e](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_7439)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.7416 (2022-06-16)
 - [jitsi-meet 1.0.6239](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7416)
 	- New features:
