@@ -1,5 +1,44 @@
 # Mobile apps Changelog
 
+# 22.2.0 (2022-05-16)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.2.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.2.0)
+
+## Changes
+
+### Common
+
+- Add Car Mode
+- Added GIPHY integration
+- Revamp lobby UI
+- Stop reordering tiles in small meetings
+- Don't show raise hand button in menu if disabled
+- Don't disable screen-sharing button when in audio-only mode
+- Hide display name label in one to one meeting
+- Updated UI for thumbnail indicators
+- Fix private chat messages getting stuck
+- Fix lobby not showing up on subsequent tries
+- Fix joining breakout rooms
+- Fix participant list not taking enough space
+- Fix recording start button not being enabled
+- UI tweaks and fixes
+- Updated translations
+
+### Android
+
+- Fix crash when starting foreground service on some devices
+- Fix back button behavior
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-22.1.0...android-22.2.0)
+
+### iOS
+
+- Fix not marking speaker as a selected device
+- Fix not showing the CarPlay audio interface
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-22.1.0...ios-22.2.0)
+
 # 22.1.0 (2022-03-22)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.1.0)
