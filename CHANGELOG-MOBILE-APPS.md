@@ -1,5 +1,44 @@
 # Mobile apps Changelog
 
+# 22.3.0 (2022-06-25)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.3.0)
+
+## Changes
+
+### Common
+
+- Add ability to move participants across rooms without being in them
+- Make sure Picture-in-Picture is only enabled in the conference screen
+- Car Mode improvements: force portrait mode, add connection indicator
+- Add a pre-join screen
+- Fix landscape mode tile view
+- Fixed janky scrolling in bottom sheets 
+- Update the lobby UI
+- Use native navigation components
+- Add show self-view button in overflow menu (#11568)
+- Update WebRTC to version 100
+- Navigation improvements
+- Fix incorrect handling of private chat replies
+- Fix video context sheet not displaying
+- Numerous UI tweaks and improvements
+- Updated translations
+
+### Android
+
+- Fix incorrect colors on MIUI 12 devices
+- Fix initial muted state in the ongoing notification
+- Fix crash starting foreground service
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-22.2.0...android-22.3.0)
+
+### iOS
+
+- Fix not using the loudspeaker by default
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-22.2.1...ios-22.3.0)
+
 # 22.2.0 (2022-05-16)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.2.0)
