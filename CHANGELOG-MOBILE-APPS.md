@@ -9,19 +9,19 @@
 
 ### Common
 
+- Add a pre-join screen
 - Add ability to move participants across rooms without being in them
+- Add show self-view button in overflow menu
 - Make sure Picture-in-Picture is only enabled in the conference screen
 - Car Mode improvements: force portrait mode, add connection indicator
-- Add a pre-join screen
-- Fix landscape mode tile view
-- Fixed janky scrolling in bottom sheets 
 - Update the lobby UI
 - Use native navigation components
-- Add show self-view button in overflow menu (#11568)
 - Update WebRTC to version 100
-- Navigation improvements
+- Fix landscape mode tile view
+- Fix janky scrolling in bottom sheets 
 - Fix incorrect handling of private chat replies
 - Fix video context sheet not displaying
+- Navigation improvements
 - Numerous UI tweaks and improvements
 - Updated translations
 
