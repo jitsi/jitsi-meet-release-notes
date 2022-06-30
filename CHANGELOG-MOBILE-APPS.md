@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# 22.3.1 (2022-06-30)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.3.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.3.1)
+
+## Changes
+
+### Common
+
+- Fix broken recording dialog
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-22.3.0...android-22.3.1)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-22.3.0...ios-22.3.1)
+
 # 22.3.0 (2022-06-25)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.3.0)
