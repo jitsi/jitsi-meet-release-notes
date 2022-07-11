@@ -1,5 +1,49 @@
 # Mobile SDKs Changelog
 
+# 6.0.0 (2022-07-08)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-6.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-6.0.0)
+
+## Changes
+
+- BREAKING: External API scope has been removed
+- Add a pre-join screen
+- Add ability to move participants across rooms without being in them
+- Add show self-view button in overflow menu
+- Make sure Picture-in-Picture is only enabled in the conference screen
+- Car Mode UI improvements
+- Update the lobby UI
+- Update WebRTC to version 100
+- Fix landscape mode tile view
+- Fix janky scrolling in bottom sheets 
+- Fix incorrect handling of private chat replies
+- Fix video context sheet not displaying
+- Navigation improvements
+- Numerous UI tweaks and improvements
+- Updated translations
+
+### Android
+
+- BREAKING: JitsiMeetFragment has been removed
+- BREAKING: Removed delegate methods, BroadcastReceiver is the only supported event mechanism now
+- Fix incorrect colors on MIUI 12 devices
+- Fix initial muted state in the ongoing notification
+- Fix crash starting foreground service
+- Set proper theme for JitsiMeetActivity
+
+Relevant native dependencies:
+
+- react-native: 0.68.1
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-5.1.0...android-sdk-6.0.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-5.1.0...ios-sdk-6.0.0)
+
 # 5.1.0 (2022-05-16)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-5.1.0)
