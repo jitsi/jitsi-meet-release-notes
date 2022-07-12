@@ -1,5 +1,30 @@
 # Mobile apps Changelog
 
+# 22.4.0 (2022-07-11)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.4.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.4.0)
+
+## Changes
+
+### Common
+
+- Numerous UI fixes and improvements
+- Show more tiles in landscape mode
+- Make sure PiP is only available while in a meeting
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-22.3.1...android-22.4.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-22.3.1...ios-22.4.0)
+
 # 22.3.1 (2022-06-30)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.3.1)
