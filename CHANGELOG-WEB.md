@@ -2,6 +2,159 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.7577 (2022-08-02)
+- [jitsi-meet 1.0.6380](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7577)
+	- New features:
+		- feat(old-client-notification) bump notice for anything older than 2022
+		- feat(config) allow dangling comma
+		- feat(base-chat): conditioned should set responder
+		- feat(noise-suppression): Add noise suppression effect. (#11547)
+		- feat(tokens) Add new tokens (#11881)
+		- feat(ui-components) Add button component (#11868)
+		- feat(theme) Add TS interface for Theme (#11877)
+		- Always enable receiveMultipleVideoStreams. (#11871)
+		- Adds room info http endpoint jwt protected. (#11738)
+		- feat(toolbox/conference): review remarks
+		- feat(toolbox/conference): button places updates
+		- feat(conference): removed padding
+		- Moves to use jitsi-anonymous by default.
+		- feat(security/native): replaced security dialog buttons with new button
+		- feat(base): fixed height for buttons
+		- feat(conf/gifs/participants): created ParticipantsPaneFooter and updated comments
+		- feat(base): TERTIARY type rework
+		- feat(mobile/navigation): revert to stack navigator (#11811)
+		- feat(base/native): button abstractions (#11795)
+		- feat(gifs/native): fixed linter
+		- feat(gifs/native): created GifsMenuFooter
+		- feat(conference/native): created CarModeFooter
+		- feat(base): removed PagedList because it is not used anymore
+		- feat(etherpad): ui fixes
+		- feat(conference/native): disabled PiP on WelcomePage (#11801)
+		- feat(rn) remove use of externalAPIScope
+		- feat(conference): fixed linter
+		- feat(conference): disabled pip if we are not in conference room
+		- feat(etherpad/native): fixed header left close button
+		- feat(dynamic-branding): get branding data from state
+		- Add screenshare filmstrip (#11714)
+		- feat(lobby/prejoin/native): display name input text color update
+		- feat(recording) Add config to hide storage warning (#11761)
+		- feat(gifs/native): fixed gify search input
+		- feat(transcription) Enable for all (#11739)
+		- feat(settings): add option to mute lobby knocking sounds
+		- feat(polls/native): New polls screen (#11741)
+		- feat(local-recording) Add self local recording (#11706)
+		- feat(prejoin/web): updated shouldAutoKnock helper (#11725)
+		- feat(settings) add abilty to hide more tab under settings
+		- feat(local-recording) Update config (#11731)
+		- feat(breakout-rooms) add context menu to participants in other rooms
+		- feat(dynamic-branding): SVG branding image needs to cover the entire screen (#11724)
+		- feat(mobile, external_api) exposes setClosedCaptionsEnabled
+		- feat(lobby/prejoin): updates
+		- feat(external-api) Add participants pane toggled event (#11718)
+		- feat(analytics): obfuscate room name (#11587)
+		- feat(invite) Consider SHARING_FEATURES on the email invites (#11711)
+		- feat(rn,dynamic-brandind) added background image url to prejoin and lobby
+
+	- Fixes:
+		- fix(lang) update Croatian translation
+		- fix(externalStorage): Infinitely growing.
+		- fix(lang) update German translation
+		- fix(lang) update Arabic translation
+		- fix(filmstrip): Remove SS ep from list of active speakers. This fixes a case where duplicate SS tile appears when SS ep is the dominant speaker and all the active speakers are currently visisble.
+		- fix(android) exclude the Giphy SDK from the libre build
+		- fix(filmstrip) Make dominant speaker visible at all times (#11874)
+		- fix(filmstrip) Fix pinning (#11889)
+		- fix(local-recording) Notify external api about local recording (#11887)
+		- fix(lang) update Croatian translation
+		- fix(hangup) - redirect after hangup in tenant meetings (#11876)
+		- fix(typescript) Make TS parse tsx files (#11866)
+		- fix(lobby) Fix buttons colors (#11867)
+		- fix(screensharing-pinning) Clear pin on tile view (#11864)
+		- fix(debian) add mime.type mapping for wav files
+		- fix(misc) fix typos
+		- fix(lang) update Portuguese translation
+		- fix(screenshare) disable sound when presenter stops sharing
+		- fix(dynamic-branding) fix loading on web
+		- fix(local-recording) Improvements (#11854)
+		- fix(breakout-rooms): Stop previous leave timers if any. (#11842)
+		- fix(virtual-background) Fix virtual backgrounds list (#11833)
+		- fix(theme) Fix tokens (#11822)
+		- fix(local-recording) Fixes (#11834)
+		- fix(more-tab) fix crash when quickly selecting settings more tab (#11837)
+		- fix(etherpad) close menu when opening / closing document
+		- fix(lang) update Russian translation
+		- Fixes tokens debian package configuration. Fixes #11702.
+		- fix(lint) make sure eslint also runs on TypeScript files (#11777)
+		- fix(lang) update Arabic translation
+		- fix(lang) update German translation
+		- fix(virtual-background) Do not allow desktop as virtual background when multi-stream is enabled.
+		- fix(Toolbox) Render the virtual background button in multi-stream mode. In multi-stream mode, both camera and desktop streams are available at the same time. Virtual backgrounds can be applied to the camera stream while screensharing is in progress.
+		- fix(message/notification): use unique keys for url tokens (#11809)
+		- fix(ios) removes scope from sendEvent parameter in ExternalAPI
+		- fix(video-constraints) Fix video constraints for resizable top panel (#11794)
+		- fix(prejoin) don't hide during auth
+		- fix(rn) fix mobile build
+		- fix(rn,dynamic-branding) fix extracting fqdn from URL
+		- fix(filmstrip) Fix screensharing filmstrip (#11775)
+		- fix(android) make ongoing service public
+		- fix(android) explicitly sets the theme for JitsiMeetActivity
+		- Do not send the videoType for audio tracks (#11742)
+		- fix(ios, pip): update view hierarchy to present the rn view with view controller
+		- fix(external-api) fix error if setting some options too early
+		- fix(local-recording) Improvements (#11754)
+		- fix(iOS) fixed running in simulator for apple silicon
+		- fix(tile-view, rn) Fix tile view in landscape (#11749)
+		- fix(polls) Update limits (#11748)
+		- fix(chat) fix scrolling chat in safari
+		- fix(build,dev) disable circular dependency detector
+		- fix(build,dev) fix source map generation in development mode
+		- fix(rn, pip) enables PiP on conference mounted
+		- fix(android) calls startForeground in onCreate
+		- fix(local-recording) Add notification config and style fixes (#11728)
+		- fix(auth) simplify auth-and-upgrade procedure
+		- fix(audio-only) Do not unmute camera when SS is in progress. If the audio-only mode is automatically disabled when user starts a screenshare while in audio-only mode, do not unmute the camera track.
+		- fix(rn,styles) cleanup unused styles
+		- fix(pip) make PiP disabled by default
+		- fix(rn) add backhandler on Prejoin screen
+		- fix(rn,dialogs) fix displaying dialogs on top of modal screens
+		- fix(rn, bottomsheet) fix not rendering above presentation sheets
+		- fix(lang) update Portuguese translation
+		- fix(util) fix parsing strings in parseURLParams
+		- fix(lang) update Arabic translation
+
+	- Translation updates:
+		- add upper sorbian translation (#11610)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Add videoType to sources signaled in jingle. (#2058)
+
+	- Fixes:
+		- fix(ScreenObtainer) Fix broken high resolution SS capture.
+		- fix(ts) don't set file extension for TS files
+		- fix(RTC) Use mute/unmute track operation for effects. Since the track is only temporarily removed and added back, it can be treated like mute & unmute operation. Fixes https://github.com/jitsi/lib-jitsi-meet/issues/2048. Remove a TODO thats no longer needed, track replace operation don't force renegotiations anymore.
+		- Fixes boolean/string comparison.
+		- fix(LocalSdpMunger): _had*Added->_hasHad*Track
+		- typo in variable name
+		- fix(FF): Don't add recvonly SSRC in session-accept
+		- fix(JitsiConference) simplify auth-and-upgrade procedure
+		- fix(multi-stream) Fix VP9 bitrates in the multi-stream mode. Set the bitrates on the video m-lines based on the associated track type. In multi-stream mode, there will be two separate m-lines for camera and desktop tracks. Also fallback to SDP munging for setting codec preferences on Chromium.
+		- fix(ScreenObtainer) Apply resolution constraints only for low fps SS. The hack for making Chrome capture the highest resolution possible for desktop track breaks high fps screen capture.
+		- fix(SDP): don't separate fmtp parameter with spaces (#2034)
+
+- [jicofo 1.0-910](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_7577)
+	- New features:
+
+	- Fixes:
+		- stress accounting for recently added endpoints (#944)
+		- Remove bridge when "create relay" times out (#941)
+
+- [jitsi-videobridge 2.2-18-gade06bf8](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_7577)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.7439 (2022-06-17)
 - [jitsi-meet 1.0.6260](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7439)
 	- New features:
