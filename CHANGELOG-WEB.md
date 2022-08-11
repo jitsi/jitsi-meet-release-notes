@@ -2,6 +2,89 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.7648 (2022-08-11)
+- [jitsi-meet 1.0.6447](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7648)
+	- New features:
+		- Adds a jaas reference when installing.
+		- feat(ui-components) Add clickable icon component (#11976)
+		- feat(large-video/web) Add screen share placeholder (#11971)
+		- feat(noise-suppression): add toggle noise-suppression API (#11968)
+		- feat(recording/native): added new Button component
+		- feat(ui-components) Add Checkbox component (#11927)
+		- feat(ui-components) Add toggle component (#11933)
+		- feat(base/media): fixed linter
+		- feat(base/media): removed max offset value for wide view screen sharing
+		- feat(liveStreamting) add configuration to customize streaming dialog
+		- feat(external-api) Add command to show custom in-meeting notification (#11897)
+		- feat(base/modal): renamed prop and fixed scroll inside webview
+		- feat(welcome/native): settings updates (#11830)
+		- feat(ui-components) Add Input Component (#11882)
+		- feat(prejoin-lobby): ui fixes
+
+	- Fixes:
+		- fix(dropbox) fix signing out when switching rec providers
+		- fix(dropbox) fix incorrect button labels and click on web
+		- Adds missing notification in example config.
+		- fix(face-landmarks) fix createImageBitMap polyfill on Safari 14
+		- fix(settings) fix not showing the more tab
+		- fix(audio-only SS) Stop audio-only SS when user stops share from the browser's share in progress window.
+		- fix(remote-control): when multistream is enabled
+		- fix(remote-control): fix remote-control when multi-stream is enabled.
+		- fix(noise-suppression): remove no track warning on share audio flow (#11966)
+		- Applies AV moderation checks on screen sharing with multistream on.
+		- fix(external-api) Fix toggleShareScreen in multi-stream mode. Fixes https://github.com/jitsi/jitsi-meet/issues/11916.
+		- fix(ios) use the RN logger in RN modules
+		- Fixes tenants in default configuration.
+		- fix(breakout): Do not load token_verification for breakout rooms.
+		- fix(polls) Fix CSS
+		- fix(config) Fix recording config backwards compatibility (#11953)
+		- fix(lobby) fix not being able to type password
+		- fix(i18n) Fix translate Typescript (#11949)
+		- fix(ios) add missing entitlement
+		- fix(lang) update Arabic translation
+		- fix(base) drop old button implementation
+		- fix(audio-share): Fix audio-only SS in multi-stream mode. ShareAudioDialog passes undefined when the user hits continue in the share audio demo modal. Toggle state of audio-share based on the current state of audio share in that case.
+		- fix(participants-pane): Get the correct participantCount for multi-stream. Do not add virtual screenshare participants to participantCount.
+		- fix(screenshot-capture): Impl screenshot capture in multi-stream mode.
+		- fix(config) add recordingService to the whitelist
+		- fix(config) add 'noisesuppression' to 'toolbarButtons'
+		- fix(noise-suppression): fix muted state, update icons (#11936)
+		- fix(screenshare-filmstrip) Fix pin screenshare (#11892)
+		- fix(dialog) Add key to buttons (#11925)
+		- fix(prejoin) rename Prejoin.js to Prejoin.web.js
+		- fix(html) add doctype and fix HTML errors
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(JitsiConference) add ability to set the leave reason
+		- feat(ts) add hand-crafted types for red
+		- feat(red) Add missing type defs for RFC2198Encoder.
+		- feat(test) bump karma and jasmine
+
+	- Fixes:
+		- fix(TPC) Set maxbitrates via b=AS line on the remote SDP as well. This fixes an issue where the bitrates for screenshare were much higher than before for VP9 causing the JVB to suspend SS streams more often.
+		- potential race condition when en-/dis-abling E2EE
+		- fix(moderation): media not working
+		- fix(safari-ios) Fix audio being lost on safari ios after phone call
+		- fix(RTC) remove no longer needed helpers
+		- fix(chore) typos and jsdoc
+		- corrected typo in error message
+		- fix(BrowserCapabilities) remove no longer used function
+		- fix(RTC) unconditionally use adapter
+
+- [jicofo 1.0-911](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_7648)
+	- New features:
+
+	- Fixes:
+		- Clear old state when MUC is re-joined. (#952)
+
+- [jitsi-videobridge 2.2-22-g42bc1b99](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_7648)
+	- New features:
+		- Include forceMute state in debug. (#1928)
+
+	- Fixes:
+
 ##  2.0.7577 (2022-08-02)
 - [jitsi-meet 1.0.6380](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7577)
 	- New features:
