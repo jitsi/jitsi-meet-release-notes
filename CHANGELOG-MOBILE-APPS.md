@@ -1,5 +1,32 @@
 # Mobile apps Changelog
 
+# 22.5.1 (2022-09-09)
+
+(The 22.5.0 release was aborted)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.5.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.5.1)
+
+## Changes
+
+### Common
+
+- Rework the settings screen, now also accessible from the in-meeting menu
+- Numerous UI tweaks and improvements
+- Updated translations
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-22.4.0...android-22.5.1)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-22.4.0...ios-22.5.1)
+
 # 22.4.0 (2022-07-11)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.4.0)
