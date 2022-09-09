@@ -1,5 +1,29 @@
 # Mobile SDKs Changelog
 
+# 6.1.0 (2022-09-09)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-6.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-6.1.0)
+
+## Changes
+
+- Add settings button and screen to the overflow menu
+- Skip participant joined and left events for virtual screen shares
+- Numerous UI tweaks and improvements
+- Updated translations
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-6.0.0...android-sdk-6.1.0)
+
+### iOS
+
+- Add a "lite" SDK target
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-6.0.0...ios-sdk-6.1.0)
+
 # 6.0.0 (2022-07-08)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-6.0.0)
