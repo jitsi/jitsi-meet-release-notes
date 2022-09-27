@@ -2,6 +2,187 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.7830 (2022-09-27)
+- [jitsi-meet 1.0.6600](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7830)
+	- New features:
+		- Set LE as default choice when installing. (#12232)
+		- feat(android) add logcat helper script
+		- feat(external-api) start/stop local recording (#12210)
+		- feat(rtc-stats): send face landmarks detection off timestamp to service (#12183)
+		- Adds automatic jaas account creation. (#12213)
+		- feat(multi-stream) Enable multi-stream by default (if not disabled explicitly).
+		- feat(ui-components) Add Tabs component (#12199)
+		- feat(ios) Xcode 14 compatibility
+		- feat(android) disable volume logger thread
+		- feat(rn,deps) update WebRTC to M106
+		- feat(ui-components) Add Select component (#12182)
+		- Handle dominant speaker silence
+		- feat(iOS): callkit objc implementation
+		- Adds LE choice when installing debian package. (#12154)
+		- feat(external_api) add adbility to resize the filmstrip
+		- Adds jaas choice when installing.
+		- Drops prosody 0.10 checks.
+		- Drops migration from jetty deployments.
+		- feat(rtc-stats): support for react native and breakout rooms (#11835)
+		- feat(build,ljm) don't expose jquery
+		- feat(settings/native): fixes and updates (#12094)
+		- feat(translation) enable cc translation (#12046)
+		- feat(prejoin/native): update react-native-video dep and unmount LargeVideo is Prejoin is not focused
+		- feat(aot-prejoin) Add support for showing AOT on prejoin
+		- feat(polls/native): fixed scroll inside screen
+		- feat(security/native): options available only if participant is moderator
+		- feat(settings/native): updated placeholder and placeholder text color
+		- feat(ios) add generated Swift interface header
+		- feat(conference) add end conference
+		- feature(rtcstats): expose sendSdp as config option (#12072)
+		- feat(logging): Store JS console logs in RTCStats.
+		- feat(conference) send leave reasons on switching room and when errors occur
+		- (chat) add new message badge (#11987)
+		- feat(base/native): Switch thumb track color (#12066)
+		- feat(polls/native): added thumbColor for android
+		- feat(lobby/prejoin): added room name title (#12054)
+		- feat(settings): changed switch enabled track color
+		- (screen-share) Added logs and emit iframe event for video and audio sharing (#12051)
+		- feat(recording): StartRecordingDialogContent web and native (#12009)
+		- feat(prejoin) add room name to premeeting screen (#12049)
+		- feat(media): added extra percentage padding right to screen share view fit
+		- feat(participants-pane/native): fixed undefined error
+		- feat(logging) migrate logging to config.js
+		- feat(jwt) deprecate and remove enableFeaturesBasedOnToken
+		- feat(ios) add lite SDK target
+		- Updates the local stats to match remote for 'connected to'.
+
+	- Fixes:
+		- Fixes jaas and cert choice when package configure is reordered. (#12234)
+		- fix(face-landmarks) Do not start detection on muted tracks
+		- fix(carmode) Don`t show rec/live labels after rec/ls finished
+		- fix(external-api) Fix start recording (#12227)
+		- fix(carmode) Force portrait when in carmode
+		- Fixes LE script on existing cert. (#12223)
+		- fix(giphy) Allow space in input (#12221)
+		- Fixes postinst after pull/12213.
+		- fix(filmstrip) Fix stage filmstrip (#12209)
+		- fix(build) speed up webpack dev build by 4x
+		- fix(prejoin) Remove no longer needed hack
+		- fix(testing): Fixes for multi-stream torture tests to work.
+		- fix(e2ee) check if e2ee is supported before playing the sound
+		- fix(prejoin) Fix focus stealing in settings (#12188)
+		- fix(lang) remove unused language lists
+		- fix(settings) fix not storing maxStageParticipants
+		- fix(config) fix check for filmstrip property
+		- fix(filmstrip) Save stage filmstrip in settings (#12170)
+		- Set default choice for jaas, keeps old behavior.
+		- fix(external-api) Add email to local participant info
+		- fix(external-api) Fix notify audio muted/audio available
+		- fix(rn) fixes typo in functions.native
+		- fix(subtitles) web components must not be used in generic action files
+		- fix(rn,conference) fix mobile build
+		- fix(lang) update Dutch translation
+		- fix(large-video) disable screen-sharing placeholder on Spot
+		- fix(prejoin) Hide conference name based on config
+		- fix(prejoin) Fix roomname showing for 3rd party prejoin app (#12155)
+		- fix(ios) fix lite SDK release process
+		- fix(large-video) Update large-video when the streamingStatus of the attached track changes. This fixes an issue where screenshare appears on the thumbnail but not on the large-video.
+		- fix(lang) update German translation (#12122)
+		- fix(analytics) Fix lint error (#12135)
+		- fix(lang) updated Arabic translation
+		- fix(lang) improve Arabic translation
+		- fix(rn,video-layout) fix mobile
+		- fix(external_api): Fix number of participants in meeting (#12052)
+		- fix(lang) update Russian translation
+		- fix(lobby) fix opening lobby chat after API change
+		- fix(breakout-rooms) fix broadcast timer
+		- fixup!
+		- fix(lang) update Dutch translation
+		- Fixes lua log lines.
+		- fix(stage-filmstrip): Pinning
+		- fix(rn,thumbnail) show SS indicator on the local thumbnail
+		- fix(rn,tracks) fix muting local screenshare when remote is muted
+		- fix(shared-video) fix exception on mobile
+		- fix(rn,filmstrip) avoid "red" screen sharing tile
+		- fix(rn,multi-stream) don't send multiple streams on mobile
+		- fix(ts) fix build
+		- fix(prejoin) use the conference display name instead of the room name
+		- fix(chore) fix typo
+		- fix(debian) add missing dependency of lua-inspect
+		- fix(face-landmarks): not sending duplicate expressions when recognition stops (#12067)
+		- fix(audio-only) Do not enable video automatically when audio-only is disabled (#12056)
+		- fix(chore) fix typo
+		- fix(follow-me): SS not visible
+		- fix(participant) Avoid unnecessary unpin calls (#12060)
+		- fix(logging) Add more info logs for device switching.
+		- Jwt context.features to work without context.user. Fixes #12005
+		- fix(highlight) check for JaaS features before opening the dialog
+		- fix(participants-pane) fix button impport
+		- fix(filmstrip) Push dominant speaker to the top of the active speaker list. The active speaker list in redux is alpha sorted, we need to ensure dominant speaker is at the top otherwise it can get truncated based on the available number of visible slots in the filmstrip.
+		- fix(rtcstats): Fix rtcstats poll interval typo and increase default value (#12024)
+		- fix(virtual-backgrounds) cache loaded model
+		- fix(config) add a missing comma in json list
+		- fix(fimstrip): Do not re-sort the active speakers if dominant speaker is visible. Fixes a case where re-sorting doesn't happen even when dominant speaker is currently not visible.
+		- fix(participants-pane): leave breakout room button appearance
+		- fix(audio-only-ss): Attach a track stopped handler to the audioDesktop track only for audio-only sharing case. There will be an audio desktop track for regular screensahring when a tab is selected. We do not have to toggle screensharing again when that track is killed.
+		- fix(iOS): script for enabling multitasking camera access for release build
+		- fix(mobile externalApi) suppress participant joined and left events for virtual screenshare
+
+	- Translation updates:
+		- update Ukrainian translation
+		- Update Portuguese translation (#12081)
+		- Update for Polish (#12053)
+		- add Ukrainian to more languages
+		- update Ukrainian translation
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(multi-stream) Enable multi-stream by default (if not disabled explicitly) (#2116)
+		- Handle dominant speaker silence.
+		- feat(build) embed jquery slim
+		- feat(JitsiConference) added end conference
+
+	- Fixes:
+		- fix(multi-stream) Block addition of multiple video streams of the same videoType. This fixes an issue where mute camera operation doesn't stop sending camera stream even though locally it appears to the user that they are muted. This happens when multiple camera streams are added to peerconnection because of how toggle of the video button is implemented. This limitation will be removed when the application is fixed.
+		- fix(TPC): Ignore stopped transceivers on FF during new track addition. Firefox lists stopped transceivers when getTranceivers is called, ignore these when picking a trancceiver for a screenshare track. Fixes an issue when starting screenshare fails if there are stopped tranceivers in the peerconnection (i.e., if some remote users with sources have left the call).
+		- fix(e2ee) discards frames that cannot be decrypted
+		- fix(TPCUtils): Re-use the existing recv-only transceiver for secondary video tracks. Fixes cases where SS fails in multi-stream mode with p2p->jvb->p2p switching.
+		- fix(TPC) Do not force immediate O/A cycles after track replace operations. In Unified-plan mode, we rely on the browser to fire 'negotiationneeded' event to start a O/A cycle. Also add muted tracks to PC. Fixes issues where the streams are not being signaled when call switches over from p2p to jvb in multi-stream mode.
+		- fix(ts) skip generating type definitions for index.js
+		- fix(stats): Skip bandwidth calc if there is no uplink/downlink bitrate. This fixes an error that gets logged when no media is being sent/received by the endpoint. Logger.js:154 2022-09-12T14:40:53.476Z [modules/statistics/AvgRTPStatsReporter.js] <xl.addNext>:  bandwidth_upload - invalid value for idx: 0
+		- fix(SignalingLayer) sync interface with implementation
+		- fix(ProxyConnectionPC) use a custom signaling layer implementation
+		- fix(build) add missed jquery slim imports
+		- fix(logging) Do not print 'Fowarded sources changed' log multiple times.
+		- fix(TPC): Switch media direction correctly on all m-lines associated with local tracks during p2p->jvb switch. Fixes cases where SS stream is not being sent when p2p->jvb switch happens.
+		- fix(ProxyConnection) add more necessary stubs
+		- fix(SignalingLayer) add sourceName argument to getPeerMediaInfo
+		- fix(connectivity): Fire trackStreaming status update  on init. > Possibly fixes a bug where SS appears black when the'unmute' and forwarded sources event for the track are received before a large-video update is scheduled.
+		- fix(electron):Respect desktopSharingSources option
+		- fix(types) update hand-crafted types
+		- fix(chore) xmpp constants jsdoc
+
+- [jicofo 1.0-934](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_7830)
+	- New features:
+
+	- Fixes:
+		- Fire registratinChanged in IO pool. (#974)
+		- Fix encoding videoType to json. (#972)
+		- Fix path in debian build. (#971)
+		- Fix path to jicofo jar. (#970)
+		- Set versions before building package. (#968)
+		- Catch failures on startup and stop the process early. (#965)
+		- Fix a failure to invite a participant when the session has been removed. (#964)
+		- graceful-shutdown handling (#962)
+		- Do not access the JicofoServices singleton before it has initialized. (#959)
+		- Leave the MUC first if it is joined when we try to join. (#958)
+		- Log a warning (instead of NPE) when jigasiDetector is null. (#955)
+
+- [jitsi-videobridge 2.2-43-gce94dbb2](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_7830)
+	- New features:
+		- Silence detection (#1926)
+
+	- Fixes:
+		- Avoid failures when purging packages.
+		- Treat maxHeight=-1 as "unlimited". (#1939)
+
 ##  2.0.7648 (2022-08-11)
 - [jitsi-meet 1.0.6447](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7648)
 	- New features:
