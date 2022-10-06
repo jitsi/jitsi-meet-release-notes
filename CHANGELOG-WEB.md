@@ -2,6 +2,76 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.7882 (2022-10-06)
+- [jitsi-meet 1.0.6644](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7882)
+	- New features:
+		- feat(toolbar-buttons) Hide buttons disabled through JWT (#12261)
+		- feat(local-recording) Change tab title to help identifying it (#12294)
+		- feat(ci) cache npm package data
+		- feat(ci) move linting to its own step
+		- feat(mobile/navigation): updated translations for screen headers
+		- feat(ci) run GHA also on macOS
+		- feat(whiteboard) add initial implementation (#12185)
+		- feat(mobile/navigation/welcome): welcome page tabs translations
+		- feat(invite-dialog) Add limit message for invite dialog
+		- feat(base/ui): added autofocus prop
+		- feat(ui-components) Add Dialog Component (#12260)
+		- feat(reservations) start lobby and set password from reservation (#12215)
+		- feat(room-metadata) add module for generic room metadata storage
+		- feat(rn,conference) show participants pane in the top bar
+		- include sort members eslint changes
+		- feat(large-video) Show SS on large-video instead of camera tile. This is helpful in live streaming scenarios when AUTO_PIN_LATEST_SCREEN_SHARE is disabled and multi-stream is enabled. Dominant speaker's SS tile (if available) will be on stage instead of their camera tile. Fixes https://github.com/jitsi/jitsi-meet/issues/10869.
+
+	- Fixes:
+		- fix(ios,callkit) make sure the start call action is fulfilled
+		- fix(lobby) Make password hidden by default (#12295)
+		- fix(polls) Fix autoscroll for polls causing layout issues
+		- (translation) remove unused i18n import
+		- fix(ts) fix build on macOS
+		- fix(avatar) support icons alongside cors avatars (#12280)
+		- fix(lang) update Chinese translations & fix typo
+		- fix(lang) update German translation (#12277)
+		- fix(polls) refactor message handling
+		- fix(config) drop debug lefover
+		- fix(translation) translation button visibility for users, add missing languages
+		- fix(face-landmarks): Check mute state from redux before starting detection.
+		- fix(speaker-stats) decouple sort order from speaker stats (#12197)
+		- fix(lang) remove non-existent languages (#12258)
+		- fix copyText import
+		- fix(audio-configs) Fix startWithAudioMuted overrriding startSilent (#12251)
+		- fix(config) Update link to to UI tokens
+		- fix(helpers) move copyText function to web.js file
+		- fix(ts,build) fix TS error in web build
+		- fix(external-api) Fix pin function (#12236)
+
+	- Translation updates:
+		- Update Chinese translations (#12104)
+		- Update Portuguese translation (#12241)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(RoomMetadata) add generic room metadata storage module
+
+	- Fixes:
+		- fix(xmpp) simplify code
+
+- [jicofo 1.0-940](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_7882)
+	- New features:
+
+	- Fixes:
+		- ConcurrentModificationException. (#984)
+		- Only include the indended file in /etc/logrotate.d.
+		- Do not require that actor != null. (#980)
+		- Fix leaking conferences. (#978)
+		- Fix NPE when getting stats. (#977)
+
+- [jitsi-videobridge 2.2-45-ge8b20f06](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_7882)
+	- New features:
+		- Routes logs from slf4j to java logging.
+
+	- Fixes:
+
 ##  2.0.7830 (2022-09-27)
 - [jitsi-meet 1.0.6600](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7830)
 	- New features:
