@@ -1,11 +1,34 @@
 # Mobile SDKs Changelog
 
+# 6.2.2 (2022-10-24)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-6.2.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-6.2.2)
+
+## Changes
+
+- Fixes missing participant tiles when joining a meeting
+- Set the default P2P codec to H.264
+- Fixed not forcing VP8 for bridge calls
+
+### Android
+
+- Add support for the H.264 hardware accelerated codec
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-6.2.1...android-sdk-6.2.2)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-6.2.1...ios-sdk-6.2.2)
+
 # 6.2.1 (2022-10-21)
 
 (The 6.2.0 was aborted)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-6.2.0)
-- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-6.2.0)
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-6.2.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-6.2.1)
 
 ## Changes
 
@@ -30,14 +53,14 @@
 - Fix crash in devices with Android < 10
 - Disable volume logger thread
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-6.1.0...android-sdk-6.2.0)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-6.1.0...android-sdk-6.2.1)
 
 ### iOS
 
 - Fix layout issues in iOS 16
 - Xcode 14 compatibility
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-6.1.0...ios-sdk-6.2.0)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-6.1.0...ios-sdk-6.2.1)
 
 # 6.1.0 (2022-09-09)
 
