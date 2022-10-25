@@ -1,5 +1,40 @@
 # Mobile apps Changelog
 
+# 22.6.0 (2022-10-21)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.6.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.6.0)
+
+## Changes
+
+### Common
+
+- Fixed incompatibilities with recent Jitsi Meet deployments
+- Add ability to start car mode when setting low bandwidth mode
+- Force portrait when in car mode
+- Prevent duplicated participant tiles
+- Clear notifications when joining a conference
+- Change default bridged calls codec to VP8
+- Show participants pane button in the top bar
+- Fixed screen headers not being translatable
+- Fixed welcome page tabs not being translatable
+- Fixed showing stale recording labels in car mode
+- Numerous UI tweaks and improvements
+- Updated translations
+
+### Android
+
+- Add support for the H.264 hardware accelerated codec
+- Fix back button behavior in the welcome page
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-22.5.1...android-22.6.0)
+
+### iOS
+
+- Fix layout issues in iOS 16
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-22.5.1...ios-22.6.0)
+
 # 22.5.1 (2022-09-09)
 
 (The 22.5.0 release was aborted)
