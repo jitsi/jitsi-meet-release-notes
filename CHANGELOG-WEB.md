@@ -2,6 +2,159 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8044 (2022-11-11)
+- [jitsi-meet 1.0.6776](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8044)
+	- New features:
+		- feat(rtc-stats): send camera off and on events (#12522)
+		- feat(ts) make tsc happy
+		- feat(base/react): removed old web Switch component and exports (#12481)
+		- feat(base/ui/native): removed unused files and updated imports (#12477)
+		- Adjust language list to be shown in native language (#12475)
+		- feat(gif) Support rating config + show display name over gif tile (#12461)
+		- feat(rn) use H.264 (HW codec) for P2P calls
+		- feat(translation): add description for source language (#12371)
+		- feat(config) add ability to hide speaker stats
+		- feat(settings/native): fixed scroll inside screen (#12395)
+		- Updates deb install texts. (#12394)
+		- feat(chat): fixed chat counter (#12385)
+		- feat(conference/native): adjusted carmode ui
+		- feat(prejoin/native): adjusted room name margins
+		- feat(deps,rn) update React Native to version 0.68.4 (#12376)
+		- feat(prejoin/native): clear notifications when joining (#12361)
+		- feat(toolbox/conference/audio-mode/chat/native): UI fixes and updates (#12375)
+		- feat(prejoin/native): ui updates (#12368)
+		- feat(base/ui): fixed native button active style (#12353)
+		- feat(base/modal): enable scroll for jitsi screen component
+		- feat(base/ui/native): centered button label
+		- feat(mobile/navigation): disabled bottom tab navigator backBehavior (#12320)
+		- feat(settings/native): start car mode in low bandwidth mode (#12286)
+		- Adds some compatibility for building on windows.
+		- Updates prosody dependency to be at least 0.11.7.
+		- feat(rn,config) default to VP8 on mobile
+		- feat(deps,rn) update React Native to version 0.68.3 (#12293)
+
+	- Fixes:
+		- fix(rn) fix hangup all action
+		- fix(lang) update German translation
+		- fix(polls) refactor storage of poll data
+		- fix(lang) update Russian translation
+		- fix(lang) update translations
+		- fix(lang) update Chinese translations (#12344)
+		- get rooms info (#12492)
+		- fix(recording-dialog) Fix broken dialog content (#12490)
+		- fix(ts) fix mysterious linting errors
+		- fix(iframeAPI): pinParticipant & setLargeVideo
+		- fix(connection-indicator) use SSRCs to match tiles to stats
+		- fix(connection-stats) make local / remote layout consistent
+		- fix(connection-stats) fix rendering codec information
+		- fix(ts) make tsc (almost) not cry on native
+		- fix(lang) update Portuguese translation
+		- fix(lang) update Italian translation
+		- fix(lang) update Italian language list
+		- fix(lang) update Ukrainian translation
+		- fix(dialog,web) fix opening dialogs in succession
+		- fix(input) Fix background color (#12452)
+		- fix(noise-suppression) exit out early if no input data to Worklet
+		- fix(rn,config) fix forcing VP8 for bridge calls
+		- fix(label) Fix Participants Count label color (#12445)
+		- fix(rn,filmstrip) fix dropping tiles on conference join
+		- fix(deps) update xmldom@0.7.6
+		- fix(ios) also bump the lite SDK version when bumping versions
+		- fix(dialog) Wrap dialog in FocusLock (#12431)
+		- fix(recording): recording link.
+		- fix(persistent_lobby): properly destroy main room when empty
+		- fix(rn,filmstrip) clear participants cache when changing conferences
+		- fix(filmstrip) prevent duplicated participants
+		- Drops participants count white background. (#12416)
+		- fix(video-layout) Fix auto-pinning latest screenshare.
+		- fix(screenshare-jwt) Disable screen share based on jwt
+		- fix(iOS, layout): fix iOS 16 layout
+		- fix(lang) add chat.sendButton translation
+		- fix(jaas) redirect to about blank when close meeting opened in iframe
+		- fix(notifications) don't show self view notifications if already one is active
+		- fix(ios) fix mute "ping-pong"
+		- fix(rn,large-video) don't render video for the local SS
+		- fix(rn,screensharing) fix build
+		- Fix log messages in end_conference module. (#12369)
+		- fix(remote-control): when multistream is enabled
+		- fix(conference) fix Spot wireless screen sharing
+		- fix(android) fix crash in Android < 10
+		- fix(virtual-background) Remove unused action type VIRTUAL_BACKGROUND_TRACK_CHANGED.
+		- fix(virtual-backgroud) Remove desktop share as virtual background. Its no longer supported in multi-stream mode.
+		- fix(reservations): skip reservations check for breakout rooms
+		- fix(external-api) Remove muted SS tracks from the list of participants currently screensharing. Fixes an issue where 'contentSharingParticipantsChanged' event and 'getContentSharingParticipants' API continue to list IDs of the participants that have already stopped their screenshares.
+		- fix(large-view) fix selection if local SS auto-select is true
+		- fix(local-recording) don't use tab audio
+		- fix(rn,display-name) fix displaying for virtual SS
+		- fix(rn,thumbnail) fix not rendering indicators for virtual SS
+		- fix(rn,participants) fix not rendering connection info messages
+		- fix(rn,participants) fix rendering screen-sharing
+		- fix(prejoin) show subject in prejoin if available (#12338)
+		- fix(screenshare): Pass _desktopSharingSourceDevice as shareOptions when available. Fixes an issue when external cam as screensharing source fails on Spot with multi-stream enabled.
+		- fix(hide-buttons-on-jwt) Fix getting disabled buttons (#12326)
+		- Switches by default mutli-stream and through config.js.
+		- fix(whiteboard) account for moderation rights (#12323)
+		- fix(whiteboard) use randomly generated room id for collaboration (#12321)
+		- fix(rn) disables joinButton while navigating
+		- fix(rn,util) avoid 'clipboard-copy' being bundled in native
+		- fix(doc) update README
+		- Fixes cert choice when pre-set in automations. (#12312)
+		- fix(multi-stream): Set mediaType to screenshare on SS tracks. Fixes an issue where camera video doesn't get requested by RN clients when the remote ep starts SS first before turning on their camera.
+		- Workaround failure to install jitsi-meet-prosody Fixes #12300
+
+	- Translation updates:
+		- Update Swedish 100% translation (#12511)
+		- Updated Czech Translation (#12388)
+		- Update Turkish translation  (#12348)
+		- Update main-nl.json (#12479)
+		- Update Croatian translation (#12441)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Sends presence on reconnect only if there was an update.
+		- feat(ScreenObtainer) Allow seamless switching of tab capture. Allow users to seamlessly switch which tab they are sharing without having to stop the current share and select a new tab again. This is supported on Chrome 107 onwards.
+		- feat(ssrc-rewriting) Add initial implementation (#2136)
+		- feat(ts) migrate JitsiMeetJS to TS
+		- feat(ts) generate autp types when packing
+		- feat(build) add ability to run each build separately
+
+	- Fixes:
+		- fix(breakout): filter hidden participants
+		- fix(chore) typos and jsdoc
+		- fix(RTPStatsCollector) only process possitive frame rates
+		- fix(RTPStatsCollector) fix extracting codec information
+		- fix(RTPStatsCollector) don't skip processing the first report
+		- of case when findLine returns false
+		- fix(types) update hand-crafted TPC types
+		- fix(types) update hand-crafted types
+		- fix(types) update hand-crafted types
+		- codec negotiation and other multi-stream issues (#2133)
+		- Always set recroding status=on when a jibri is present (#2132)
+		- fix(RTC) fix stop track with effect (#2127)
+		- fix(RTC) Update sourceType on desktop track for web. Fixes https://github.com/jitsi/jitsi-meet/issues/12319.
+		- fix(ts) update jsdoc to appease typescript
+		- fix(ci) test type generation
+		- fix(build) don't pollute global state in ESM build
+
+- [jicofo 1.0-954](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8044)
+	- New features:
+		- Remove callstats. (#987)
+
+	- Fixes:
+		- Update colibri even when there are no new sources (to update the transport). (#1004)
+		- Do not process empty accepted sources. (#1002)
+		- Update metrics a single time, not once for each conference. (#996)
+		- updating jicofo.conf (#992)
+		- stopping jibri sessions (#989)
+		- Cleanup /etc/logrotate.d/jicofo if it was polluted by an earlier package.
+
+- [jitsi-videobridge 2.2-61-g98c9f868](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8044)
+	- New features:
+
+	- Fixes:
+		- Always copy the mediaSources array for signaledMediaSources. (#1961)
+
 ##  2.0.7882 (2022-10-06)
 - [jitsi-meet 1.0.6644](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_7882)
 	- New features:
