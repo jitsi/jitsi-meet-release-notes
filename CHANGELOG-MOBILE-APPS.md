@@ -1,5 +1,33 @@
 # Mobile apps Changelog
 
+# 22.7.0 (2022-11-25)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.7.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.7.0)
+
+## Changes
+
+### Common
+
+- Dropped support for very old Jitsi Meet instances
+- UI tweaks to all screens
+- Update icons
+- Fix hangup all action
+- Fix displaying connection information and make it more accurate
+- Updated translations
+
+### Android
+
+- Temporarily disable P2P
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-22.6.0...android-22.7.0)
+
+### iOS
+
+- Status bar is now visible at all times
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-22.6.0...ios-22.7.0)
+
 # 22.6.0 (2022-10-21)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.6.0)
