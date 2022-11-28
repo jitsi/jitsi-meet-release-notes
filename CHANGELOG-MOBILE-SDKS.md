@@ -1,5 +1,38 @@
 # Mobile SDKs Changelog
 
+# 7.0.0 (2022-11-25)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-7.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-7.0.0)
+
+## Changes
+
+- BREAKING: legacy signalling support has been removed, thus the SDK will stop working with
+  very old Jitsi Meet instances
+- UI tweaks to all screens
+- Update icons
+- Fix hangup all action
+- Add ability to hide settings button in overflow menu
+- Add ability to go PiP while screen sharing (flag)
+- Fix rendering connection information and make it more accurate
+- Update React Native to version 0.68.5
+- Updated translations
+
+### Android
+
+- Temporarily disable P2P
+- Sort codecs in the same order as iOS
+- Set compile and target SDKs to 32
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-6.2.2...android-sdk-7.0.0)
+
+### iOS
+
+- Status bar is now visible at all times
+- Make initialPositionInSuperView a variable
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-6.2.2...ios-sdk-7.0.0)
+
 # 6.2.2 (2022-10-24)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-6.2.2)
