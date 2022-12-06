@@ -2,6 +2,117 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8127 (2022-12-06)
+- [jitsi-meet 1.0.6846](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8127)
+	- New features:
+		- feat(polls/web): removed sort options from polls (#12641)
+		- Update lib-jitsi-meet.
+		- Several module optimizations to avoid constant parsing of jids. (#12594)
+		- Modules for implementing visitor nodes. (#12593)
+		- feat(lobby/prejoin/native): style updates (#12615)
+		- feat(conference): fixed padding
+		- feat(whiteboard): use jitsi room name for socket io connection (#12610)
+		- feat(native): Last mobile release UI fixes (#12603)
+		- feat(face-landmarks): add face landmarks timeline (#12561)
+		- feat(android) set compile and target SDKs to 32
+		- feat(native): New mobile release UI fixes (#12592)
+		- feat(rtcstats): report pc connection failure (#12560)
+		- feat(deps,rn) update React Native to version 0.68.5
+		- feat(thumbnail,filmstrip) show blackend thumbnail for participant on stage
+		- feat(notification,external-api) notify bridge channel failures
+		- feat(chat/polls/native) Update chat and polls UI (#12550)
+		- feat(prejoin): updated styles
+		- feat(dialog): add disableAutoHideOnSubmit prop
+		- feat(redux) throw exception in case invalid listeners are registered
+		- feat(toolbox) notify click for hangup-menu and end-meeting menu button
+		- feat(rn) make status bar visible at all times
+		- feat(base/modal): addBottomPadding default prop for extra padding on JitsiScreen
+		- feat(external-api) Add endConference command
+		- feat(base/ui): updated BUTTON_TYPES imports based upon native or web
+		- feat(welcome/native): improved ui
+		- feat(prejoin/native): updated UI (#12528)
+		- feat(base/ui/native): Use new Input component (#12526)
+		- feat(chat/native): moved ChatAndPollsNavigator to mobile/navigation (#12527)
+		- feat(ios) add ability to go PiP while screen sharing
+
+	- Fixes:
+		- fixup!
+		- fixup devcontainer
+		- fix(build) use http for GitHub codespaces
+		- fix(toolbox) hide drawer after toggling camera
+		- get the current conference
+		- fix(face-landmarks): assign empty array to facelandmarks in speakerstats if undefined
+		- always display transcription (#12325)
+		- fix(ios) make initialPositionInSuperView a variable
+		- fix(lang) update Hungarian translation
+		- Native styles fixes (#12606)
+		- fix(android) temporarily disable P2P
+		- fix(android) sort codecs in the same order as iOS
+		- fix(conference) Remove the check for multi-stream mode for web client.
+		- fix(dialog) Improvements (#12590)
+		- fixup!
+		- fixup!
+		- fix(conference/native): apply width and height only on the connection indicator
+		- fix(conference/native): video quality label ui updates
+		- fix(conference/native): fixed title bar indicators style
+		- fix(dialog) Update max height
+		- fix(dialog): cancel hide timeout on openDialog
+		- fix(participants) don't treat Jigasi like a fake participant
+		- fix(rn,filmstrip) fix invalid selector registered as state listener
+		- fix(rn,connection-indicator) align rendering with web
+		- fix(dial-in) Fix warning (#12571)
+		- fix(lang) fixup main-el.json
+		- fix(styles) Remove Theme type annotation (#12544)
+		- fix(welcome/native): removed unused constant
+		- fix(welcome/native): placeholder fix
+		- fix(ui) Fix new icons issues (#12545)
+		- fix(connection-stats) Do not display max enabled resolution on SS tile.
+		- fix(ios) fix uploading symbols to Crashlytics
+		- fix(thumbnail) Fix top indicators sizes (#12539)
+		- fix(recording) Fix local recording (#12531)
+		- fix(thumbnail) Open native video context menu (#12532)
+		- fix(config) add "whiteboard" to toolbarButtons
+		- fix(dialog) Fix initial focus (#12509)
+
+	- Translation updates:
+		- fixing typo in a hungarian lang file (#12559)
+		- Remove Indonesian & Norwegian translations (#12554)
+		- Update main-it.json (#12541)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Handles conferenceIQ error with redirect.
+		- feat(e2ee) add ability to verify participants using a SAS mechanism
+		- feat(face-landmarks): add face landmarks timeline (#2157)
+		- feat(JitsiConference,BridgeChannel) emit event when channel is closed
+
+	- Fixes:
+		- fix(TPC) Allow remote tracks to be created if no presence is found. Currently, remote tracks are not created if presence for the endpoint is not received before source signaling. With ssrc-rewriting, the source information will be received on the bridge channel and presence on the prosody ws so there are chances that they can be out of sync. We do not want to skip remote track creation when that happens.
+		- Drop duplicated method.
+		- fix(JitsiConference) send mute sourceInfo before removing an unmuted track
+		- fixup!
+		- allow disabling and setting preferred codec
+		- fix(presence) Fix backwards compat with endpoints that don't send sourceInfo in presence.
+		- Do not send trickle candidates to jicofo (#2149)
+
+- [jicofo 1.0-965](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8127)
+	- New features:
+
+	- Fixes:
+		- gracefully handle receiving a session-terminate with reinvite (#1016)
+		- Fix log message (log sources after filter). (#1015)
+		- Handle transport-info before session-initiate (for jigasi). (#1013)
+		- update sourcesignaling when received simultaneously source-add (#1009)
+		- handling empty sources. (#1003)
+
+- [jitsi-videobridge 2.2-63-g252d14bc](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8127)
+	- New features:
+		- Adds missing dependency for configuring.
+
+	- Fixes:
+		- Treat "unlimited" correctly (fixes #1971). (#1972)
+
 ##  2.0.8044 (2022-11-11)
 - [jitsi-meet 1.0.6776](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8044)
 	- New features:
