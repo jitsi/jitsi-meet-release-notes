@@ -7,26 +7,15 @@ Full changelogs are available in each project's release page: click on one of th
 	- New features:
 		- feat(E2EE) add initial SAS verification UI
 
-	- Fixes:
-
-
 	lib-jitsi-meet
-	- New features:
-
 	- Fixes:
 		- fix(TPC) Do not create track when presence is missing. Revert this change as this is causing a dummy track to be created when the media resumes on jvb connection after the p2p peer has left the call.
 		- Fixes undefined error.
 		- Do not send empty <nick/> when a nick exists and gets removed (#2170)
 
 - [jicofo 1.0-967](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8133)
-	- New features:
-
-	- Fixes:
 
 - [jitsi-videobridge 2.2-63-g252d14bc](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8133)
-	- New features:
-
-	- Fixes:
 
 ##  2.0.8127 (2022-12-06)
 - [jitsi-meet 1.0.6846](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8127)
