@@ -2,6 +2,21 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8138 (2022-12-07)
+- [jitsi-meet 1.0.6854](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8138)
+	- New features:
+		- feat(base/redux): fixed local storage on native
+
+	- Fixes:
+		- fix(video-mute) prevent multiple camera track creation
+		- fix(dialog) Fix Dialog on mobile (#12650)
+
+- [jicofo 1.0-968](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8138)
+	- Fixes:
+		- Temporary fix for JingleSession-s being GC too early (#1019)
+
+- [jitsi-videobridge 2.2-63-g252d14bc](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8138)
+
 ##  2.0.8133 (2022-12-07)
 - [jitsi-meet 1.0.6850](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8133)
 	- New features:
