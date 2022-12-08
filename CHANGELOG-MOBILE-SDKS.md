@@ -1,5 +1,26 @@
 # Mobile SDKs Changelog
 
+# 7.0.1 (2022-12-08)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-7.0.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-7.0.1)
+
+## Changes
+
+- Fixed not saving settings
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-7.0.0...android-sdk-7.0.1)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-7.0.0...ios-sdk-7.0.1)
+
 # 7.0.0 (2022-11-25)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-7.0.0)
