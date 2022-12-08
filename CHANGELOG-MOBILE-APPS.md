@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# 22.7.1 (2022-12-08)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.7.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-22.7.1)
+
+## Changes
+
+### Common
+
+- Fixed not saving settings
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-22.7.0...android-22.7.1)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-22.7.0...ios-22.7.1)
+
 # 22.7.0 (2022-11-25)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-22.7.0)
