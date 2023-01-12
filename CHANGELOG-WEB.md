@@ -2,6 +2,82 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8194 (2023-01-12)
+- [jitsi-meet 1.0.6897](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8194)
+	- New features:
+		- feat(prejoin) Disable join buttons during joining
+		- feat(deeplinking) Move deeplinking to config.js (#12704)
+		- feat(audioOnly): do not disable when SS starts
+		- feat(deps,rn) update react-native-webrtc@106
+		- feat(route) Redirect to a custom welcome page
+		- Adds docs, config and scripts around the visitor mode. (#12658)
+		- Prints the error on problem sharing YouTube video.
+		- feat(giphy) disable feature from dynamic branding (#12620)
+
+	- Fixes:
+		- fix(config) Delete deprecated config. Client (receiver constraints)  and bridge use the new b/w allocation strategy by default.
+		- fix(config): Remove unused config values. capScreenshareBitrate and setScreenSharingResolutionConstraints are no longer valid.
+		- fix(audio-only):Don't disable on SS started. (#12733)
+		- fix(lang) update German translation (#12720)
+		- fix(welcome-page) Fix error before joining a meeting from welcome page (#12718)
+		- fix(filmstrip): scroll
+		- fix(config) Remove code related to deprecated configs 'preferH264' and 'disableH264'.
+		- fix(face-landmarks): check for track state only if image capture is not polyfill (#12711)
+		- fix(rn) temporarily disable P2P
+		- fix(android,config) allow to override integer config
+		- fix(rn,polyfills) simplify WebRTC polyfills
+		- fix(rn,config) make sure VP9 is never selected
+		- fix(rn) removes settings dialog webviews and opens urls in browser
+		- fix(invite-dialog) adjust dial in limit display condition and styling (#12654)
+		- fix(conference) Fixes an issue where first unmute with disableInitialGUM=true was resulting in user staying muted. When device list changes, create a new track with the preferred device only if the user is unmuted. If the user is audio/video muted, remove the existing track from conference. A new track will be created and replaced automatically when the user unmutes. Also since screensharing is a separate source, always check for updated camera devices.
+		- fix(config): cleanup config function (#12690)
+		- fix(rn,dynamic-branding) fix handling bogus response from the backend
+		- fix(prejoin) fix prejoin app dialogs not being visible (#12689)
+		- fix(rn,screenshare) rework the logic for unified-plan with multi-stream
+		- fix(rn,config) don't disable multi-stream sending on RN
+		- fix(prejoin) Fix missing lib error
+		- fix(salesforce) require selected records + styling (#12669)
+		- Error in patching config.js
+		- Fixes undefined error in some cases after patching config.js.
+		- fix(e2ee) avoid running middleware when there is no conference
+
+
+	lib-jitsi-meet
+	- New features:
+		- Remove the startBitrate and minBitrate conference-request options. (#2194)
+		- feat(rn,TPC) use modern layer selection on RN
+		- feat(browser-support) use Unified Plan on React Native
+		- Moves vnode handle from  conferenceIQ error to success response.
+
+	- Fixes:
+		- fix(deps) Use Yarn v2 compatible syntax (#2092)
+		- fix(codec-selection): Codec selection fixes. 1. Checks peer's preferred codec in p2p case. Mobile and web have different preferred codecs. 2. Log an error message when the preferred codec is not offered by JVB. 3. Clean up code related to deprecated config.js settings 'preferH264' and 'disableH264'. 4. Refactor the codec selection logic so that correct codec is picked.
+		- fix(spot) adapt to API changes and fix remote screen-share
+		- fix(rn,CodecSelection) RN now supports the capabilities API so use it
+		- fix(rn,ConnectionQuality) use new APIs for target bitrate on RN
+		- fix(BridgeChannel): prevent multiple websockets on retries (#2179)
+		- fix(statistics): remove infinite logging (#2180)
+		- set faceLandmarks on update only if it is has data (#2177)
+
+- [jicofo 1.0-977](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8194)
+	- New features:
+		- Handle conference requests over HTTP. (#1012)
+		- Keep track of participant features better, expose stats. (#1023)
+
+	- Fixes:
+		- Fix example selection strategy configuration. (#1026)
+		- Do not remove sources in colibri on transport-info. (#1022)
+		- Fix JingleSession handling. (#1021)
+		- removing own sources (#1020)
+
+- [jitsi-videobridge 2.2-67-gc7f2b2d5](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8194)
+	- New features:
+		- Allow a different domain for the relay WS. (#1978)
+		- Replace existing MucClient if the config has changed. (#1975)
+
+	- Fixes:
+		- Use metaconfig from mvn central, remove jitpack repos (broken). (#1979)
+
 ##  2.0.8138 (2022-12-07)
 - [jitsi-meet 1.0.6854](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8138)
 	- New features:
