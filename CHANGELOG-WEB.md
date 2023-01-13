@@ -2,6 +2,50 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8218 (2023-01-13)
+- [jitsi-meet 1.0.6918](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8218)
+	- New features:
+		- feat(rn,deps) update react-native-webrtc to 106.0.3
+		- feat(polls): added marginTop
+		- feat(share-room): created getInviteOthersControl helper (#12769)
+		- feat(rn,deps) update react-native-webrtc to 106.0.2
+		- feat(share-room): disable Invite Others button when Share is visible (#12765)
+		- feat(ui/polls/security/native): style fixes and updates  (#12761)
+		- Append ?room= to conferenceRequestUrl. (#12753)
+		- feat(android) created Monochrome Icon
+		- feat(base/media): SS mobile align (#12743)
+
+	- Fixes:
+		- Drops jicofo-authuser as we use hardcoded value.
+		- Fix appending URL params. (#12763)
+		- fix(deeplinking) Consider deprecated config (#12758)
+		- fix(audio-only) Fix an issue where 'startAudioOnly' in config is not applied to web clients.
+		- fix(local-rec) Stop recording properly on size exceeded (#12757)
+		- Fixes using s2s for visitors.
+
+
+	lib-jitsi-meet
+	- New features:
+
+	- Fixes:
+		- Fix setting machineUid when sending conference-request.
+		- fix(quality-control) Fix receiver constraints for default case. When the application doesn't set receiver constraints, generate default constraints in the source-name mode. Cleanup code related to the endpoint based video constraint handling for p2p connection.
+		- fix(qualitycontrol): Cleanup old receiver constraints. Endpoint based receiver constraints and other endpoint based bridge signaling messages are no longer supported by latest JVB after the switch to source-name signaling. Rename method names 'sendNewReceiverVideoConstraintsMessage'->'sendReceiverVideoConstraintsMessage', 'setNewReceiverVideoConstraints'->'setReceiverVideoConstraints'
+		- fix(JitsiTrack) Add setSourceName/getSourceName methods to JitsiTrack class.
+		- fix(p2p) Fix an issue where unmute fails on p2p with channelLastN=0. Always initiate a sRD->cA->sLD cycle since renegotiation fails in the following scenario. In a p2p call when channelLastN=0, the direction on the video tranceiver is set to'inactive'. At this point, if the user unmutes, the track is replaced on the video sender. If a cO->sLD->sRD is triggered, the browser adds a third m-line which isn't expected and possibly is a bug. All renegotiations fail as a result. However, the browser does not add a third m-line in the answer it generates and renegotiation succeeds.
+		- fix(BridgeChannel) skip close notification if the code is 1001
+
+- [jicofo 1.0-980](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8218)
+	- New features:
+
+	- Fixes:
+		- Drop jicofo-authuser as we use hardcoded value.
+
+- [jitsi-videobridge 2.2-67-gc7f2b2d5](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8218)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.8194 (2023-01-12)
 - [jitsi-meet 1.0.6897](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8194)
 	- New features:
