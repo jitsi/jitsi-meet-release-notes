@@ -2,6 +2,61 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8252 (2023-01-30)
+- [jitsi-meet 1.0.6943](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8252)
+	- New features:
+		- feat(config/giphy) add proxyUrl config for giphy requests (#12816)
+		- feat(base/lib-jitsi-meet): fixed build failing from bad import
+		- feat(narrow-layout) Use drawer menus on desktop narrow mode (#12799)
+		- ssrc rewriting (#12408)
+		- feat(ci) add luacheck
+		- feat(chat) Redesign chat
+		- feat(participants) Add count badge to toolbar button
+		- feat(settings/native): changed FormSectionAccordion.js to FormSection.tsx
+		- feat(wifistats) drop support for WiFiStats
+		- feat(external-api) sandbox the iframe
+		- feat(polls): removed platform check and fixed button arrangement (#12780)
+		- feat(rn,deps) update react-native-webrtc to 106.0.4
+
+	- Fixes:
+		- fix(external-api) fix sending forms after introduction of sandbox
+		- fix(Thumbnail):limit the size of the avatar to 200
+		- Fixed overflow of popover (#12814)
+		- fix(recording-dialog) Fix switch UI (#12826)
+		- fix(breakout-room, rn): joining room
+		- fix(conferendce-timer) use "monospace" digits
+		- fix(lang) updated Esperanto
+		- fix(authentication) don't hide the dialog until auth has completed
+		- fix(external-api) fix no longer allowing popups
+		- fix(local-rec) Reset max size on recording stop (#12815)
+		- fix(external-api) Don't check recording service for live streaming (#12807)
+		- fix(dialog) Make sure dialog fits in the available height (#12803)
+		- fix(config,debian) fix multistream backwards compatibility
+		- fix(deep-linking) drop broken an unused setting
+		- fix(welcome-page) Fix narrow mode (#12781)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(ssrc-rewriting) Advertise support to Jicofo. (#2209)
+		- ssrc rewriting (#2192)
+		- feat(statistics) drop support for WiFiStats
+
+	- Fixes:
+		- Bring back code setting externalAuthEnabled. (#2207)
+		- fix(SignalingLayer) Update SSRC owners on leave. (#2184)
+
+- [jicofo 1.0-987](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8252)
+	- New features:
+		- generate AV1 SDP in Jicofo (#994)
+
+	- Fixes:
+
+- [jitsi-videobridge 2.2-69-gad606ca2](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8252)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.8218 (2023-01-13)
 - [jitsi-meet 1.0.6918](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8218)
 	- New features:
