@@ -2,6 +2,92 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8319 (2023-02-21)
+- [jitsi-meet 1.0.6991](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8319)
+	- New features:
+		- feat(video-picker) Redesign (#12902)
+		- feat(overlay): native page reload dialog (#12667)
+		- feat(audio-menu) Redesign audio picker menu (#12899)
+		- feat(icons) add new moderator icon
+		- feat(config) add flag to disable lobby password & group lobby config flags (#12793)
+		- add custom buttons for participant menu and toolbar via config (#12832)
+		- feat(dialout) check appId for permission to call outbound destination (#12871)
+		- feat(base/icon): removed burger icon (#12876)
+		- feat(participants-pane): removed unused action
+		- feat(title-bar) Update design (#12851)
+		- feat(giphy) add sample resource for giphy-proxy
+		- feat(prejoin) Update design (#12844)
+		- feat(polls/native): changed remove option button color to match web
+		- feat(polls) Redesign (#12838)
+		- feat(ci): using .luacheckrc
+
+	- Fixes:
+		- fix(external-api) Unpin all participants when participant id is null (#12921)
+		- fix(video-quality) Add pinned participants to selectedSources. When mulltiple videos are pinned to the stage filmstrip, the expectation is that the bridge will forward all the videos even if they are of lower quality. For this, the video sources need to be added to selectedSources instead of onStageSources.
+		- fix(follow-me-pinning) Fix pin/unpin when follow-me (#12911)
+		- fix(context-menu): set height for context menu when it does not have enough space at top
+		- fix(video-background): set dialog add button margin to right size
+		- fix(rn) makes the preferedCode vp8 and enabled p2p
+		- fix(notifications) remove dead code
+		- fix(participants-counter) Style fix (#12907)
+		- fix(ios) avoid getting duplicated SDK events
+		- Drop unused dependency.
+		- fix(chat) keep avatar width inside flex container (#12891)
+		- fixup!
+		- fixup!
+		- fixup!
+		- fix(participant-count) Fix mobile style (#12880)
+		- fix(remote-control) Add some missing key codes for numpad (#12879)
+		- fix(context-menu) Minor style fixes (#12874)
+		- fix(filmstrip) Minor style fixes (#12870)
+		- fix(etherpad) avoid using deprecated property
+		- fix(etherpad) fix CORS issues
+		- fix(toolbar) Fix styles (#12863)
+		- fix(deps) remove nunused dependencies
+		- fix(local-rec) Handle no mic permission (#12862)
+		- fix(toolbox): consistent color of hangup buttons
+		- fix(lang) updated Dutch translation
+		- fix(toolbox): do not show hangup menu for non-moderators
+		- fix(local-recording) after IFrame sandboxing
+		- Fixes follow-me on the side that is screen sharing.
+		- Fixes follow-me when there is a screenshare.
+		- fix(context-menu) Fit the overflow menu on small heights (#12848)
+		- fix(chat) Break long text in multiple lines (#12842)
+		- fix(self-view) Hide self view when alone in meet as well (#12831)
+		- fix(face-landmarks): set session id for webhook using method (#12834)
+
+	- Translation updates:
+		- update German translation
+		- Update Portuguese translation (#12647)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Ignore colibri-ws urls if their domain matches ignoreDomain. (#2214)
+
+	- Fixes:
+		- fix(TPC): Fix encodings for p2p connection. 'localStreamEncodingsConfig' is no longer available on TPCUtils.
+		- fix(TPC): make screen share bitrate configurable (#2215)
+
+- [jicofo 1.0-996](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8319)
+	- New features:
+		- Return ready=false when the MUC is not joined (regardless of whether authentication is enabled). (#1045)
+
+	- Fixes:
+		- Fix health status in stats. (#1046)
+		- Fix NPE if chatRoom get nulled. (#1039)
+		- Fully implement XmppProvider.Listener in BaseBrewery. (#1040)
+
+- [jitsi-videobridge 2.2-79-gf6426ea0](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8319)
+	- New features:
+		- Advertise multiple colibri-ws URLs. (#1988)
+
+	- Fixes:
+		- Fix setting health check status in /colibri/stats and xmpp. (#1994)
+		- Fix maxHeight when -1 is replaced for an existing key (reported by @ruozhen-vsee in #1985). (#1991)
+		- wrong statistic paths (#1987)
+		- fix(#1962): Fix lastn when an endpoint has an enabled and a disabled source. (#1989)
+
 ##  2.0.8252 (2023-01-30)
 - [jitsi-meet 1.0.6943](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8252)
 	- New features:
