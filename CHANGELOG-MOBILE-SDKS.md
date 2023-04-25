@@ -1,5 +1,42 @@
 # Mobile SDKs Changelog
 
+# 8.0.0 (2023-04-25)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.0.0)
+
+## Changes
+
+- Updated WebRTC to version 111 and migrated to Unified Plan
+- UI tweaks to all screens
+- Overhaul notifications UI
+- Add language selection support to subtitles
+- Replace ongoing meeting indicator with a notification
+- Add support for visitor mode
+- Reloading a meeting after a failure bypasses the pre-join screen
+- Skip disabling low bandwidth mode when screen-sharing
+- Open settings links in the system browser
+- Fix UI conflict between raised hand indicator and filmstrip
+- Fix joining breakout rooms
+- Fix opening multiple share-meeting sheets
+- Reinitialize rtcstats when the config changes
+- Updated React Native to version 0.68.6
+- Updated translations
+
+### Android
+
+- Fix not leaving the room when swiping the activity recent apps
+- Added default notification icon
+- Allow to override integer config
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-7.0.1...android-sdk-8.0.0)
+
+### iOS
+
+- Avoid getting duplicated SDK events
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-7.0.1...ios-sdk-8.0.0)
+
 # 7.0.1 (2022-12-08)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-7.0.1)
