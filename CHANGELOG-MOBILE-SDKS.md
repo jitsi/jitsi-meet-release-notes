@@ -1,5 +1,16 @@
 # Mobile SDKs Changelog
 
+# 8.1.0 (2023-04-27)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.1.0)
+
+## Changes
+
+### Common
+
+- Fix authentication
+
 # 8.0.0 (2023-04-25)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.0.0)

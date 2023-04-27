@@ -1,5 +1,17 @@
 # Mobile apps Changelog
 
+# 23.1.0 (2023-04-27)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-23.1.0)
+
+## Changes
+
+### Common
+
+- Fix authentication
+
+
 # 23.0.0 (2023-04-25)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.0.0)
