@@ -11,6 +11,17 @@
 
 - Fix authentication
 
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-23.0.0...android-23.1.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-23.0.0...ios-23.1.0)
 
 # 23.0.0 (2023-04-25)
 
