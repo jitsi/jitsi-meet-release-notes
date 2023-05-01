@@ -1,5 +1,17 @@
 # Mobile SDKs Changelog
 
+# 8.1.1 (2023-05-01)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.1.1)
+
+## Changes
+
+### Android
+
+- Raise minimum API level to 24
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.1.0...android-sdk-8.1.1)
+
 # 8.1.0 (2023-04-27)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.1.0)
