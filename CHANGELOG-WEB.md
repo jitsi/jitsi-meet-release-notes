@@ -2,6 +2,296 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8615 (2023-05-01)
+- [jitsi-meet 1.0.7235](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8615)
+	- New features:
+		- Adds conference duration to the amplitude stat. (#13294)
+		- Shows html in notification warning.
+		- Implements amplitude events for messages count.
+		- Disables sending localstats in visitor mode. (#13279)
+		- feat(external-api) support assumed bandwidth bps config and command (#13164)
+		- feat(conference): fixed raisedhandcountlabel and filmstrip conflict
+		- feat(invite/native): add people functionality fixes (#13240)
+		- feat(base/config): commented out mobile codecs override
+		- Adds an option to disable iframeAPI. (#13235)
+		- Adds a module for restricting number of messages in a room. (#13229)
+		- Module to expose turn credentials via http endpoint.
+		- feat(subtitles): rework feature (#12484)
+		- Module to rate limit based on sent stanzas via ip.
+		- Module to kick jigasi from a meeting via http endpoint.
+		- Module to invite jigasi to a meeting via http endpoint.
+		- Module to ban users based on external service.
+		- Module to provide http endpoint for ending a meeting.
+		- Module to hide rooms for some queries.
+		- Module to flip devices.
+		- Module to restrict muc access.
+		- feat(external-api) drop iframe sandbox
+		- feat(visitors): Fix creating breakout rooms for promoted visitor. (#13188)
+		- feat(visitors): Updates meeting id for visitor rooms.
+		- feat(visitors): Adds an option to ignore certain domains. (#13174)
+		- feat(polls): answer and question inputs native updates (#13166)
+		- feat(conference, toolbox): reverted PR and removed pointer events from parent views
+		- feat(participants-pane) Design update (#13162)
+		- feat(conference, toolbox): fixed linter
+		- feat(filmstrip): update method to match meeting participant item onpress method
+		- feat(connection-table): e2ee verified changes
+		- clear base.html (#13157)
+		- support loading pwa-worker from subdir (#13156)
+		- Visitors stats (#13139)
+		- feat(recording): fix ui for live stream screen on mobile (#13123)
+		- Updates visitors component with new iq messages. (#13125)
+		- Visitors chat (#13112)
+		- feat(visitors): Updates mobile to handle redirected conf error. (#13110)
+		- feat(conference): hide status bar on android devices
+		- feat(prejoin) Update design & refactor (#13089)
+		- feat(filmstrip): updated styles and moved raised hand count to the right (#13094)
+		- feat(prejoin): decreased height for bottom container
+		- feat(filmstrip): thumnail indicators ui updates
+		- feat(tooltip) Create and move to our component (#13061)
+		- feat(webhid) - add webhid feature flag (#13071)
+		- feat(mobile/navigation): fixed close button size (#13063)
+		- feat(noise-suppression) add support for Krisp
+		- feat(conference): dismiss calendar notification (#13050)
+		- feat(avatar) Update style (#13019)
+		- feat(thumbnail,filmstrip) - remove tint from owner screenshare participants (#12944)
+		- feat(notifications): NotificationsContainer native updates (#13047)
+		- feat(notifications) Use our own component
+		- feat(filmstrip): fix indicators size
+		- feat(recording/LiveStream): native ui updates
+		- feat(ui-components) Create Spinner component (#13026)
+		- feat(conference): calendar updates (#13020)
+		- feat(calendar-sync): refactored ConferenceNotification (#12945)
+		- feat(ci) build mobile bundles as part of the CI
+		- feat(virtual-background) Move dialog to SettingsDialog tab (#13005)
+		- feat(device-selection) Separate Devices into Audio and Video in Settings (#12987)
+		- feat(shortcuts) Update dialog (#12993)
+		- feat(notification-settings) Update Sounds tab in Settings Dialog (#12990)
+		- feat(profile-tab) Update Profile tab in Settings Dialog (#12992)
+		- Sends the statisticsDisplayName to rtcstats.
+		- feat(devices) scroll overflow devices texts on hover (#12974)
+		- feat(a11y) add headings across the app for easier screen reader nav (#12427)
+		- feat(notifications) trigger iframe api event when a notification occurs (#12952)
+		- feat(notifications): moved notifications to the bottom of the screen
+		- feat(webhid) - add integration webhid telephony device (#12904)
+		- Introduces iAmVisitor mode.
+		- feat(mobile): Adds visitors count.
+		- Adds visitors count in conference info.
+		- Hide self-view and buttons in visitors mode.
+		- Adds visitors count in participants pane.
+		- Adds initial impl of visitors feature.
+		- feat(base/dialog): visibility control for  PageReloadDialog (#12961)
+		- Drops external connect optimization. (#12958)
+		- feat(deeplinking) Refactor deeplinking (#12950)
+		- feat(notifications): fix width for notifications on all devices
+		- feat(notifications): small ui updates (#12943)
+		- feat(lobby): deleted knocking participant api event (#12940)
+		- feat(notifications): native UI updates (#12798)
+		- feat(mobile/navigation): reload now navigates to conference (#12919)
+		- Avoids joining participants before jicofo is in the room. (#12923)
+
+	- Fixes:
+		- fix(chat): Fixes long display name that overflow the message bubble.
+		- fix(chat): White square when both scrolls are visible.
+		- Hide virtual background for unsupported browsers from vide preview.
+		- multiselect for invite people (#13287)
+		- fix(dialog) Fix close animation moves whole body
+		- fix(chat) Make the name fit the chat bubble
+		- Fixes unresolved function.
+		- fix(chat) Focus input on chat open (#13285)
+		- fix(visitors) Do not add tracks in redux to conference.
+		- Allows jicofo entering rooms without requiring a password.
+		- fix(dial-in) Make text selectable on Dial In page
+		- Updates the option for disabling iframe to show a warning. (#13263)
+		- fix(toolbar) Remove focus on hide (#13256)
+		- fix(lang) update Mongolian translation
+		- fix(android) fix JitsiMeetActivity.onDestroy not leaving the room
+		- fix(visitor): Do not add media tracks in visitor mode. When gUM resolves after the user has joined as a visitor, skip adding the local tracks to the conference.
+		- fix(deps) override xmldom dependency from strophe.js
+		- Fix handling visitor messages and msgs limits module.
+		- Fix logs to use module logger.
+		- fix(whiteboard/pinning) mark whiteboard participant as pinned in the active participant logic (#13232)
+		- Reinitialize rtcstats when the config changes (#13181)
+		- fix(mobile) Do not disableAudioLevels on RN since it uses feature detection now (#13226)
+		- fix(build) drop unused file
+		- fix(google-api): sign out button label on smaller devices
+		- fix(ios) disable CallKit when running in the simulator
+		- fix(desktop-picker): Populate list of desktop app windows to share
+		- fix(toolbox): imports
+		- fix(dial-in) Make text selectable (#13205)
+		- breakout rooms with non-ascii room names
+		- fix(notifications-tab) Fix sounds settings (#13195)
+		- fix(device-picker) Close picker when another is open (#13190)
+		- leave the conference after it is destroyed (#13182)
+		- fix(popover) Fix close popover from toggle button (#13180)
+		- fix(visitors): Fixes large video and pinning.
+		- Updates the rules for visitor room destroy.
+		- Handles max occupants reached from a visitor node.
+		- Show visitors notification only when iAmVisitor is true.
+		- fix(lastn): Do not update lastn on participant join/leave. Last-n doesn't need to be updated when participants join/leave the conference or for other layout changes.
+		- fix(config) Remove the code related to lastN limits which is not used anymore.
+		- fix(toolbox): stop onpress bubbling for components underneath the toolbox
+		- fix(conference): stop onpress bubbling for components underneath the titlebar
+		- revert base.html clearing (#13161)
+		- fix(external-api): Set ifame.src before adding it.
+		- fix(docs) set proper language for codeblocks in lang/readme.md
+		- fix(notications): increased notification max height for buttons to fit (#13152)
+		- fix(api) webhid error showing up in logs
+		- fix(config) Remove ununsed abTesting config.
+		- fix(config) cleanup unused 'enableLayerSuspension' flag.
+		- fix(config) Ignore enableUnifiedOnChrome config flag. Always enable unified plan support on Chromium endpoints.
+		- fix(filmstrip): show video for screenshare participant in tile view
+		- fix(design-system) Remove tokens that are not part of DS (#13122)
+		- fix(filmstrip): hide screenshare indicator if not screen sharing
+		- fix(notifications) drop no longer used css file (#13100)
+		- fix(share-audio) Fix dialog max-height (#13114)
+		- fix(tooltip) Don't show on small screens (#13113)
+		- fix(visitors): Visitor updates - request to participate (#13106)
+		- fix(lang) update Japanese translation
+		- fix(lang) update Russian translation
+		- fix(welcome-page) Fix function name (#13097)
+		- fix(polls) Fix style issue (#13090)
+		- fix(device-picker) Close the picker when the other one opens (#13091)
+		- fix(lang) update Ukrainian translation
+		- fix(remote-control):Pin the control participant SS
+		- Returns source names only for existing participants.
+		- fix(external_api) fix linking to the Jitsi mobile application
+		- fix(large-video):Dont elect participants that left
+		- fix(speaker-stats) Change icon (#13074)
+		- fix(conference-timer) Show correct time (#13070)
+		- fix(notification) Fix overflow issue (#13068)
+		- fix(audio-picker) Fix max height (#13069)
+		- fix(welcome-header) Fix and improve welcome page header (#13056)
+		- fix(thumbnail) Fix broken video for thumbnail. Fixes a regression introduced by https://github.com/jitsi/jitsi-meet/commit/466a36dc93bb19cbc66ed788427e5efb3130ba33
+		- fix(test) Switch to using 'streamingStatus' on the track for checking… (#13055)
+		- fix(prejoin) Fix prejoin toolbar buttons
+		- fix(useVideoStream): a crash after GUM failure (#13040)
+		- fix(lang) update Portuguese translation
+		- fix(base/ui): Buttons fix for accessibility large text (#13036)
+		- fix(AudioTrack): Reattach the track to the audio element on error. Audio playback for a remote participant doesn't happen when the browser fires an error event on the audio element that the audio track is attached to. '[modules/RTC/JitsiRemoteTrack.js] <._containerEventHandler>:  error handler was called for a container with attached RemoteTrack' Log an error when that happens and try to re-attach the audio track and execute play on it as a potential fix.
+		- Updates gapi to use new google identity service.
+		- fix(lang) update french translation
+		- Fixes video unmuting in case of av moderation.
+		- fix(overlay): fixed undefined error on web
+		- fix(virtual-background) Style fix (#13016)
+		- fix(settings) use new moderator icon
+		- fix(native) Move function to web file (#13014)
+		- Fixes muc rate limit to fire occupant-pre-join.
+		- fix(e2ee): enabled/supported flags calculation.
+		- fix(participants-reducer):old particpant selection
+		- fix(everyoneIsModerator): Optimize.
+		- fix(e2ee): Optimize.
+		- fix(speaker-stats): dispatch action only on change
+		- Batch actions.
+		- fix(Filmstrip): Use id for localScreenShare.
+		- fix(avatar): Remove unnecessary code.
+		- fix(lastN): Update only if neccessary.
+		- fix(dialog-portal): set z-index to high value (#13004)
+		- fix(av-moderation): buttons for participants pane (#12977)
+		- fix(lang) update Spanish translation
+		- fix(numbers-list) Re-add sip svg
+		- fix(ui) change streaming icon background + add tooltip (#12973)
+		- fix(sound-settings) Disable checkbox for disabled sounds (#12976)
+		- fix(pinning) Fix whiteboard pinning behavior when stage filmstrip is enabled (#12966)
+		- fix(always-on-top) Show participant`s avatar (#12967)
+		- Fixes visitors count when the data is missing.
+		- Always normalizes bosh config.
+		- fix(virtual-background) don't disable uploads
+		- fix(reservations): fixes errors not being displayed when reservation system returns error. removed translations applied twice. (#11144)
+		- fix(video-layout) get pinned participant from payload to determine pinning behavior (#12951)
+		- fix(ParticipantsCounter)fixup  badge style
+		- fix(toolbar) Removed width from toolbar (#12935)
+		- fix(lobby) Fix lobby inputs (#12930)
+
+	- Translation updates:
+		- update translation for mongolian language (#13237)
+		- Greek translations update (#13163)
+		- Improve Traditional Chinese (zhTW) locale (#13169)
+		- Update Russian translations (#12979)
+		- update German translation (#13065)
+		- Update main-sc.json (#12598)
+		- Update main-ca.json (#12597)
+		- Update Finnish translations (#12678)
+		- Update for sq locale translation (#12665)
+		- update German translation (#13000)
+		- Add lower sorbian translation (#12947)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Adds an option to disable local stats.
+		- feat(bandwidth) send bandwidth constraints to the bridge
+		- Adds debug log around connected.
+		- Jibri will ignore redirects for visitors.
+		- Clean up immediately when room is not joined.
+		- Updates strophe stream management plugin.
+		- feat(visitors): Visitors chat. (#2245)
+		- Listens for visitor IQs. (#2241)
+		- feat(build) add ability to make development bundles
+		- Add initial-last-n to jingle if config.channelLastN is set. (#2232)
+		- Add an option to prefer SCTP (if offered) over a colibri-ws. (#2227)
+		- Drops external connect optimization.
+
+	- Fixes:
+		- Downgrade strophe.js to fix react-native.
+		- fix(conference) Make sure media on jvb connection stays suspended. Fixes an issue where media gets sent on jvb connection even when the connection is suspended.
+		- fix(stats) Obtain resolution/fps from 'outbound-rtp' stats. (#2265)
+		- fix(codec-selection) Calc preferred codec after media session is established. Fixes an issue on mobile where the videos of users joining after the mobile endpoint are not being rendered.
+		- fix(audio-levels) check if local stats are supported before starting stats collection.
+		- fix(BrowserCapabilities) drop no longer used file
+		- fix(audio-detection) Enable NoAudioDetection only when local audio levels are available.
+		- fix(statistics) Use RTCRtpReceiver:getSynchronizationSources for audioLevels always. Track based stats have been removed recently and RTCRtpReceiver:getSynchronizationSources has been available in the browsers for a while now.
+		- fix(ssrc-rewriting) Update mute state after source is re-mapped. Also add all the orphan jvb tracks to the conference when the call switches over from p2p to jvb.
+		- fix(ssrc-rewriting) Set track owners to null when remote participant leaves.
+		- Clean up rooms when redirecting to a new one.
+		- Fixes strophe disconnection.
+		- Fixes reconnects with ws stream management plugin.
+		- fix(config) Ignore enableUnifiedOnChrome flag in config.js, always enable unified-plan.
+		- fix(JingleSession) Avoid pushing encodings configuration task to the queue. When configureSenderVideoEncodings task is pushed to the modification queue, there might not be a setParameters call in progress and this new one will not get chanined to any promise. However, when the task finally is executed, there is a chance for another setParameters method execution to be in progress and can result in setParameters call failing. Also, these extra steps to ensure that the sender encodings are correctly encoded are no longer needed since with multi-stream mode, we do not change the source video type and the previous encodings config will still be valid.
+		- fix(TPC) Avoid applying constraints on desktop tracks if not needed. (#2246)
+		- fix(ScreenObtainer) Request high resolutions by default. Request higher capture resolutions when desktopSharingFrameRate is not defined in config.js.
+		- Update xmpp element for visitors. (#2243)
+		- fix(TPC) Chain all RTCRtpSender.setParameters calls. (#2242)
+		- fix(JitsiConference) Check if participants exist before adding the tracks back. When the call switches over to JVB after a remote p2p peer leaves, the remote tracks (of the peer that just left) are removed from the conference after the SSRCs are removed from SDP and since it necessitates a renegotiation, the task is pushed to the modification queue. Since the switch to jvb connection happens immediately, the remote jvb remote tracks are present after the switch and they get added to the conference again. Add the check for the remote participant before adding the tracks. This fixes an issue where the remote tracks are present in redux even after the participant leaves.
+		- fix(codec-selection) Apply codec preferences to initial offer/answer. This fixes an issue where p2p clients (with different codec preferences) fail to decode video because the negotiated codecs are removed from the supported codecs list after the media session is established. The codec preferences will be applied when the first offer/answer is created.
+		- fix(addTrack): throw on undefined (#2230)
+		- fix(ScreenObtainer): make electron desktop resolution constraints configurable
+		- fix(codec-selection) Check if disabled is already removed from sdp. This should avoid unnecessary renegotiations if disabledCodec setting is present in config.js and should improve time to receive media when joining big calls.
+		- fix(TPC) Disable media instead of changing dir for p2p->jvb switch. (#2226)
+		- fix(doc) calirfy how to generate the keys for public validation
+		- fix(onPresence): extract anonymous function
+		- fix(BridgeChannel): Attempt conn retries when there are remote endpoints. Currently, the client doesn't attempt to re-establish bridge WS when the connection is closed by the remote end with a code 1001. We have noticed that Cloudflare terminates the WS with the same error code when it recycles its proxies. When that happens, client ends up not having a bridge channel which can result quality issues. Client now tries to re-establish connection when there are remote endpoints in the call.
+		- fix(SDP): extmap's are allowed at session level
+
+- [jicofo 1.0-1027](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8615)
+	- New features:
+		- Read initial-last-n from jingle, set it in colibri2. (#1052)
+
+	- Fixes:
+		- Use fixed queue names for jingle and role manager queues. (#1084)
+		- feature discovery blocking a smack thread. (#1078)
+		- Temporary fix for counting visitors. (#1074)
+		- Tell bridges what mesh they belong to. (#1073)
+		- Fix incorrect logs when the extensions didn't change. (#1071)
+		- Ignore errors for stale sessions/participants. (#1070)
+		- participant count for visitor redirection. (#1068)
+		- Use a ConcurrentHashMap to avoid an exception. (#1061)
+		- Allow null from smack listeners. (#1060)
+		- Handle registering listeners after XmppProvider has registered. (#1053)
+		- Do not log error when visitors are disabled. (#1049)
+
+- [jitsi-videobridge 2.3-19-gb286dc0c](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8615)
+	- New features:
+		- Support setting the initial value of last-n through colibri2. (#2003)
+		- Add an option to assume a given value for BWE. (#1997)
+
+	- Fixes:
+		- Fix PacketCacher stats aggregation. (#2019)
+		- Correctly read assumed-bandwidth-limit as a Bandwidth. (#2018)
+		- Fix sending preemptive keyframe requests with source names, do not send for screensharing. (#2017)
+		- reversed condition adding websockets to transport parameters. (#2016)
+		- XMPP health checks (#2015)
+		- setting transport for relays not using sctp. (#2005)
+
 ##  2.0.8319 (2023-02-21)
 - [jitsi-meet 1.0.6991](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8319)
 	- New features:
