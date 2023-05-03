@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# 23.1.1 (2023-05-01)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.1.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-23.1.1)
+
+## Changes
+
+### Common
+
+- N/A
+
+### Android
+
+- Raise minimum API level to 24
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-23.1.0...android-23.1.1)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-23.1.0...ios-23.1.1)
+
 # 23.1.0 (2023-04-27)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.1.0)
