@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# 23.1.2 (2023-05-03)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.1.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-23.1.2)
+
+## Changes
+
+### Common
+
+- N/A
+
+### Android
+
+- Add support for hearing aid audio devices
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-23.1.1...android-23.1.2)
+
+### iOS
+
+- Fix video rendering crash
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-23.1.1...ios-23.1.2)
+
 # 23.1.1 (2023-05-01)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.1.1)
