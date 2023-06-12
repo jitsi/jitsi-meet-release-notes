@@ -2,6 +2,124 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8719 (2023-06-12)
+- [jitsi-meet 1.0.7322](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8719)
+	- New features:
+		- feat(external-api) add function and event to check p2p status (#13406)
+		- feat(screen-lock): request on conference join.
+		- Adds a stat for limited ips.
+		- feat(unmute/track creation): pending indicator.
+		- feat(toolbox) Shift up to make tile name visible
+		- feat(rn,config) use more efficient codecs on mobile
+		- feat(jaas-example): Uses conf-id generated from token generator.
+		- feat(CI) Improve CI (#13360)
+		- feat(ios): podfile.lock update
+		- feat(deps,rn) update React Native to version 0.69.9 (#13241)
+		- Jaas example that uses local jitsi-meet (#13350)
+		- feat(prejoin) add unsafe room name warning
+		- feat(external-api) optional sandbox
+		- feat(video-menu): native track volume control updates (#13305)
+		- Updates unsupported desktop to tsx.
+		- add toggleWhiteboard to Jitsi API (#13292)
+		- feat(android) add support for Hearing Aid devices
+		- Audio output settings in visitor mode. (#13315)
+		- Sets meeting id using the connect method.
+		- feat(reactions): New button for web.
+		- feat(android) bump minimum API level to 24
+		- feat(visitors): Handles locked rooms for visitors. (#13296)
+
+	- Fixes:
+		- fix(chat-input) Autofocus when sending private message (#13400)
+		- fix(toolbar) Fix auto-hide toolbar in tileview (#13424)
+		- fix(visitors): Fixes delivering visitors presence to jicofo.
+		- fix(visitors): Ignore push-to-talk shortcut.
+		- fix(device-selection): Do not create multiple tracks for the same deviceId. Also, log an error when when the application fails to switch to the selected audio output device.
+		- fix(visitors): Fixes s2s multiple connections.
+		- fix(participants): Ignore orphan tracks in ssrc-rewriting mode. Gets rid of an unwanted error that gets printed in the log when there are orphan tracks.
+		- fix(visitors): Fixes rate limit module.
+		- fix(lang) update Farsi translation
+		- build after Giphy update (#13393)
+		- fix(visitors): Fixes patch.
+		- fix(visitors): Fixes leaking s2s connections. (#13391)
+		- Fix matching user affiliation.
+		- fix(visitors): Filters some more presences coming back to main prosody.
+		- fix(visitors): Filters some presences coming back to main prosody.
+		- fix(visitors): Change log level.
+		- fix(visitors): Do not send error replies for errors.
+		- fix(API)setLargeVideoParticipant ensure stage view
+		- fix(toolbox-visible) Fix hiding toolbox - clicking toolbox button was keeping focus on toolbox even after mouse move(as focus would only be changed when clicking on some other element), so .toolbox-content-items:focus-within selector was returning a value even when mouse was moved from toolbox - .filmstrip:focus-within did not seem to ever activate, I replaced with :hover since the intent was probably to keep the toolbox open while filmstrip is hovered
+		- fix(CI): Eslint warning for testing ignored files.
+		- fix(web-hid): Fully disable from config
+		- fix(stale) migrate stale to GH actions
+		- fix(reactions-popup) Fix tooltip not closing correctly (#13367)
+		- Adds visitor messages to the room history.
+		- fix(visitors): Leave and disconnect before connecting. (#13362)
+		- Do not allow visitors while lobby is enabled.
+		- fix(lang) update Portuguese translation
+		- fix(prejoin): avoid bypass unsafe consent when enter is pressed in name input (#13344)
+		- fix(android) set MainActivity launch mode to singleInstance
+		- fix(local-recording) Enable local rec for non-moderators (#13334)
+		- fix(virtual-background) Use correct video device (#13329)
+		- fix(toolbar-buttons) Hide rec and livestream buttons for non-moderators (#13328)
+		- Fixes notifying vnodes to destroy rooms.
+		- Fix measure messages.
+		- fix(large-video): Attempt to fix jumping.
+		- Restore old config for promoted visitors.
+		- fix(ios) bump WebRTC version to fix crash
+		- Handles disconnect coming from jicofo to destroy visitor rooms.
+		- Drops console warn for logger.
+		- Disables p2p for visitors as it doesn't make sense.
+		- Fix xmldom version to be used.
+		- fix(main-Toolbox): Display the correct buttons.
+		- fix(dial-in) Place PIN on a new line (#13309)
+		- fix(chat) Fix horizontal scroll (#13308)
+		- Fix room locking without visitors.
+		- fix(ios) avoid rejecting builds in progress in TestFlight
+		- fix(checkbox) Fix misalign when label has multiple lines (#13304)
+		- fix(chat) Fix name overflows chat bubble (#13303)
+		- fix(keyboard-a11y) Remove space from click trigger
+
+	- Translation updates:
+		- Improve Swedish translation (#13356)
+
+
+	lib-jitsi-meet
+	- New features:
+
+	- Fixes:
+		- Remove TRACK_VIDEOTYPE_CHANGED listener on dispose
+		- fix(JingleSession): Check for source updates after every reneg Check for source updates and notify the peer of any new sources after every renegotiation cycle. This fixes issues where source changes are not detected if any other task that requires a renegotiation is scheduled between replaceTrack and a negotiationneeded event.
+		- fix(logging) Use logger for TTFM stats.
+		- Disconnect after being kicked.
+		- fix(ssrc-rewriting) Update owners when a new SSRC is assigned to existing source. Fixes a bug where the remote video freezes if the remote user does an ICE restart using session-terminate. In this case, a new SSRC is assigned to the remote source which will have the same source-name.
+		- fix(TPC) Ignore codecSelection when codec settings are missing. Fixes an issue with Spot screensharing since Spot uses a fake conference to create a connection for screensharing and codecSettings are undefined.
+		- Fix possible uncaught error on redirected.
+		- fix(TPC) do not set videoType for audio sources
+		- fix(SignalingLayer) do not set videoType for audio sources
+		- fix(p2p)  Enable p2p for Firefox. (#2279)
+		- fix(JitsiConference) Do not apply the startMutedPolicy locally on the moderator. (#2280)
+		- fix(JitsiConference) Do not add local tracks on p2p when startMutedPolicy is set to true. Fixes an issue that started surfacing after https://github.com/jitsi/lib-jitsi-meet/commit/f0dd403951dd5d417aca301f0b8b4e2d31751713 because local tracks were getting added to pc even when the moderator has set start muted policy to true.
+		- fix(JingleSession) start modification queue after session is established. Pull initial offer/answer tasks out of the modification queue and execute them right away. Only track and codec related operations that necessitate a renegotiation cycle need to be pushed to the modification queue. The queue execution is paused until the session is established. This avoids track operations being executed before the session is established. This fixes an issue seen in p2p connections where sources of the initiator are not signaled to the remote since the tracks are added while the initiator is waiting for a session-accept from the peer.
+		- fix(e2ee) call correct function to update key
+		- fix(p2p) Enable p2p for Safari
+		- fix(conference) Update JSDoc for JitsiConference:setReceiverConstraints()
+
+- [jicofo 1.0-1038](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8719)
+	- New features:
+		- Add the application version to metrics. (#1096)
+
+	- Fixes:
+		- Actually stop the conference after the timeout. (#1097)
+		- Fix log message and error response for STOP request for unknown session. (#1093)
+		- Fix chat room debug state. (#1089)
+
+- [jitsi-videobridge 2.3-25-g1da507fa](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8719)
+	- New features:
+
+	- Fixes:
+		- Do not update RTT when the calculated value is invalid (#2025)
+		- Fix broken audio when SSRC rewriting with relays (#2024)
+
 ##  2.0.8615 (2023-05-01)
 - [jitsi-meet 1.0.7235](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8615)
 	- New features:
