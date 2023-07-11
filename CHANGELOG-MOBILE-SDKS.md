@@ -1,5 +1,37 @@
 # Mobile SDKs Changelog
 
+# 8.2.0 (2023-07-11)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.2.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.2.0)
+
+## Changes
+
+### Common
+
+- Use more efficient codecs by default
+- Add unsafe room name warning
+- Add ability to control remote track volume
+- Settings: add field with SDK version
+- Fix not showing a screen-share until a reload
+- Fix and and zoom in remote screen-share
+- Fixes for visitor mode
+- Update native dependencies
+- Updated React Native to version 0.69
+- Updated translations
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.1.2...android-sdk-8.2.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.1.2...ios-sdk-8.2.0)
+
 # 8.1.2 (2023-05-03)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.1.2)
