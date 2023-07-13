@@ -1,5 +1,36 @@
 # Mobile apps Changelog
 
+# 23.2.0 (2023-07-11)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.2.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-23.2.0)
+
+## Changes
+
+### Common
+
+- Use more efficient codecs by default
+- Add unsafe room name warning
+- Add ability to control remote track volume
+- Settings: add field with SDK version
+- Fix not showing a screen-share until a reload
+- Fix and and zoom in remote screen-share
+- Fixes for visitor mode
+- Update native dependencies
+- Updated translations
+
+### Android
+
+- Set MainActivity launch mode to singleInstance
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-23.1.2...android-23.2.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-23.1.2...ios-23.2.0)
+
 # 23.1.2 (2023-05-03)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.1.2)
