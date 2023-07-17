@@ -1,5 +1,51 @@
 # Mobile SDKs Changelog
 
+# 8.2.2 (2023-07-17)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.2.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.2.2)
+
+## Changes
+
+### Common
+
+- Update React Native to version 0.69.11
+
+### Android
+
+- Fix React-Native POM file when publishing
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.2.1...android-sdk-8.2.2)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.2.1...ios-sdk-8.2.2)
+
+# 8.2.1 (2023-07-14)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.2.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.2.1)
+
+## Changes
+
+### Common
+
+- Add feature flag to control the unsafe room name warning message
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.2.0...android-sdk-8.2.1)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.2.0...ios-sdk-8.2.1)
+
 # 8.2.0 (2023-07-11)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.2.0)
