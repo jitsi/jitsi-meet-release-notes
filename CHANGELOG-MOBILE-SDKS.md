@@ -1,5 +1,16 @@
 # Mobile SDKs Changelog
 
+# 8.3.0 (2023-08-23)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.3.0)
+
+## Changes
+
+### Common
+
+- N/A
+
 # 8.2.2 (2023-07-17)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.2.2)

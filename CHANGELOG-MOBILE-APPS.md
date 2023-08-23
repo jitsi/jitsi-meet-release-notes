@@ -1,5 +1,17 @@
 # Mobile apps Changelog
 
+# 23.3.0 (2023-08-23)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-23.3.0)
+
+## Changes
+
+### Common
+
+- New Settings screen
+- Support for Firebase authentication
+
 # 23.2.0 (2023-07-11)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.2.0)
@@ -13,8 +25,8 @@
 - Add unsafe room name warning
 - Add ability to control remote track volume
 - Settings: add field with SDK version
-- Fix not showing a screen-share until a reload
-- Fix and and zoom in remote screen-share
+- Fix not showing a screen-share until reload
+- Fix and zoom in remote screen-share
 - Fixes for visitor mode
 - Update native dependencies
 - Updated translations
