@@ -9,7 +9,7 @@
 
 ### Common
 
-- N/A
+- Fix for screen-share event toggle tracking.
 
 # 8.2.2 (2023-07-17)
 

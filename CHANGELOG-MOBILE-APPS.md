@@ -11,6 +11,9 @@
 
 - New Settings screen
 - Support for Firebase authentication
+- Hide Grant Moderator inside breakout rooms
+- Authentication through Profile screen
+- Count badge for Participants button
 
 # 23.2.0 (2023-07-11)
 
