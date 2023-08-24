@@ -1,5 +1,16 @@
 # Mobile apps Changelog
 
+# 23.3.1 (2023-08-24)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.3.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-23.3.1)
+
+## Changes
+
+### Common
+
+- Fix for non-token authentication.
+
 # 23.3.0 (2023-08-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.3.0)

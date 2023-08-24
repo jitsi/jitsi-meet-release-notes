@@ -1,5 +1,16 @@
 # Mobile SDKs Changelog
 
+# 8.3.1 (2023-08-24)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.3.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.3.1)
+
+## Changes
+
+### Common
+
+- Fix for non-token authentication.
+
 # 8.3.0 (2023-08-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.3.0)
@@ -10,6 +21,11 @@
 ### Common
 
 - Fix for screen-share event toggle tracking.
+- New Settings screen
+- Support for Firebase authentication
+- Hide Grant Moderator inside breakout rooms
+- Authentication through Profile screen
+- Count badge for Participants button
 
 # 8.2.2 (2023-07-17)
 
