@@ -2,8 +2,8 @@
 
 # 8.3.1 (2023-08-24)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.3.1)
-- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.3.1)
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.3.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.3.1)
 
 ## Changes
 
@@ -13,8 +13,8 @@
 
 # 8.3.0 (2023-08-23)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.3.0)
-- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.3.0)
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.3.0)
 
 ## Changes
 
@@ -29,8 +29,8 @@
 
 # 8.2.2 (2023-07-17)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.2.2)
-- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.2.2)
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.2.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.2.2)
 
 ## Changes
 
@@ -52,8 +52,8 @@
 
 # 8.2.1 (2023-07-14)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.2.1)
-- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.2.1)
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.2.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.2.1)
 
 ## Changes
 
@@ -75,8 +75,8 @@
 
 # 8.2.0 (2023-07-11)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.2.0)
-- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.2.0)
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.2.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.2.0)
 
 ## Changes
 
@@ -107,8 +107,8 @@
 
 # 8.1.2 (2023-05-03)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.1.2)
-- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.1.2)
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.1.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.1.2)
 
 ## Changes
 
@@ -130,7 +130,7 @@
 
 # 8.1.1 (2023-05-01)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.1.1)
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.1.1)
 
 ## Changes
 
@@ -142,8 +142,8 @@
 
 # 8.1.0 (2023-04-27)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-8.1.0)
-- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-8.1.0)
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.1.0)
 
 ## Changes
 
