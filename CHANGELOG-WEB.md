@@ -2,6 +2,212 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8922 (2023-08-28)
+- [jitsi-meet 1.0.7499](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8922)
+	- New features:
+		- feat(authentication): fix normal authentication
+		- feat(authentication): Fixes logging out on web.
+		- feat(authentication): Changes wait for owner cancel txt.
+		- feat(authentication): Hides password button from lobby on waiting for host.
+		- feat(authentication): Fixes logout on web.
+		- feat(authentication): authentication log in/log out through Profile section
+		- feat(dial-in) add sip audio only (#13714)
+		- feat(rn,auth) add support for toekn URL auth
+		- feat(external-api) add command for setting camera facing mode (#13541)
+		- use i18next-http-backend and fix ts-ignore
+		- feat(rn, settings, rn): update view
+		- Shows dialog when about to navigate away on login.
+		- Caches is secure room checks.
+		- feat(toolbar-buttons) Add optional background color (#13691)
+		- feat(static) improve message in authError.html (#13681)
+		- feat(lang) drop enGB as a language
+		- feat(jwt) enhance JWT error notifications with details (#13668)
+		- feat(participants, rn): add count badge to participants buttons (#13667)
+		- feat(compute-pressure) monitor cpu pressure (#13645)
+		- feat(unsafe-room-name) unify logic
+		- feat(rn) add toggleCamera action
+		- feat(rnsdk) makes `flags` and `eventListeners` props optional
+		- feat(rnsdk) share bootsrap code with app
+		- feat(android): add retrieveParticipantsInfo builder in helper (#13642)
+		- Adds auto redirect config for token auth URL.
+		- feat(mobile/external-api): fixed screenshare event toggle tracking (#13620)
+		- feat(breakout-rooms): renaming
+		- Adds wait for host prosody module and handling it.
+		- Adds option to pass extra params (reason) when creating lobby.
+		- Uses some extra fields to discover name and avatar.
+		- Adds option for a url to list of pub keys for jwt to pre-fetch.
+		- feat(conference): hide lonely meeting exp in tile view
+		- feat(display-name): fixed display name label
+		- feat(noise-suppression): persist noise suppression setting (#13593)
+		- feat(external-api) extend event to listen to system buttons and add config to prevent execution
+		- feat(stats) add support for watchRTC
+		- Returns an error on join request with no display name. (#13546)
+		- New config disable feature virtual background (#13580)
+		- feat(rnsdk) add npm ignore file
+		- Drops connection on prejoin screen. (#13538)
+		- feat(base/flags): created flag to control unsafe room warning (#13560)
+		- New prosody auth module using shared secret.
+		- Ignores list of domains when checking for visitors and promotion.
+		- feat(i18n) add i18next compatible IDE-extension for i18n handling
+		- feat(react-native-sdk): updated dependencies
+		- feat(rn,settings) add field with SDK version
+		- allowlist checking for token verification module (#13488)
+		- feat(base/media): fixed movement inside zoomed screenshare (#13476)
+		- feat(external-api) Forward non participant message to iframe (#13440)
+		- feat(bwe) support setting the bandwidth from the client (#13335)
+		- feat(rnsdk) add initial React Native SDK
+
+	- Fixes:
+		- fix(video-menu) hide Grant Moderator inside breakout rooms on native
+		- fix(jitsi-local-storage): remove debug log.
+		- fix(localFlipX) Fix localFlipX for large video (#13728)
+		- Fixes start A/V muted after going to welcome page. Fixes #11393. (#13726)
+		- Fixes i18next trying to fetch non-existing files. Fixes #13716.
+		- Fixes password authentication on prejoin. Fixes #13721.
+		- fix(WaitForOwner) tweak copy
+		- fix(doc): fix typo in jsdoc comment
+		- fix(auth) move common actions to actions.any
+		- fix(auth) open token auth URL in a new window on Electron
+		- fix(jitsi-local-storage):Is empty after reload
+		- Shows login warning for leaving only when in conference.
+		- fix(rnsdk) copying sounds on iOS
+		- fix(chat) Only display private message dialog for active participants (#13708)
+		- fix(toolbar) disable the profile button based on the toolbar logic (#13696)
+		- fix(lang) update zhCN & zhTW translations
+		- Hides email when gravatar is disabled or avatar is provided.
+		- fix(shortcuts) toggle value based on current state (#13685)
+		- fix(input, rn): add deps to input callbacks (#13683)
+		- fix(misc) use safeJsonParse from js-utils
+		- fix(rn, appNavigate) make sure tracks are created before prejoin
+		- fix(lang) update Albanian translation
+		- fix(external-api) extend buttonsWithNotifyClick effect to participants pane invite button (#13660)
+		- fix(local-storage) allow disabling window.localStorage (#13592)
+		- Fixes redirect to token auth URL from welcome page.
+		- fix(docs): Fixes a typo in visitors example config.
+		- fix(connection): Dispatch _connectInternal.
+		- Fixes redirect to auth url, set_room can be undefined.
+		- fix(visitors): Fixes visitors to work with anonymous domain.
+		- fix(welcome, rn): key warning for unsafe room warning (#13626)
+		- Fix wait for owner log.
+		- fix(react-native-sdk): Declare JitsiMeeting `flags` prop as an object instead of an array
+		- fix(BaseDialog):Update onSubmit for keyDown.
+		- fix(breakoutRooms): Fix rename.
+		- fix(ios) disable CallKit when running in a simulator
+		- fix(ios) remove unnecessary fallback for SDK version detection
+		- Skips lobby check for jicofo.
+		- fix(notifications) Show correct info on updated notification (#13607)
+		- Fixes max users and web joining.
+		- fix(authentication): Fixes web login dialog to connect and join.
+		- fix(api) fix parsing API ID
+		- fix(raised-hand) remove duplicate callback (#13598)
+		- fix(css) fix cut off borders and barely visible scrollbars (#13576)
+		- fix(rnsdk) update README
+		- fix(rnsdk,deps) update dependencies
+		- fix(rnsdk) drop unnecessary Swift files and dependencies
+		- Fixes joining visitor.
+		- fix(android) fix crash when pending intent is created without flags
+		- fix(android) fix React-Native POM file when publishing
+		- fix(local-rec) Download recording on meeting end (#13557)
+		- fix(settings) fix when devices tab is not visible
+		- solved the flip bug in screen share video (#13542)
+		- fix(app) simplify appNavigate on web
+		- jicofo_lock is null when restored from storage (#13517)
+		- fix(lang) updated Polish translation
+		- fix(lang, rn) add Ukrainian lang to builtinLanguages
+		- fix(jwt) fix not processing features if avatar, name, email are missing
+		- fix(config): Remove the deprecated configs. (#13500)
+		- fix(chat-URLs): Use punycode only on host name.
+		- fix(keyboard-shortcuts) Check modifier key (#13520)
+		- fix(android) remove no longer needed view clipping hack
+		- fix(dialog) Fix close on backdrop (#13512)
+		- Drop events if conn is closed while waiting for jicofo.
+		- fix(shortcuts): reactions description translations (#13504)
+		- fix(ios) fix UUID comparison
+		- fix(Popup): Invalid reference.
+		- fix(iframe): Add allow screen-wake-lock.
+		- store only "clean" URLs in recent-list (#13489)
+		- Adds one more check for iframes.
+		- fix(lastn) Update lastN on virtual screenshare updates. Fixes https://github.com/jitsi/jitsi-meet/issues/13448.
+		- fix(prejoin) Check for valid url for prejoin (#13468)
+		- fix(AudioTrack) fix currentMuted
+		- fix(password) use the numeric input mode when only digits are required
+		- fix(transcriptions) Open correct settings tab (#13460)
+		- fix(horizontal-filmstrip): JS error.
+		- fix(screenLock): Improve.
+		- fix(lang) update German translation
+		- fix(full-screen) drop no longer needed checks
+		- fix(toolbox) drop unneeded checks
+		- fix(settings-dialog) On mobile open on the correct tab (#13443)
+		- fix(local-rec) Fix audio only recording (self) (#13442)
+		- fix(lang) update Spanish translation
+		- fix(RN): broken build after AV pending changes.
+		- fix(notif-sounds) Set correct audio output device for notifs (#13436)
+		- fix(moderation) Show Screensharing blocked notification (#13433)
+		- fix(e2ee) fix config migration of e2eeLabels
+		- remove harcoded url (#13426)
+		- fix(visitors): Move some logs to debug.
+
+	- Translation updates:
+		- update German translation
+		- Update Portuguese translation (#13625)
+		- update German translation
+		- Farsi (Persian) translation (#13463)
+		- Update Portuguese translation (#13481)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(breakout-rooms): renaming
+		- Parse extra lobby reason waiting for host.
+		- feat(stats) add support for watchRTC
+		- Handles join error about required display name. (#2312)
+		- Prints deployment info.
+		- New Codec selection logic (#2296)
+
+	- Fixes:
+		- fix(codec-selection): Disabled VP9 for p2p on Firefox. When VP9 is at the top of the codec list in the remote offer, Firefox omits it in the answer but decides to use VP9 for encoding media. Therefore the remote peer gets an answer with no VP9 in the list and when it updates its local description (with no VP9) after a renegotiation, it stops rendering the VP9 video received from Firefox.
+		- fix(JitsiConference): Filter local tracks when accepting remote p2p offer.
+		- fix(IceFailedHandling): Attempt client reload when ICE restart via session-terminate fails.
+		- fix(codec-selection): Do not remove codecs from capabilities.
+		- fix(misc) use safeJsonParse from js-utils
+		- fix(ci) update action versions
+		- fix(SDP): Add msid to generated RTX SSRC only when present on primary SSRC. Fixes setLocalDescription failing in the case where simulcast is disabled since the answer produced by the browser (after a local source is added) does not have the msid line.
+		- fix(RTC) Update docs w.r.t to config options.
+		- fix(codecs): Enable VP9 encode on FF/Safari for p2p. Addresses https://github.com/jitsi/jitsi-meet/issues/10657
+		- fix(codec-selection) Pick only 1 VP9 codec for p2p negotiation. More than one VP9 payload type is produced in the offer, more experimental ones if the local endpoint has no local video source. Munge the SDP to remove all codecs besides the one with profile-id=0 so that only one VP9 codec is negotiated with p2p peer.
+		- fix(TPC): Make sure all RTCRtpSender:setParameters calls are sequential. Recommit https://github.com/jitsi/lib-jitsi-meet/commit/17ade96a70971b7429b6beac73b919885e665f16 with the jvb leak fix.
+		- fix(JingleSession) Modify encoding to stop/start outgoing media on p2p. This is much faster than changing direction on the transceiver and doesn't need a renegotiation for the suspending/resuming media. Also fixes an issue with audio-only mode in p2p where media doesn't resume when audio-only mode is disabled if it was enabled while the jvb connection was active.
+		- fix(watchrtc) remove unnecessary log message
+		- fix(codec-selection): Do not strip codecs that are not in the preferred list. Just moving them to the end of the list guarantees that they are not picked for encoding.
+		- fix(CodecSelection) Switch codec to VP8 when E2EE is enabled. (#2322)
+		- fix(JingleSession): Reject all m-lines associated with sources in source-remove. Fixes an issue when a screenshare doesn't show up on remote endpoints after one of the endpoints in the call does an ICE RESTART using session-terminate while it has 2 video sources.
+		- fix(AsyncQueue) use async-es
+		- fix(screenshare): Ignore mute events on remote desktop tracks. Workaround for Chromium bug https://bugs.chromium.org/p/chromium/issues/detail?id=1099280 which results in client switching to showing avatar instead of static content after 10 secs.
+		- Disconnecting and clearing on redirect is handled from outside.
+		- Fixes authentication and renamed method.
+		- fix(JingleSession) actually call browser.supportsCodecPreferences
+		- fix(test) update CodecMimeType and spec
+		- fix(codec-selection) Move VP9 to the end of the list when not supported. Move VP9 to the end of the list when the VP9 encode is not desirable on certain endpoints, even when no codec preference is specified.
+		- fix(ScreenObtainer): Apply contentHint on captured desktop track correctly. contentHint needs to be set to 'motion' for high fps SS and 'detail' otherwise. Fixes https://github.com/jitsi/lib-jitsi-meet/issues/2298.
+		- fix(JingleSession) Reconfigure the stream encodings after p2p->jvb switch. Fixes blurry screenshare in some cases. There is a higher probability of the higher layers getting suspended when all the stream encodings are enabled for low fps SS. Make sure only the highest spatial layer is sent for low fps SS after p2p->jvb switch. Make sure all the stream encodings are enabled for high fps SS after p2p->jvb switch.
+		- fix(BrowserCapabilities) log browser name and version on init
+		- fix(log) Add debug logs for track mute state changes in presence.
+		- fix(receiver-constraints) Update maxHeight if only default constraints are used. Fixes an issue in the load-test client where correct constraints are not send when the media session is established.
+		- fix(ReceiveVideoController) Do not throw if empty constraints object is passed.
+
+- [jicofo 1.0-1048](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8922)
+	- New features:
+		- Skip redirecting to vnodes any trusted domains.
+
+	- Fixes:
+		- Fix audio/video limits since muted stated was moved to SourceInfo. (#1090)
+		- Fixes NPE when using http request.
+
+- [jitsi-videobridge 2.3-41-ga8d8a786](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8922)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.8719 (2023-06-12)
 - [jitsi-meet 1.0.7322](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8719)
 	- New features:
