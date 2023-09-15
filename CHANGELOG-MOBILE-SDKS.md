@@ -1,5 +1,39 @@
 # Mobile SDKs Changelog
 
+# 8.4.0 (2023-09-15)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.4.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.4.0)
+
+## Changes
+
+### Common
+
+- Authentication fixes
+- Fix moderator logout when using token auth
+- Fix not leaving conference if it was never properly joined
+- Avoid starting to knock twice
+- Add support for custom icons through dynamic branding
+- Use rtcstats from lib-jitsi-meet
+- Allow spaces when renaming breakout rooms
+- Hide Grant Moderator button inside breakout rooms
+- Small UI tweaks
+- Update native dependencies
+- Translation updates
+
+### Android
+
+- Fixes to support target API level 33
+- Disable full-screen while screen-sharing
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.3.1...android-sdk-8.4.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.3.1...ios-sdk-8.4.0)
+
 # 8.3.1 (2023-08-24)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.3.1)
