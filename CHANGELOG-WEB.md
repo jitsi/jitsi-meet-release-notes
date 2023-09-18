@@ -2,6 +2,74 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.8960 (2023-09-18)
+- [jitsi-meet 1.0.7531](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8960)
+	- New features:
+		- feat(branding) add support for custom icons
+		- feat(iframe-api): replace ice servers
+		- feat(external-api) Add functions to query supported commands/events
+		- feat(rtcstats): use rtcstats from lib-jitsi-meet (#13693)
+		- feat(base/ui): Native buttons UI fixes (#13788)
+		- feat(amplitude) add amplitude UTM tracking option
+		- Sends conference request over http before connecting to xmpp (#13725)
+		- feat(chat): fixed action import for abstract component
+		- feat(filmstrip) Add config for disabling vertical filmstrip (#13752)
+
+	- Fixes:
+		- fix(authentication) fix moderator logout
+		- fix(config): missing colon in example for lobby config
+		- fix(rn,conference) avoid starting to knock twice
+		- missing closing tag for identity node in presence stanza
+		- fix(toolbar-buttons) Show tileview in toolbar when separate reactions button (#13810)
+		- fix(disable-filmstrip) Fix disabling filmstrim through config - there was a problem with pinning the participants from the Participants pane with the previous approach
+		- fix(android) disable full-screen when screen-sharing
+		- fixed linter
+		- fix(video-select): remove video preview from device selection and fix video switch on mobile browsers (#13780)
+		- fix(android) bump target API level to 33
+		- Attempt to fix setSinkId failures.
+		- fix(logger): Prevent JSON stringify errors
+		- fix(virtual-background) standardize options object (#13760)
+		- fix(rn, participants): set badge horizontal padding
+		- fix(rn, settings): row text wrapping
+		- fix(rn, settings): fix arrow back navigation for lang selection
+		- fix(breakout-rooms) allow spaces when renaming (#13761)
+
+	- Translation updates:
+		- Update Portuguese translation (#13818)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(JitsiConference) drop unused transcription mechanism
+		- feat(iframe-api): replace ice servers
+		- feat(rtcstats): move rtcstats to ljm (#2335)
+		- Sends http conference-request before xmpp connecting.
+		- Moves redirected event to connection events.
+		- Moves moderator to xmpp.
+		- Removes eventEmitter from Moderator.
+		- Moves moderator to be class.
+		- Removes roomName field from moderator.
+		- Sends machineId with the initial presence.
+		- feat(remoteTrack): log more container events
+
+	- Fixes:
+		- Fixes using correct reference in authenticateAndUpgradeRole.
+		- Fixes missing roomjid when sending sendConferenceRequest.
+		- fix(JitsiConference) make sure leave always resolves
+		- Fixes resolving disconnect if never connected.
+		- Send visitors version when using http request.
+		- fix(track.attach): return promise & improve logs
+
+- [jicofo 1.0-1050](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8960)
+	- New features:
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-44-g8983b11f](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8960)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.8922 (2023-08-28)
 - [jitsi-meet 1.0.7499](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8922)
 	- New features:
