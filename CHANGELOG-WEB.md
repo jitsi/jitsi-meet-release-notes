@@ -62,13 +62,16 @@ Full changelogs are available in each project's release page: click on one of th
 
 - [jicofo 1.0-1050](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_8960)
 	- New features:
+                - Add a colibri flag to use private addresses for ICE for jigasi/jibri. (#1112)
 
 	- Fixes:
 
 - [jitsi-videobridge 2.3-44-g8983b11f](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_8960)
 	- New features:
+                - Enable private addresses for ICE based on a per-endpoint flag. (#2047)
 
 	- Fixes:
+                - Revert "Bump Bouncycastle to version 1.75. (#2036)" (#2049)
 
 ##  2.0.8922 (2023-08-28)
 - [jitsi-meet 1.0.7499](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8922)
