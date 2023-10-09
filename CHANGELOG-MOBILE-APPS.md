@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# 23.5.0 (2023-09-25)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.5.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-23.5.0)
+
+## Changes
+
+### Common
+
+- Authentication fixes
+
+### Android
+
+- Fix crash in Android <= S due to an outdated GMS dependency
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-23.4.0...android-23.5.0)
+
+### iOS
+
+- Fixed CallKit video button ending the call
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-23.4.0...ios-23.5.0)
+
 # 23.4.0 (2023-09-15)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.4.0)
