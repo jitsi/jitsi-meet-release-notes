@@ -1,5 +1,30 @@
 # Mobile SDKs Changelog
 
+# 8.5.0 (2023-09-25)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.5.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.5.0)
+
+## Changes
+
+### Common
+
+- Authentication fixes
+
+### Android
+
+- Fix crash in Android <= S due to an outdated GMS dependency
+- Disable ConnectionService by default
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.4.0...android-sdk-8.5.0)
+
+### iOS
+
+- Fixed CallKit video button ending the call
+- Fix compilation with Xcode 14.3
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.4.0...ios-sdk-8.5.0)
+
 # 8.4.0 (2023-09-15)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.4.0)
