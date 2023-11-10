@@ -2,6 +2,147 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9078 (2023-11-10)
+- [jitsi-meet 1.0.7629](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9078)
+	- New features:
+		- feat(base/modal): changed hasTabNavigator to hasExtraHeaderHeight (#14033)
+		- feat(filmstrip): fixed indicators container dissapear when not in tile view (#14031)
+		- feat(filmstrip): fixed indicators container ui
+		- feat(participants-pane): fixed visitors label position
+		- feat(external_api) add event with transcription chunks
+		- feat(recent-list): fix undefined error that breaks visitor joining (#14024)
+		- feat(facing-mode) add config for initial camera facing mode (#14013)
+		- Adds leave rate limit to muc_rate_limit.
+		- Adds region parameter to dial out authorize requests.
+		- feat(external-api) introduce a "ready" event
+		- feat(external-api) allow vh and vw values as parameters
+		- feat(chat/native): fixed keyboard overlapping chat input bar (#13984)
+		- feat(visitors): Adds an option to request to be visitor based on jwt. (#13977)
+		- feat(whiteboard) expose the excalidraw api (#13974)
+		- Adds event for parsed jwt and check for required token.context  (#13973)
+		- Filter iq rayo respects the actor of grant moderation.
+		- feat(config) add ability to prefer BOSH over WebSocket
+		- feat(screenshare) - add web security fix for electron (#13096)
+		- feat(settings/native/android): Fixed scroll inside conference settings screen (#13956)
+		- feat(prejoin/native): fix display name input on prejoin
+		- feat(whiteboard) add user limit (#13870)
+		- feat(deps,rn) update React Native to version 0.69.12
+		- feat(track-state): Log on add/remove/mute/owner.
+		- feat(breakout-rooms/native): separate breakout rooms from participants (#13920)
+		- feat(shared-video/native): use local logger (#13886)
+		- feat(authentication/native): hide login button for 8x8.vc (#13881)
+		- Updates for jwt when room claim is not required.
+		- Check jwt expiration and redirects to auth url if any. (#13879)
+		- feat(devices): Filter MS Teams Audio device
+		- feat(android) disable ConnectionService by default
+		- Introduces passing state to the token authUrl.
+		- Updates base64-js dependency.
+		- Hides any error from the UI for the DialIn info app.
+		- Adds an event for host arrived.
+		- feat(android) add Fastlane metadata
+		- feat(prejoin/native): fixed screen header hooks warning (#13845)
+		- feat(app/native): rework appNavigate so callkit video button does not end the call (#13814)
+
+	- Fixes:
+		- fix(conference-hangup): Leave room in parallel.
+		- fix(token): add jitsi_meet_context_room into the param list
+		- fix(drawer-menu) Make drawer menu accessible on small height (#14026)
+		- Make room_metadata Prosody module depend on the required jitsi_session module
+		- fix(screen-sharing) Self view of SC sized correctly initially (#13992)
+		- fix(moderated): Fixes moderators in moderated rooms without tenant.
+		- fix(rn) allow default server URL to be set from native
+		- fix(android) fix crash on Android 14
+		- Adds a nil check in visitors module.
+		- fix(visitors): Bumps queue size for waiting for jicofo.
+		- fix(visitors): Fixes filtering initial msgs to main participants.
+		- fix(electron-screensharing): simplify the proccess (#13967)
+		- fix(visitors): informs visitor nodes when a participant is kicked. (#13951)
+		- fix(whiteboard) fix room id generation
+		- fix(deps) run npm audit fix
+		- fix(language/config) deprecate defaultLanguage (#13949)
+		- fix(conference) clear raised hands when conference changes
+		- fix(rnsdk,build) run npm install after syncing deps
+		- fix(rnsdk,build) don't commit the result after bumping version
+		- fix(lang) update Turkish translation
+		- fix(visitors): Fixes duplicated messages sent from guest domain.
+		- fix(notifications) Fix case when description is react component instance (#13919)
+		- fix(screen-sharing) remove stop screen sharing icon
+		- fix(config): add missing notification keys into the  list
+		- fix(breakout-rooms) fix race condition in timer handling
+		- fix(aot) remove dependency to store (#13910)
+		- fix(environment): optimal browsers list
+		- fix(aot) fix icons creating deps to store (#13901)
+		- Fixes skipping the lobby for two times in a row for jibri.
+		- Fixes passing the hash params in state for token auth URL.
+		- Fixes wait for host to respect moderated tenants.
+		- fix(prejoin) improve display name handling relative to configs (#13865)
+		- fix(rn,polyfills) remove no longer needed polyfill
+		- fix(GUM):set deviceId only when the device exists
+		- Also check single quote on jitsi-meet-tokens install (#13869)
+		- fix(android,deps) update GMS native dependencies
+		- fix(ios) remove duplicate dependency
+		- Fixes missing import in wait for host module.
+		- Adds check for missing main_room.
+		- Fixes check for health check room.
+		- fix(ios) fix compilation with Xcode 14.3
+		- fix(external-api) add policy to support the Compute Pressure API
+		- fix(virtual-background) display current settings (#13857)
+		- disable virtual background feature, now hides the feature everywhere
+		- (mobile-layout) change "vh" to "dvh" for all layouts (#13840)
+
+	- Translation updates:
+		- update zhTW translation (#13986)
+		- update German translation
+
+
+	lib-jitsi-meet
+	- New features:
+		- Retries joining the room on room creation error.
+		- feat(ScreenObtainer): add more control over screen obtainer (#2371)
+		- feat(visitors): Adds an option to request to be visitor.
+		- feat(RTCStats): Suppress unnecessary error message when rtcstatsEnabled === false (#2374)
+		- feat(xmpp) remove support for the deprecated options.bosh
+		- feat(jwt) expose JWT identity claims through
+		- Do not advertise visitor version in case of jibri.
+		- feat(local-track): log on mute.
+		- Enable TCC support on Firefox. TCC was disabled on older versions because of a known issue where BWE is halved on every renegotiation. The regular libwebrtc updates in Firefox seems to have fixed it. This hopefully fixes the BWE issues seen on Firefox 117.
+		- feat(auth) remove external auth mechanisms
+
+	- Fixes:
+		- fix(kicked): leave the conference immediately
+		- fix(SS): Reverse the encoding order for Firefox desktop streams. (#2384)
+		- fix(ScreenObtainer) Apply min fps after a successful gDM call. (#2383)
+		- fix(JingleSessionPC): call task callbacks upon clearing
+		- fix(track): get track height (#2380)
+		- fix(E2EE): Switch to VP8 when E2EE is enabled. No other codecs are supported currently.
+		- fix(JingleSession) Use the video type from presence. Instead of using the videoType from source map signaled by the bridge which can be incorrect if the bridge doesn't receive the presence before it sends out the source map. It uses the default 'camera' as video type if presence is not received from the senders. Possibly fixes a bug where a screenshare source is displayed in the wrong tile after the SSRC is re-mapped.
+		- fix(signaling): Merge ssrcOwners and _sourceName.
+		- Properly log remote track mute changes.
+		- update rtcstats fix browser detection and relay obfuscation (#2362)
+		- allow rtcstats and watchrtc to coexists (#2360)
+		- update engine version checking
+		- getting right resolution for mobile web (#2356)
+		- fix(JingleSessionPC,ProxyConnectionPC) handle empty local tracks
+		- fix(TPC): Revert the reverse ordering of encodings for Firefox 117 and newer. In the older versions, the SSRCs in the SDP were in reversed order, i.e., the resolution order was 1:2:4 as opposed to Chromium and other browsers. Therefore, the client was confuguring the reverse order. However, the commit https://hg.mozilla.org/mozilla-central/rev/b0348f1f8d7197fb87158ba74542d28d46133997 which was seems to have landed in Firefox 117 has reverted the reversing of the RID order. Therefore, this hack is no longer needed on the newer Firefox versions. This fixes an issue where the bridge suspends all video from Firefox to other endpoints in the call because of the reversed order of the encodings.
+		- fix(ProxyConnectionPC) fake IQ acknowledgements
+
+- [jicofo 1.0-1055](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9078)
+	- New features:
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-59-g5c48e421](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9078)
+	- New features:
+		- Add an option to use "CPU usage" for stress. (#2060)
+
+	- Fixes:
+		- Fix saving the connected WebSocket instance the first time. (#2066)
+		- Avoid calling IQ.toXML().toString() (#2064)
+		- Fix setting the stress level. (#2062)
+		- Fix ICE consent checks. (#2058)
+		- routing of audio and stats when routeLoudestOnly is disabled (#2055)
+		- Fix a leak of WebSocketClients. (#2051)
+
 ##  2.0.8960 (2023-09-18)
 - [jitsi-meet 1.0.7531](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_8960)
 	- New features:
