@@ -1,5 +1,37 @@
 # Mobile apps Changelog
 
+# 23.6.0 (2023-11-17)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.6.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-23.6.0)
+
+## Changes
+
+### Common
+
+- Move breakout rooms to a dedicated screen
+- Fix display name input on prejoin screen
+- Fix keyboard overlapping chat input bar
+- Fix displaying poll creator name
+- Fix not keeping user settings after authentication
+- Clear raised hands when conference changes
+- Miscellaneous UI tweaks
+- Update native dependencies
+- Translation updates
+
+### Android
+
+- Fix crash on Android 14
+- Fix scroll inside conference settings screen
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-23.5.0...android-23.6.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-23.5.0...ios-23.6.0)
+
 # 23.5.0 (2023-09-25)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.5.0)
