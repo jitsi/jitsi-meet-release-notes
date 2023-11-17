@@ -1,5 +1,39 @@
 # Mobile SDKs Changelog
 
+# 8.6.0 (2023-11-17)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.6.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.6.0)
+
+## Changes
+
+### Common
+
+- Move breakout rooms to a dedicated screen
+- Fix display name input on prejoin screen
+- Fix keyboard overlapping chat input bar
+- Fix displaying poll creator name
+- Fix not keeping user settings after authentication
+- Clear raised hands when conference changes
+- Miscellaneous UI tweaks
+- Allow default server URL to be set on the SDK
+- Update React Native WebRTC to version 111.0.6
+- Update React Native to version 0.69.12
+- Translation updates
+
+### Android
+
+- Fix crash on Android 14
+- Fix scroll inside conference settings screen
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.5.0...android-sdk-8.6.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.5.0...ios-sdk-8.6.0)
+
 # 8.5.0 (2023-09-25)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.5.0)
