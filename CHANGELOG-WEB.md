@@ -2,6 +2,57 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9111 (2023-11-20)
+- [jitsi-meet 1.0.7658](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9111)
+	- New features:
+		- feat(rnsdk): add audio and video muted state changed
+		- feat(authentication): group config options inside an object param
+		- feat(authentication): used config for control over joining audio/video mute/unmute
+		- feat(feedback): show even if callstats is disabled
+		- feat(base/ui): removed unneeded lineHeight value
+		- feat(a11y) make instructions in share audio accessible and provide equivilant translation
+
+	- Fixes:
+		- fix(config): Add the new codec settings
+		- fix(context-menu) fix double click behaviour if closed with ESC
+		- fix(salesforce) reduce notification duration (#14068)
+		- Fixes login button in profile settings.
+		- fix(screenshot-captue): get the right worker url
+		- fix(native app): Display poll creator name
+		- fix(config) Remove deprecated config option.
+		- fix(config): Add the optional screenshare settings.
+		- fix(iFrame): Add 'speaker-selection' to the allow list. This is needed for Firefox 116 and above for setSinkId to succeed.
+		- fix(FeedbackButoon): display for JaaS meetings.
+		- fix(a11y) resolve contrast issues in userAvatar and in performance settings slider
+		- fix(pr-test): For LJM
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(rtcstats): expose functionality to send identity data (#2393)
+
+	- Fixes:
+		- fix(browser-detection): ipad detection in safari
+		- fix(video-quality): Set scaleResolutionDownBy value for every codec switch. This fixes an issue when encodings for video streams are configured incorrectly after every codec switch
+		- fix(video-quality): Read the deprecated bitrate settings correctly.
+		- fix(codec-selection): Select VP8 as default codec. When RTCRtpReceiver.getCapabilities() is not supported by browser or if it returns an empty list. Fixes an issue where call doesn't get established in Firefox ESR 102. Fixes https://github.com/jitsi/jitsi-meet/issues/13839.
+		- fix(ssrc-rewriting) Update the track owner correctly. Fixes an issue when the track owner is not updated after a p2p->jvb switch right after leaving breakout room.
+		- fix(TPCUtils) Insert simulcast recv line for all senders on FF. The simulcast receive lines needs to be inserted in the receive desc for all the m-line associated with local tracks, currently its being done only for the first video source.
+		- fix(sendFeedback): resolve if callstats disabled
+
+- [jicofo 1.0-1057](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9111)
+	- New features:
+		- Add stats for number of conference requests. (#1121)
+
+	- Fixes:
+		- Always send presence unavailable when leaving a MUC. (#1122)
+
+- [jitsi-videobridge 2.3-61-g814bffd6](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9111)
+	- New features:
+
+	- Fixes:
+		- Fixed default file path (#2070)
+
 ##  2.0.9078 (2023-11-10)
 - [jitsi-meet 1.0.7629](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9078)
 	- New features:
