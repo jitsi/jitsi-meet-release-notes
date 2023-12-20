@@ -2,6 +2,101 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9164 (2023-12-20)
+- [jitsi-meet 1.0.7712](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9164)
+	- New features:
+		- feat(sounds) use audio files based on locale (#14104)
+		- feat(toolbox): fixed undefined for previous layout type
+		- feat(transcript) add recording settings for recording transcriptions (#14158)
+		- feat(error-handling) refactor global error and unhandledrejection event handling
+		- Visitors promotion (#14119)
+		- feat(call-integration): revert changes related to visitors (#14150)
+		- Adds detection of occupants with no connection. (#14146)
+		- feat(rn-sdk): add getRoomsInfo ref callback
+		- feat(rn-sdk): add onParticipantLeft event listener
+		- vendor mod_log_ringbuffer from prosody hg
+		- feat(settings/native): hide login/logout for 8x8.vc on profile screen
+		- feat(analytics): add visitor,prejoin,lobby props
+		- feat(rn): 0.70.14 update (#14123)
+		- feat(mobile): fixed undefined is not an object (evaluating action.conference.callUUID)
+		- Log all API commands. (#14118)
+		- feat(ci) test debian packages build
+		- feat(deps,rn) update react-native-webrtc to 118
+		- feat(rtcstats): fetch conference creator id and send to rtcstats (#14060)
+		- feat(react-native-sdk): null error fix for ios
+		- feat(settings): make settings screen functional component (#14084)
+		- feat(watermark) move static styles into stylesheet file & refactor a tiny bit
+		- feat(recording) Allow extra metadata for file recordings (#14081)
+
+	- Fixes:
+		- fix(ui) style prejoin drawer (#14165)
+		- fix(doc) update README
+		- fix(toolbox) prevent toolbox shift up on stage view (#14155)
+		- Do not log unknown commands. (#14153)
+		- fix(external-api) extend captureLargeVideoScreenshot for screenshare (#14149)
+		- fix(transcript) duplicated namespace (#14151)
+		- lint
+		- Drops luacheck for modules sourced from prosody-modules.
+		- fix(rn,room-lock) use numeric input for password dialog if appropriate (#14142)
+		- fix(auth): Skip authStatusChanged for jaas meetings. (#14128)
+		- When host is loaded muc module maybe still be nil in rayo filter.
+		- fix(breakout-rooms, persistent-lobby): support for using both these modules together
+		- fix(debian): No svg available in root folder.
+		- fix(ci) Fix favicon (#14108)
+		- fix(lang) update spanish translation
+		- fix(lang) update Brazilian Portuguese translation
+		- fix(favicon) make favicon visible in dark-themed browser
+		- fix(devices): device type to settings key mapping for video
+		- fix(media-devices) Fix configuring media devices on init (#14097)
+		- fix(devices): return user selected device id if there is no device id
+		- fix(compute-pressure) disable when in an iframe
+		- fix(sdk): custom server url is overwritten by sdk default url option value (#14092)
+		- fix(lang) update Latvian translation
+		- fix(i18n): Fixes retrieving correct countries i18n file.
+		- fix(electron-screensharing): get the right current selected source
+		- fix(lang) update Latvian language translation (#14075)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(GlobalOnErrorHandler) completely drop it
+		- feat(GlobalOnErrorHandler) drop unused functions
+		- feat(RTC): add support for creating non-standard tracks (#2409)
+		- feat(visitors): Fires events for received visitors message promotion … (#2403)
+		- feat(analytics)connection time stats in join event
+
+	- Fixes:
+		- fix(ts) don't declare types support yet
+		- fix(ts) move dts file to types/
+		- Avoids p2p when there are visitors in the meeting.
+		- fix(codec-selection): put Av1 support behind a flag. Fixes an issue with audio after p2p->jvb switch when the media active state is set to false because of a setVideoCodecs call after a remote user joins the call.
+		- fix(types): fix last few types (#2417)
+		- fix(Listenable) fix not adding cancellable listeners after refactor
+		- fix(RTC): reduce debug log noise
+		- fix(build) exclude generated types file from TSC build
+		- fix(JitsiConference) remove unused functions
+		- fix(JitsiConference) simplify code
+		- fix(JitsiConference) don't fail hangup() if room wasn't created yet
+		- fix(GlobalOnErrorHandler) avoid calling it when we handle the error
+		- fix(AsyncQueue): call the callback only if it's defined (#2370)
+		- fix(video-quality) Enable TCC support for Firefox 115 and later. Firefox ESR 115 stops sending REMBs to the bridge under certain network conditions making the bridge suspend all video streams sent to the Firefox eps. It is still unclear why Firefox stops sending REMBs so enabling TCC support as workaround since TCC doesn't seem to have issues with uplink BWE in the older versions.
+		- fix(Lobby): Clean the room on destroy.
+		- Double MUC_JOINED event.
+		- Enable scalability mode on Chromium 113.
+
+- [jicofo 1.0-1059](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9164)
+	- New features:
+		- Read visitor configuration from MUC config form. (#1124)
+		- Once visitors are enabled, always redirect. (#1123)
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-64-g719465d1](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9164)
+	- New features:
+
+	- Fixes:
+		- Reject JSON with duplicate keys (#2073)
+
 ##  2.0.9111 (2023-11-20)
 - [jitsi-meet 1.0.7658](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9111)
 	- New features:
