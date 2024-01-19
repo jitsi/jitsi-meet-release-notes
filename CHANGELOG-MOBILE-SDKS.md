@@ -1,5 +1,29 @@
 # Mobile SDKs Changelog
 
+# 8.6.1 (2023-11-22)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.6.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.6.1)
+
+## Changes
+
+### Common
+
+- Fix custom server URL being overwritten by SDK default url option value
+- Update native dependencies
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.6.0...android-sdk-8.6.1)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.6.0...ios-sdk-8.6.1)
+
 # 8.6.0 (2023-11-17)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.6.0)
