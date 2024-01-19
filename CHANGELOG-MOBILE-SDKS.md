@@ -1,5 +1,31 @@
 # Mobile SDKs Changelog
 
+# 8.6.2 (2024-01-19)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.6.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.6.2)
+
+## Changes
+
+### Common
+
+- Hide login/logout for 8x8.vc on profile screen
+- Fix wobbly lobby switch
+- Fix share button bottom margin
+- Use numeric input for password dialog if appropriate
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.6.1...android-sdk-8.6.2)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.6.1...ios-sdk-8.6.2)
+
 # 8.6.1 (2023-11-22)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.6.1)
