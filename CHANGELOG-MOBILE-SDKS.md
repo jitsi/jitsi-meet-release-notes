@@ -1,5 +1,28 @@
 # Mobile SDKs Changelog
 
+# 8.6.3 (2024-01-22)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.6.3)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.6.3)
+
+## Changes
+
+### Common
+
+- Add ability to disable dial-in options
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.6.2...android-sdk-8.6.3)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.6.2...ios-sdk-8.6.3)
+
 # 8.6.2 (2024-01-19)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.6.2)
