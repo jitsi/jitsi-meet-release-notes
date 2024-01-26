@@ -5,7 +5,7 @@ Full changelogs are available in each project's release page: click on one of th
 ##  2.0.9220 (2024-01-26)
 - [jitsi-meet 1.0.7762](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9220)
 	- New features:
-		- * feat: Stores vpaas check in room object.
+		- feat: Stores vpaas check in room object.
 		- feat(ci,ios) check if Pod file is in sync when running CI
 		- feat(rn,invite) add ability to disable dial-in options
 		- feat(deeplinking): Desktop deeplinking configurable (default off) and using jitsi-meet-electron (#14259)
