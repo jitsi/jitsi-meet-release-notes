@@ -2,6 +2,86 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9220 (2024-01-26)
+- [jitsi-meet 1.0.7762](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9220)
+	- New features:
+		- * feat: Stores vpaas check in room object.
+		- feat(ci,ios) check if Pod file is in sync when running CI
+		- feat(rn,invite) add ability to disable dial-in options
+		- feat(deeplinking): Desktop deeplinking configurable (default off) and using jitsi-meet-electron (#14259)
+		- feat(android) set target SDK to 34 (#14129)
+		- feat(face-landmarks) disable on mobile web browsers
+		- Drops sending facelandmarks to speakerstats. (#14253)
+		- feat(ios): add missing config to .xcodeproj
+		- feat(rn, ios): build fixes and metro-config updates (#14251)
+		- feat(base/conference): check conference status when leaving
+		- Drop unused module from prosody config. (#14229)
+		- feat(external-api) add transcribingStatusChanged event
+		- feat(transcribing) add notification when transcribing starts
+		- feat(configWhitelist): add disableVirtualBackground
+		- feat(ios): set build config setting for deployment target to 13.4
+		- feat(ios): updated firebase pods
+		- feat(config,transcriptions) add option to skip interim transcriptions
+		- feat(react-native): rn 0.72.7 update (#14130)
+		- feat(transcriptions) alway send the transcriptionChunkReceived event
+		- feat(accessibility): Improve search input fields accessibility (#14186)
+		- feat(invite/security):  Brave issues fixes (#14180)
+		- Adds a nil check for occupants joining as moderators.
+
+	- Fixes:
+		- fix(lang) update french translation  (#14269)
+		- Updates checking for granted feature.
+		- fix(ios) sync Podfile
+		- fix(lang) updated Russian translations (#14213)
+		- Fixes leaving the visitor's meeting on promotion. (#14239)
+		- Make multi-stream mode the default mode. Since plan-b mode will no longer be supported, check for unified plan support is not needed anymore.
+		- fix(rn,recording) use the same icon as web
+		- fix(ios) downgrade Firebase
+		- fix(transcribing) refactor notification handling
+		- fix(transcribing) show pending notification while transcriber joins
+		- fix(transcribing) simplified code
+		- fix(transcribing) remove unused state properties
+		- fix(config) drop no longer existing option
+		- census lua init to 0 to avoid openmetrics errors (#14210)
+		- fix(remote-sources): update only when neccessary
+		- fix(config): Add testing flag for Av1 support.
+		- fix(i18n)fix moment duration format error
+		- fix(analytics): Update permanent props.
+		- fix(config): Remove enableLipSync config. It is not supported by Jicofo anymore.
+		- fix(reactions-firefox) Fix drawer menu not scrollable on FF (#14181)
+
+	- Translation updates:
+		- typo in German translation
+		- Updated Esperanto Translations. (#14203)
+		- update German translation
+		- Update Portuguese translation (#14175)
+
+
+	lib-jitsi-meet
+	- New features:
+
+	- Fixes:
+		- fix(conference): Remove the tracks that were filtered out. When tracks are not included in the initial offer/answer, remove them from the conference. Otherwise, the tracks in conference will be out of sync with those in the media sessions.
+		- fix(JitsiConference): Check if track belongs to the conference before addition/removal. If the local track was not added to the conference because the participant was muted on join by focus, add it the conference instead of adding it to the media session when the user unmutes. Fixes a failing torture test case.
+		- Fixes p2p and visitors.
+		- fix(stats): Fix audio/video bitrates. (#2431)
+		- parse connectinon failed message error (#2425)
+		- fix(TPC): Do not configure 'scaleResolutionDownBy' and 'maxBitrate' for legacy VP9 K-SVC. When these are configured, the browser sends only the lowest resolution layer even when all the encodings are active. Fixes a quality issue on older versions of Chromium that do not support the scalabilityMode API.
+		- fix(xmpp): Do not advertise lip-sync support. It is no longer supported by Jicofo.
+
+- [jicofo 1.0-1062](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9220)
+	- New features:
+		- Use RocksXmppPrecisStringprep for striter JID validation. (#1125)
+
+	- Fixes:
+		- Fix NPE when a conference request has no payload (#1126)
+
+- [jitsi-videobridge 2.3-67-gb2d4229f](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9220)
+	- New features:
+		- Relax the health checks for STUN (#2077)
+
+	- Fixes:
+
 ##  2.0.9164 (2023-12-20)
 - [jitsi-meet 1.0.7712](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9164)
 	- New features:
