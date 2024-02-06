@@ -2,6 +2,77 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9258 (2024-02-06)
+- [jitsi-meet 1.0.7790](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9258)
+	- New features:
+		- feat(visitors): Adds notification for promotion requests. (#14316)
+		- feat(visitors): Whitelist trusted domains when promoting.
+		- Drops some debug prints. (#14311)
+		- Adds indication for visitors messages to event.
+		- feat(visitors): Hide reactions.
+		- feat(recording) add notification to suggest recording at meeting startup (#14296)
+		- feat(recording) stop transcription when recording is stopped
+		- feat(recording) always show advanced options in dialog
+		- feat(recording) show recording icon when transcribing
+		- feat(transcribing) emit recording notifications for transcriptions
+		- feat(subtitles) drop disableStartForAll config option
+		- feat(recording) update labels with transcription status
+		- feat(conference) drop transcribing label
+		- feat(transcribing) drop transcribing notifications
+		- feat(deeplinking): offer electron app for download, configurable (#14261)
+		- feat(LargeVideo): Add logging.
+		- feat(android) list HDMI connections as speakers
+
+	- Fixes:
+		- fix(lobby): Hide enable option if there is a visitor
+		- fix(visitors): Disable polls.
+		- fix(reactions): Show when received even if UI is disabled
+		- fix(shortcut): Unregister for altKey shortcuts.
+		- fix(transcriptions) obey skipInterimTranscriptions for chunk events
+		- fix(transcriptions) avoid generating duplicated events
+		- Fixes promoting the only moderator in a non vpass meeting.
+		- fix(visitors): Lowers visitor's hand on leave. (#14302)
+		- fix(visitors): Handles promotion rejection msg.
+		- fix(visitors): hide highlight button.
+		- fix(visitors): Fixes clearing promotion requests.
+		- fix(lang) Update Latvian translation
+		- fix(deeplinking): allow translating all strings on deeplinking pages (#14286)
+		- fix(deeplinking): allow partial config of deeplinking and defaults for the remaining (#14285)
+		- fix(deeplinking): skip deeplinking within electron (#14284)
+		- fix(LargeVideo): Add retries for play.
+		- fix(participant) prevent gravatar request during loading of config (#14255)
+		- fix(lang) Update main-is.json (#14270)
+
+	- Translation updates:
+		- add translation tr (#14282)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Waits for the room dataform to be received before setting lobby.
+		- Skips enabling lobby if already enabled.
+
+	- Fixes:
+		- fix(TPC): Do not negotiatate ULPFEC and RED for p2p video. Fixes https://bugzilla.mozilla.org/show_bug.cgi?id=1877675.
+		- fix(JitsiLocalTRack): Calc resolution correctly. If MediaStreamTrack.getSettings() doesn't return the height of the track, use the constraints passed to gUM for calculating the height. Fixes an issue for Firefox/Linux which could result in media not displayed.
+		- fix(browser-support): Impl a min. version check for Firefox. Set the min. required version for Firefox to 91 so that the last 3 ESR versions are supported.
+		- fix(TPCUtils): Use track resolution instead of height. When a local video track is muted, getSettings() on MediaStreamTrack doesn't return capture height. Fixes random torture test failures on beta.
+		- fix(video-quality): Adjust encodings bitrates/scalefactor for high capture resolutions (#2436)
+		- fix(video-quality): Remove the encoding check for webkit. This check is not needed anymore since we now set the correct scaleResolutionDownBy value everytime the encodings are configured. Fixes a regression on Safari where it can end up sending low resolution to a p2p peer in some cases. Also, add more unit tests for p2p desktop share cases.
+
+- [jicofo 1.0-1066](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9258)
+	- New features:
+
+	- Fixes:
+		- the ID of the RID extension. (#1132)
+		- Include visitors with the initial invite. (#1131)
+
+- [jitsi-videobridge 2.3-74-ga015be96](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9258)
+	- New features:
+
+	- Fixes:
+		- compatibility with DTLS 1.3. (#2086)
+
 ##  2.0.9220 (2024-01-26)
 - [jitsi-meet 1.0.7762](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9220)
 	- New features:
