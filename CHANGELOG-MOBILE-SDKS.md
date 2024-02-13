@@ -2,7 +2,6 @@
 
 # 8.6.3 (2024-01-22)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.6.3)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.6.3)
 
 ## Changes
@@ -10,12 +9,6 @@
 ### Common
 
 - Add ability to disable dial-in options
-
-### Android
-
-- N/A
-
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.6.2...android-sdk-8.6.3)
 
 ### iOS
 
@@ -25,7 +18,6 @@
 
 # 8.6.2 (2024-01-19)
 
-- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-8.6.2)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.6.2)
 
 ## Changes
@@ -36,12 +28,6 @@
 - Fix wobbly lobby switch
 - Fix share button bottom margin
 - Use numeric input for password dialog if appropriate
-
-### Android
-
-- N/A
-
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.6.1...android-sdk-8.6.2)
 
 ### iOS
 
