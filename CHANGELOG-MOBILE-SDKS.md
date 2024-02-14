@@ -6,6 +6,7 @@
 
 ### Common
 
+- Updated React Native to version 0.72.9
 - Fix livestream label visibility and tooltip.
 - Fix standard authentication.
 - More control over room name visibility.
