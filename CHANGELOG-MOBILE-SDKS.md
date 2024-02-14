@@ -1,5 +1,29 @@
 # Mobile SDKs Changelog
 
+# 9.0.0 (2024-02-15)
+
+## Changes
+
+### Common
+
+- Fix livestream label visibility and tooltip.
+- Fix standard authentication.
+- More control over room name visibility.
+- Limit conference time for visitors.
+- Whiteboard feature
+- Display participant name in one to one conferences.
+- Updated translations.
+
+### iOS
+
+- N/A
+
+### Android
+
+- Fix screen-sharing for API 33.
+- Create separate notifications for screen-sharing and ongoing conference warnings.
+
+
 # 8.6.3 (2024-01-22)
 
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-8.6.3)
