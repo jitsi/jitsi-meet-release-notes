@@ -23,7 +23,7 @@
 ### Android
 
 - Fix screen-sharing for API 34.
-- Create separate notifications for screen-sharing and ongoing conference warnings.
+- Separate notifications for screen-sharing and ongoing conference warnings.
 
 
 # 8.6.3 (2024-01-22)
