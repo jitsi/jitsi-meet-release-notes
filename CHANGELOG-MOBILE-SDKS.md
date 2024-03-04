@@ -1,6 +1,6 @@
 # Mobile SDKs Changelog
 
-# 9.0.0 (2024-02-15)
+# 9.0.0 (2024-03-04)
 
 ## Changes
 
@@ -11,9 +11,10 @@
 - Fix standard authentication.
 - More control over room name visibility.
 - Limit conference time for visitors.
-- Whiteboard feature
+- Whiteboard feature.
 - Display participant name in one to one conferences.
 - Updated translations.
+- Flag control for pip while screen-sharing.
 
 ### iOS
 
@@ -21,7 +22,7 @@
 
 ### Android
 
-- Fix screen-sharing for API 33.
+- Fix screen-sharing for API 34.
 - Create separate notifications for screen-sharing and ongoing conference warnings.
 
 
