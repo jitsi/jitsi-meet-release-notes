@@ -2,6 +2,9 @@
 
 # 9.0.0 (2024-03-04)
 
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.0.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-9.0.0)
+
 ## Changes
 
 ### Common
@@ -15,15 +18,22 @@
 - Display participant name in one to one conferences.
 - Updated translations.
 - Flag control for pip while screen-sharing.
+- Added support for UVC cameras.
 
-### iOS
-
-- N/A
 
 ### Android
 
 - Fix screen-sharing for API 34.
 - Separate notifications for screen-sharing and ongoing conference warnings.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-8.6.1...android-sdk-9.0.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.6.3...ios-sdk-9.0.0)
+
 
 
 # 8.6.3 (2024-01-22)
