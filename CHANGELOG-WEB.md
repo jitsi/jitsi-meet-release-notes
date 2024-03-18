@@ -2,6 +2,140 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9364 (2024-03-18)
+- [jitsi-meet 1.0.7874](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9364)
+	- New features:
+		- feat(visitors): Demote a visitor for mobile.
+		- feat(visitors): Checks for visitors support per room.
+		- feat(visitors): Adds an option to demote participants to visitors.
+		- feat(visitors): Drops not-used messages.
+		- feat(visitors): Admit all function.
+		- feat(lobby): Approve multiple participants.
+		- Rate limits update (#14429)
+		- feat(android): fix screen sharing for android 14 (#14419)
+		- feat(rn,deps) update react-native-webrtc@118.0.1
+		- Send room_metadata updates to jicofo. (#14417)
+		- feat(recorder-transcription): Handle correctly in the UI.
+		- feat(tracks): disable pip in screen-share based on flag value (#14413)
+		- feat(config/flag): enable/disable participants pane
+		- Enable ssrc-rewriting by default. (#14395)
+		- feat(dynamic-branding): fix label customisation
+		- feat(conference): Add init debug log
+		- Adds stats around room token validation.
+		- Adds a print for timing out http requests after the retry.
+		- Adds stat when a rayo IQ is filtered.
+		- Adds stats around token validation.
+		- feat(conference/recordin): Fix always on labels (#14368)
+		- feat(prejoin) default to enabled (#14236)
+		- feat(android): replaced NotificationChannels with NotificationUtils
+		- feat(android): update media projection notification build (#14365)
+		- feat(лоббъ): Admin set function for multiple items.
+		- feat(android): separate MediaProjection and OngoingConference notifications (#14363)
+		- feat(android): fixed screen sharing for Android 33 (#14359)
+		- feat(transcript) add ability to dump transcript for debugging
+		- feat(prejoin) display recording warning (#14347)
+		- Notify jicofo when room_metadata changes the config form. (#14346)
+		- feat(recordings) send recordings metadata
+		- feat(premeeting/prejoin): Control room name visibility (#14339)
+		- Sends event on not allowed error.
+		- feat(mobile/polyfills): strophe.js for react native (#14329)
+		- feat(visitors): Adds conference duration for visitors.
+		- Use room data form for conference duration.
+		- Moves common process_host_module to util.
+		- feat(whiteboard) add native implementation (#14327)
+		- feat(conference): remove one2one check for diplaying participants name (#14324)
+
+	- Fixes:
+		- fix(visitors): Fixes replacing visitor domain. (#14457)
+		- fix(visitors): Fixes demoting correct participant.
+		- decouple local recording from needing a valid jwt (#14434)
+		- fix(ios) sync SDK and Lite SDK building commands
+		- Changes jwt error dialog to be sticky.
+		- fix(visitors): Fixes missing import.
+		- fix(visitors): Fixes wrong text in notification on multiple promote requests.
+		- fix(toolbarButtons): filter visitor buttons in redux.
+		- fix(toolbarButtons): Store all buttons in redux.
+		- Drops inspect print.
+		- fix(live-streaming) fix handling bogus URLs
+		- fix(etherpad) fix handling certain URL types
+		- fix(recording) restore labels when recording locally
+		- fix(recording) remove duplicated check
+		- fix(subtitles) keep subtitles state when recording
+		- fix(recording) set transcribing metadata when stopping
+		- fix(overflow-menu): disabled buttons styles
+		- fix(recording/livestreaming):  labels
+		- fix(Typo in comment) (#14077)
+		- fix(Livestreaming): label
+		- fix(gumPending): Handle ignored muted tracks.
+		- fix(lang) update for sq translation (#14387)
+		- Fixes initializing cached keys.
+		- fix(ui) center conference info (#14379)
+		- Change whitelist to support only domains.
+		- Handles few more cases for updating cached tokens.
+		- fix(local-recordings) fix on Chrome
+		- fix(recording) only show advanced section for cloud recordings
+		- fix(recording) fix checking if we can skip the recording dialog
+		- Drops unused token validation.
+		- fix(prejoin) adjust recording warning (#14361)
+		- Fixes polls parsing.
+		- fix(whiteboard) handle metadata being null
+		- fix(recording) ensure recording label is shown when transcription is on
+		- fix(recording) do not show advanced options for users with local recording rights
+		- fix(recording) do not show stop recording option in some wrong cases
+		- fix(ci) use the right CocoaPods version
+		- Use same format for anonymous jids as token module.
+		- fix(recording) fix recording suggestion not being shown in some cases (#14333)
+		- fix(recording) avoid having duplicate notification sounds
+		- fix(recording) fix default value to auto-transcribe-on-record
+		- fix(conference) avoid adding extra endpoint message listeners
+		- fix(conference) move endpointMessageReceived action
+		- fix(config): Fix the typo in Av1 support flag.
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(lobby): Adds an option to approve multiple participants.
+		- feat(visitors): Checks for visitors support per room.
+		- feat(JitsiConference): invalid name.
+		- feat(ssrc-rewriting): Enable it by default. Enable ssrc-rewriting by default, it can still be overwritten via config.js
+		- feat(lobby): Admin set function for multiple items.
+		- Back off retries joining on not allowed error.
+		- Drop conference duration component and use the data form.
+
+	- Fixes:
+		- fix(codec-selection): Include visitor codecs. Include visitor codecs published by Jicofo while calculating the intersection set for the conference.
+		- fix(SDP): Negotiate only baseline H.264 codecs for p2p. Chrome on macOS recently started offering encoder for higher level (5.2) but decoder only for level 3.1. See https://issues.chromium.org/issues/324930413 Therefore, filter out all H.264 payload types with main and high profiles. Also, sort all H.264 payload types so that same pt is picked for both H.264 encoder and decoder. Fixes random black tile issues across different browsers when H.264 is the preferred codec for p2p.
+		- fix(TPC): Do not run the DD Header Ext check on Firefox as it doesn't support it currently.
+		- fix(TPCUtils): Chain both RTCRtpSender getParameters and setParameters call properly. Firefox 123 started throwing an error when the transction ids for getParamters and setParameters don't match. This can result in Firefox not establishing a p2p connection with a remote peer when it is the offerer.
+		- fix(SDP): Generate msid attr for source when browser doesn't produce one. Chrome 122 does not generate a 'msid' attribute in the local SDP when a local source is added after the user joins muted. The SSRC doesn't get signaled to remote p2p peer when this happens. Also, when the direction of the transceiver changes from 'sendonly' to 'sendrecv', Chrome is generating a new set of SSRCs resulting the client sending out a source-remove followed by source-add. Fixes various p2p related bugs that have surfaced in p2p calls where both the endpoints are running Chromium 122.
+		- fix(tracks): Do not filter the tracks for p2p. The tracks should get removed if the startAudioMuted/startVideoMuted flags are set for the conference. Fixes the failing startMuted testcase.
+		- fix(TPC): Run the DD ext header check on all browsers. We do not want non Chromium browsers to negotiate DD ext headers when VP8/VP9 is the selected codec. Fixes poor video quality issue for Safari when Av1 is offered by Jicofo.
+		- fix(JitsiTrack): Detect track ended event on Safari. Fixes https://github.com/jitsi/jitsi-meet/issues/14386
+		- fix(JitsiConference): Clear jingleSession after session restart. This makes sure that any track operations that are executed after the terminate is sent and before the new session is established get synced up on the new session. Also reset the JVB stats. Fixes https://github.com/jitsi/jitsi-meet/issues/14326.
+		- fix(TPC): Reset the scalabilityMode for VP8. Set the scalabilityMode to undefined for VP8 after a VP9->VP8 switch even though the browser returns L1T2 in the RTCRtpSender.getParameters() call. Fixes an issue where the bridge stops forwarding video for some participants after vp8->vp9 switch.
+		- fix(codec-selection): Ignore transcriber for calc. codec intersection set.
+		- fix(RTC): Fix capture resolution for Safari desktop tracks. The browser returns height as 0 at track creation time. Fixes an issue where Safari's screenshare shows as black.
+		- fix(video-quality): Fix resolution of simulcast streams. When both the camera and screenshare tracks are present. Add unit tests.
+		- fix(video-quality): Bump up 4k and 1080p bitrates even more for faster rampup.
+		- fix(video-quality): Bump up the default bitrates for 1080p and 4k. Check the first payload type of the m-line in remote description to get the codec used for encoding the local video source.
+
+- [jicofo 1.0-1075](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9364)
+	- New features:
+		- Updates java dependencies to include java17.
+		- Handle room metadata updates from the room_metadata component (#1139)
+		- Enable transcription based on MUC config form (#1135)
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-92-g64f9f34f](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9364)
+	- New features:
+		- Updates java dependencies to include java17.
+		- Add a config option for default initial last n. (#2095)
+		- Implement a Prometheus histogram of rtp transit time. (#2091)
+
+	- Fixes:
+		- bug that would cause VP9/AV1 simulcast not to be routed properly after a switch. (#2101)
+
 ##  2.0.9258 (2024-02-06)
 - [jitsi-meet 1.0.7790](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9258)
 	- New features:
