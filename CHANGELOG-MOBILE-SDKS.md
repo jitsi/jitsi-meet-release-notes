@@ -1,5 +1,29 @@
 # Mobile SDKs Changelog
 
+# 9.0.2 (2024-03-13)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.0.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-9.0.2)
+
+## Changes
+
+### Common
+
+- Update react-native-webrtc to 118.0.3.
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-9.0.0...android-sdk-9.0.2)
+
+### iOS
+
+- Fix incorrect room name in CallKit
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-9.0.0...ios-sdk-9.0.2)
+
+
 # 9.0.0 (2024-03-04)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.0.0)
