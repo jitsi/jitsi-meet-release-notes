@@ -1,5 +1,30 @@
 # Mobile SDKs Changelog
 
+# 9.1.0 (2024-04-02)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.1.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-9.1.0)
+
+## Changes
+
+### Common
+
+- Delegate methods for transcriptionChunkReceived.
+- Fixed subject overwriting the conference room.
+- Whiteboard screen header navigation fixes.
+
+### Android
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-9.0.2...android-sdk-9.1.0)
+
+### iOS
+
+- N/A
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-9.0.2...ios-sdk-9.1.0)
+
 # 9.0.2 (2024-03-13)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.0.2)
