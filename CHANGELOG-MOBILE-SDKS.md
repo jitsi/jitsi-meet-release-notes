@@ -1,5 +1,31 @@
 # Mobile SDKs Changelog
 
+# 9.2.0 (2024-04-12)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.2.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-9.2.0)
+
+## Changes
+
+### Common
+
+- Add ability to insert custom buttons in the overflow menu
+- UI / UX tweaks
+- Updated translations
+
+### Android
+
+- Dropped support for UVC cameras
+- Fix parsing server URL
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-9.1.0...android-sdk-9.2.0)
+
+### iOS
+
+- Fix duplicated audio in certain scenarios
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-9.1.0...ios-sdk-9.2.0)
+
 # 9.1.0 (2024-04-02)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.1.0)
@@ -48,7 +74,6 @@
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-9.0.0...ios-sdk-9.0.2)
 
-
 # 9.0.0 (2024-03-04)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.0.0)
@@ -69,7 +94,6 @@
 - Flag control for pip while screen-sharing.
 - Added support for UVC cameras.
 
-
 ### Android
 
 - Fix screen-sharing for API 34.
@@ -82,8 +106,6 @@
 - N/A
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-8.6.3...ios-sdk-9.0.0)
-
-
 
 # 8.6.3 (2024-01-22)
 
