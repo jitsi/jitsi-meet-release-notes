@@ -1,5 +1,34 @@
 # Mobile apps Changelog
 
+# 24.2.1 (2024-04-18)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-24.2.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-24.2.1)
+
+## Changes
+
+### Common
+
+- Add ability to insert custom buttons in the overflow menu.
+- Translation updates.
+- Fixed visitors promote all option.
+- Enable media on promotion for visitors.
+- lib-jitsi-meet update.
+
+### Android
+
+- Dropped support for UVC cameras.
+- Fix parsing server URL.
+- Disable local storage for whiteboard.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-23.6.0...android-24.2.1)
+
+### iOS
+
+- react-native-webrtc@118.0.6 update which fixes duplicated audio.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-23.6.0...ios-24.2.1)
+
 # 23.6.0 (2023-11-17)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-23.6.0)
