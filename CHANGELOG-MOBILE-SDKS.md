@@ -1,5 +1,31 @@
 # Mobile SDKs Changelog
 
+# 9.2.1 (2024-04-18)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.2.1)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-9.2.1)
+
+## Changes
+
+### Common
+
+- Fixes around custom overflow menu buttons icon.
+- Fixed visitors promote all option.
+- Enable media on promotion for visitors.
+- lib-jitsi-meet update.
+
+### Android
+
+- Disable local storage for whiteboard.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-sdk-9.2.0...android-sdk-9.2.1)
+
+### iOS
+
+- Update to react-native-webrtc@118.0.6 which fixes duplicated audio.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-9.2.0...ios-sdk-9.2.1)
+
 # 9.2.0 (2024-04-12)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-sdk-9.2.0)
