@@ -2,6 +2,122 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9457 (2024-04-23)
+- [jitsi-meet 1.0.7952](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9457)
+	- New features:
+		- feat(react-native-sdk): update readme file
+		- feat(android): list media projection permission in manifest
+		- feat(base/config): whitelist customToolbarButtons
+		- feat(toolbox/native): fixed icon for CustomOptionButton and styles
+		- feat(visitors-config): Enable media on promotion.
+		- Adds option to print not-allowed errors we sent back to client.
+		- feat(toolbox/native): custom overflow menu buttons (#14594)
+		- prosody plugin for sending system chat messages (#14603)
+		- Move to use cjson everywhere.
+		- Adds module to attach data to be available in jibri metadata.
+		- feat(whiteboard/native): ui fixes (#14585)
+		- feat(ios/android/sdk): delegate transcription chunk received event (#14516)
+		- Drops unused ext_events.lua.
+		- Reduces into state region and shard changes from the lib. (#14546)
+		- feat(base/conference): get subject and localSubject from config (#14520)
+		- feat(visitors): Updates docs for promotion. (#14538)
+		- feat(external-api) Expose meeting session (#14522)
+		- feat(notifications) added toast notification on copy sharing link
+		- feat(premeeting/conference/prejoin): fix hiding meeting subject helper (#14500)
+		- feat(recording) add ability to change recording defaults
+
+	- Fixes:
+		- fix(lang): Update missing Latvian lang translation (#14664)
+		- descriptions
+		- fix(chat) improve new message visibility for local participant
+		- fix(visitors): Fixes promote all.
+		- fix(conference): use up to date state in useVideoStream.
+		- fix(debug) enable webview debugging (#14623)
+		- fix(whiteboard/native) disable Android local storage
+		- (invite-copy) give user a feedback that copy is done (#14552)
+		- fix(whiteboard) compute serverUrl once to limit rerenders (#14600)
+		- Clear up knocking state on error.
+		- fix(lang) updated Russian translation
+		- fix(misc) drop unused files from the project
+		- fix(misc) fix .editorconfig line width
+		- fix(chat): added emoji tooltip and enter key in smiley panel
+		- fix(LargeVideo): use correct track for streaming status.
+		- fix(chat): fixed error message colors (#14574)
+		- fix(whiteboard) backend safe room hash
+		- fix(android) fix server URL parsing
+		- fix(chat): added translation function
+		- fix(config): Enable ssrc-rewriting by default. (#14567)
+		- Fixes parsing hash params to be passed to tokenAuthUrl.
+		- fix(lang) update vietnameses translation
+		- fix(flags): Don't assume ssrc-rewriting enabled by default. (#14545)
+		- fix(polls/web) check for duplicate poll options (#14541)
+		- fix(polls): fix poll button overflow
+		- fix(lang): added new tr translations
+		- fix(participants-pane): multi words search
+		- fix(video-quality): Correctly pin camera tile. When screensharing source is the first source to be added with ssrc-rewriting enabled, constraints for the camera tile don't get updated when its pinned. Fixes https://github.com/jitsi/jitsi-meet/issues/14501
+		- Fixes showing left participants in the pane under certain conditions.
+		- Updates lobby password.
+		- fix(polls) fix answer editing bug causing unintended removal
+		- fix(feedback) avoid sending dialog with enter press in textarea
+		- define local vars in public key handler (#14176)
+		- fix(kick): JS error when participant pane is open.
+		- fix(chat) dont emojify matrix ids (#14492)
+		- fix(recordings) disable default auto transcribe (#14495)
+		- fix(whiteboard) adjust whiteboard ready check to work without config (#14486)
+		- fix(lang) update Latvian translation
+		- fix(lang) update Portuguese translation
+		- fix(PasswordSection): Add button not working.
+		- fix(conference): Do not remove muted tracks at join time when ssrc-rewriting is enabled.
+		- fix(buttonsWithNotify): Duplicates in config
+		- fix(conference) fix incorrect meeting name in CallKit
+
+	- Translation updates:
+		- update German translation (#14662)
+		- Translated main-hi.json (#14532)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Introduces connection event for custom properties. (#2493)
+		- feat(build) remove export from build script
+
+	- Fixes:
+		- fix(ResumeTask) Avoid adding multiple NETWORK_INFO_EVENT  listeners
+		- fix(codec-selection): Enable AV1 by default
+		- fix(ProxyConnectionPC) fix after API change in Listenable
+		- Sends conference requests on retries of errors.
+		- Bumps retry interval for http conference requests.
+		- fix(watchrtc) don't log RN warning unless WatchRTC is used
+		- fix(rtc) use exact deviceId constraints
+		- fix(TPC): Use a default maxHeight for configuring encodings. This is needed when p2p conn establishes before jvb and no sender constraints have been received before media on jvb conn is suspended.
+		- fix(flags): Init flags before creating XMPP conn. This allows us to set defaults through jitsi-meet. Also remove undocumented setting enableJoinAsVisitor that is no longer needed.
+		- fix(statistics) initialize LocalStatsCollector on Statistics.init
+		- fix(flags) don't enable SSRC rewriting by default
+		- fix(logging) initialize logger to INFO level by default
+		- fix(JitsiTrack): Remove func that's no longer used.
+		- fix(JitsiMeetJS) cleanup createLocalTracks docs
+		- fix(statistics) remove last vestiges of callstats
+		- fix(watchrtc) fix consecutive call issue
+		- fix(TPC): reconfigure the encodings to suspend/resume media after jvb<->p2p switch. Also fixes the issue with video freezing after video mute and unmute when the user joins the call with startSilent=true.
+		- fix(TPC): Removed unused function
+		- fix(conference): Signal muted tracks on join when ssrc-rewriting is enabled.
+
+- [jicofo 1.0-1078](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9457)
+	- New features:
+		- Enable AV1 by default (#1150)
+
+	- Fixes:
+		- Handle timeout from jibri as an error. (#1144)
+
+- [jitsi-videobridge 2.3-105-ge155b81e](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9457)
+	- New features:
+
+	- Fixes:
+		- or suppress some ktlint-1.2.1 warnings. (#2120)
+		- new config value name in reference.conf.
+		- Catch RTP parsing exceptions. (#2117)
+		- Fix ICE TCP port. (#2114)
+
 ##  2.0.9364 (2024-03-18)
 - [jitsi-meet 1.0.7874](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9364)
 	- New features:
