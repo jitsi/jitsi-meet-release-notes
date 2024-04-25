@@ -3,6 +3,7 @@
 # 24.2.2 (2024-04-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-24.2.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-24.2.2)
 
 ## Changes
 
@@ -19,6 +20,8 @@
 ### iOS
 
 - RN WebRTC update to 118.0.7.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-24.2.1...ios-24.2.2)
 
 # 24.2.1 (2024-04-18)
 

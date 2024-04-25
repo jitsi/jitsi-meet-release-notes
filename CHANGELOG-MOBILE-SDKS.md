@@ -3,6 +3,8 @@
 # 9.2.2 (2024-04-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-9.2.2)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-sdk-9.2.2)
+
 
 ## Changes
 
@@ -19,6 +21,8 @@
 ### iOS
 
 - RN WebRTC update to 118.0.7.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-9.2.1...ios-sdk-9.2.2)
 
 # 9.2.1 (2024-04-18)
 
