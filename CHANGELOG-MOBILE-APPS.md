@@ -1,5 +1,36 @@
 # Mobile apps Changelog
 
+# 24.3.0 (2024-06-13)
+
+- [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-24.3.0)
+- [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-24.3.0)
+
+## Changes
+
+### Common
+
+- UI fixes around notifications.
+- UI fixes around polls.
+- Fixed local participant video menu connection status.
+- Fixed setting and broadcasting subject
+- Use WebSockets for XMPP by default on mobile.
+- Removed 360p resolution limitation.
+- RN WebRTC update to 124.0.1.
+
+### Android
+
+- Fixed build with Java 17.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-24.2.2...android-24.3.0)
+
+### iOS
+
+- Don't pretty-print build output with Fastlane.
+- Rendering improvements.
+- Fix room taken from wrong param in default conference options.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-24.2.2...ios-24.3.0)
+
 # 24.2.2 (2024-04-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-24.2.2)
