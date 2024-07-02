@@ -2,6 +2,145 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9584 (2024-07-02)
+- [jitsi-meet 1.0.8043](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9584)
+	- New features:
+		- feat(toolbox): enable full screen button for ipad browsers
+		- feat(ios): updated cocoalumberjack dependency
+		- feat(android): updated timber dependecy
+		- feat(base/native): Fixes around UI (#14820)
+		- feat(jwt): Adds more logs when jwt is expired.
+		- feat(rn,config) use WebSockets for XMPP by default on mobile
+		- feat(rn) remove 360p resolution limitation
+		- feat(notifications/native): minor ui refurbishment
+		- feat(rnsdk): exclude adding metro dep if already available
+		- feat(ios/sdk): fix room taken from wrong param
+		- feat(sdk/android): custom overflow menu buttons fix (#14795)
+		- feat(notifications/native): ui fixes (#14786)
+		- feat(react-native-sdk): match any version between react native and metro config
+		- feat(polls/web/native): fixed identical answers verification (#14782)
+		- feat(polls/web/native): refactoring (#14778)
+		- feat(lang) add upper sorbian to transcription languages
+		- feat(MainToolbar): implement custom order.
+		- feat(invite): move JWT to Authorization header for invite and search endpoints (#14777)
+		- feat(polls): rework (#14645)
+		- feat(web) add config to hide login button on WaitForOwnerDialog
+		- feat(gh) use new form based issue and feature request templates
+		- feat(ci) use a more future-proof way of installing Node in CI
+		- move jwt to URL hash from search parameters (#14749)
+		- feat(react-native-sdk): Update rnsdk script dependencies (#14739)
+		- feat(external-api) Forward CONFERENCE_CREATED_TIMESTAMP to iframe
+		- Introduce utility for checking sip jigasi stanzas.
+		- Checking for visitors in available hosts.
+		- feat(createInitialAVTracks): Improve handling/displaying errors.
+		- allow client JWT in Authorization header (#14724)
+		- feat(ci) run CI also on macOS on arm64
+		- feat(config) allow overriding desktop deeplinking toggle (#14712)
+		- * feat(visitors): Shows notification when not-allowed error is detected.
+		- feat(fastlane) metadata i18n ru
+		- feat(visitors): enableMediaOnPromote option for mobile.
+		- feat(android): list post notifications permission (#14657)
+
+	- Fixes:
+		- fix(build) compile the frontend before making a source package
+		- fix(MainToolbar): replace hidden buttons.
+		- fix(config) add missing apostrophe
+		- fix(tracks): Update the codec for local tracks in redux. Also add helper functions for torture tests.
+		- fix(system_chat_message): Fixes delivering system messages to visitors.
+		- fix(remote-control) Fix caps lock key name (#14821)
+		- fix(iOS-responsive-ui) Attempt fix iOS responsive ui issue (#14819)
+		- fix(breakout-rooms): Closes menu after clicking on it.
+		- fix(subject) Fix setting and broadcasting subject (#14807)
+		- fix(ios) don't pretty-print build output with Fastlane
+		- fix(android) fix build with Java 17
+		- fix(participant-features): Add missing properties in the type.
+		- fix(Toolbox): Stop rerendering on every action
+		- fix(subtitles) show subtitles even without reactions enabled (#14784)
+		- fix(polls): add vertical margin to create poll button (android)
+		- Fix room_jid in room_metadata message when a tenant is set. (#14765)
+		- fix(jwt): Fixes parsing JWT in hash as JSON instead of a string (#14760)
+		- fix(recordings) extend notification timeout (#14758)
+		- Drop nodejs build dependency.
+		- fix(visitors): Drop use of APP, breaks mobile. (#14746)
+		- Fixes swagger syntax.
+		- fix(premeeting/conference/prejoin): hideConferenceSubject hides subject on prejoin
+		- fix(lang) update screen reader related french translation
+		- fix(visitors): Stops processing pre-join on error reply.
+		- fix(createAndAddInitialAVTracks): async/await logic.
+		- fix(visitors): Use single GUM for enabling media on promotion.
+		- fix(ios) use the correct organization name
+		- fix(lang): Make existing phrasing in Latvian language more clear (#14721)
+		- fix(lang): Update Latvian language translation (#14720)
+		- Fixes visitors component.
+		- fix(conference): save local recording when conference fails (#14606)
+		- fix(lang): added new tr translations
+		- fix(notifications): Adds a 60 secs timeout for bridge channel message. (#14690)
+		- fix(android) Keep microphone enabled when app is in background
+		- fix(participants-pane) close overflow menu when selecting option
+		- fix(lang) update fr-ca translation
+		- Disallow visitor joining directly to main room.
+		- Skip flip processing for password when there is no room password.
+		- fix(ios) Xcode 15.2 updates
+		- fix(tracks): Remove code that handles TRACK_OWNER_CHANGED event. (#14652)
+		- Parse/decode the URL params before constructing the url.
+		- fix(config): Update the bitrate settings for 1080p and 4K.
+		- allow multiple jids to be specified for sending system messages (#14669)
+		- Updates jvb user account check.
+
+	- Translation updates:
+		- add indonesian translation (#14836)
+		- update German translation (#14711)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(JitsiTrack) make track disposal more resilient
+		- feat(JitsiTrack) always detach the track for any elements when disposing
+		- feat(build) use Node 20
+		- feat(JitsiMediaDevices) don't initialize in the constructor
+		- feat(JitsiMeetJS) drop deprecated APIs
+		- feat(createLocalTracks) drop unused slow gUM event
+		- Detects different not-allowed errors.
+
+	- Fixes:
+		- fix(video-quality) Reset scale factor and bitrates for VP9 K-SVC. Fixes poor low resolution video from Spot running older electron versions when the codec changes from VP9->VP8->VP9.
+		- fix(JitsiLocalTrack) Keep a reference to SSRC. This helps us in identifying the video codec associated with a local video track for codec selection torture tests.
+		- fix(JitsiLocalTrack) handle broken constraints more gracefully (#2535)
+		- fix(RTC) improve bridge channel not being available error (#2533)
+		- fix(ice-restart): Use an exponential backoff timer for ICE restarts. (#2531)
+		- fix(video-quality): Bump up the default bitrates for H.264. The browser is downsampling the resolution since the current default bitrates for H.264 are very conservative.
+		- fix(xmpp) catch errors in XMPP session resumption
+		- fix(ssrc-rewriting): Check if track exists before updating owner/sourceName. Fixes missing audio issue when the bridge resends the full audio map even before the track for the SSRCs signaled before are created. This is possible when the RTP packets race with the thread that completed the websocket connection.
+		- fix(stats): Fix local stats when ssrc-rewriting is enabled.
+		- * fix: Fixes double conf requests & always send them after presence error.
+		- fix(ssrc-rewriting): Check for track owner/sourceName before calling TRACK_OWNER_SET. When the bridge WS is re-established, jvb sends the full map of audio and video sources. Without the check, the library will end up firing TRACK_REMOVED and TRACK_ADDED for all the exiting tracks. Also, process audio and video source maps only on JVB sessions.
+		- fix(TPC): Do not reconfigure the encodings for Safari audio. Fixes an issues where microphone change for Safari fails.
+		- fix(ssrc-rewriting): Fire track removed/added instead of owner changed. When an existing SSRC for a remote track gets re-mapped from one source to another, fire a TRACK_REMOVED event followed by TRACK_ADDED event instead of TRACK_OWNER_CHANGED event. This should simplify the application logic for track handling.
+		- Sends set admin only when not empty.
+
+- [jicofo 1.0-1084](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9584)
+	- New features:
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-149-g793df5a9](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9584)
+	- New features:
+		- Move some processing to the sender pipeline (#2172)
+		- Add a timeline event when the packet was sent over ICE. (#2171)
+		- feat(config): Count iceTransport.send as part of transit time, confugurable timeline. (#2163)
+		- feat(VideoParser): In some cases, process VP8 or VP9 packets as AV1. (#2134)
+		- Export more metrics to prometheus. (#2129)
+		- Add metrics for colibri-ws closing and receiving an error. (#2128)
+
+	- Fixes:
+		- Fix(dcsctp): Fix memory leak. (#2182)
+		- Fix(dcsctp): Allow unlimited sctp retransmissions with dcsctp. (#2180)
+		- Run lastNEndpointsChanged asynchronously in Conference#endpointSourcesChanged. (#1611)
+		- Update dcsctp, fixing DcSctpOptions initialization. (#2137)
+		- fix(AV1 DD): Separate AV1 DD template's decodeTargetLayers and decodeTargetProtectedBy fields. (#2136)
+		- Remove mappings when an endpoint expires. (#2132)
+		- Concurrent modification of receiverVideoConstraints. (#2125)
+
 ##  2.0.9457 (2024-04-23)
 - [jitsi-meet 1.0.7952](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9457)
 	- New features:
