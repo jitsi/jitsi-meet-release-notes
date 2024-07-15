@@ -1,5 +1,52 @@
 # Mobile SDKs Changelog
 
+# 10.0.0 (UPDATE DATE)
+
+- [Android](CHANGE LOG LINK);
+- [iOS](CHANGE LOG LINK);
+- [React Native SDK](CHANGE LOG LINK);
+- [Flutter SDK](CHANGE LOG LINK);
+
+## Changes
+
+### Common
+
+- UI fixes around notifications.
+- UI fixes around polls.
+- Fixed local participant video menu connection status.
+- Fixed setting and broadcasting subject
+- Use WebSockets for XMPP by default on mobile.
+- Removed 360p resolution limitation.
+- RN WebRTC update to 124.0.3.
+- Fix visitors going live.
+- Update react-native to 0.73.8.
+- Update react-emoji-render to latest.
+- Update @amplitude/react-native to latest.
+- Switch to @react-native-clipboard/clipboard.
+- Update react navigation related dependencies to latest.
+
+### Android
+
+- Fixed build with Java 17.
+- Fixed granting/denying permissions app crash for >= Android 13.
+- Fixed enterPictureInPicture method call.
+
+[Full changelog](CHANGE LOG LINK COMPARISION)
+
+### iOS
+
+- Don't pretty-print build output with Fastlane.
+- Rendering improvements.
+- Fix room taken from wrong param in default conference options.
+
+[Full changelog](CHANGE LOG LINK COMPARISION)
+
+### React Native SDK
+
+- Added ENDPOINT_MESSAGE_RECEIVED to event listeners.
+
+[Full changelog](CHANGE LOG LINK COMPARISION)
+
 # 9.2.2 (2024-04-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-9.2.2)
