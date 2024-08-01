@@ -2,6 +2,98 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9646 (2024-08-01)
+- [jitsi-meet 1.0.8091](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9646)
+	- New features:
+		- feat(react-native-sdk): added setAudioOnly to the ref props
+		- feat(etherpad) merge query string parameters in `etherpad_base` with app values
+		- feat(prejoin): Move startConference logic to conference middleware.
+		- feat(prejoin): make initPrejoin sync.
+		- feat(polls-history): control polls through local storage
+		- feat(rtcstats): move conference start time to ljm (#14900)
+		- feat(visitors) add info dialog (#14926)
+		- feat(raise-hand) add ability for the moderator to lower hands
+		- feat(toolbox/web): fix You seem to be using a value for content without quotes error log
+		- feat(react-native-sdk): add ENDPOINT_MESSAGE_RECEIVED to rnsdk events (#14889)
+		- feat(notifications/native): some UI arrangements for smaller devices (#14896)
+		- feat(android): update rnVersion to 0.73.8
+		- feat(react-native-sdk): add stompjs to peerDependencies
+		- feat(silent): hide unmute if participant joined without audio (#14803)
+		- feat(android): check for microphone permission so ongoing service can start (#14865)
+		- feat(android/sdk): fixed enterpictureinpicture method call
+		- feat(visitors): Adds option to disable self-demote button.
+		- feat(visitors): Handles live conference and queue service. (#14869)
+		- feat(doc): add waiting queue documentation (#14775)
+		- feat(visitors): Force promote works for all moderators.
+		- feat(external_api) add ability to start transcriptions together with recordings
+		- feat(prosody): Add handling of a room-metadata-changed event.
+		- feat(external_api) include transcription state in recordingStatusChanged
+		- feat(recording) add isLiveStreamingRunning helper
+
+	- Fixes:
+		- fix(whiteboard) remove limit dialog for jibri (#14947)
+		- fix(prosody-auth): Don't loose initial tracks.
+		- Make all middleware functions sync.
+		- fix(push2talk): incorect state on release because a new audio track is beening created. (part 2)
+		- fix(config) add missing comma
+		- fix(visitors) update dialog button (#14936)
+		- fix(push2talk): incorect state on release because a new audio track is beening created.
+		- fix(keyboard-shortcuts) fix PTT on keyboards which send repeated keys
+		- fix(visitors): Fixes going live when the meeting is created. (#14905)
+		- fix(visitors): Check for preferVisitor from redux.
+		- fix(visitors): Adds a nil check for metadata.
+		- fix(raise-hand) clone queue instead of mutate (#14867)
+		- fix(contributing): contributing file has been updated to be directed to the handbook Fixes #14702
+		- fix(recording) start transcription from notification when configured (#14879)
+		- fix(breakout-rooms): rename on native
+		- fix(config) Add 'screenshareCodec' and 'mobileScreenshareCodec'.
+		- fix(conference-duration): Fixes formatting the creation time.
+
+	- Translation updates:
+		- Hebrew Typo Fix (#14949)
+		- Correct accusative error in Esperanto translation (#14940)
+		- added new tr translations (#14908)
+		- french update 07 2024 (#14906)
+		- Update Latvian language translation (#14866)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(quality) Add a QualityController class for runtime adjustments. (#2542)
+		- feat(rtcstats): move conference start time to ljm (#2544)
+		- feat(silent): track if participant joined without audio (#2534)
+		- feat(visitors): Fire not live connection on jicofo response for visitors.
+		- feat(codec-selection): Use the new codec selection API (#2520)
+
+	- Fixes:
+		- fix(RTCUtils) Apply default frameRate constraints. This prevents the browser from starting the camera at 60 fps wherever supported as this could drastically affect the cpu and result in poor experience.
+		- fix(BridgeChannel) Enable SCTP by default.
+		- fix(codecs) Continue to munge SDP for p2p codec. We need the initial invite/answer to have the codecs in the correct order so codec selection API for selecting codecs is not useful in this case.
+
+- [jicofo 1.0-1090](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9646)
+	- New features:
+		- Add an API to move endpoints. (#1161)
+		- feat(visitors): Adds flag to enable live room feature.
+		- feat(visitors): Read visitors.live from metadata, redirect visitors unless live=true.
+
+	- Fixes:
+		- fix(visitors): Do not join visitor MUC until live. (#1158)
+		- Fix scheduling jvb health checks. (#1156)
+
+- [jitsi-videobridge 2.3-160-g97a1f15b](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9646)
+	- New features:
+		- Remove support for ICE/TCP. (#2194)
+		- Redact remote endpoint IP addresses in log messages. (#2188)
+		- feat(log): Always log when a MucClient is added/removed. (#2183)
+
+	- Fixes:
+		- Support VP9 flexible mode. (#2199)
+		- Push packets received from ICE onto a queue. (#2196)
+		- Fix(SSRC rewriting): Catch exceptions rewriting SSRCs in the SSRC cache. (#2192)
+		- Fix(AV1): Prevent some exceptions in AV1 processing. (#2191)
+		- Catch exceptions processing packets. (#2190)
+		- jetty versions (#2186)
+
 ##  2.0.9584 (2024-07-02)
 - [jitsi-meet 1.0.8043](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9584)
 	- New features:
