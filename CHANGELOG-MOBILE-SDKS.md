@@ -1,6 +1,6 @@
 # Mobile SDKs Changelog
 
-# [10.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.0.0) (UPDATE DATE)
+# [10.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.0.0) (2024-08-07)
 
 ## Changes
 
@@ -15,16 +15,16 @@ SDKs will be released in tandem, using the same version number.
 - Removed 360p resolution limitation
 - Update WebRTC to 124
 - Update React Native to 0.73
-- UI tweakss around notifications
+- UI tweaks around notifications
 - UI fixes around polls.
 - Fixed local participant video menu connection status
-- Fixed setting and broadcasting meeeting subject
+- Fixed setting and broadcasting meeting subject
 - Fix visitors going live
 - Updated translations
 
 ### Android
 
-- Permissions fixes for Android 14
+- Permission fixes for Android 14
 - Fixed build with Java 17
 - Fixed enterPictureInPicture method call
 - Fixed adding custom overflow menu buttons
