@@ -1,5 +1,47 @@
 # Mobile SDKs Changelog
 
+# [10.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.0.0) (2024-08-07)
+
+## Changes
+
+**IMPORTANT**: This release marks the unification of SDK releases. From now on Android, iOS, React Native and Flutter
+SDKs will be released in tandem, using the same version number.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-9.2.1...mobile-sdk-10.0.0)
+
+### Common
+
+- Use WebSockets for XMPP by default
+- Removed 360p resolution limitation
+- Update WebRTC to 124
+- Update React Native to 0.73
+- UI tweaks around notifications
+- UI fixes around polls.
+- Fixed local participant video menu connection status
+- Fixed setting and broadcasting meeting subject
+- Fix visitors going live
+- Updated translations
+
+### Android
+
+- Permission fixes for Android 14
+- Fixed build with Java 17
+- Fixed enterPictureInPicture method call
+- Fixed adding custom overflow menu buttons
+
+### iOS
+
+- Fix build with Xcode 15.2
+- Fix room taken from wrong param in default conference options
+
+### React Native
+
+- Added ENDPOINT_MESSAGE_RECEIVED to event listeners
+
+### Flutter
+
+- N/A
+
 # 9.2.2 (2024-04-23)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-9.2.2)
