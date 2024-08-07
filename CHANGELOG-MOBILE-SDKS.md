@@ -1,51 +1,46 @@
 # Mobile SDKs Changelog
 
-# 10.0.0 (UPDATE DATE)
-
-- [Android](CHANGE LOG LINK);
-- [iOS](CHANGE LOG LINK);
-- [React Native SDK](CHANGE LOG LINK);
-- [Flutter SDK](CHANGE LOG LINK);
+# [10.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.0.0) (UPDATE DATE)
 
 ## Changes
 
+**IMPORTANT**: This release marks the unification of SDK releases. From now on Android, iOS, React Native and Flutter
+SDKs will be released in tandem, using the same version number.
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-9.2.1...mobile-sdk-10.0.0)
+
 ### Common
 
-- UI fixes around notifications.
+- Use WebSockets for XMPP by default
+- Removed 360p resolution limitation
+- Update WebRTC to 124
+- Update React Native to 0.73
+- UI tweakss around notifications
 - UI fixes around polls.
-- Fixed local participant video menu connection status.
-- Fixed setting and broadcasting subject
-- Use WebSockets for XMPP by default on mobile.
-- Removed 360p resolution limitation.
-- RN WebRTC update to 124.0.3.
-- Fix visitors going live.
-- Update react-native to 0.73.8.
-- Update react-emoji-render to latest.
-- Update @amplitude/react-native to latest.
-- Switch to @react-native-clipboard/clipboard.
-- Update react navigation related dependencies to latest.
+- Fixed local participant video menu connection status
+- Fixed setting and broadcasting meeeting subject
+- Fix visitors going live
+- Updated translations
 
 ### Android
 
-- Fixed build with Java 17.
-- Fixed granting/denying permissions app crash for >= Android 13.
-- Fixed enterPictureInPicture method call.
-
-[Full changelog](CHANGE LOG LINK COMPARISION)
+- Permissions fixes for Android 14
+- Fixed build with Java 17
+- Fixed enterPictureInPicture method call
+- Fixed adding custom overflow menu buttons
 
 ### iOS
 
-- Don't pretty-print build output with Fastlane.
-- Rendering improvements.
-- Fix room taken from wrong param in default conference options.
+- Fix build with Xcode 15.2
+- Fix room taken from wrong param in default conference options
 
-[Full changelog](CHANGE LOG LINK COMPARISION)
+### React Native
 
-### React Native SDK
+- Added ENDPOINT_MESSAGE_RECEIVED to event listeners
 
-- Added ENDPOINT_MESSAGE_RECEIVED to event listeners.
+### Flutter
 
-[Full changelog](CHANGE LOG LINK COMPARISION)
+- N/A
 
 # 9.2.2 (2024-04-23)
 
