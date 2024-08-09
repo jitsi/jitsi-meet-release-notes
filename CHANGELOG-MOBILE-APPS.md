@@ -1,6 +1,6 @@
 # Mobile apps Changelog
 
-# 24.3.0 (TBD)
+# 24.3.0 (2024-08-08)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-24.3.0)
 - [iOS](https://github.com/jitsi/jitsi-meet/releases/tag/ios-24.3.0)
