@@ -1,5 +1,32 @@
 # Mobile SDKs Changelog
 
+# [10.0.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.0.1) (2024-08-12)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-10.0.0...mobile-sdk-10.0.1)
+
+### Common
+
+- Marked chat and polls elements with IDs useful for mobile testing.
+- Fixed naming and receiving event CUSTOM_OVERFLOW_MENU_BUTTON_PRESSED.
+
+### Android
+
+- N/A
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [10.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.0.0) (2024-08-07)
 
 ## Changes
