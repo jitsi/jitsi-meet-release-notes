@@ -1,5 +1,30 @@
 # Mobile apps Changelog
 
+# [24.4.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-24.4.0) (2024-08-21)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-24.3.0...mobile-app-24.4.0)
+
+### Common
+
+- Fix not fully disabling remote video while in the background
+- Fix audio loss when switching to the bridge in certain cases
+- Allow only whitelisted URLs when sharing a video
+- Restrict gif rendering to Giphy only
+- Improve poll message validation
+- Set limits for linkifying and replacing emoji in chat messages
+- Updated translations
+
+### Android
+
+- Don't re-launch activity after closing PiP
+- Fix not opening Activity from ongoing meeting notification
+
+### iOS
+
+- N/A
+
 # 24.3.0 (2024-08-08)
 
 - [Android](https://github.com/jitsi/jitsi-meet/releases/tag/android-24.3.0)

@@ -1,10 +1,45 @@
 # Mobile SDKs Changelog
 
+# [10.1.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.1.0) (2024-08-21)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-10.0.1...mobile-sdk-10.1.0)
+
+### Common
+
+- Fix not fully disabling remote video while in the background
+- Fix audio loss when switching to the bridge in certain cases
+- Allow only whitelisted URLs when sharing a video
+- Add ids to chat and polls to help automated testing
+- Restrict gif rendering to Giphy only
+- Improve poll message validation
+- Set limits for linkifying and replacing emoji in chat messages
+- Updated translations
+
+### Android
+
+- Fix not opening Activity from ongoing meeting notification
+- Fix joining meetings in quick succession
+- Fix default value for pip.enabled
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [10.0.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.0.1) (2024-08-12)
 
 ## Changes
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/ios-sdk-10.0.0...mobile-sdk-10.0.1)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-10.0.0...mobile-sdk-10.0.1)
 
 ### Common
 
