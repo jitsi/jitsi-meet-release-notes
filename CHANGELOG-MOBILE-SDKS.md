@@ -22,6 +22,7 @@
 - Fix not opening Activity from ongoing meeting notification
 - Fix joining meetings in quick succession
 - Fix default value for pip.enabled
+- Fix crash when staring ongoing notification
 
 ### iOS
 
