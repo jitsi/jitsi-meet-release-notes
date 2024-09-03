@@ -42,14 +42,12 @@
 - Improve poll message validation
 - Set limits for linkifying and replacing emoji in chat messages
 - Updated translations
-- Fix video not showing if disableThirdPartyRequests is true
 
 ### Android
 
 - Fix not opening Activity from ongoing meeting notification
 - Fix joining meetings in quick succession
 - Fix default value for pip.enabled
-- Fix crash when staring ongoing notification
 
 ### iOS
 
