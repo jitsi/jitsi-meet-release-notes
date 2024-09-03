@@ -4,7 +4,7 @@
 
 ## Changes
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-24.4.0...mobile-app-mobile-app-24.4.2)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-24.4.0...mobile-app-24.4.2)
 
 ### Common
 
