@@ -1,5 +1,23 @@
 # Mobile apps Changelog
 
+# [24.4.2](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-24.4.2) (2024-09-03)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-24.4.0...mobile-app-mobile-app-24.4.2)
+
+### Common
+
+- Fix shared video not rendering depending on configuration
+
+### Android
+
+- Fix crash when creating ongoing notification
+
+### iOS
+
+- N/A
+
 # [24.4.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-24.4.0) (2024-08-21)
 
 ## Changes
