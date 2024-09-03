@@ -1,5 +1,31 @@
 # Mobile SDKs Changelog
 
+# [10.1.2](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.1.2) (2024-09-03)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-10.1.0...mobile-sdk-10.1.2)
+
+### Common
+
+- Fix video not showing if disableThirdPartyRequests is true
+
+### Android
+
+- Fix crash when staring ongoing notification
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [10.1.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.1.0) (2024-08-21)
 
 ## Changes
