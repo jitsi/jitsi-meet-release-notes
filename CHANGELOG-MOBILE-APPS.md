@@ -33,7 +33,6 @@
 - Improve poll message validation
 - Set limits for linkifying and replacing emoji in chat messages
 - Updated translations
-- Fix video not showing if disableThirdPartyRequests is true
 
 ### Android
 
