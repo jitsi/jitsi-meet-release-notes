@@ -12,7 +12,7 @@
 
 ### Android
 
-- Fix crash when staring ongoing notification
+- Fix crash when creating ongoing notification
 
 ### iOS
 
