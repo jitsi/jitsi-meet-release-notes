@@ -1,22 +1,28 @@
 # Mobile apps Changelog
 
-# [24.4.2](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-24.4.2) (2024-09-03)
+# [24.5.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-24.5.0) (2024-09-17)
 
 ## Changes
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-24.4.0...mobile-app-24.4.2)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-24.4.0...mobile-app-24.5.0)
 
 ### Common
 
-- Fix shared video not rendering depending on configuration
+- Fix skip showing reload dialog while leaving the conference.
+- Update translations.
+- Fix video not showing if disableThirdPartyRequests is true.
+- Get allowed URL domains from config and dynamic branding.
+- Small UI tweaks.
 
 ### Android
 
-- Fix crash when creating ongoing notification
+- Fix crash when creating ongoing notification.
+- Fix joining meetings in quick succession.
+- Fix default value for pip.enabled.
 
 ### iOS
 
-- N/A
+- Bump minimum required iOS version to 15.1.
 
 # [24.4.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-24.4.0) (2024-08-21)
 
