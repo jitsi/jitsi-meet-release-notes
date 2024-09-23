@@ -1,5 +1,31 @@
 # Mobile SDKs Changelog
 
+# [10.2.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.2.1) (2024-09-23)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-10.1.0...mobile-sdk-10.2.1)
+
+### Common
+
+- Fix black screen error for when app is in background.
+
+### Android
+
+- N/A
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [10.2.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.2.0) (2024-09-17)
 
 ## Changes
