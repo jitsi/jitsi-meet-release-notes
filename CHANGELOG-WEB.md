@@ -2,6 +2,155 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9753 (2024-09-25)
+- [jitsi-meet 1.0.8187](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9753)
+	- New features:
+		- feat(visitors): Allow occupants switching from breakout to main room.
+		- feat(prosody): If room is destroyed already reply to disconnect.
+		- feat(prosody): Moves respond_iq_result to util.
+		- feat(conference): apply reduced ui for when app is in background
+		- feat(external-api): Set blurred background from external api. (#15131)
+		- feat(chat) add message reactions
+		- feat(stage-name-label): Don't show for SS when toolbar is hidden
+		- feat(follow-me): Adds iframeAPI to activate recorder follow me. (#15134)
+		- feat(react-native-sdk): update podspec file
+		- feat(follow-me): Adds option to limit it for recorder only. (#15120)
+		- feat(visitors): Transcriptions for visitors. (#15119)
+		- feat(ios) bump minimum required iOS version to 15.1
+		- feat(stage-participant-badge): Scale size based on the screen height
+		- feat(visitors): Adds option to turn off auto promotion with token.
+		- feat(shared-video): Fixes showing thumb on the sharer side.
+		- feat(participants-pane): Fixes actions menu when sharing video.
+		- feat(subtitles): Move with toolbar.
+		- feat(shared-video): Closes confirm dialog if shown on stop. (#15065)
+		- feat(shared-video): Shows confirmation dialog before playing video. (#15059)
+		- feat(shared-video): Get allowed URL domains from config and dynamic branding.
+		- feat(shared-video): run whitelisted urls through store
+		- feat(rnsdk): moved deps that dont require linking
+		- feat(android/sdk): fix jitsiview join call
+		- feat(shared-video): Allow only whitelisted URLs.
+		- feat(deps) replace lodash with lodash-es
+		- feat(chat/polls/native): added ids for tests (#14994)
+		- feat(toolbox): moved action to appropriate feature and fixed naming
+		- feat(raise-hand) group options in config.js
+		- feat(raise-han) add CTA for opening participants pane on notification
+		- feat(ios): readded git tag for release sdk scritps
+		- feat(chat/native): set limit for linkifying and replacing non unicode messages (#14979)
+		- Presence identity module to support other auth mechanisms.
+		- feat(chat) use the original message ID for processing
+		- feat(android/ios): we no longer need to set a tag
+		- feat(chat): revert char_limit for input (#14973)
+		- feat(toolbox/web): updated imports and fixed jsdocs (#14966)
+		- feat(chat): fixed linter
+		- feat(notifications): set numberOfLines for content text description and title
+		- feat(chat): set CHAR_LIMIT for chat input
+		- feat(participants): revert prev change
+		- feat(participants): check for raisedHandsQueue length before notifying participant to speak
+		- feat(invite) add email autocomplete in invite (#14610)
+		- feat(window.loaded): Add new metric. (#14965)
+		- feat(base/participants): fix max callstack error
+		- feat(external-api) add "name" property to participant-kicked-out event
+		- feat(external-api) add deployment information to ready event
+		- feat(raise-hand) notify next speaker (#14904)
+
+	- Fixes:
+		- fix(av-moderation): Fix wrong json format for empty array.
+		- flip mode can be unsynced between tileview and large video (#15141)
+		- fix(follow-me): Small UI fixes.
+		- Fixes installing let's encrypt on clean system.
+		- fix(deb): Restart jicofo on new install.
+		- fix(transcriptions,recording): Allows non moderators with features to dial, record or transcribe. (#15074)
+		- fix(breakout-rooms): Fixes reporting virtual jid of main room.
+		- fix(rn,overlay) skip showing reload dialog while leaving the conference (#15045)
+		- fix(ios) specify supported platforms (iOS, iPadOS)
+		- correct inconsistencies between disableLocalVideoFlip flag and UI (#15101)
+		- fix(devices): Do not select stored devices that are not available.
+		- fix(jicofo): conference request nginx config add expose headers for cors (#15084)
+		- fix(avatar): Prefer avatar url from jwt identity.
+		- fix(visitors): When metadata or flag live is missing, consider live.
+		- fix(subtitles): positioning and padding
+		- fix(subtitles): Styles.
+		- fix(gifs): trim the message before extracting the URL.
+		- fix(shared-video): Fix skip showing confirm dialog for YouTube links.
+		- fix(RN/shared-video): sharedVideoAllowedURLDomains prop from branding.
+		- fix(RN-video): Video not showing if disableThirdPartyRequests is true.
+		- fix(shared-video): Lint errors.
+		- fix(gh) fix typos in issue template
+		- fix(android) fix crash when staring ongoing notification
+		- fix(participants): Handles kicker undefined on participantKicked.
+		- fix(subtitles): ITranscriptMessage type.
+		- fix(visitors): Visitors raise hand to be promoted, skip notification for speak line.
+		- fix(visitors): Do not show reactions icon in visitors join dialog.
+		- fix(android) fix joining meetings in quick succession
+		- fix(android) fix default value for pip.enabled
+		- fix(android) remove unused method
+		- fix(rn) improve rnsdk version script
+		- fix(lang): Update Latvian language translation
+		- fix(auth): Preserve iceServers URL params
+		- fix(lastN) simplify lastN calculation when in background (#15018)
+		- fix(lang): update german translation (#15011)
+		- fix(rn) fix audio loss when switching to the bridge
+		- fix(android) don't re-launch activity after closing PiP
+		- fix(android) fix not opening activity from notification
+		- fix(android/ios/scripts): updated react native packager script path
+		- fix(lang) update Portuguese translation
+		- fix(gif): Restrict gif rendering to Giphy only
+		- fix(giphy): Remove proxyUrl config option.
+		- fix(polls) improve message validation (#14991)
+		- fix(build) don't run clean after compilation
+		- fix(ios) SDK release script fixes
+		- fix(i18n): Ignore case when normalizing  languages.
+		- fix(visitors) remove default notification (#14970)
+		- fix(participants) skip notification when kicker is the local participant
+
+	- Translation updates:
+		- update German translation
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(moderator): Skips redirect events when moving to main from breakout.
+		- feat(moderator): Make sure we resolve the sendConference promise.
+		- feat(quality) Send analytics event for video codec changes.
+		- feat(deps) update to TypeScript 5
+		- feat(chat) add support for sending and receiving reactions
+		- feat(statistics) remove AudioOutputProblemDetector
+		- feat(JitsiConference) emit PARTICIPANT_KICKED also for the kicker
+
+	- Fixes:
+		- fix(logging): Set default logging level as early as possible.
+		- fix(quality) Do not force desktop codecs on mobile. If the mobileCodecPreferenceOrder setting is missing, use the default order for mobile. Fixes an issue where mobile endpoints encodes using AV1 when mobile settings are missing.
+		- fix(deps) drop unused promise.allsettled dependency
+		- fix(JitsiTranscriptionStatus): the status values are upper case
+		- fix(quality) Do not set b:AS line in SDP for SVC codecs when codec selection API is used. This was needed in older versions since the browser didn't apply maxBitrates from RTCRtpEncoderParameters on the encoder. In the newer versions this seems to be no longer the case. Also, when the codec selection API is used, we no longer renegotiate locally so if we switched codec from AV1->VP9-VP9, the AV1 bitrate setting in the SDP will still be effective resulting in a lower send resolution because of b/w limitation.
+		- fix(metadata): Allows non moderators to send values.
+		- fix(quality-control) Check only for cpu limitation Checking for send resolution vs expected resolution was unnecessarily limiting lastN and receive resolution when local camera has issues and stops sending video. Also, do not send redundant receiver constraints on the bridge channel
+		- fix(xmpp): Fixes skipping messages when disco-info is processed late.
+		- fix(TPC) fix getting video SSRCs if local one is not present yet
+		- fix(ResumeTask) reset resume timeout after running timer
+		- fix(JitsiConference) handle repeaded calls to leave gracefully
+		- fix(chat) change jid to participantId for reactions (#2557)
+		- fix(JitsiConferenceEvents) add missing export
+		- fix(BrowserCapabilities) fix detecting WKWebView on iPad
+		- fix(ReceiveVideoController) fix setting lastN to 0
+		- fix(ICE): treat completed as connected
+		- fix(chat) add messageId to message events
+
+- [jicofo 1.0-1097](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9753)
+	- New features:
+		- feat(jigasi): Verify the rayo JvbRoomName header if it exists. (#1166)
+		- feat(transcription): Handles dial iq coming from visitors.
+		- feat(transcription): Drops TranscriberManager and expects dialIQ. (#1163)
+
+	- Fixes:
+		- fix(visitors): Make sure we disconnect vnodes before leaving rooms. (#1170)
+		- fix(breakout-rooms): Fixes the case where a single participant switches to breakout room. (#1169)
+
+- [jitsi-videobridge 2.3-165-gb7dba824](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9753)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.9646 (2024-08-01)
 - [jitsi-meet 1.0.8091](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9646)
 	- New features:
