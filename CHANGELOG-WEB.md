@@ -2,6 +2,58 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9779 (2024-10-21)
+- [jitsi-meet 1.0.8206](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9779)
+	- New features:
+		- feat(participants-pane/native): updated accessibility label to match translations
+		- feat(base): minor syntax and ts types fixes
+		- feat(connect): Add logging before every connect.
+		- feat(jwt): Adds some more logs around expiration.
+		- feat(accessibility): add focus and blur handle to the toolbar (#15054)
+		- feat(ios) use Xcode 16 as the new baseline
+
+	- Fixes:
+		- fix(lang) fix Russian lang
+		- fix(auth_token): check params before getting its property
+		- fix(config) Remove unsupported settings.
+		- fix(visitors): Skips a log if room is being destroyed.
+		- fix(jwt): Fix initial value of features in jaas mode.
+		- fix(keyboard-shortcuts): Rename .web/.native files.
+		- fix(KbShortcuts): remove listeners on leave.
+		- fix(toolbox): Fix re-rendering of toolbar on every state change.
+		- fix(jwt): Fixes when feature is missing from features.
+		- fix(jwt): Fixes getJwtDisabledButtons to respect moderator flag.
+		- fix(jwt): Use isJwtFeatureEnabled the same way in all places.
+		- fix(ios) update giphy SDK
+		- fix(transcribing): Handle transcriber status changed.
+		- fix(face-landmarks) Ignore muted tracks while starting detection. This fixes an issue where a user gets stuck on lobby page when they have a muted video track after the user is accepted.
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(statistics): add pre call test API
+
+	- Fixes:
+		- fix(JingleSession) Remove ice restart option and functionality. (#2586)
+		- fix(TPC) Do not call setCodecPreferences on Firefox. Calling this API on Firefox is causing freezes when the local endpoint is the answerer. https://bugzilla.mozilla.org/show_bug.cgi?id=1917800
+		- fix(transcriptions): Fixes transcription status, going offline. (#2581)
+		- fix(xmppConnection) Fix unit tests. The number of retries is limited to 3 now.
+		- fix(XmppConnection) limit retries to 3, bail afterwards
+
+- [jicofo 1.0-1101](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9779)
+	- New features:
+		- Update jicofo start script to check for config. (#1176)
+		- Add brewery_jid to the jigasi detector debug output. (#1172)
+
+	- Fixes:
+		- Fail early if no config.file is specified. (#1177)
+
+- [jitsi-videobridge 2.3-168-g28674f78](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9779)
+	- New features:
+		- Use the ice4j push API. (#2195)
+
+	- Fixes:
+
 ##  2.0.9753 (2024-09-25)
 - [jitsi-meet 1.0.8187](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9753)
 	- New features:
