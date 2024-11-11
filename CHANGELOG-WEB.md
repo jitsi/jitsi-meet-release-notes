@@ -2,6 +2,77 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9823 (2024-11-11)
+- [jitsi-meet 1.0.8242](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9823)
+	- New features:
+		- feat(ios) update CocoaPods version
+		- feat(base/ui): remove force capitalize from button labels
+		- feat(audio-recording): Handles conference properties sent from jicofo and play notification.
+		- feat(metrics): related to conference.init execution.
+		- feat(lib-jitsi-meet) log UA string too
+		- feat(rn) improve UA string
+		- feat(rn,screen-sharing) allow sharing the screen and camera on mobile (#15236)
+		- feat(connection): Handles the new connection error CONFERENCE_REQUEST_FAILED. (#15231)
+		- feat(e2ee) add flag to disable the feature
+		- feat(sounds) skip playing back sounds when leaving a conference
+		- feat(subtitles): Adds an option to automatically enable subtitles when transcriber is available.
+		- feat(visitors): Uses metadata to save participants that were promoted. (#15215)
+		- feat(mobile/background): use reducedUI only when app is not active and log appState (#15167)
+		- feat(premeeting): pre-join connection test (#15151)
+
+	- Fixes:
+		- fix(rn) tweak UA string
+		- fix(chat): show focus on chat
+		- fix(lobby): Inconsistent state after deny and then approve. (#15226)
+		- fix(lang): Add newline at the end of generated lang file
+		- fix(android) fix bundle script path
+		- fix(android) fix making production bundles
+		- fix(android) add SDK version information
+		- fix(rn,android) fix build for RN 0.75
+		- fix(rn,call-integration) use a more reliable event for starting
+		- fix(e2ee) don't display E2EE verified field until final
+		- fix(conference): Make sure join waits for confernce.init.
+		- fix(transcribing): Fix missing transcribing status changed event.
+		- fix(premeeting): remove console log #15217
+		- fix(chat) make reactions processing more resilient
+		- fix(polls) add extra check when creating polls
+
+	- Translation updates:
+		- Update for sq translation (#15271)
+		- update German translation (#15264)
+		- Update Latvian language translation (#15244)
+		- Missing keys in Turkish language file added with translations. (#15232)
+		- Update Turkish translation (#15222)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(JingleSession) Convert Jingle->SDP directly w/o interop layer. (#2590)
+		- feat(e2ee) add ability to disable the feature
+		- feat(moderator): Fires new error on connection failed for conference request failures. (#2591)
+		- feat(SDP) Convert SDP->Jingle directly w/o sdp-interop layer.
+		- feat(JitsiParticipant) use a Map for properties, rather than an object
+
+	- Fixes:
+		- fix(quality) Sends updated receiver constraints. Fixes a regression for JitsiConference::setReceiverVideoConstraint and JitsiConference::setAssumedBandwidthBps.
+		- fix(breakout): Clear up request sent on authentication.
+		- fix(JingleSession) Get correct direction for source-remove on p2p.
+		- fix(ChatRoom) refactor handling of participant properties
+
+- [jicofo 1.0-1104](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9823)
+	- New features:
+
+	- Fixes:
+		- Set lower log level for health check ChatRooms. (#1183)
+		- Allow OPTIONS for /conference-request. (#1181)
+
+- [jitsi-videobridge 2.3-174-gd011ddf7](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9823)
+	- New features:
+
+	- Fixes:
+		- fix(#2234): Metrics content type. (#2247)
+		- RTT when SSRC rewriting is enabled. (#2237)
+
 ##  2.0.9779 (2024-10-21)
 - [jitsi-meet 1.0.8206](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9779)
 	- New features:
