@@ -1,5 +1,27 @@
 # Mobile apps Changelog
 
+# [24.6.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-24.6.0) (2024-11-19)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-24.5.0...mobile-app-24.6.0)
+
+### Common
+
+- Fix toolbar re-rendering.
+- Update translations.
+- Skip playing back sounds when leaving a conference.
+- Button label fixes.
+
+### Android
+
+- N/A
+
+### iOS
+
+- Update GIPHY SDK.
+- Use Xcode 16 as the new baseline.
+
 # [24.5.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-24.5.0) (2024-09-17)
 
 ## Changes
@@ -70,7 +92,7 @@
 
 ### Android
 
-- Permissions fixes for Android 14
+- Permission fixes for Android 14
 
 [Full changelog](https://github.com/jitsi/jitsi-meet/compare/android-24.2.2...android-24.3.0)
 
