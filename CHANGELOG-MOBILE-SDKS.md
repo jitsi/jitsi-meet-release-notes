@@ -1,5 +1,34 @@
 # Mobile SDKs Changelog
 
+# [10.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.3.0) (2024-11-18)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-10.2.1...mobile-sdk-10.3.0)
+
+### Common
+
+- react-native update to 0.75.4.
+- Transcribing fixes.
+- Allow sharing the screen and camera.
+
+### Android
+
+- N/A
+
+### iOS
+
+- Update GIPHY SDK.
+- Use Xcode 16 as the new baseline.
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [10.2.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.2.1) (2024-09-23)
 
 ## Changes
