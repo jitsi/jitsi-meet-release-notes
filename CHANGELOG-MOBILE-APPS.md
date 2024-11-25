@@ -12,6 +12,7 @@
 - Update translations.
 - Skip playing back sounds when leaving a conference.
 - Button label fixes.
+- Allow sharing the screen and camera.
 
 ### Android
 
