@@ -2,6 +2,109 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.9909 (2024-12-16)
+- [jitsi-meet 1.0.8302](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9909)
+	- New features:
+		- feat(prosody): extend jigasi kick endpoint to work for any participant (#15387)
+		- feat(tests): Adds avatar test. (#15382)
+		- feat(toolbox/native): update CustomOptionButton props
+		- feat(tests): Grid, FF and iframeAPI tests. (#15372)
+		- feat(dynamic-branding): New options for URLs in config
+		- feat(dynamic-branding) support setting transcription language
+		- feat(always-on-top): Updates buttons for visitors. (#15369)
+		- feat(base/tracks): removed pip limitation while screensharing
+		- feat(settings/native): fix prejoin settings
+		- feat(visitors): Propagate moderator role to visitor nodes.
+		- feat(android): removed jsc related code
+		- feat(prosody): Enables connection resumption for jicofo and jvb.
+		- feat(android): hermes and react native are synced (#15353)
+		- feat(toolbox): adapt toolbox and hang up menu visibility to mobile web (#15340)
+		- feat(config) add option to show recording link (#15336)
+		- feat(react-native): enable hermes engine (#15279)
+		- feat(URL): Add metrics for config overwrites.
+		- feat(external-api): Fix reporting kicker display name.
+		- feat(external-api) add function to change virtual backgrounds
+		- feat(ci) improve mobile CI
+		- feat(subtitles): Don't show delayed final
+		- feat(config) whitelist enableCalendarIntegration
+		- feat(prejoin): fix join meeting from external/calendar link while in another meeting (#15310)
+		- feat(recording): Shows notification when you try to start recording too quick. (#15311)
+		- feat(IFrameApi): setAudioOnly command & event.
+		- feat(conference): revert fix for background app state (#15308)
+		- feat(tests): First test from torture to meet. (#15298)
+		- feat(reactions): Added heart reaction
+		- feat(ns) update Krisp to latest version
+		- feat(Video): Handle .play() errors.
+
+	- Fixes:
+		- fix(lang): Update Latvian language translation
+		- fix(lang) update German translation
+		- fix(config) hide ui label for the recording start notification and send event (#15385)
+		- fix(configWhitelist): Remove hiddenDomain and restrict dropbox options to key only. (#15381)
+		- fix(whiteboard) fix disabling button
+		- fix(config): Add missing config options
+		- fix(speakerstats): Filters speaker stats to not include hidden participants.
+		- fix(whiteboard) simplify room hash generation to cover custom region shards (#15345)
+		- fix(visitors): Fixes slowing down after meeting becomes live.
+		- fix(visitors): Fixes go live check.
+		- fix(lang) updated el translation
+		- fix(config-whitelist): remove props.
+		- fix(supportURL): Override true dynamic branding only.
+		- fix(iframeAPI): Fix role changed event to work not only for local user.
+		- fix(conference) update transcription language with meeting language
+		- fixup!
+		- fix(lang) refactor user media permission copy
+		- fix(lang) update text on extra noise suppression
+		- fix(config-whitelist) cleanup (#15314)
+		- fix(connection): Detects tenant hyphen and length problems and show notification.
+		- fix(connection): Shows notification instead of reload on conference request failed.
+		- fix(local-recording) handle repeated values
+		- fix(ci) use macOS 15 to run iOS tests
+		- fix(visitors): Fixes detection of turning of subtitles by visitor.
+		- fix(base/icons): error regarding default props
+		- fix(prejoin): Device indicator.
+
+	- Translation updates:
+		- Adds missing Korean translations
+		- Update for sq translation (#15322)
+		- update German translation
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(conference) add ability to change the transcription language
+		- feat(recording): Adds one more error type in constants.
+
+	- Fixes:
+		- fix(browser) detect WebRTC APIs and mark browser unsupported if not
+		- fix(TPC) Fix H.264 simulcast. Regression was introduced in https://github.com/jitsi/lib-jitsi-meet/commit/07f037e12ed7ced3ba5b1bc6be1cb58dff61789d. Also process encodeTime stats when H.264 is selected
+		- fix(TPC) Use videoType from 'source-add' for remote track creation. (#2596)
+
+- [jicofo 1.0-1117](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_9909)
+	- New features:
+		- Add signaling for VLA RTP header extension. (#1203)
+		- Update jigasi detection  (#1200)
+		- Add metrics for conference/endpoint duration. (#1197)
+		- Add a metric for XMPP disconnects. (#1193)
+		- * feat(connection): Enables stream management for xmpp connections.
+		- Set max-bridge-participants=80 by default. (#1187)
+		- Support region groups for jigasi selection. (#1186)
+
+	- Fixes:
+		- Handling of IQ error responses. (#1204)
+		- Reconnect after an error. (#1199)
+		- Fixes reconnecting when there was no resumption. (#1196)
+		- Enable av1dd independent of av1. (#1191)
+		- Do not start ktor when rest.port is set to -1. (#1185)
+
+- [jitsi-videobridge 2.3-187-gc7ef8e66](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_9909)
+	- New features:
+		- Split config for default constraints. (#2252)
+		- Use the cpu-usage measurement for stress. (#2248)
+
+	- Fixes:
+		- block comment syntax in analyze-timeline2.pl. (#2256)
+
 ##  2.0.9823 (2024-11-11)
 - [jitsi-meet 1.0.8242](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9823)
 	- New features:
