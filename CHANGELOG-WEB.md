@@ -52,7 +52,6 @@ Full changelogs are available in each project's release page: click on one of th
 		- fix(supportURL): Override true dynamic branding only.
 		- fix(iframeAPI): Fix role changed event to work not only for local user.
 		- fix(conference) update transcription language with meeting language
-		- fixup!
 		- fix(lang) refactor user media permission copy
 		- fix(lang) update text on extra noise suppression
 		- fix(config-whitelist) cleanup (#15314)
