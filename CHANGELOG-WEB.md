@@ -2,6 +2,107 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10008 (2025-01-31)
+- [jitsi-meet 1.0.8384](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10008)
+	- New features:
+		- feat(build) show webpack progress
+		- feat(api): Adds a print about overwritten config via iframeAPI.
+		- Reads region from http headers and set it in presence. (#15531)
+		- feat(tests): Adds lobby test.
+		- feat(tests): Adds lastN test.
+		- feat(tests): Adds kick test.
+		- feat(rn) implement startSilent
+		- feat(toolbox): use custom buttons inside toolbox (#15506)
+		- feat(react-native-sdk/android): force permissions approval in order to launch RNOngoingNotification (#15400)
+		- feat(android) bump minimum required version to 26 aka Oreo
+		- feat(toolbox): reactions menu native ui adjustments
+		- feat(ios): fixed path from where we take hermes.xcframework
+		- feat(dialog): Adds a print when opening and hiding dialogs.
+		- feat(speakerstats): Shows a tooltip for participants count.
+		- feat(visitors): Start shortening the number above 1000.
+		- feat(visitors): Renames visitors/obeserver to viewers.
+		- feat(rnnoise): update rnnoise-wasm version (#15478)
+		- feat(tests): Adds follow-me and invite dialog test. (#15476)
+		- feat(tests): Adds dial-in test. (#15470)
+		- feat(tests): Adds desktop sharing test.
+
+	- Fixes:
+		- fix(web) fix properly applying polyfill
+		- fix(web) polyfill Promise.withResolvers
+		- fix(config) Remove deprecated codec settings from config.js
+		- fix(tests): Adds missing audio file.
+		- fix(prosody): Fixes jibri util check to support occupant and jid.
+		- fix(visitors): Destroy visitors room earlier on main=0.
+		- fix(virtual-backgrounds) fix handling empty file list
+		- fix(lobby): Fixes wrong password going back to knocking.
+		- fix(polls): Fixes send/receive polls and processing answers.
+		- fix(tests): Fixes AVModeration test hovering over more menu in thumbnail.
+		- fix(tests): Fix dial-in check for pin, can be 8 digits.
+		- fix(tests): Simplifies await async.
+		- fix(pre-join): Remove from dom when lobby is shown.
+		- fix(tests): Simplify suite names.
+		- fix(tests): Fixes breakout room wait for room update.
+		- fix(tests): Fixes element not interceptable in AV moderation tests.
+		- fix(virtual-background) fix image upload cancelling
+		- fix(device-selection) hide framerate selection on mobile browsers
+		- fix(share-video): Hide element when not shown on large. (#15507)
+		- fix(notifications): Removed info type from docs (#15504)
+		- fix(interface-config-whitelist): cleanup
+		- fix(configWhitelist): alphasort
+		- fix(config): Document desktopSharingSources and improve types
+		- fix(logging-config): Improve types
+		- fix(config): Document googleApiApplicationClientID
+		- fix(config): Document LJM props.
+		- fix(config): Remove unused options.
+		- fix(config): Document testing.failICE
+		- fix(config): Move debugAudioLelvels in config.testing
+		- fix(config): Remove config.debug.
+		- fix(conference): Remove unused argument from _createDesktopTrack
+		- fix(ios) fix node path in scripts
+		- fix(subtitles) fix skipping transcription messages
+		- fix(config): Allow only enableMediaOnPromote from visitors config to be overriden.
+		- fix(external_api) drop legacy constructor arguments
+		- fix(lang): Update Latvian language translation
+		- fix(configWhitelist): Add p2p.mobileScreenshareCodec
+		- fix(lint) tame linter
+		- fix(polls) limit maximum amount of answers
+		- fix(readme): Fixes badge icon.
+
+	- Translation updates:
+		- Update main-zhCN.json (#15426)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Updates userRegion from backend. (#2626)
+		- feat(subject): Avoids setting subject if already set. (#2615)
+
+	- Fixes:
+		- fix(codec) Debounce the call that calc codec intersection set. (#2622)
+		- fix(xmpp) unescape HTML entities in JSON messages
+		- fix(SDP) Include the trackId in the signaled msid for the source. (#2621)
+		- fix(ScreenObtainer): allow Electron to use getDisplayMedia, hidden behind a flag for now (#2605)
+		- fix(JPC) skip processing remote audio sources when startSilent
+		- fix(video-quality) Fixes an issue where outbound resolution can be stuck at wrong resolution. The calls to RTCRtpSender.setParameters() are all chained and the current maxHeight is set after the call to setParameters is resolved. If there is another call made to setParameters before the previous one resolves, we can end up passing the wrong maxHeight resulting in the client getting stuck at an unexpected resolution. This issue can be reproduced sometimes  when the users are moving across the main and breakout rooms. TPC.setVideoCodecs() ends up pushing a wrong maxHeight for update when the previous call to setParameters hasn't resolved yet.
+		- fix(config): Move failIce to testing
+		- fix(JitsiMeetJS): Document desktopSharingSourceType
+		- fix(JingleSession) Fix high fps screenshare not showing up.
+		- fix(gDM) handle NotReadableError
+
+- [jicofo 1.0-1122](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10008)
+	- New features:
+
+	- Fixes:
+		- logic on when to ignore member role changes, and when to log about them. (#1208)
+		- Do not stop health checks after an error response. (#1207)
+		- Prioritize load higher than region. (#1206)
+		- Fix detecting transcriber (the extension is not added on initial join). (#1205)
+
+- [jitsi-videobridge 2.3-204-g26cd91bd](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10008)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.9955 (2025-01-13)
 - [jitsi-meet 1.0.8339](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_9955)
 	- New features:
