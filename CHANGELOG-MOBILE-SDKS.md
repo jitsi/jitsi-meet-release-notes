@@ -1,6 +1,47 @@
 # Mobile SDKs Changelog
 
-# [10.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.3.0) (2024-11-18)
+# [11.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.0.0) (2025-02-17)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-10.3.0...mobile-sdk-11.0.0)
+
+### Common
+
+- react-native update to 0.75.5.
+- Enabled hermes engine.
+- lib-jitsi-meet update to latest version.
+- Translation updates.
+- Native API events for show/hide notifications and start/stop recording.
+- UI fixes and improvements around custom buttons.
+- UI fixes around recordings.
+- Implement startSilent
+- Update rnnoise
+- Update @react-native-community/clipboard/clipboard to 1.14.3
+- Fixes around video sharing, prejoin, authentication, polls, visitors, lobby and notifications.
+
+
+### Android
+
+- Fix GIFs animation.
+- Bump minimum required version to 26 aka Oreo. 
+- Removed jsc related code.
+
+### iOS
+
+- Add ability to configure the native WebRTC logging level.
+- Add ability to inject a custom RTCAudioDevice implementation.
+
+### React Native
+
+- Fixed Android native notifications signaling ongoing conference and media projection.
+- Specify the React native version we support.
+
+### Flutter
+
+- N/A# 
+
+[10.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.3.0) (2024-11-18)
 
 ## Changes
 
