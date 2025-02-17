@@ -35,7 +35,6 @@
 ### React Native
 
 - Fixed Android native notifications signaling ongoing conference and media projection.
-- Specify the React native version we support.
 
 ### Flutter
 
