@@ -38,9 +38,9 @@
 
 ### Flutter
 
-- N/A# 
+- N/A
 
-[10.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.3.0) (2024-11-18)
+# [10.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-10.3.0) (2024-11-18)
 
 ## Changes
 
