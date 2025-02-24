@@ -1,5 +1,26 @@
 # Mobile apps Changelog
 
+# [25.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.0.0) (2025-02-20)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-24.6.0...mobile-app-25.0.0)
+
+### Common
+
+- Translation updates.
+- UI fixes and improvements around custom buttons.
+- UI fixes around recordings.
+- Fixes around video sharing, prejoin, authentication, polls, visitors, lobby and notifications.
+
+### Android
+
+- Fixed GIFs animation.
+
+### iOS
+
+- N/A
+
 # [24.6.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-24.6.0) (2024-11-19)
 
 ## Changes
