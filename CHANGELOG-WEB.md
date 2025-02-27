@@ -2,6 +2,152 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10073 (2025-02-27)
+- [jitsi-meet 1.0.8443](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10073)
+	- New features:
+		- feat(config): Add logger.warn for depricated params.
+		- feat(dynamic-branding): Add customToolbarButtons.
+		- feat(dynamic-branding): Add customParticipantMenuButtons
+		- feat(dynamic-branding): Add etherpadBase
+		- feat(dynamic-branding): Add peopleSearchUrl
+		- feat(analytics): remove overwritesPrejoinConfigICEUrl
+		- feat(inIframe-whitelists): Implement.
+		- allow specifying actions in custom notifications (#15666)
+		- feat(tests): Drops unused field for setting password.
+		- feat(tests): Adds keep-alive to newly created sessions.
+		- feat(tests): Adds debug logs on failure.
+		- feat(tests): Adds an option to specify max instances.
+		- feat(tests): Adds target for grid ff tests.
+		- feat(tests): Handle checking for grid by updating merged config.
+		- : Add config to disable camera tint foreground (#15619)
+		- feat(ios) introduce gemfile to make builds more reproducible
+		- feat(tests): Adds video layout test.
+		- feat(tests): Adds udp test.
+		- feat(tests): Adds tile view test.
+		- feat(tests): Adds switch video test.
+		- feat(tests): Adds subject test.
+		- feat(tests): Adds stop video test.
+		- feat(tests): Adds singlePort test.
+		- feat(tests): Adds preJoin test.
+		- feat(tests): Adds oneOnOne test.
+		- feat(test): Implement hangupAllParticipants
+		- feat(tests): Print error on execute failure.
+		- feat(tests): Adds grant moderator test.
+		- feat(tests): Adds lock room with digits only test.
+		- feat(tests): Adds lock room test.
+		- feat(android/ios): start/stop recording events for native (#15598)
+		- feat(external_api) facilitate gDM Electron
+		- feat(tests): Small improvements to dial-in test. (#15600)
+		- feat(prosody): Updates checks in presence_identity avoids setting missing user.
+		- feat(toolbox/native): reorganizing buttons in the toolbox and overflow menu (#15543)
+		- feat(notifications): Make all error notifications sticky.
+		- feat(android/ios): Native API events for show/hide notification (#15577)
+		- feat(prosody): Introduces events for json messages and transcripts.
+		- feat(android): use fresco 3.2.0 in order to fix animation for gifs
+		- feat(tests): Add start muted test.
+		- feat(package.json): Add test-ff-single script.
+		- feat(base/devices): removed unused helper
+		- feat(ios) add ability to configure the native WebRTC logging level
+		- feat(ios) add ability to inject a custom RTCAudioDevice implementation
+		- feat(analytics) drop defunct Google Analytics integration
+		- feat(build) use core-js to polyfill modern JavaScript features
+		- feat(build) drop export-default-from plugin
+		- feat(android/sdk): custom button pressed event name updated
+		- feat(toolbox): Fixed background color prop custom buttons (#15529)
+
+	- Fixes:
+		- fix(configWhitelist): Remove customToolbarButtons.
+		- fix(analytics): overwritesCustomButtonsWithURL metric
+		- fix(iceServers): Restrict iceServers url param to iframe only.
+		- Check for ICE connected as part of ensureXParticipants. (#15664)
+		- fix(tests): Fix test name in FF excludes.
+		- fix(tests): Temporary disable one check when FF is involved.
+		- fix(tests): AV moderation UI changes.
+		- fix(tests): Fix avatar test adding FF condition.
+		- fix(tests): Fixes Lobby disabled wait.
+		- fix(tests): Disable lastN test for FF.
+		- fix(tests): Disable AV moderation for FF.
+		- fix(tests): Use worker id to create console log files.
+		- fix(tests): Disable startMuted on FF.
+		- fix(tests): Bumps global timeout for tests.
+		- fix(tests): Adds undefined checks.
+		- fix(logging): Keeps the log storage ready when there is conference error.
+		- fix(docs): Updates the extra large conf docs.
+		- fix(tests): Adopts tests to the AV moderation UI changes.
+		- fix(av-moderation): When we are allowed to unmute make the notification sticky.
+		- fix(participants): Offer audio,video choice to allow a participant.
+		- fix(participants-pan): Move the audio allow to be default.
+		- fix(video-menu): When muting all skip local.
+		- fix(fmuc): Updates auto-promote case checks.
+		- fix(recordings) increase duration for recording prompt notification (#15632)
+		- fix:Auto-Scroll Issue in Poll Screen After Adding an Option
+		- fix(avmoderation): Fix actor jid.
+		- fix(iframeAPI): Fix setSubtitles command language param.
+		- fix:(profile): ensure apply button remains visible when keyboard appears
+		- fix(build) add .bundle to ignore files
+		- fix(ios,build) add missing dependencies for fastlane
+		- fix(ios,ci) use Xcode 16.2 for making iOS builds
+		- fix(tests): Uses utility methods for mute/unmute.
+		- fix(tests): ensureTwoParticipants.
+		- fix(tests): Adds mute test.
+		- fix(tests): Moves muteAudio to ParticipantsPane.
+		- fix(tracks) Replace the tracks directly on camera toggle. Fixes an issue where p2p peer stops rendering remote video when the mobile client toggles camera. This happens only when the peer starts video muted.
+		- fix(tracks) don't throw if creating a desktop track fails
+		- Fixes wrong state in password dialog.
+		- fix(prejoin): do not show conference info in prejoin or lobby (#15591)
+		- fix(tests): add more time for getNotificationText.
+		- fix(recordings) dismiss notification when recording in progress (#15588)
+		- fix(recordings) improve label to clearly reflect current status (#15570)
+		- fix(analytics): remove overwritesWatchRTC* props
+		- fix(rn) remove Pomise.allSettled polyfill
+		- fix(av-moderation-test): random timing failures.
+		- fix(tests): wdio.cong ffExcludes undefined error.
+		- fix(rn,polyfills) use core-js for promise polyfills
+		- Fixes is_jibri check.
+		- fix(build) apply @babel/preset-env also to TS files
+		- fix(ts) drop bogus method anotations
+		- fix(build) don't use babel-loader on node_modules
+		- fix(ts) set ES2024 as our target for web
+		- fix(lang) update Swedish translation
+		- Adds nil check in some util methods.
+
+	- Translation updates:
+		- Update Italian.
+		- Update hindi translation
+		- update German translation (#15650)
+		- added language norwegian bokmal (#15594)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(ScreenObtainer) add fallback option for Electron
+		- feat(JitsiConference) Allow adding multiple tracks to the conference. This should be supported by the backend. This limitation was added here only because of track synchronization issues between JM and LJM. The support is added behind testing.allowMultipleTracks config.js setting Fixes https://github.com/jitsi/lib-jitsi-meet/issues/2205
+		- Move electronUseGetDisplayMedia to testing.
+
+	- Fixes:
+		- fix(SDP) Add trackID if its missing in msid. (#2667)
+		- fix(electron): Check for unsuported gDM
+		- fix(SDP) Inject trackID if missing from signaled source info. Reconstruct the msid to include both streamId and trackId if its missing from the source signaling. Fixes issue on Chromium < 117 where the remote offer gets rejected and the client gets kicked out of the call.
+		- fix(codec) Fix AV1/VP9 support on Firefox. Firefox added support for AV1 with DD and VP9 SVC is also working as expected in Firefox 136.
+		- fix(ScreenObtainer) fix using gDM with old Electron clients
+		- fix(JingleSession) Allow addition of multiple tracks
+		- fix(ScreenObtainer) improve result handling
+		- fix(connectivity) Force restart client after 3 failed ICE restarts
+
+- [jicofo 1.0-1124](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10073)
+	- New features:
+		- Detect bridge ICE failure based on restart requests from endpoints (#1210)
+		- feat(avmoderation): When muting skip the actor.
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-209-gb5fbe618](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10073)
+	- New features:
+		- Add an option to disable discarding silence. (#2289)
+
+	- Fixes:
+		- Sources with type NONE should not have effective constraints (#2292)
+
 ##  2.0.10008 (2025-01-31)
 - [jitsi-meet 1.0.8384](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10008)
 	- New features:
