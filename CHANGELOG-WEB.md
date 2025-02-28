@@ -10,6 +10,7 @@ Full changelogs are available in each project's release page: click on one of th
 
 	- Fixes:
 		- fix(rn) fix displaying meeting times for yesterday
+                - Fixes audio unmuting on Firefox. 
 
 	- Translation updates:
 		- norwegian language added (#15669)
