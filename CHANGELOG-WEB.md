@@ -2,6 +2,37 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10078 (2025-02-28)
+- [jitsi-meet 1.0.8448](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10078)
+	- New features:
+		- feat(conference): hide toggle camera and audio device selection btns
+		- feat(conference): hide LonelyMeetingExperience if add people feat is disabled
+
+	- Fixes:
+		- fix(rn) fix displaying meeting times for yesterday
+                - Fixes audio unmuting on Firefox. 
+
+	- Translation updates:
+		- norwegian language added (#15669)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(TS) migrate IceFailedHandling to TS (#2663)
+
+	- Fixes:
+		- fix(TPCUtils): handle missing codec in  isRunningInSimulcastMode.
+
+- [jicofo 1.0-1124](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10078)
+	- New features:
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-209-gb5fbe618](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10078)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.10073 (2025-02-27)
 - [jitsi-meet 1.0.8443](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10073)
 	- New features:
