@@ -1,5 +1,27 @@
 # Mobile apps Changelog
 
+# [25.1.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.1.0) (2025-03-06)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-25.0.0...mobile-app-25.1.0)
+
+### Common
+
+- Translation updates.
+- Restructure chat messages
+- Recordings fixes.
+- Consent dialog for recordings.
+- Fix auto-scroll issue in polls screen.
+
+### Android
+
+- N/A
+
+### iOS
+
+- N/A
+
 # [25.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.0.0) (2025-02-20)
 
 ## Changes
