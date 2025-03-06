@@ -15,6 +15,7 @@
 - Fix displaying meeting times for yesterday.
 - Possibility to hide toggle camera and audio device selection.
 - Hide LonelyMeetingExperience button if add people feat is disabled.
+- New CONFERENCE_UNIQUE_ID_SET event.
 
 ### Android
 
