@@ -1,5 +1,39 @@
 # Mobile SDKs Changelog
 
+# [11.1.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.1.0) (2025-03-06)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.0.0...mobile-sdk-11.1.0)
+
+### Common
+
+- Native API for overwriteConfig
+- Config option to notify user on conference destruction.
+- Translation updates.
+- Fix hide display name based on config option.
+- Fix displaying meeting times for yesterday.
+- Possibility to hide toggle camera and audio device selection.
+- Hide LonelyMeetingExperience button if add people feat is disabled.
+
+### Android
+
+- N/A
+
+### iOS
+
+- Fix exporting JitsiMeetView.{start,stop}Recording to Swift.
+- Fix missing dependencies for fastlane.
+- Use Xcode 16.2 for making iOS builds.
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [11.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.0.0) (2025-02-17)
 
 ## Changes
@@ -19,7 +53,6 @@
 - Update rnnoise
 - Update @react-native-community/clipboard/clipboard to 1.14.3
 - Fixes around video sharing, prejoin, authentication, polls, visitors, lobby and notifications.
-
 
 ### Android
 
