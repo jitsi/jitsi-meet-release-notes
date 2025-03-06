@@ -32,7 +32,8 @@
 
 ### Flutter
 
-- N/A
+- Updated customOverflowMenuButtonPressed to customButtonPressed event.
+- Exclude Jitsi Meet activity from recents
 
 # [11.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.0.0) (2025-02-17)
 
