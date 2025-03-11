@@ -16,6 +16,7 @@
 - Possibility to hide toggle camera and audio device selection.
 - Hide LonelyMeetingExperience button if add people feat is disabled.
 - New CONFERENCE_UNIQUE_ID_SET event.
+- New RECORDING_STATUS_CHANGED event.
 
 ### Android
 
