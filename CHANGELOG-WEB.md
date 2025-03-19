@@ -2,6 +2,117 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10133 (2025-03-19)
+- [jitsi-meet 1.0.8499](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10133)
+	- New features:
+		- feat(base/ui): update tokens (#15688)
+		- feat(ios) migrate remaining helper classes to Swift
+		- feat(ios) rewrite AppDelegate in Swift
+		- feat(ios) rewrite ViewController in Swift
+		- feat(ios) allow importing SDK in Swift modules in another target
+		- feat(ios) drop use of storyboard
+		- feat(prosody): New impl of is_admin.
+		- feat(prosody): Moves is_admin to util.
+		- feat(logging): Let ljm handle its logging to rtcStats.
+		- feat(android): fix case where actions have no data
+		- Adds ts rule noImplicitOverride and fix errors.
+		- feat(ios): Update data types for events (#15767)
+		- feat(ios): fixed data type for startRecording param
+		- feat(external-api): change config type for overwriteConfig
+		- feat(android): use Bundle to get data from actions
+		- feat(dev) make webpack-dev-server listen on all interfaces
+		- feat(android/ios): added SEND_CAMERA_FACING_MODE_MESSAGE external api event
+		- added lobby chat notification (#15728)
+		- feat(android/ios): broadcast RECORDING_STATUS_CHANGED event
+		- feat(tests): Adds an option to run beta versions.
+		- feat(external_api): Expose the Etherpad SharedDocument URL
+		- feat(jwt): Adds an option to match tenant. (#15727)
+		- feat(android/ios): add CONFERENCE_UNIQUE_ID_SET event
+		- feat(android): update WritableNativeMap to convert Bundle data type
+		- feat(tests): Fixes the checks when to use token. (#15706)
+		- feat(android/ios): Native API to overwrite config (#15707)
+		- feat(base/config): notify user on conference destruction option (#15697)
+		- feat(tests): Adds some jaas related checks.
+		- feat(tests): Fixes race who will join first in start muted.
+		- feat(tests): Adds wait for locked state.
+		- feat(tests): Bumps time waiting for joining lobby room.
+		- feat(tests): Bumps time waiting for breakout rooms update.
+		- feat(tests): Adds an option to use a different tenant for iframeAPI.
+		- feat(tests): Adds an option to append room name suffixes.
+		- feat(tests): Adds an option for an access jwt token.
+		- feat(android) use hardware video decoders by default
+		- feat(recordings) add consent dialog (#15673)
+		- feat(conference/large-video): hide display name label based on config
+
+	- Fixes:
+		- Adds an option to set jicofo as owner of rooms.
+		- Fixes creating users when using latest prosody.
+		- fix(prejoin): polite name error message
+		- fix(test): Fixes failing to hangup a participant.
+		- fix(ci) fix action branch name
+		- fix(ci) update tj-actions/changed-files action
+		- Fixed unrelated changes
+		- fix(base/config): apply disableProfile check only for web buttons
+		- fix(ios) patch SocketRocket to support WebSocket with TLS 1.3
+		- fix(test): use filmstrip to audio mute in av moderation (#15785)
+		- fix(settings): notification tab restructure
+		- Disable lobby chat emoji reactions
+		- fix(lang): video permission text for non-moderators (#15775)
+		- Drops not needed binds.
+		- Fixes dialout dialog and undefined error.
+		- fix(ios): overwriteConfig payload structure
+		- fix(android,ios) set native view background matching JS
+		- fix(av-moderation): Skip hiding AV moderation menu.
+		- fix(test): VP9 is enabled in Firefox 136.
+		- fix(tracks) fix toggleCamera on mobile web browsers
+		- Ignores disableThirdPartyRequests when using data url.
+		- the box problem, by hiding it on submitting the messge (#15713)
+		- fix(watermarks): bring watermarks to the top
+		- fix(recents-list) show delete icon on small devices
+		- fix(rn,recording) fix closing the consent dialog (#15699)
+		- fix(chat): restructure chat messages
+		- Fix invite tests.
+		- fix(breakout-rooms) fix processing commands (#15695)
+		- fix(tests): Lobby wait more for the load.
+		- fix(tests): Locked dialog wait to be stable.
+		- fix(tests): Use lower resolution when possible.
+		- fix(tests): Avatar do not ignore token when joining second time.
+		- fix(tests): Adds time to the keep-alive print.
+		- fix(tests): Skip iframeAPI if it is disabled.
+		- fix(tests): Fixes avatar tests when providing jwt token.
+		- fix(tests): Fixes audio only test when using jwt for joining.
+		- padding in the welcome page and overflow of in small screens (#15690)
+		- fix(ios) remove orphaned file references from the project
+		- fix(ios) fix exporting JitsiMeetView.{start,stop}Recording to Swift
+
+	- Translation updates:
+		- Add arabic translation to audio, video, notifications and shortcuts (#15735)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Set AV1 as the preferred video codec. This is done in code for desktop clients. Mobile clients will continue to encode VP8 by default
+		- feat(deps) use our forked version of strophe.js
+		- feat(lint) update linter and apply it to TS code
+		- feat(rtcstats): Adds a default log collector. (#2678)
+
+	- Fixes:
+		- fix(connectivity) Do not overwrite the packet loss value when video muted. RTCP termination for audio was implemented a while back. This hack is no longer needed.
+		- fix(ci) migrate stalebot to GHA
+
+- [jicofo 1.0-1124](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10133)
+	- New features:
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-215-gbee626bf](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10133)
+	- New features:
+		- feat(deb): Moves to using jvb.conf only.
+
+	- Fixes:
+		- fix(debian): Fixes default config when password contains special chars.
+		- Schedule RelayMessageTransport timeout regardless of sctp config. (#2306)
+
 ##  2.0.10078 (2025-02-28)
 - [jitsi-meet 1.0.8448](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10078)
 	- New features:
