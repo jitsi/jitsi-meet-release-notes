@@ -2,6 +2,136 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10169 (2025-04-08)
+- [jitsi-meet 1.0.8532](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10169)
+	- New features:
+		- feat(tests): Checks for mute icon in filmstrip and participants pane.
+		- Save state debug function.
+		- feat(rtcstats): attach LogCollector storage to rtcstats lifecycle
+		- feat(visitors): Respects moderatorId and option to auto promote all moderators.
+		- feat(visitors): Drops propagating moderator_id to visitor nodes.
+		- feat(groupchat-polls-permissions): Backend implementation.
+		- feat(allowners): Adds a field to metadata which can be checked later by clients.
+		- Backend reports default permissions.
+		- feat(groupchat-polls-permissions): Native implementation.
+		- Switches by default to using websockets.
+		- feat(prosody): Drops support for 0.11.
+		- feat(tests): Adds check for name on join/leave webhooks.
+		- feat(isEmbedded) limit mobile meetings too
+		- feat(inIframe/isEmbedded) add ability to detect generic embedding
+		- feat(notification/native): remove number of lines limitation for description
+		- feat(android): add build type separation and debug app
+		- feat(lint) update to eslint-config-jitsi v6
+		- feat(groupchat-polls-permissions) Implement groupchat and polls creation for web (#15806)
+
+	- Fixes:
+		- fix(visitors): Updates promotion path for non jaas meetings.
+		- fix(tests): Some times the leave can take more time.
+		- fix(tests): Adds more prints from the iframeAPI page.
+		- fix(invite): Improves the logged error.
+		- fix(api): Drops firing local user role changed twice.
+		- fix(rn) adapt to new BackHandler eventing API
+		- fix(logging): Logger names changed, adjusting. (#15879)
+		- fix(recording) disable option to dismiss consent dialog (#15876)
+		- fix(base/ui): fallback to og value if not found in allTokens
+		- fix(audio-devices): fix index as pos in set
+		- fix(visitors): Fixes using table for moderators.
+		- fix(visitors): Fixes configure script.
+		- fix(allowners): Fixes presence optimization when using tenant.
+		- fix(mobile/external-api): check types for recording error, initiator, terminator
+		- fix(jwt): Fix tenant matching for features when tenant is missing.
+		- fix(lang): Update Latvian language translation
+		- fix(ios) skip check for manual audio in (de)activateWithAudioSession
+		- fix(tests): In AV moderation test close notification.
+		- fix(docs) update contributing
+		- fix(tests): When checking audio levels make sure testMode and debugAudioLevels are present.
+		- fix(tests): Adds some debug prints for a case reporting failure to leave.
+		- fix(tests): Make sure we give time dialog to submit password.
+		- fix(tests): Wait for the join button to disappear if it was there.
+		- fix(recordings) skip consent for jibri participant (#15825)
+		- fix(tests): Avoid error after tests.
+		- fix(welcome) open external links in a new tab
+		- fix(deps) remove xmldom override
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(rtcstats) early rtcstats initialization
+		- feat(build) make commit hash generation process generic
+		- feat(pkg) add react-native key to pakage.json
+		- feat(ts) migrate MockClasses to TS
+		- feat(ts) migrate strophe.logger to TS
+		- feat(ts) migrate strophe.util to TS
+		- feat(ts) migrate JibriSession to TS
+		- feat(ts) migrate StropheLastSuccess to TS
+		- feat(ts) add typedoc
+		- feat(docs) update README
+		- feat(ts) migrate strophe.rayo to TS
+		- feat(ts) migrate strophe.ping to TS
+		- feat(xmpp): Parses permissions extension from self-presence.
+		- feat(ts) migrate ResumeTask to TS
+		- feat(ts) migrate Settings to TS
+		- feat(ts) improve AVModeration types
+		- feat(ts) migrate ConnectionPlugin to TS
+		- feat(ts) migrate JingleHelperFunctions to TS
+		- feat(ts) migrate UsernameGenerator to TS
+		- feat(ts) migrate retry to TS
+		- feat(ts) migrate recordingConstants to TS
+		- feat(ts) migrate P2PDominantSpeakerDetection to TS
+		- feat(ts) migrate e2ee/utilis to TS
+		- feat(ts) migrate Listenable to TS
+		- feat(ts) migrate TestUtils to TS
+		- feat(ts) migrate StringUtils to TS
+		- feat(ts) migrate ScriptUtil to TS
+		- feat(ts) migrate MathUtil to TS
+		- feat(ts) migrate EventEmitter to TS
+		- feat(ts) migrate AsyncQueue to TS
+		- feat(ts) migrate SpeakerStats to TS
+		- feat(ts) migrate VADTalkMutedDetection to TS
+		- feat(ts) migrate VADReportingService to TS
+		- feat(ts) migrate AVModeration to TS
+		- feat(docs) added CONTRIBUTING
+		- feat(ts) migrate JitsiParticipant to TS
+		- feat(ts) migrate SAS to TS
+		- feat(ts) migrate SignalingLayer to TS
+		- feat(ts) migrate LiteModeContext to TS
+		- feat(ts) migrate JitsiTrackError to TS
+		- feat(ts) migrate RecordingManager to TS
+		- feat(ts) migrate e2eping to TS
+		- feat(lint) make the linter more spartan
+		- feat(ts) migrate modules/RTC/BridgeChannel to TS
+		- feat(ts) migrate modules/rtc/MockClasses to TS
+		- feat(ts) migrate Jvb121EventGenerator to TS
+		- feat(ts) migrate connectivity/NetworkInfo to TS
+		- feat(ts) migrate red/red to TS
+		- feat(lint) update to eslint-config-jitsi v6
+
+	- Fixes:
+		- fix(Signaling) Return correct media type for Audio sources
+		- fix(xmpp): Moves event local user role changed after muc joined.
+		- Adjust log levels.
+		- fix(pkg) fix typedoc build
+		- fix(lint) ignore generated docs when linting
+		- fix(pkg) exclude hand-generated types from package
+		- fix(xmpp): Avoid duplicate presences on join.
+		- fix(connection-quality) Trigger ramp up on codec and session changes.
+		- fix(connection): Use only mechanisms we support.
+		- fix(e2eping) fix linting error
+		- fix(Settings) use a proper UUID rather than hand-rolling it
+		- fix(gh) drop old stale.yml file
+		- fix(SDP) Do not filter out SSRC 'cname' attributes. (#2695)
+
+- [jicofo 1.0-1126](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10169)
+	- New features:
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-217-g125684fc](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10169)
+	- New features:
+
+	- Fixes:
+		- Do not pollute the parent logger context with remote endpoint id. (#2309)
+
 ##  2.0.10133 (2025-03-19)
 - [jitsi-meet 1.0.8499](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10133)
 	- New features:
