@@ -2,6 +2,49 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10184 (2025-04-10)
+- [jitsi-meet 1.0.8542](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10184)
+	- New features:
+		- feat(metadata): Converts presence startMuted to metadata.
+		- feat(tests): Checks on participant left for user id and customer.
+		- feat(prosody): Adds an occupant check on disco-info.
+		- feat(tests): Adds transcription tests.
+
+	- Fixes:
+		- fix(config): Drop a default websocket config.
+		- fix(prosody): Adds some nil checks.
+		- fix(prosody): Enables websocket in default config.
+		- fix(tests): Adds a data field in context to be reused in tests.
+		- fix(features): Allow checking features when jwt is not available. (#15906)
+		- fix(config) Update the codec preference order
+		- fix(UploadImageButton): add accessibility role
+		- fix(tests): Adds default permissions.
+		- fix(tests): Adds option to clear iframeAPI events.
+		- fix(tests): Replies to SETTINGS_PROVISIONING wh requests.
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(startMutedPolicy): Uses metadata for startMuted policy. (#2759)
+		- feat(ts) update TypeScript targets
+		- feat(ScreenObtainer) Allow SS resolution to be re-configured. This is only permitted when testing.testMode=true in config.js
+		- feat(connection-quality) Process BWE stat received on bridge channel.
+
+	- Fixes:
+		- fix(JitsiMediaDevices) prevent multiple listeners when reinitializing
+		- fix(JitsiConnection) remove unused WRONG_STATE event
+
+- [jicofo 1.0-1128](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10184)
+	- New features:
+		- Read startMuted configuration from room metadata (only).
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-220-g7cda0a66](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10184)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.10169 (2025-04-08)
 - [jitsi-meet 1.0.8532](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10169)
 	- New features:
