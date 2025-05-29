@@ -1,5 +1,37 @@
 # Mobile SDKs Changelog
 
+# [11.2.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.2.0) (2025-05-29)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.1.0...mobile-sdk-11.2.0)
+
+### Common
+
+- Translation updates.
+- UI updates and fixes.
+- Update the codec preference order in config.
+- Fixes around adding new people.
+- Recording consent functionality.
+- Fixes around kick event.
+- Drop support for Firebase Dynamic Links(deprecated/no longer maintained).
+
+### Android
+
+- N/A
+
+### iOS
+
+- Skip check for manual audio in (de)activateWithAudioSession.
+
+### React Native
+
+- Adapt to new BackHandler eventing API.
+
+### Flutter
+
+- N/A
+
 # [11.1.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.1.0) (2025-03-06)
 
 ## Changes
