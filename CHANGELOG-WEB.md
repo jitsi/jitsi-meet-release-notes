@@ -2,6 +2,186 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10314 (2025-06-05)
+- [jitsi-meet 1.0.8648](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10314)
+	- New features:
+		- feat(jwt): New option to control user info check. (#16115)
+		- feat(jwt): Delay loading of avatar. (#16111)
+		- feat(prosody): Allow filter_rayo to be loaded in other virtual hosts.
+		- feat(conference) force reload page on shard changes.
+		- feat(transcribing): Switch state on audio-recording-enabled. (#16094)
+		- feat(metadata): Append moderators to the list of main participants for jicofo. (#16097)
+		- feat(transcribing): Adds config to skip inviting jigasi on transcribing. (#16095)
+		- feat(conference): Adds check for non-moderators dropping files anywhere.
+		- feat(file-sharing): Uses short term token for operations.
+		- feat(file-sharing): Uses feature to determine is upload enabled.
+		- feat(prosody): Adds a short-live token module.
+		- feat(metadata): Sends a list of main participants to jicofo. (#16088)
+		- feat(android,ios) drop support for Firebase Dynamic Links
+		- feat(conference): File sharing over conference (#16067)
+		- feat(prosody): Check granted identity for recordings.
+		- feat(build,config) disable config whitelist in dev mode
+		- feat(file-sharing): added author display name (#16059)
+		- feat(file-sharing): sort shared files
+		- feat(file-sharing): ui fixes
+		- feat(notifications) make sticky notifications duration configurable
+		- feat(file-sharing) add support for file sharing
+		- feat(tests): Adds visitors go live test.
+		- feat(tests): Adds general visitors test.
+		- feat(visitors): Disable stats broadcast for visitors.
+		- feat(av-moderation): Updates startMuted policy in metadata.
+		- feat(av-moderation): Disable start muted settings when av moderation is on.
+		- feat(metadata): Pushes metadata early before join.
+		- feat(chat): Make chat panel resizeable
+		- feat(tests): Chat iframeApi tests.
+		- feat(tests): Recording and live-streaming tests.
+		- feat(tests): Use more predictable room names. (#15998)
+		- feat(base/conference): add isReplaced, reason, params for KICKED conference event
+		- feat(recording) refactor consent dialog (#15985)
+		- feat(pre-join): Drops skip pre-join option. (#15989)
+		- feat(tests): Prefer to generate token for dial in.
+		- feat(tests): Adds invite test. (#15986)
+		- feat(tests): Handle and final transcriptions.
+		- feat(tests): Adds debug log for webhooks.
+		- feat(recording) add ability to skip consent in-meeting
+		- feat(local-recordings) refactor how audio is captured
+		- feat(external_api,devices) drop use of isDeviceListAvailable
+		- feat(local-recordings) remove recording time limit
+		- Implement a closed caption history panel.
+		- feat(base/ui/native): Convert rem to px  (#15934)
+		- feat(web,input) add hint for 1Password to ignore input fields
+		- feat(toolbar): Enable 9th and 10th button
+		- feat(lang,settings) remove experimental label from multi-pinning
+		- * feat(tests): Simplifies display names and participant create.
+
+	- Fixes:
+		- Handling inviteJigasiOnBackendTranscribing. (#16113)
+		- fix(conference): show hours in duration instead of undefined
+		- fix(prosody): Updates client permissions on granting owner rights.
+		- fix(permissions): Fix grant the granted features.
+		- fix(chat): avoid emoji accidents when sending messages (#15854)
+		- fix(local-recording) defend against out of order events
+		- fix(settings): trying to access getMetadata() of undefined
+		- fix(config) fixed incorrect documentation about toolbar buttons
+		- fix(permissions): Adds an option to force-send permissions.
+		- fix(file-sharing) fix handling undefined metadata
+		- fix(CC): Disable when config.transcription.enable=false
+		- fix(file-sharing) rework sync
+		- lit error
+		- analytics loadscript call to match the new function signature
+		- fix(tests): Tests improvements.
+		- fix(test) Add media checks for startMuted test.
+		- fix(file-sharing) don't mark upload as complete until response
+		- fix(local-recordings) back to WebM format, fix duration
+		- fix(file-sharing) fix file upload error handling
+		- fix(file-sharing) fix styling on hover
+		- fix(file-sharing) don't pass token for downloads
+		- fix(file-sharing) remove bogus error check
+		- fix(file-sharing) middleware is not async
+		- Fix file-sharing swagger.
+		- fix(spot) make Spot TV detection more resilient
+		- fix(conference) Mute user when startMuted policy update is received in conference meta data (#16025)
+		- fix(lang): Update Latvian language translation
+		- fix(ui) fix parsing typography tokens
+		- fix(recording) fix matching initiator
+		- fix(breakout): Move visibility checks to the Security dialog.
+		- fix(CCTab): Reset start button state on error
+		- fix(CC): Handle errors on start
+		- fix(tests): Updated startMuted test (behaviour changed in jitsi/jicofo#1219. (#16019)
+		- fix(local-recordings) use the Matroska container with VP8 as a codec
+		- fix(local-recordings) use constant bitrate for audio
+		- fix(patch) fix warning after dependency update
+		- fix(StageParticipantNameLabel): size
+		- fix(subtitles): position part2
+		- fix(subtitles): position part1
+		- fix(ITypographyType): wrong type of fontSize and lineHeight props
+		- fix(local-recordings) make sure we have a gDM audio stream
+		- fix(local-recordings) tweak audio constraints for local recordings
+		- fix(popover): touch interaction closes overflow drawer without triggering action
+		- fix(settings,a11y) extract Test button outisde the radio button
+		- fix(local-recordings) fix data loss when MediaRecorder is stopped
+		- fix(local-recordings) more resilient way to get local audio
+		- fix(local-recordings) remove text mentioning time limit
+		- fix(local-recordings) style, for readability
+		- fix(local-recording) require setCaptureHandleConfig
+		- fix(recording) prevent multiple consent requests
+		- fix(base/connection/native): add a check for vpass meeting when we connect (#15978)
+		- fix(prosody): Adds a nil check for ends_with utility.
+		- fix(prosody): Fixes filter rayo message when int id is used.
+		- fix(test): Fix codec selection test
+		- fix(invite/add-people-dialog): isCorsAvatarURL update (#15959)
+		- fix(codecSelection): test
+		- fix(participants): fix dynamic participants count in german translation (#15902)
+		- fix(recording) skip consent dialog on Spot TV
+		- fix(polls) halt processing of malformed polls
+		- fix(ui) default to "off" for autoComplete in Input
+		- fix(web,input) Added description to inputs that filter participants
+		- fix(rtcstats) drop unnecessary dependency
+		- fix(prosody): add consider_websocket_secure into Prosody config
+		- fix(prosody): Fixes extracting domain when more cases. (#15930)
+		- fix(DesktopPicker): Stops displaying if closed too fast.
+		- fix(prosody): Fixes extracting domain from rooms without a domain.
+		- fix(overlay|prejoin) Added level to items with heading role
+
+	- Translation updates:
+		- Update Italian translation
+		- Update Italian translation
+		- update German translation (#16001)
+		- Update Italian translation (#15991)
+		- update German translation (#15949)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(JitsiConnection) force reload page on shard changes.
+		- feat(metadata): Drops reading from room data form.
+		- feat(conference): Adds a method to request short live tokens. (#2783)
+		- feat(conference-request): Attach token to the conference request sent to jicofo. (#2782)
+		- Adds an option to disable broadcasting stats.
+		- feat(ScreenObtainer) initialize support only once
+		- feat(RTC) remove unnecessary wrapAttachMediaStream
+		- feat(RTC) drop no longer needed isDeviceListAvailable()
+		- feat(jaas) add simple zero-config mechanism for JaaS users
+		- feat(JitsiConference) add dispose method
+		- feat(ReceiveVideoController) remove no lonegr needed check
+		- feat(rtcstats): move rtcstats init (#2766)
+		- feat(ts) migrate JitsiConnection to TS
+
+	- Fixes:
+		- fix(ICE) remove force reload option on ICE failures. Restarting media session when ICE fails has been working well for some time now.
+		- fix(TPC) Fire mute event on the correct track. When a remote user does a ICE restart and a source-remove followed by source-add is received for its sources, mute event on new remote track may not be fired if the old track hasn't been disposed yet.
+		- fix(permissions): Handles an empty permissions list.
+		- fix(CodecSelection): disable AV1 for Safari.
+		- fix(conference) Fix different bugs with startMuted policy. (#2777)
+		- Fix possible undefined error in bwe stats.
+		- fix(Conference) Do not kick endpoint out on renegotiation errors.
+		- Uses boolean for isReplaced on kick event.
+		- fix(RTCUtils) drop unnecessary variable
+		- fix(remoteControl): Failure to start
+		- fix(codec) Always use DD when its supported by Jicofo and browser. The bridge is now able to use DD headers for VP8 and VP9 as well so there is no need to remove it from remote desc when the call switches from AV1 to VP8/VP9.
+		- s/supportsKSVCFor*/supportsSVC
+		- fix(AV1): disable for FF.
+		- fix(AV1): scalability for FF 136+
+		- fix(VP9): Disable for FF.
+		- fix(VP8): Scalability for FF 136+
+		- fix(e2ee) avoid restarting media sessions more than once
+
+- [jicofo 1.0-1138](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10314)
+	- New features:
+		- Read list of main room participants, do not redirect them. (#1227)
+
+	- Fixes:
+		- Change default http host. (#1228)
+		- Fix start muted feature to match lib-jitsi-meet. (#1224)
+		- Fix justJoined flag for initial invite.
+
+- [jitsi-videobridge 2.3-236-g95ef6210](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10314)
+	- New features:
+		- Detect CPU steal. (#2329)
+		- Add a /stats http endpoint (#2320)
+
+	- Fixes:
+
 ##  2.0.10184 (2025-04-10)
 - [jitsi-meet 1.0.8542](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10184)
 	- New features:
