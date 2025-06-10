@@ -9,7 +9,6 @@
 ### Common
 
 - Translation updates.
-- Restructure chat messages
 - Recordings fixes.
 - Consent dialog for recordings.
 - Fix auto-scroll issue in polls screen.
