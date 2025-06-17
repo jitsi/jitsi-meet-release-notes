@@ -1,10 +1,10 @@
 # Mobile SDKs Changelog
 
-# [11.2.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.2.0) (2025-05-29)
+# [11.2.2](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.2.2) (2025-06-17)
 
 ## Changes
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.1.0...mobile-sdk-11.2.0)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.1.0...mobile-sdk-11.2.2)
 
 ### Common
 
