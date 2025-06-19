@@ -1,5 +1,33 @@
 # Mobile SDKs Changelog
 
+# [11.2.4](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.2.4) (2025-06-19)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.2.2...mobile-sdk-11.2.4)
+
+### Common
+
+- Fixed recording consent dialog.
+- Update standalone JITSI_MEET_APPS list.
+- Fixed conference duration hour.
+
+### Android
+
+- N/A
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [11.2.2](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.2.2) (2025-06-17)
 
 ## Changes
