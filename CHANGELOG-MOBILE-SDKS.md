@@ -1,5 +1,37 @@
 # Mobile SDKs Changelog
 
+# [11.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.3.0) (2025-07-11)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.2.4...mobile-sdk-11.3.0)
+
+### Common
+
+- React Native update to 0.77.2
+- Apply new @amplitude/analytics-react-native dependency and API updates.
+- Translations updates.
+- Allow private chats between users and moderators.
+- Expose recording consent to external api.
+- Use the same button name for screen share on toolbar config.
+
+### Android
+
+- Update Gradle to 8.14 and AGP to 8.4.2.
+- Disable HW AV1 codec.
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [11.2.4](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.2.4) (2025-06-19)
 
 ## Changes
