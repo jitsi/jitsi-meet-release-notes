@@ -1,5 +1,26 @@
 # Mobile apps Changelog
 
+# [25.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.3.0) (2025-07-22)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-25.2.0...mobile-app-25.3.0)
+
+### Common
+
+- React Native update to 0.77.2
+- Translations updates.
+- Allow private chats between users and moderators.
+- Fix visitors count.
+
+### Android
+
+- N/A
+
+### iOS
+
+- N/A
+
 # [25.2.2](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.2.2) (2025-06-17)
 
 ## Changes
