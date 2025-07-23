@@ -10,10 +10,8 @@
 
 - React Native update to 0.77.2
 - Apply new @amplitude/analytics-react-native dependency and API updates.
-- Translations updates.
-- Allow private chats between users and moderators.
 - Expose recording consent to external api.
-- Use the same button name for screen share on toolbar config.
+- Use the same name as WEB for screen share button on toolbar config.
 
 ### Android
 
