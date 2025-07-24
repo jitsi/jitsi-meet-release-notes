@@ -2,6 +2,184 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10431 (2025-07-24)
+- [jitsi-meet 1.0.8737](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10431)
+	- New features:
+		- feat(external-api) Add camera capture function (#16238)
+		- feat(android): init RIMHs app before on create (#15887)
+		- feat(visitors-queue) Add leave meeting button (#16225)
+		- feat(av-moderation) implement screen-sharing moderation
+		- feat(av-moderation): Adds desktop media type.
+		- Adds a room option to hide display name.
+		- feat(visitors): Adds showing shared files in the meeting.
+		- feat(conference): Clears any error from previous attempts.
+		- feat(av_moderation): handle av_can_unmute policy
+		- feat(visitors): Fixes nil error about 'get_visitors_room_metadata'
+		- feat(recording): enable consent dialog on spot (#16179)
+		- feat(visitors-list): Add to participant pane.
+		- feat(filesharing): Adds a nil check.
+		- feat(visitors): Adds allow promotion setting per room.
+		- feat(filmstrip) Add always visible resize bar and initial width (#16181)
+		- allow private chats between users and moderators (#16165)
+		- feat(tests): Adds a debug print for document ready.
+		- feat(tests): Adds url normalize test.
+		- feat(android) drop support for x86 architecture
+		- feat(base/config): remove customToolbarButtons warning
+		- feat(transcribing): Use invite jigasi option only when async transcriptions are enabled.
+		- feat(file-sharing): Uses a filesharing management from ljm.
+		- feat(prosody): Fixes log messages.
+		- feat(prosody): Simplifies modules that need to add identity.
+		- feat(API): expose recording consent to external api (#16141)
+		- feat(toolbox): use the same name for screen share
+		- feat(polls): Make sure we check for json messages with no namespace.
+		- feat(iframeAPI): Fires transcribing events when subtitles are on.
+		- feat(permissions): Clear up granted-permissions.
+		- feat(base/avatar): Update the avatar to show the first and last name letters rather than first and second name (#15732)
+		- feat(react-native-sdk): fixed missing dependencies (#16102)
+		- feat(webpack): rewrite CDN urls when proxying with webpack (#15938)
+		- feat(file-sharing): Update wrong fields.
+		- feat(visitors): Updates buttons visible to visitors.
+
+	- Fixes:
+		- Fixes table equals missing param name.
+		- Fixes table equals.
+		- fix(av-moderation): Updates the whitelist with every moderator.
+		- fix(toolbox/native): update SvgCssUri import
+		- Showing go-live notification.
+		- fix(visitors): Add fallback display names for empty visitor names
+		- fix(go-live): unsubscribe from topics before closing if not done already (#16244)
+		- Fixes updating local UI startMuted state.
+		- Fixes restoring startmuted in av mod.
+		- Avoids sending two metadata updates.
+		- Drops not needed default values when filtering.
+		- Filters stanza on cloned copy.
+		- fix(polls) more resilient parsing of payloads, take 2
+		- fix(i18n) Fix showing Afrikaans when set language is not found (#16245)
+		- fix(go-live): waiting not updated correctly.
+		- fix(go-live): Disconnect on page close.
+		- Fix hideDisplayNameForAll. (#16239)
+		- Fix setting whitelist when av_moderation is initially enabled. (#16235)
+		- fix(lang) add missing desktop sharing keys (#16234)
+		- fix(deeplinking): Prevent web specific files beeing included in native build.
+		- GUM prompt not displayed after deeplinking page.
+		- fix(visitors-queue): style adjustments for native (#16228)
+		- fix(participants-pane) use icon to indicate non-moderator actions
+		- fix(av-moderation): Fixes auto starting av moderation, notify everyone.
+		- fix(visitors): A join case with live rooms.
+		- fix(amplitude) adjust to new SDK API changes
+		- fix(av-moderation): Fixes auto starting av moderation.
+		- fix(visitors): Fixes empty array case and wrong json.
+		- fix(visitors): Updates docs, drops s2soutinjection.
+		- Do not merge participants and moderators into room metadata.
+		- fix(file-sharing) fix resetting the state for share file input
+		- fix(virtual-background): Fix i18n for a device error.
+		- fix(visitors): Avoid go live to overwrite other settings.
+		- fix(amplitude) sync device ID on web too
+		- fix(transcribing) fix overriding transcribing state
+		- fix(rn,embed) remove 8x8 apps from isEmbedded check
+		- fix(file-sharing) hide upload button for visitors
+		- fix(participant-pane): Don't show the Viewers label twice.
+		- fix(VisitorsList): use separate stomp instance.
+		- fix(visitors): avoid lost deltas when subscribing
+		- fix(visitors): Allow joining queue when not prefer to be visitor.
+		- fix(visitors): Deny access when room is not live and there is a list of participants.
+		- fix(visitors): Checks mainMeetingParticipants array to allow joins.
+		- fix(file-sharing) Keep original filename on file download (#16183)
+		- fix(PressureObserver) adapt to API changes
+		- fix(lang) Update zhCN & zhTW translations and fix English apostrophes (#16174)
+		- fix(file-sharing) fix computing file sharing percentage
+		- hide chat controls and show disabled notice instead (#16168)
+		- hide create poll button rather than disabling it (#16167)
+		- layout issue when only chat tab is visible (#16166)
+		- fix(android) disable HW AV1 codec
+		- fix(tests): Skip url normalisation test when using tokens.
+		- fix(permissions): Fixes grant owner for participant with token.
+		- fix(tests): Fixes Firefox tests excludes.
+		- fix(ios) remove unused entitlement
+		- fix(rn,dynamic-branding) don't override payload
+		- fix(android) drop old JSC dependency
+		- fix(config): Moves a property to dynamic branding. (#16138)
+		- fix(tracks) Log when the MediaStream becomes 'inactive'
+		- fix(visitors): Fixes visitors count. (#16134)
+		- fix(conference): Handles promise rejection on conference failed.
+		- fix(recordings) create missing local tracks when unmuting after consent (#16119)
+		- fix(ts) apply import linting rules to TS files too
+
+	- Translation updates:
+		- update Italian translation
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(av-moderation) add support for moderating desktop tracks
+		- feat(lint) Add rule for sorting keys alphabetically
+		- feat(JitsiLocalTrack): Enable updating local audio track with new constraints (#2831)
+		- feat(ts) drop hand-written types
+		- feat(TS) Migrate `JitsiMediaDevices.ts` (#2848)
+		- feat(TS) Migrate `modules\RTC\JitsiLocalTrack.ts` to TS (#2840)
+		- feat(TS) Migrate ReceiveVideoController to TS (#2823)
+		- feat(TS) Migrate SendVideoController to TS
+		- feat(TS) Migrate CodecSelection to TS (#2825)
+		- feat(TS) Migrate BrowserCapabilities to TS.
+		- feat(lint, ts) Add member-ordering rule for TS
+		- feat(TS) Migrate Strophe.emuc to TS (#2815)
+		- feat(TS) Migrate SampleSdpStrings to TS
+		- feat(TS) Migrate recordingXMLUtils to TS
+		- Moves jquery import in a common place.
+		- feat(file-sharing): Adds file sharing options. (#2829)
+		- feat(es) migrate statistics/statistics to ES6 Class
+		- Disable p2p when transcribing is enabled. (#2812)
+		- feat(ts) migrate statistics/LocalStatsCollector to TS
+		- feat(lint,ts) apply import order rules for TS files too
+		- feat(ts) migrate modules\videosipgw\JitsiVideoSIPGWSession to TS
+		- feat(ts) migrate modules\videosipgw\VideoSIPGW to TS
+		- feat(ts) migrate modules\util\Deferred to TS
+		- feat(PerformanceObserverStats) remove it (#2809)
+		- feat(ts) migrate ActiveDeviceDetector to TS
+		- feat(ts) migrate sdp/SDPDiffer to TS
+		- feat(ts) migrate webaudio to TS
+		- feat(es6) migrate statistics/RTPStatsCollector to ES6
+		- feat(ts) migrate detection/NoAudioSignalDetection to TS
+		- feat(ts) migrate modules\util\RandomUtil to TS
+		- feat(ts) migrate modules\statistics\SpeakerStatsCollector to TS
+		- feat(ts) migrate proxyconnection/CustomSignalingLayer to TS
+
+	- Fixes:
+		- fix(JitsiLocalTrack) fix unmute for desktop tracks
+		- fix(conference) remove unneded parameter
+		- fix(TPC) Enable L1T3 for p2p streams (#2845)
+		- fix(visitors): When conference is not live always fire the event.
+		- fix(TS) Remove paths declaration from TS config.
+		- fix(xmpp) don't use jquery to add (before)unload handlers
+		- Enforces namespace for json-message.
+		- fix(ts,VideoSIPGW) fix type
+		- fix(ChatRoom) filter out bogus reaction emojis
+
+- [jicofo 1.0-1153](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10431)
+	- New features:
+		- Publish jibri status in visitor MUCs. (#1244)
+		- Handles mute desktop IQ. (#1235)
+		- Assume visitorRequested when a conference requires a token and the user has no token.
+		- Read asyncTranscription from metadata. (#1231)
+		- Add a REGION template to the transcription url (resolved to JVB region). (#1230)
+		- Support transcribing using a colibri connect. (#1214)
+		- feat(visitors): Broadcast conference props to vnodes.
+
+	- Fixes:
+		- Only redirect to queue if visitor is supported (not jibri/jigasi). (#1243)
+		- Fix setting the colibri mute state for video. (#1241)
+		- visitor redirection  (#1239)
+		- Split mainRoomParticipants into moderators and participants.
+
+- [jitsi-videobridge 2.3-249-g9a2123ad4](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10431)
+	- New features:
+		- Subscription to audio sources (#2338)
+		- Export audio over a WS. (#2220)
+
+	- Fixes:
+		- Only log "stopping" if the exporter has been started. (#2344)
+		- Do not require a certain Connect type. (#2337)
+
 ##  2.0.10314 (2025-06-05)
 - [jitsi-meet 1.0.8648](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10314)
 	- New features:
