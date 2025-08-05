@@ -1,5 +1,34 @@
 # Mobile SDKs Changelog
 
+# [11.4.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.4.0) (2025-08-05)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.3.0...mobile-sdk-11.4.0)
+
+### Common
+
+- Support screen-sharing moderation
+- Make poll data handling more resilient
+- Fix using SVGs as custom button icons
+
+### Android
+
+- Initialize RN instance before Activity
+- Build targetting API level 35
+
+### iOS
+
+- Fix black screen when launched locked
+
+### React Native
+
+- Updated dependencies
+
+### Flutter
+
+- N/A
+
 # [11.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.3.0) (2025-07-11)
 
 ## Changes
