@@ -1,5 +1,24 @@
 # Mobile apps Changelog
 
+# [25.4.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.4.0) (2025-08-05)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-25.3.0...mobile-app-25.4.0)
+
+### Common
+
+- Support screen-sharing moderation
+- Make poll data handling more resilient
+
+### Android
+
+- N/A
+
+### iOS
+
+- N/A
+
 # [25.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.3.0) (2025-07-22)
 
 ## Changes
