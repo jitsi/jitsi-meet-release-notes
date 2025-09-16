@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# [25.5.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.5.1) (2025-09-16)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-25.4.0...mobile-app-25.5.1)
+
+### Common
+
+- Update languages
+- Fixes around lobby and visitors.
+- Fixes around recording consent dialog.
+- Fix grant moderator rights after being in lobby.
+- Style adjustments around notifications.
+
+### Android
+
+- Align with Android 16kb page size requirement.
+- Add top and bottom margin insets for API 35.
+
+### iOS
+
+- N/A
+
 # [25.4.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.4.0) (2025-08-05)
 
 ## Changes
