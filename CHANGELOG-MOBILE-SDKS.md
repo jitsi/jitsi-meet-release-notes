@@ -1,5 +1,36 @@
 # Mobile SDKs Changelog
 
+# [11.5.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.5.1) (2025-09-16)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.4.0...mobile-sdk-11.5.1)
+
+### Common
+
+- Update languages
+- Fixes around lobby and visitors.
+- Fixes around recording consent dialog.
+- Fix grant moderator rights after being in lobby.
+- Style adjustments around notifications.
+
+### Android
+
+- Replace duktape lib with react-native-worklets-core lib to align with Android 16kb page size requirement.
+- Add top and bottom margin insets for API 35.
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [11.4.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.4.0) (2025-08-05)
 
 ## Changes
