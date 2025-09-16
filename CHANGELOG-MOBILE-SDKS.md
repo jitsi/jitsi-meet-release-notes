@@ -11,7 +11,6 @@
 - Fixes around lobby and visitors.
 - Fixes around recording consent dialog.
 - Fix grant moderator rights after being in lobby.
-- Style adjustments around notifications.
 
 ### Android
 
