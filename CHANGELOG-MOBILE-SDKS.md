@@ -8,7 +8,6 @@
 
 ### Common
 
-- Update languages
 - Fixes around lobby and visitors.
 - Fixes around recording consent dialog.
 - Fix grant moderator rights after being in lobby.
@@ -17,7 +16,6 @@
 ### Android
 
 - Replace duktape lib with react-native-worklets-core lib to align with Android 16kb page size requirement.
-- Add top and bottom margin insets for API 35.
 
 ### iOS
 
