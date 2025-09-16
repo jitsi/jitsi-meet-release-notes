@@ -14,7 +14,7 @@
 
 ### Android
 
-- Replace duktape lib with react-native-worklets-core lib to align with Android 16kb page size requirement.
+- Replaced duktape lib with react-native-worklets-core lib to align with Android 16kb page size requirement.
 
 ### iOS
 
