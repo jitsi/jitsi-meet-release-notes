@@ -17,7 +17,7 @@
 ### Android
 
 - Align with Android 16kb page size requirement.
-- Add top and bottom margin insets for API 35.
+- Edge-to-edge adjustments for API 35.
 
 ### iOS
 
