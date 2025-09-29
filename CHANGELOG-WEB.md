@@ -2,6 +2,170 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10532 (2025-09-29)
+- [jitsi-meet 1.0.8821](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10532)
+	- New features:
+		- feat(notifications/native): fix case for no title notifications
+		- feat(visitors): Retries as a visitor when max occupants reached.
+		- Requires a moderator to start a moderated room without a tenant.
+		- feat(react-native-sdk): Remove JavaScriptSandboxModule from package
+		- feat(react-native-sdk): Update update_dependencies.js
+		- feat(react-native-sdk): update scripts to add worklets babel plugin deps
+		- feat(react-native-sdk): add react-native-worklets-core as a peer dep
+		- feat(visitor) confirm raised hand sent to mods (#16388)
+		- feat(settings) Add advanced audio settings checkboxes (#16316)
+		- feat(chat): Add Open chat button to chat notifications
+		- feat(display-name): Handles new display-name extension in messages.
+		- feat(displayname): Adds new feature name-readonly.
+		- feat(recording): explicitly convert visible value to true or false
+		- feat(notifications): style adjustments
+		- feat(metadata): Adds logging when metadata is modified or sent.
+		- feat(tests): Return early if jaas tests not configured.
+		- feat(tests): Make sure we add a single listener for iframeAPI events.
+		- feat(tests): Clear previous videoConferenceLeft events.
+		- feat(tests): Increase wait time for webhooks.
+		- feat(chat): add tooltip for each chat screen tab
+		- feat(tests): Updates join logic. (#16320)
+		- disable Giphy analytics to prevent beforeunload handlers (#16314)
+		- feat(chat-web) add chat recipient picker (#16298)
+		- feat(prosody): Adds docs for added room fields. (#16299)
+		- feat(visitors): Private messages to main participants.
+
+	- Fixes:
+		- Fix the tenant used for webhook proxy. (#16445)
+		- fix(muc_displayname): Adds a nil check.
+		- fix(logging) Update the logger ids for default log levels
+		- fix(wait-for-host): Fixes missing param.
+		- fix(chat): disable reactions for reaction messages (#16425)
+		- (lobby): Remove _onSendMessage base method from LobbyChatScreen
+		- fix(tests): Fixes error because of not waiting for conference left event.
+		- fix(lobby): Clear any params set on destroy lobby.
+		- fix(visitors): Fixes checking for group.
+		- Fixes log message about meeting id.
+		- Fixes missing string for shortcut.
+		- Drops hideDisplayNameForAll.
+		- fix(recordings): conditionally render learn more link in consent dialog (#16386)
+		- fix(permissions): Fixes grant moderator after being in lobby.
+		- fix(av-moderation): Update initial whitelists when auto enabling.
+		- fix(accessibility) improve file actions with focus management and ARIA roles (#16322)
+		- fix(tests): Fixes participantRoleChanged event handling.
+		- fix(tests): Fix passing correct participant options.
+		- fix(tests): Make sure first participant is moderator.
+		- fix(localrecording): Local recording is not supported in embedded mode.
+		- jaas tests (#16360)
+		- fix(dynamic-branding) cleanup custom icon SVGs
+		- fix(jiconop): Fixes loading it under different virtual hosts.
+		- fix(config): Drops legacy config prejoinPageEnabled.
+		- More fixes sending metadata to jicofo.
+		- fix(dynamic-branding) expand background color option to support a wider range of configurations (#16334)
+		- Fixes sending metadata to jicofo.
+		- fix(prejoin) no initial tracks when using URL override to disable it
+		- fix(accessibility) return focus to share file button after upload modal closes (#16312)
+		- fix(accessibility) add ARIA attributes to file upload progress bar (#16311)
+		- fix(accessibility) show upload successful notification (#16309)
+		- fix(accessibility) announce error and warning notifications immediately (#16307)
+		- fix(accessibility) improve notification action button accessibility (#16306)
+		- fix(accessibility) remove nested button structure in file sharing drop zone (#16304)
+		- fix(accessibility) use semantic list for uploaded files (#16317)
+		- fix(i18n) improve label (#16301)
+		- fix(ChatMessage): context menu position
+		- fix(participants-pane): restore scrolling and fix context menu clipping
+		- fix(config) revise option description
+		- fix(lang): Update Latvian language translation
+		- fix(rn) fix iOS rendering when launched locked
+		- fix(react-native-sdk): resolve Android build configuration issues
+
+	- Translation updates:
+		- Update Sardinian
+		- Update main-it.json (#16363)
+		- Update swedish (#16396)
+		- Update Latvian language translation (#16395)
+		- Update Portuguese (#16331)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(visitors): Handles visitors-supported received from jicofo.
+		- feat(TS) migrated `modules/sdp/SDP.ts` to TS (#2883)
+		- feat(RTCStats) Add more events to RTCStats (#2923)
+		- add XEP-0461 message reply support (#2922)
+		- feat(TS) Migrate `modules\sdp\SDPUtil.js` to TS (#2846)
+		- feat(TS) Migrated `modules/RTC/TPCUtils.ts` to TS (#2882)
+		- feat(ts) migrate tests to TS
+		- feat(ChatRoom) drop deprecated _addToPresence method
+		- feat(ts) remove unnecessary backwards compatibility in event enums
+		- feat(typedoc) document all related types even if not explciitly exported
+		- feat(tests): Add comprehensive source attribute tests for display-name extension.
+		- feat(tests): Adds tests for ChatRoom and MESSAGE_RECEIVED and PRIVATE_MESSAGE_RECEIVED JitsiConferenceEvents.
+		- feat(tests): Adds tests for ChatRoom and MESSAGE_RECEIVED and PRIVATE_MESSAGE_RECEIVED XMPPEvents.
+		- feat(xmpp): Handles new display-name extension in messages.
+		- feat(ts) introduce noImplicitOverride rule
+		- feat(ts) migrate `modules\RTC\JitsiTrack` to TS
+		- feat(ts) migrate `modules\RTC\JitsiRemoteTrack` to TS
+		- feat(ts) migrated modules/xmpp/ChatRoom.spec to TS
+		- feat(ts) migrated `modules/xmpp/JingleSessionPC` to TS
+		- feat(ts) migrated `TraceablePeerConnection` to TS
+		- feat(ts) migrated `authenticateAndUpgradeRole.js` to TS
+		- feat(ts) migrate `authenticateAndUpgradeRole` to TS
+		- feat(ts) migrate `e2ee/context` to TS
+		- feat(TS) Migrated `modules/RTC/ScreenObtainer.ts` to TS(#2891)
+		- feat(ts) migrated modules/xmpp/ChatRoom to TS
+		- feat(ts) migrate e2ee/worker to TS
+		- feat(ts) migrated modules/e2ee/crypro-utilis to TS
+		- feat(ts) migrate modules/xmpp/xmpp to TS
+		- feat(ts) migrate modules/xmpp/Caps to TS
+		- feat(JitsiConference) improved visibility modifiers
+		- feat(ts) added Optional and Nullable
+		- feat(ts) migrate JitsiConferenceEventManager
+		- feat(TS) Migrate `modules\connectivity\ConnectionQuality.js` to TS(#2851)
+		- feat(TS) Migrate `modules\statistics\AnalyticsAdapter.ts` to TS (#2861)
+		- feat(TS) MIgrate xmppConnection to TS (#2837)
+		- feat(TS) Migrate `modules\sdp\LocalSdpMunger.js` to TS(#2860)
+		- feat(TS) Migrate `modules/statistics/AvgRTPStatsReporter.ts` to TS (#2862)
+		- feat(TS) Migrating `modules/xmpp/SignalingLayerImpl.ts` to TS(#2865)
+		- feat(AudioController) Adds support for subscribing to audio sources. (#2869)
+		- feat(TS) Migrate `JitsiConference` to TS (#2834)
+		- feat(TS) Migrate JingleSession (#2817)
+		- feat(TS) migrate Sdp transform (#2819)
+		- feat(visitors): Support private messages.
+
+	- Fixes:
+		- fix(logging) Rename logger ids to facilitate proper filtering of logs. (#2915)
+		- fix(SDP) Remove redundant types. (#2917)
+		- fix(tests) fix JitsiConference tests
+		- fix(TPC) Fix types for RTCRtpSendParameters
+		- fix(Listenable) remove unneeded checks
+		- fix(typedoc) improve documented types for Jitsi{*}Track
+		- Fixing `xmpp.createroom` (#2902)
+		- fix(JitsiTrack) Re-mute audio track after applying constraints (#2901)
+		- fix(typedoc) fix warnings  (#2897)
+		- build error (#2896)
+		- fix(typedoc) improve generated TypeDoc documentation (#2893)
+		- Sync jicofo and jibri status for visitors.
+		- fix(JitsiTrack) Return correct SSRC, fixes missing remote stats. Regression caused by https://github.com/jitsi/lib-jitsi-meet/commit/b6142c7078637b8c24d0a7e2039c2e1dec96e230. Ideally, JitsiRemoteTrack should be overriding 'getSsrc'.
+		- fix(JitsiTrack): Recreate audio analyser track when applying constraints (#2873)
+		- fix(ts) remove extraneous JitsiParticipantEvents.js file
+		- fix(ts,docs) fix TypeDoc entrypoints
+
+- [jicofo 1.0-1161](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10532)
+	- New features:
+
+	- Fixes:
+		- Do not redirect visitor when disabled for the room. (#1256)
+		- Honor visitorRequested above preferredInMainRoom. (#1254)
+		- Fix log level (update jitsi-utils). (#1255)
+		- Handle jibri requests in the room queue. (#1252)
+		- Return ready=false until the MUC is fully joined. (#1251)
+		- Handle XMPP-related events in a per-ChatRoom queue. (#1250)
+		- Catch TERM/HUP/INT and cleanup. (#1249)
+		- Fix race condition between muc joined and processing presence. (#1248)
+
+- [jitsi-videobridge 2.3-258-g955816e0f](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10532)
+	- New features:
+
+	- Fixes:
+		- a race in sending ReceiverVideoConstraints messages. (#2358)
+
 ##  2.0.10431 (2025-07-24)
 - [jitsi-meet 1.0.8737](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10431)
 	- New features:
