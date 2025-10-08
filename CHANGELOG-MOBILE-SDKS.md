@@ -1,5 +1,38 @@
 # Mobile SDKs Changelog
 
+# [11.6.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.6.0) (2025-10-08)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.5.1...mobile-sdk-11.6.0)
+
+### Common
+
+- lib-jitsi-meet updates. 
+- Translation updates.
+- Support for visitor voting in polls.
+- Add warning for unsupported feature flags.
+- UI adjustements around notifications.
+- Disabled reactions for reaction messages.
+- Add moderator requirement to start a moderator room without a tenant.
+
+### Android
+
+- Remove everything related to this react-native-immersive-mode and fixed edge-to-edge issues.
+
+### iOS
+
+- N/A
+
+### React Native
+
+- Fix "directory not found" error when copying sounds on iOS.
+- Update update_dependencies.js script to handle react-native-worklets-core depedencies.
+
+### Flutter
+
+- Fix handling config overrides for different array and object types.
+
 # [11.5.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.5.1) (2025-09-16)
 
 ## Changes
