@@ -18,7 +18,7 @@
 
 ### Android
 
-- Remove everything related to this react-native-immersive-mode and fixed edge-to-edge issues.
+- Remove everything related to react-native-immersive-mode dep and fixed edge-to-edge issues.
 
 ### iOS
 
@@ -26,7 +26,7 @@
 
 ### React Native
 
-- Fix "directory not found" error when copying sounds on iOS.
+- Fix "directory not found" error when copying sounds folder on iOS.
 - Update update_dependencies.js script to handle react-native-worklets-core depedencies.
 
 ### Flutter
