@@ -1,5 +1,32 @@
 # Mobile SDKs Changelog
 
+# [11.6.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.6.1) (2025-10-11)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.6.0...mobile-sdk-11.6.1)
+
+### Common
+
+- Fix amplitude init.
+- Update react-native-webrtc
+
+### Android
+
+- N/A
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [11.6.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.6.0) (2025-10-08)
 
 ## Changes
@@ -8,7 +35,7 @@
 
 ### Common
 
-- lib-jitsi-meet updates. 
+- lib-jitsi-meet updates.
 - Translation updates.
 - Support for visitor voting in polls.
 - Add warning for unsupported feature flags.
