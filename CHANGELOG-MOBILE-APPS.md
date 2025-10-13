@@ -1,5 +1,24 @@
 # Mobile apps Changelog
 
+# [25.6.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.6.0) (2025-10-13)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-25.5.1...mobile-app-25.6.0)
+
+### Common
+
+- Update translations.
+- Support for visitors voting in polls.
+
+### Android
+
+- Disabled immersive mode.
+
+### iOS
+
+- N/A
+
 # [25.5.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.5.1) (2025-09-16)
 
 ## Changes
@@ -8,7 +27,7 @@
 
 ### Common
 
-- Update languages
+- Update translations.
 - Fixes around lobby and visitors.
 - Fixes around recording consent dialog.
 - Fix grant moderator rights after being in lobby.
