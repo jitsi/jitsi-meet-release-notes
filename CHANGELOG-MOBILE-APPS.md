@@ -1,5 +1,23 @@
 # Mobile apps Changelog
 
+# [25.6.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.6.1) (2025-10-17)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-25.6.0...mobile-app-25.6.1)
+
+### Common
+
+- UI adjustments around lobby, prejoin and unsafe room warning.
+
+### Android
+
+- Fixed top insets, bottom insets and set status bar, navigation bar color.
+
+### iOS
+
+- N/A
+
 # [25.6.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.6.0) (2025-10-13)
 
 ## Changes
