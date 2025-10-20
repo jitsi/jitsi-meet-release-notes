@@ -66,15 +66,12 @@ Full changelogs are available in each project's release page: click on one of th
 		- fix(TS) add proper types instead of `any` (#2910)
 
 - [jicofo 1.0-1162](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10590)
-	- New features:
-
 	- Fixes:
 		- Refresh the conference start timeout on a conference-request. (#1257)
 
 - [jitsi-videobridge 2.3-259-g22868ff7d](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10590)
 	- New features:
-
-	- Fixes:
+		- Change default CC algorithm.
 
 ##  2.0.10532 (2025-09-29)
 - [jitsi-meet 1.0.8821](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10532)
