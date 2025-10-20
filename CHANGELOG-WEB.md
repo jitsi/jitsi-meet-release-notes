@@ -2,6 +2,77 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10590 (2025-10-20)
+- [jitsi-meet 1.0.8877](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10590)
+	- New features:
+		- feat(token_verification): Pass through recorder and transcriber into meetings.
+		- feat(keyboard-shortcuts): Adds support for any keyboard layout.
+		- feat(visitors): add showJoinMeetingDialog config option (#16540)
+		- feat(visitors): add hideVisitorCountForVisitors config option (#16541)
+		- feat(chat): Display file uploads as inline chat messages
+		- feat(prejoin): add showHangUp config option to prejoinConfig (#16531)
+		- Whitelist the disableFocus config option. (#16526)
+		- feat(ios) remove Apple Watch app
+		- feat(conference): Adds option to silently reconnect.
+		- feat(file-sharing): show count badges for unread files and notify on uploads/removals (#16484)
+		- feat(visitors): Sends msg history to new visitor nodes.
+		- feat(token_verification): Adds more token failure reasons on verify room. (#16473)
+		- feat(conference): Process unauthenticated access disabled error. (#16465)
+		- feat(i18n): Complete Bulgarian translation with missing keys (#16464)
+		- feat(visitors): Adds support for visitors voting in polls.
+		- feat(polls): Move polls to using a component (#16406)
+		- feat(CLAUDE.md): Add
+		- feat(base/flags): add warning for unsupported feature flags
+		- feat(RN): Add querySelector polyfill.
+		- feat(lobby) integrate login in lobby + configs (#16401)
+
+	- Fixes:
+		- Fix dial-in test (wait until the dialog is closed). (#16538)
+		- fix(analytics/amplitude/native): package does nott have a def export
+		- fix(prosody): Drops not needed debug log.
+		- fix(chat): improve naming convention for unread items (#16499)
+		- fix(persistent_lobby): Fix main room lookup.
+		- fix(shot_lived_token): Handles case with empty string for tenant.
+		- fix(recording) prevent recording consent dialog for visitors (#16452)
+		- fix(large-video): Prevents unnecessary updates when container is hidden
+		- fix(ui): improve tab badge styling (#16507)
+		- fix(prosody): Avoid using stale room instances. (#16492)
+		- fix(tests): Fixes randomly failing start muted test.
+		- fix(RTCStats) Stop sending dominantSpeaker events. They are handled in lib-jitsi-meet now.
+		- fix(chat): Fixes sending message after system message.
+		- fix(conference): Fixes showing max users notification.
+		- fix(follow-me): Moves follow-me state to its feature.
+		- fix(participants-pane): Allow multiline text in footer context menu
+		- check if asapKeyServer is empty string
+		- fix(muc_displayname): Handles few more cases for missing nick element.
+		- fix(i18n): Uses language-variant for translations.
+
+	- Translation updates:
+		- Updated swedish translation
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(connection): Do unlock check earlier after connect.
+		- feat(CLAUDE.md): Add
+		- feat(xmpp): Process unauthenticated access disabled error. (#2928)
+		- Polls using component. (#2916)
+		- feat(TS) Migrate Statistics to TS (#2835)
+
+	- Fixes:
+		- fix(strophe) Add a strophe error handler, send errors to RTCStats.
+		- fix(RTCStats) Send dominantSpeaker and audio/video mute events correctly.
+		- fix(visitors): Fixes promotion response handling.
+		- fix(TS) add proper types instead of `any` (#2910)
+
+- [jicofo 1.0-1162](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10590)
+	- Fixes:
+		- Refresh the conference start timeout on a conference-request. (#1257)
+
+- [jitsi-videobridge 2.3-259-g22868ff7d](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10590)
+	- New features:
+		- Change default CC algorithm.
+
 ##  2.0.10532 (2025-09-29)
 - [jitsi-meet 1.0.8821](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10532)
 	- New features:
