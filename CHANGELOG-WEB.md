@@ -2,6 +2,104 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10655 (2025-11-24)
+- [jitsi-meet 1.0.8936](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10655)
+	- New features:
+		- feat(jwt): Supports JWKS endpoint. (#16649)
+		- feat(localstorage): Filter items.
+		- feat(toolbar): implement toolbar background color via configOverwrite for web and mobile
+		- feat(dialog): Adds name to all dialogs. (#16626)
+		- feat(prosody): Adds a module to cleanup room with just service components in it.
+		- feat(base): add WebRTC availability detection (#16608)
+		- feat(chat): Add disableChat configuration option
+		- feat(toolbox): Add polls and file sharing buttons to overflow menu
+		- Filter transcription results. (#16606)
+		- feat(avatar): Strip bracketed annotations from display names before generating initials
+		- feat(tests): Do not require WebhooksProxy for jaas dial-in test (#16595)
+		- feat(metadata): Adds lobbyEnabled and visitorsEnabled to metadata. (#16583)
+		- feat(analytics): remove unused event
+		- feat(tests): Drop more aria selectors.
+		- feat(tests): Uses memory logs on failure and stops logging during conference.
+		- feat(tests): Avoids using aria selector for breakout rooms.
+		- feat(tests): Fail early and gather debug logs for iframe tests.
+		- feat(tests): Make sure dial-in user hangups.
+		- feat(tests): Increase the randomness of the room name.
+		- feat(prejoin): fix room name backdrop and button sizes
+		- feat(prejoin/lobby): style adjustments (#16550)
+
+	- Fixes:
+		- fix(lang): add the missing translation (German)
+		- fix(muc_rate_limit): Check connection when processing rate limited events.
+		- Fix transcription test expectation. (#16664)
+		- fix(cleanup_backend): Avoids cleanup when breakout rooms are active.
+		- fix(prosody): Order room-destroyed event.
+		- fix(chat): remove debug console.log statements from resize handlers
+		- fix(tests): Split participants presence. (#16642)
+		- fix(lang): Update Latvian language translation
+		- fix(tests): Wait for transcriptions to be off via an event. (#16635)
+		- fix(tests): Avoids being blocked by notification when clicking toolbar buttons
+		- fix(mod_jitsi_permissions): Use correct session on moderator revocation
+		- fix(tests): Update lobby test. (#16618)
+		- fix(wait_for_host): Make sure the main room is set back to non-persistent.
+		- fix(persistent_lobby): Avoids calling destroy twice.
+		- fix(tests): Add missing helper function.
+		- fix(chat): be explicit about screen navigation when polls are disabled
+		- fix(lobby): Hide login button if authenticated(jwt is available).
+		- * fix(lobby): Updates metadata on destroy lobby room and let in participants on empty main.
+		- fix(video-layout) Possibly fixes auto-pinning of SS in a large call. When a user joins a very large call with SS, sometime SS is not auto-pinned to stage. This may happen when lot of participant joins are processed at the same time and therefore the state for remoteScreenShares may not get updated in time. Added extra logging to help debug if this issue reproduces.
+		- fix(tests) Check for continguous thunbnails in the filmstrip
+		- fix(tests) Check for the endpointID of the large-video (#16601)
+		- fix(tests): Give some time for recording events to be received.
+		- fix(settings): Prevent enabling audio processing settings and stereo at the same time.
+		- fix(tests): Fix hangup by avoiding not defined error.
+		- fix(tests): Fix reference to APP in debug logs retrieval
+		- Use latin M in logs.
+		- fix(i18n): Fix Chinese language issues and hyphenated locale persistence
+		- fix(tests): Send logs to browser to keep correct order.
+		- fix(filmstrip) Fixes an issue where remote tiles can disappear when SS is started
+		- fix(chat): don't show private chat picker if disabled (#16556)
+		- fix(tests) Increase backToP2PDelay to 3 secs. Setting it to 1 sec was causing p2p connections to be created when it was not needed.
+		- fix(large-video)pin prev speaker on stage when local user is dominant speaker. (#16511)
+		- fix(visitors): Fix room token verification.
+		- fix(tests): Wait dialog elements to be clickable.
+		- fix(tests): Visitors tests to avoid reordered webhook events.
+		- fix(tests) Wait for p2p switch before checking for SS
+		- fix(tests): Fix p2p enable flag in desktop sharing.
+		- fix(android) fix initializer not running
+		- Disable urlNormalisation on FF.
+
+
+	lib-jitsi-meet
+	- New features:
+		- Adds some debug messages around kick and breakout rooms.
+		- feat(TS) Migrate to ts strophe.stream to TS (#2814)
+		- feat(TS) Migrate `modules\detection\TrackVADEmitter.ts` to TS (#2826)
+		- feat(TS) Migrate `modules\detection\VADNoiseDetection.ts` to TS (#2854)
+
+	- Fixes:
+		- fix(JingleSessionPC) Ignore XMPP responses if peer has terminated the session. Before, code was getting the children of the <iq> element, which would just return the <error> element and not children of the <error> element, which includes <item-not-found>, etc. Fixes an issue where local source is removed because the source-add sent to the p2p peer gets rejected because of a 3rd endpoint joining the call resulting in the p2p session getting terminated.
+		- fix(ScreenObtainer) Disable desktop audio for tests
+		- fix(authentication): Fixes wrong import.
+		- fix(ScreenObtainer) Use 'restrictOwnAudio' on Chrome 142 and newer only.
+		- fix(ScreenOBtainer) Fix echo issues with audio share.
+		- fix(tests): Avoids logging big object.
+		- fix(sendIQ): Error handling of strings, null and undefined
+
+- [jicofo 1.0-1167](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10655)
+	- New features:
+		- Read lobbyEnabled from RoomMetadata (#1258)
+
+	- Fixes:
+		- Fix missing properties in response to conference request. (#1262)
+		- Use type Transcriber for transcribers. (#1261)
+		- Fix redirection when participantSoftLimit=1.
+		- Fix ChatRoomImpl log level. (#1259)
+
+- [jitsi-videobridge 2.3-260-gea11cd36c](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10655)
+	- New features:
+
+	- Fixes:
+
 ##  2.0.10590 (2025-10-20)
 - [jitsi-meet 1.0.8877](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10590)
 	- New features:
