@@ -44,7 +44,6 @@ Full changelogs are available in each project's release page: click on one of th
 		- fix(deps) use Olm from npm
 
 	- Translation updates:
-		- * lang(de): Update chat permissions label as in #16807
 		- update German translation
 		- Remove BETA label from noise suppression button (#16730)
 
