@@ -2,6 +2,81 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10710 (2026-01-14)
+- [jitsi-meet 1.0.8979](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10710)
+	- New features:
+		- feat(test): Updates wdio to 9.22.0.
+		- feat(external-api) expose mute remote command and participant muted event (#16768)
+		- feat(conference): apply reduce ui for web (#16763)
+		- feat(lobby): Handle disabling lobby. (#16770)
+		- Use recording dialog on asyncTranscription.
+		- Drops obsolete inviteJigasiOnBackendTranscribing.
+		- feat(pip): Add Picture-in-Picture support for Electron
+		- feat(api): add toolbarVisibilityChanged event to the IFrame API (#16659)
+		- Accept transcription messages from non-participant entities. (#16631)
+		- feat(polls): Fixes support for breakout rooms.
+		- feat(logging): replace console.* with centralized logger infrastructure (#16655)
+
+	- Fixes:
+		- fix(chat): Clears private message notice if sender leaves.
+		- fix(chat): Fixes sending messages after private message sender leaves.
+		- fix(groupchat-polls-permissions): Adds UI setting to show the option. (#16807)
+		- fix(prosody): Fixes log message.
+		- fix(breakout-rooms): Fix polls in main when breakout is enabled.
+		- Fix nesting in the allure report (after allure 3 update). (#16816)
+		- fix(transcriptions): Drops not needed parameter.
+		- fix(polls): Drops not needed check.
+		- fix(polls): Updates polls validation.
+		- fix(turnserver): no dtls
+		- fix(transcription): Fixes a UI bug where you cannot start transcription 2nd time.
+		- fix(avatar) fix memory leak in preloadImage
+		- fix(large-video) Fix auto-pinning of SS in large meetings. (#16773)
+		- fix(recording): Fixes inviting jigasi when backend recording is enabled.
+		- Using recording dialog on asyncTranscription.
+		- fix(pip): Fix PiP not working when enabled via overwriteConfig
+		- fix(RN): Remove web files from build.
+		- fix(visitors): Fix s2sout host-unknown errors by skipping domain mapping
+		- Fix reading transcription results from JVB. (#16725)
+		- fix(lobby): Send virtual jid for main room destroy. (#16724)
+		- fix(prosody): Skips printing errors for reactions from visitors.
+		- fix(recording): allow samesite iframe embeds to work with local recording
+		- fix(deb): Adds Include on upgrade prosody. (#16687)
+		- fix(deps) use Olm from npm
+
+	- Translation updates:
+		- * lang(de): Update chat permissions label as in #16807
+		- update German translation
+		- Remove BETA label from noise suppression button (#16730)
+
+
+	lib-jitsi-meet
+	- New features:
+		- Read bridge channel message from 'transcriber' (#2944)
+
+	- Fixes:
+		- fix(e2ee) Wait for Olm sessions to be established before updating keys (#2955)
+		- fix(conference) fix memory leaks and race conditions from improper timeout management
+		- fix(JitsiConference): Fix participant features type handling in onMemberJoined
+		- fix(lobby): Handles race on joining and disabling lobby. (#2950)
+
+- [jicofo 1.0-1169](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10710)
+	- New features:
+		- Add configurable HTTP headers to colibri export for transcription. (#1266)
+
+	- Fixes:
+		- Log bridge details instead of session ID for transcribing. (#1265)
+
+- [jitsi-videobridge 2.3-270-g38ea5ea44](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10710)
+	- New features:
+		- Add debugState for Exporter. (#2377)
+		- Add more Exporter metrics. (#2375)
+		- Do not oversend above the configured limit, even for non-scalable streams. (#2372)
+		- Add http headers when connecting an Export. (#2371)
+		- Forward transcription via data channel (#2368)
+
+	- Fixes:
+		- Fix Exporter retry logic. (#2376)
+
 ##  2.0.10655 (2025-11-24)
 - [jitsi-meet 1.0.8936](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10655)
 	- New features:
