@@ -9,10 +9,7 @@
 ### Common
 
 - Closed captions inside chat screen.
-- Translation updates.
-- Alpha sort participants based on raised hand inside participants screen.
 - Small UI adjustments around raised hand, participants, chat screen.
-- Show translation UI if asyc transcription is disabled.
 
 ### Android
 
