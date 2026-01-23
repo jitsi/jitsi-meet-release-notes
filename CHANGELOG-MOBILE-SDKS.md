@@ -14,6 +14,7 @@
 ### Android
 
 - Fix screen capture status bar chip interaction for Android API > 35.
+- Fix top bottom insets.
 
 ### iOS
 
