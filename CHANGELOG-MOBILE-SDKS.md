@@ -26,7 +26,7 @@
 
 ### Flutter
 
-- Support String[] config overrides in mergeProps.
+- N/A
 
 # [11.6.3](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.6.3) (2025-10-16)
 
