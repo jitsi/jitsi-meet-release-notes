@@ -1,18 +1,22 @@
 # Mobile apps Changelog
 
-# [25.6.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-25.6.1) (2025-10-17)
+# [26.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.0.0) (2026-01-23)
 
 ## Changes
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-25.6.0...mobile-app-25.6.1)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-25.6.1...mobile-app-26.0.0)
 
 ### Common
 
-- UI adjustments around lobby, prejoin and unsafe room warning.
-
+- Closed captions inside chat screen.
+- Translation updates.
+- Fix sort participants based on raised hand inside participants screen.
+- Small UI adjustments around raised hand, participants, chat screen.
+  
 ### Android
 
-- Fixed top insets, bottom insets and set status bar, navigation bar color.
+- Fix top bottom insets.
+- Fix stop screen capture when status bar chip is pressed for Android API > 35
 
 ### iOS
 
