@@ -1,5 +1,35 @@
 # Mobile SDKs Changelog
 
+# [12.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-12.0.0) (2026-01-23)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-11.6.3...mobile-sdk-12.0.0)
+
+### Common
+
+Closed captions inside chat screen.
+Translation updates.
+Alpha sort participants based on raised hand inside participants screen.
+Small UI adjustments around raised hand, participants, chat screen.
+Show translation UI if asyc transcription is disabled.
+
+### Android
+
+- Fix screen capture status bar chip interaction for Android API > 35.
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- Support String[] config overrides in mergeProps.
+
 # [11.6.3](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-11.6.3) (2025-10-16)
 
 ## Changes
