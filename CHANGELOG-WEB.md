@@ -2,6 +2,62 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10741 (2026-02-02)
+- [jitsi-meet 1.0.9008](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10741)
+	- New features:
+		- feat(breakout-rooms): button margin style fix
+		- feat(subtitles): rework how isAsyncTranscriptionEnabled is being used
+		- feat(subtitles): hide translation UI for both web and native
+		- feat(config): add reducedUIEnabled config to control web side
+		- feat(breakout-rooms): Adds some jid validation on joining. (#16858)
+		- feat(muc_auth_ban): add metrics and logs for error responses from access backend (#16853)
+		- feat(base/modal): small updates around JitsiScreen footer (#16727)
+		- Hide the translation UI when asyncTranscription is used.
+		- feat(chat/native): add Closed Captions tab (#16787)
+		- feat(tracks): add/remove "ended" listener when screen sharing
+		- feat(dynamic-branding): Adds more options for overriding translations.
+		- feat(lang): added kk translations
+		- feat(participants-pane/native): fix participants sort (#13997)
+
+	- Fixes:
+		- fix(transcriptions): Fixes stop transcriptions via api.
+		- fix(transcriptions): Fixes stop transcriptions in some cases.
+		- fix(tests): Ignore clickable for password dialog.
+		- fix(tests): Fixes a problem with two notifications.
+		- fix(responsive-ui): apply reducedUI only when both width and height are below threshold
+		- fix(recording) Restores track mute state to original state after consent is provided. Do not forcefully unmute audio and video if the user consents to being recorded and wants to stay unmuted but was muted before hitting join.
+		- Fixes setting backend recording when async transcriptions are not on.
+		- fix(premeeting): device status indicator size when label is long (#16559)
+		- fix(token): Keeps checks for allowlist only.
+		- fix(recording): use cloned tracks for local recording; reset flags on stop (#16535)
+		- fix(android): support String[] config overrides in mergeProps
+
+	- Translation updates:
+		- Update Portuguese translations in main-pt.json (#16790)
+		- Updates to Danish translation (#16781)
+		- Update Italian translation
+
+
+	lib-jitsi-meet
+	- New features:
+
+	- Fixes:
+		- Fixes sending initial keep-alive.
+		- fix(JitsiConference): handles mute state updates arriving before track creation (#2956)
+		- fix(track) Updates the mute state on remote track when ssrc gets remapped
+
+- [jicofo 1.0-1169](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10741)
+	- New features:
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-272-g0360d0488](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10741)
+	- New features:
+		- Configurable limit for the number of data channels. (#2381)
+		- Send a session-end event when stopping an export. (#2380)
+
+	- Fixes:
+
 ##  2.0.10710 (2026-01-14)
 - [jitsi-meet 1.0.8979](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10710)
 	- New features:
