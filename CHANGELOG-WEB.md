@@ -2,6 +2,182 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10888 (2026-03-30)
+- [jitsi-meet 1.0.9139](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10888)
+	- New features:
+		- feat(ci) optimize Android SDK build by caching Gradle dependencies
+		- feat(external-api): send full user context (#17147)
+		- feat(translation): added missing hindi translations
+		- feat(deep-linking): use same action for join in app if scheme url is undefined
+		- feat(tracks) Adds UI notification when SS is killed by macOS.
+		- feat(tests): Adds filesharing tests.
+		- feat(speakerstats): Adds config to control history.
+		- feat(etherpad): Drops duplicate command listener.
+		- feat(amplitude): Updates initialization.
+		- feat(ci,ios) optimize iOS SDK build with CocoaPods caching
+		- feat(tests): Adds dialIn expectation to disable more numbers page. (#17109)
+		- feat(chat/web): add explicit ChatButtonEntry interface and return type to useChatButton hook (#16937)
+		- feat(ci) optimize ios-rn-bundle-build by caching CocoaPods dependencies
+		- feat(breakout): Adds a checkout whether participants were in breakout.
+		- feat(breakout): Move to use is_admin utility.
+		- feat(debian): Updates nginx template to redact log lines.
+		- feat(pip): add debug logging for better PiP flow observability
+		- feat(build) use Node 24, the current LTS
+		- feat(recording) remove recording limit functionality
+		- feat(modal): fixes around JitsiScreen footer (#17041)
+		- feat(visitors-doc): use native template units for prosody visitor instances (#16656)
+		- feat(prosody): Drops moderator_id in favor of moderators list.
+		- feat(transcription): allow custom transcriber languages via config (#16984)
+		- feat(filmstrip): move AudioTracksContainer outside (#17000)
+		- feat(authentication): Inline authentication for web
+		- feat(tests): Enables sipjibri tests.
+		- feat(lobby): Updates around toolbox menu and state (#16965)
+		- feat(file-sharing): Adds tooltip to upload button. (#16924)
+		- feat(invite): Respects dial-in field from metadata.
+		- feat(files): add external api events for upload/delete (#16908)
+		- feat(draggable-panels): Enable touch-screen support
+		- feat(external-api): fire participantMuted event for all mute state changes (#16893)
+		- feat(CustomPanel): Implement an customizable panel.
+		- feat(participants): store user context data for external API events and functions
+
+	- Fixes:
+		- fix(prosody): Drops not needed config for jigasi-invite module.
+		- fix(prosody): Adds some nil checks.
+		- fix(recording): On missing session id, send stop.
+		- fix(webpack-dev-server-proxy): Allow all hosts.
+		- fix(tests): Report worker crash when session cleanup times out. (#17211)
+		- fix(ui) adjust svg fills and backgrounds (#17062)
+		- fix(react-native-sdk): Export JitsiMeeting component
+		- * fix(invite): use URLSearchParams for decoding dial-in room name
+		- fix(file-sharing): Disable dragging on prejoin.
+		- fix(settings) Refreshes audio input levels when microphone permission is regranted.
+		- fix(settings) Fixes missing previews after device permissions are granted.
+		- fix(invite): Use decoded room name for dial-in  info page url
+		- i18n key for breakout room participant ellipsis tooltip
+		- fix(custom-panel): Button group
+		- fix(wepback-dep-proxy): Fixes header errors.
+		- fix(etherpad): Checks the received command value.
+		- fix(UI): Mirrors Virtual Background previews (#17090)
+		- fix(auth_ban): Simplifies jaas test.
+		- fix(ui): update Switch callback deps to prevent stale toggle handler for E2EE
+		- fix(base/util): prevent double URL encoding of non-ASCII room names
+		- fix(authentication): Shows notification if popup is blocked.
+		- fix(polls): use creatorName prop instead of localParticipant in native PollAnswer (#17083)
+		- fix(chat): scroll to latest messages when opening chat or CC tabs
+		- fix(breakout-rooms): fix participant menu not closing in breakout rooms (#17091)
+		- fix(virtual-background): show notification when background limit is reached (#17053)
+		- fix(jwt): Some services will not give you a new token till it is expired.
+		- fix(polls): Avoid duplicating voters.
+		- fix(url-params) Sanitize url params (#17070)
+		- fix(gifs): prevent GIF popover from closing on internal clicks
+		- fix(livestream): add YouTube “Go Live” reminder in Start Live Stream dialog
+		- fix(i18n) make translateToHTML more resilient
+		- fix(permissions): Make sure permissions are handled on mobile.
+		- fix(visitor): Checks for auth expired before redirecting to avoid jwt errors.
+		- fix(authentication): Trigger connect if no connection is available for reconnect.
+		- fix(toolbar): Fixes build, missing props.
+		- added missing aria-labels to toolbar buttons for accessibility
+		- fix(recording): Fix missing translation string.
+		- fix(authentication): Drops not needed tokenAuthUrlAutoRedirect.
+		- fix(recording): show advanced options in several corner cases
+		- fix(chat): Clear all state when changing room.
+		- fix(transcriptions): Fixes showing premium options dialog from chat panel.
+		- fix(metadata): Always check the features on modifications.
+		- fix(breakout): Hides unsupported services in breakout rooms.
+		- fix(local-recording): close AudioContext on recording stop
+		- fix(toolbox): enabledInJwt check for isDesktopShareButtonDisabled in native (#16997)
+		- fix(authentication): Skip prejoin in some case when not inline.
+		- fix(tests): Adds a retry to iframe kick test.
+		- fix(authentication): Fixes loading jwt middleware.
+		- fix(video-layout) Fixes auto-pinning of SS in large calls. (#16992)
+		- correct label binding in Advanced Options switches
+		- fix(debian): Fixes initial install and certs in trust store.
+		- fix(settings): avoid activating all microphones when audio levels are disabled
+		- fix(filmstrip) Fixes an issue with ghost tiles appearing on the filmstrip. This was a regression of the recent changes to filmstrip reordering.
+		- fix(lobby): use conferenceLeft instead of conferenceWilLeave
+		- fix(ui): add semantic tokens for svg fills and preview (#16962)
+		- fix(android/sdk): prevent inflated inset values for top and bottom
+		- fix(ui): more semantic tokens (#16955)
+		- fix(base/ui): update welcome page navigation colors
+		- insecure-document-method-36
+		- fix(ui): hide input placeholder on focus (#16932)
+		- enable local recording when embedded in a same-domain iframe (#16900)
+		- fix(tests): Add expectations for async transcriptions. (#16925)
+		- fix(filmstrip) Excludes partially visible tiles for dominant speaker slot.
+		- Do not access "room" if undefined, improve logs. (#16917)
+		- fix(filmstrip) Ensures dominant speaker is always visible in filmstrip (#16901)
+		- fix(toolbar): remove hang up from prejoin app
+		- fix(PiP): Mac OS minimize not working
+		- fix(muc_auth_ban): Adds checks for jaas.
+		- fix(tests): Make tests to go through pre-join automatically.
+		- fix(prejoin): Handles different ways of disabling prejoin.
+		- fix(settings): Fixes rendering a tab when props change.
+		- fix(muc_cleanup_backend_services): Stops timer before creating new one. (#16894)
+		- fix(recording-button) Fix recording button tooltip (#16891)
+		- Only parse transcript for transcription-result messages. (#16885)
+		- fix(filmstrip): keep AudioTracksContainer in the DOM while Filmstrip is hidden in reduced UI
+		- fix(lobby): reset lobbyVisible state when we a potential conference is being left (#16881)
+		- fix(tests): Fixes tests stack traces.
+
+	- Translation updates:
+		- Complete Swedish (sv) translation
+		- * lang(sv): Small change of wording
+		- add missing translation in main es
+		- Update Dutch translations
+		- Update Dutch translations
+		- update German translation
+		- Update Albanian translation
+		- Update Dutch translations
+		- Update Dutch translations
+		- update Hindi translations
+		- Update Persian (fa) translations
+		- Update Dutch translations
+		- Update Finnish translations (#16947)
+		- Update Dutch translations (#16931)
+		- update German translation
+		- Update French labels (#16922)
+		- Dutch translation updates.
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(xmpp): pass all user identity fields from JWT context (#2992)
+		- feat(connectivity) Adds stats based video freeze detection.
+		- feat(quality) Fires analytics events when video decode fails. (#2983)
+		- feat(connection): Adds function to refresh token. (#2977)
+		- Add cryptex to SDP/Jingle translation. (#2978)
+
+	- Fixes:
+		- fix(recording): On missing session id continue to send stop.
+		- fix(xmpp): add XEP-0461 namespace check in _parseReplyMessage
+		- correct comment for AV_MODERATION_PARTICIPANT_REJECTED event
+		- fix(JingleSessionPC) Falls back to JVB conn from P2P when SSRCs are regenerated on reneg.
+		- fix(JitsiLocalTrack) Fixes _effectEnabled to detect hardware failures
+		- fix(chat): Check match results to avoid errors.
+		- fix(JitsiMeetJS) Adds release pinning support when using joinConference. (#2987)
+		- fix(authentication): Clears connection on auth error.
+		- fix(xmpp) Adds logs for shard changed events
+		- fix(JitsiConference) Avoids throwing an error when P2P is killed mid setup
+		- fix(moderator) remove deprecated IE11 attachEvent fallback
+
+- [jicofo 1.0-1174](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10888)
+	- New features:
+		- Adds support for java 21.
+
+	- Fixes:
+		- Fix handling responses to jibri stop iqs. (#1272)
+
+- [jitsi-videobridge 2.3-287-g4f55d380a](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10888)
+	- New features:
+		- Add metrics for relay dtls failures. (#2397)
+		- read JVB_SECRET from debconf if already set
+		- Adds support for java 21. (#2388)
+		- Add ping/pong to exporter. (#2385)
+		- Send StartEvent if encoding type changes for an SSRC. (#2384)
+
+	- Fixes:
+		- a case where receiver constraints could be ignored. (#2387)
+
 ##  2.0.10741 (2026-02-02)
 - [jitsi-meet 1.0.9008](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10741)
 	- New features:
