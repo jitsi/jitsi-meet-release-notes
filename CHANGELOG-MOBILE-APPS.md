@@ -1,5 +1,28 @@
 # Mobile apps Changelog
 
+# [26.1.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.1.0) (2026-04-17)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-26.0.0...mobile-app-26.1.0)
+
+### Common
+
+- Translation updates.
+- react/react-native update.
+- Translation updates.
+- Whiteboard updates.
+- Add separate transcription indicator with contextual notifications.
+- UI fixes.
+  
+### Android
+
+- Screen-share fixes.
+
+### iOS
+
+- N/A
+
 # [26.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.0.0) (2026-01-23)
 
 ## Changes
