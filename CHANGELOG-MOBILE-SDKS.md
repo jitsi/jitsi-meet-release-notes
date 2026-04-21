@@ -8,7 +8,7 @@
 
 ### Common
 
-- react 19.0.0 /react native 0.79.7 update.
+- react 19.0.0 / react native 0.79.7 update.
 - Translation updates.
 - Whiteboard updates.
 - Add separate transcription indicator with contextual notifications.
