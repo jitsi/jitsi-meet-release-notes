@@ -1,5 +1,37 @@
 # Mobile SDKs Changelog
 
+# [12.1.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-12.1.1) (2026-04-21)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-12.0.0...mobile-sdk-12.1.1)
+
+### Common
+
+- react 19.0.0 /react native 0.79.7 update.
+- Translation updates.
+- Whiteboard updates.
+- Add separate transcription indicator with contextual notifications.
+
+### Android
+
+- Screen share fixes.
+- Hide Android status bar in landscape mode during conferences without immersive mode
+
+### iOS
+
+- N/A
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- Fix NullPointerException and Android Build Conflicts.
+- iOS UIScene compatibility.
+- Added the breakout Rooms flag in the features_flags.
+
 # [12.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-12.0.0) (2026-01-23)
 
 ## Changes
