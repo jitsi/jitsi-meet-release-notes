@@ -1,5 +1,25 @@
 # Mobile apps Changelog
 
+# [26.1.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.1.1) (2026-05-08)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-26.1.0...mobile-app-26.1.1)
+
+### Common
+
+- Recording notification audio updates.
+- Translation updates and fixes.
+- Whiteboard fixes around collaboration.
+
+### Android
+
+- Fix authentication.
+
+### iOS
+
+- N/A
+
 # [26.1.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.1.0) (2026-04-17)
 
 ## Changes
