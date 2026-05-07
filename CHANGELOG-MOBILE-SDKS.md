@@ -1,5 +1,34 @@
 # Mobile SDKs Changelog
 
+# [12.1.3](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-12.1.3) (2026-05-07)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-12.1.1...mobile-sdk-12.1.3)
+
+### Common
+
+- Recording notification audio updates.
+- Translation updates and fixes.
+- Whiteboard fixes around collaboration.
+- @react-navigation updates.
+
+### Android
+
+- Remove autoverify intent blocking authentication process.
+
+### iOS
+
+- Totally disable auto-linking @giphy/react-native-sdk.
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [12.1.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-12.1.1) (2026-04-21)
 
 ## Changes
