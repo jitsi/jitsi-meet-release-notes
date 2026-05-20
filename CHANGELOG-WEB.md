@@ -2,6 +2,114 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.10978 (2026-05-20)
+- [jitsi-meet 1.0.9222](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10978)
+	- New features:
+		- Add an option to render speaker ID for transcriptions. (#17390)
+		- feat(tests): print peak concurrent browser sessions at end of run
+		- feat(breakout-rooms): fixes (#17382)
+		- Hides visitors dialog for sip jibri.
+		- feat(chat/native): fixes around routes and keyboard avoiding view (#17348)
+		- feat(whiteboard): prevent second navigation while collaborating
+		- feat(i18n): fix format for languages that rely on region
+		- feat(prosody): add mod_muc_resource_validate module (#17316)
+		- feat(metadata): Moves turn information to metadata module.
+		- feat(tests): Adds property to override room name.
+		- feat(tests) adds e2e tests for virtual background dialog
+		- feat(whiteboard): updates  (#17274)
+		- feat(whiteboard): updates dependencies and drop not used features
+		- feat(util): Lazy load the insecure room name checker.
+		- feat(whiteboard): Lazy load the whiteboard dependeny.
+		- feat(keyboard-shortcuts): support Ctrl+Alt modifier combos in registerShortcut
+		- feat(base/ui): added testID
+		- feat(recording): Add separate transcription indicator with contextual notifications (#17153)
+		- * feat(visitors): Remove duplicate check.
+		- feat(custom-panel): add resizable panel width with drag handle and persistence
+
+	- Fixes:
+		- fix(prosody): guard is_focus against nil nick
+		- fix(tests): don't mark Firefox grid teardown timeouts as crashes
+		- fix(tests): register custom expect matchers from the before hook
+		- fix(tests): drop @wdio/globals value imports, use multiRemoteBrowser
+		- fix(tests): pin browserVersion to jitsi-stable/jitsi-beta for deterministic grid routing
+		- fix(custom-panel): refresh videoSpaceWidth when the panel toggles open/closed
+		- fix(base): prevent body from being scrolled by cross-frame scrollIntoView
+		- fix(recording): update notification audio files with natural-sounding voices (#17357)
+		- fix(lang): Update Latvian language translation
+		- fix(invite): react to dialinEnabled metadata changes in open invite dialog
+		- fix(prosody): A nil check.
+		- fix(lang) updte Dutch translation
+		- fix(prosody): allow recording-only metadata moderation
+		- Reconnects on shard changed when enableForcedReload is not set.
+		- Drop not used parameter.
+		- Fixes requesting undefined url on connection failed.
+		- fix(recording): check JWT features instead of moderator role for label controls (#17329)
+		- fix(recording): restrict stop recording dialog to moderators (#17328)
+		- fix(conference): Reload on SHARD_CHANGED_ERROR when conference already cleaned up
+		- fix(recording): wire iFrame API start/stop through the intent flow
+		- fix(prosody): Avoid creating several timers when starting limits (#17302)
+		- fix(android): artifacts never published because of naming
+		- fix(recording): resolve race conditions in recording/transcription notifications (#17309)
+		- fix(tests): Bumps wait time for lobby joining.
+		- fix(etherpad): Simplifies the url checks.
+		- fix(tests): Fixes session creation when using '--spec' arg.
+		- fix(media): retry attach on failure and re-attach after play exhaustion
+		- fix(tests): wait for aria-checked after VB thumbnail clicks
+		- fix(tests): Fixes missing wait.
+		- fix(prosody): Drops not needed checks.
+		- fix(webpack-proxy): Fixes make dev.
+		- Fixes base for dynamic loaded libs.
+		- fix(breakout-rooms): bypass disableInitialGUM when joining breakout room
+		- fix(tests): Report session-init crash in allure report. (#17263)
+		- fix(prosody-plugins): redact transcription HTTP header values from metadata log (#17258)
+		- fix(custom-panel): remove close button from custom panel
+		- Fixes excalidraw in the deb package.
+		- fix(dynamic-branding): custom palette colors not applied to semantic tokens (#17252)
+		- migrate to new Excalidraw v0.18.0 - update (#17244)
+		- fix(chat): replace kebab-case vendor style with camelCase
+		- fix(overlay) refactor and move logic to a middleware
+		- fix(chat) store replyToId in Redux
+		- fix(external-api) add messageId and replyToMessageId in incoming-message
+		- fix(lang) updated Polish translation
+		- fix(i18n) use Trans in StartLiveStreamDialog
+
+	- Translation updates:
+		- Update Arabic localization
+		- Refine zh-TW locale
+		- Update Italian
+		- update German translation (#17317)
+		- update German translation (#17285)
+		- Update German translation
+		- update German translation
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(RTCStats): Report getUserMedia errors via RTCStats
+		- feat(metadata): Moves reading turn information from metadata. (#3014)
+		- feat(audio): Add opus bitrate when toggling stereo/mono
+
+	- Fixes:
+		- fix(SendVideoController): use per-session constraints to avoid P2P sender constraint race
+		- fix(RTC): Spec-compliant simulcast on Firefox (#3031)
+		- Drop scheduling ws keep-alive on shard set.
+		- fix(RTC): Strip sdes:mid header extension from remote SDP on Firefox
+		- Fixes type error when build in jitsi-meet.
+
+- [jicofo 1.0-1180](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_10978)
+	- New features:
+		- Start sessions immediately when transcribing is enabled (#1281)
+		- Support custom transcription headers and URL params from room metadata. (#1273)
+
+	- Fixes:
+		- transcription enabled before colibri session is initialized (#1274)
+
+- [jitsi-videobridge 2.3-291-gb4b5ccc8c](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_10978)
+	- New features:
+
+	- Fixes:
+		- Redact http-header values from RECV colibri2 request log. (#2406)
+
 ##  2.0.10888 (2026-03-30)
 - [jitsi-meet 1.0.9139](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10888)
 	- New features:
