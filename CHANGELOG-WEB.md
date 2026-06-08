@@ -2,6 +2,80 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.11031 (2026-06-08)
+- [jitsi-meet 1.0.9268](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_11031)
+	- New features:
+		- feat(subtitles): add transcription.translationEnabled config flag
+		- feat(input): add accessibility label and keypress handler to clear input (#15813)
+		- feat(video-quality-slider): use active slider option text
+		- feat(video-quality-slider): add expressive aria attributes
+		- feat(settings): better keyboard navigation
+		- feat(input): improve error message association
+		- feat(base/modal): reduce space between footer and keyboard
+		- salesforce integration overhaul (#17276)
+		- feat(filmstrip/native): show screen-share on stage on long press
+		- feat(toolbox/native): refactoring (#17420)
+		- feat(deep-linking): completely remove custom scheme check
+		- feat(virtual-background) Introduces TF.js body seg using WebGPU/WebGL context.
+		- feat(mobile/navigation): improvements (#17400)
+		- feat(tests): Adds JaaS mobile browser deep-linking test.
+		- feat(mobile/navigation): remove already handled conditioning
+
+	- Fixes:
+		- Drops 'filmstrip' from toolbarButtons.
+		- Hides remote video in 1:1 when toolbar is visible.
+		- Drops auto-hiding filmstrip under certain threshold.
+		- fix(virtual-background): keep V2 processor alive across mute/unmute
+		- fix(tests): match wdio worker log name when detecting teardown timeouts
+		- fix(shared-video): do not prompt jibri to confirm playing shared video
+		- fix(mute-modal): restructure mute modal
+		- fix(popover): close hover menu on escape
+		- fix(base/native): make onRefresh work
+		- fix(visitors): Drops some presences targeted for main prosody.
+		- fix(whiteboard): allow non-moderators to close the whiteboard (#17424)
+		- fix(whiteboard): validate collaboration data before opening and notify on failure (#17421)
+		- fix(tests): bump knocking-participant notification timeout to 15s.
+		- fix(tests): wake auto-hidden toolbar before opening overflow menu (#17419)
+		- fix(config): fetch config.js on web when window.config is missing.
+		- fix(tests): Hangups failed tests.
+		- fix(whiteboard): fix auto-open for remote participants on metadata propagation (#17409)
+		- fix(tests): retry desktop-sharing toggle when the first click is dropped
+		- fix(tests): wait for desktop-sharing toggle to settle before returning
+		- fix(tests): Moderators are able to flip visitors.live to true.
+		- fix(tests): Gives more time to the UI to appear.
+		- fix(tests): wait for embedded Jitsi app before clicking prejoin in iframe tests
+		- fix(tests): give MUC join + error notification 30s instead of 10s
+		- fix(tests): wait for matching recordingStatusChanged on live-stream
+		- fix(tests): align transcription chunk webhook check by messageID
+
+	- Translation updates:
+		- update translation for mongolian (#17432)
+		- update German translation (#17445)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(browser): Enable VP9 on Firefox 151+ (#3041)
+
+	- Fixes:
+		- fix(xmpp): remove window unload listeners on disconnect
+		- Drops not used or duplicated utils for recording.
+		- fix(RTC): Silence setSinkId console spam on Firefox / Safari / iPadOS (#3045)
+		- fix(connectivity): Skip stats freeze detection on inactive session tracks.
+
+- [jicofo 1.0-1183](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_11031)
+	- New features:
+		- Forward rtcStatsEnabled to Jibri invite (#1283)
+
+	- Fixes:
+
+- [jitsi-videobridge 2.3-295-g8d5c0037b](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_11031)
+	- New features:
+
+	- Fixes:
+		- Exporter reconnect backoff loop (#2415)
+		- Jetty12 requires Websocket listener classes to be public. (#2413)
+
 ##  2.0.10978 (2026-05-20)
 - [jitsi-meet 1.0.9222](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10978)
 	- New features:
