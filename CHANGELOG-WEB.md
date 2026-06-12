@@ -20,6 +20,7 @@ Full changelogs are available in each project's release page: click on one of th
 		- feat(mobile/navigation): improvements (#17400)
 		- feat(tests): Adds JaaS mobile browser deep-linking test.
 		- feat(mobile/navigation): remove already handled conditioning
+        - Disable colibri (JVB) WebSocket proxy in nginx/apache config by default
 
 	- Fixes:
 		- Drops 'filmstrip' from toolbarButtons.
@@ -75,6 +76,7 @@ Full changelogs are available in each project's release page: click on one of th
 	- Fixes:
 		- Exporter reconnect backoff loop (#2415)
 		- Jetty12 requires Websocket listener classes to be public. (#2413)
+        - Disable colibri WebSockets and public HTTP server by default in debian package  
 
 ##  2.0.10978 (2026-05-20)
 - [jitsi-meet 1.0.9222](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_10978)
