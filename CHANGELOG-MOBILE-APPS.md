@@ -1,5 +1,24 @@
 # Mobile apps Changelog
 
+
+# [26.2.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.2.0) (2026-07-01)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-26.1.1...mobile-app-26.2.0)
+
+### Common
+
+- UI fixes and updates.
+
+### Android
+
+- N/A.
+
+### iOS
+
+- N/A
+
 # [26.1.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.1.1) (2026-05-08)
 
 ## Changes
