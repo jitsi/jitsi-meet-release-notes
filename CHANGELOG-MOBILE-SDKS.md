@@ -1,5 +1,41 @@
 # Mobile SDKs Changelog
 
+# [13.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.0.0) (2026-07-09)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-12.1.5...mobile-sdk-13.0.0)
+
+### Common
+
+- Enable React Native New Architecture.
+- Recording and transcription can be started and stopped independently.
+- Navigation, toolbox, breakout rooms and dialogs improvements.
+- Show screen-share on stage on long press.
+- Salesforce integration overhaul.
+- Render native GIFs via GiphyMediaView.
+- Rely on ICE connection to control outgoing calls.
+- Fixes around reactions, polls, avatar sizes and lonely meetings.
+- Bump react-native-video to 6.19.1.
+
+### Android
+
+- Derive SDK autolinked dependencies from settings.gradle manifest.
+- Re-assert in-communication audio mode when the system resets it mid-call.
+- Ignore benign missing-viewState mount race.
+
+### iOS
+
+- Remove bridge references.
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [12.1.5](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-12.1.5) (2026-06-22)
 
 ## Changes
