@@ -8,7 +8,7 @@
 
 ### Common
 
-- Enable React Native New Architecture.
+- Update react-native to 0.85.2(New Architecture, Fabric, Bridgeless Mode).
 - Recording and transcription can be started and stopped independently.
 - Navigation, toolbox, breakout rooms and dialogs improvements.
 - Show screen-share on stage on long press.
