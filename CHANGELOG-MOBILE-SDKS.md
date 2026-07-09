@@ -1,5 +1,33 @@
 # Mobile SDKs Changelog
 
+# [12.1.5](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-12.1.5) (2026-06-22)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-12.1.3...mobile-sdk-12.1.5)
+
+### Common
+
+- Avoid RN reload loop on display name required lobby error.
+- Polls and modal keyboard fixes.
+- Native toolbox refactoring.
+
+### Android
+
+- N/A
+
+### iOS
+
+- Fix crash on rejoin by releasing the RN bridge and view factory.
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [12.1.3](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-12.1.3) (2026-05-07)
 
 ## Changes
