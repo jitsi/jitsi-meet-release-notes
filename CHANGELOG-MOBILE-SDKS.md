@@ -1,5 +1,33 @@
 # Mobile SDKs Changelog
 
+# [13.1.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.1.0) (2026-07-27)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-13.0.0...mobile-sdk-13.1.0)
+
+### Common
+
+- Update react-native-webrtc to 124.0.8.
+- Add iceConnected to the connection-stats response.
+
+### Android
+
+- N/A
+
+### iOS
+
+- Add instantiateReactNative and destroyReactNative lifecycle methods to JitsiMeet.
+- Enable Center Stage on devices that support it.
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [13.0.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.0.0) (2026-07-09)
 
 ## Changes
