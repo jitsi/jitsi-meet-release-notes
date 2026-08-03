@@ -2,6 +2,156 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.11146 (2026-08-03)
+- [jitsi-meet 1.0.9365](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_11146)
+	- New features:
+		- feat(breakout-rooms): add participant mute flags
+		- feat(virtual-background): default to V2 engine unless explicitly disabled
+		- feat(external-api): add set-participant-properties command (#17639)
+		- feat(audio-translation): React Native UI (ducking, language selector, indicators)
+		- feat(ios/sdk): clear logs and comments
+		- add iceConnected to connection-stats response
+		- feat(ios/sdk): add react native lifecycle methods
+		- feat(external-api): add includeHidden and isJibri/isJigasi to getRoomsInfo
+		- feat(audio-translation): per-participant translation indicators (#17619)
+		- feat(transcription): add diarize flag advertised as a participant property (#17614)
+		- feat(prosody): test for escaped CRLF in rayo headers (#17583)
+		- feat(conference): log page visibility, BFCache freeze/restore events
+		- feat(config): whitelist audioTranslation for config overrides
+		- feat(multi-screen): whiteboard as a second-screen source (#17581)
+		- feat(audio-translation): live audio translation prosody support (#17537)
+		- feat(audio-translation): hide the feature when unavailable for the room (#17574)
+		- feat(prosody): reject MUC nick changes in resource validate (#17586)
+		- feat(translation) Support realtime translations in conferences (#17538)
+		- feat(base/dialog): remove edges
+		- feat(multi-screen): render second screens via a React portal (#17547)
+		- feat(screenshare): direct-cast screenshare over a plain RTCPeerConnection (#17553)
+		- feat(wake-lock): keep the screen awake while waiting in the lobby
+		- feat(custom) provide a custom.js entry point for custom javascript (#17524)
+		- feat(call-integration): rely on ice connection to control outgoing calls (#17503)
+		- feat(chat): add money bag emoji to chat smileys
+		- feat(whiteboard): enable image sharing on the inline web whiteboard (#17536)
+		- feat(multi-screen): render a meeting surface on a second screen via the iframe API (#17527)
+		- feat(ux): allow recording and transcription to be started and stopped independently (#17469)
+		- Adds additional set admin filtering.
+		- feat(carmode): fix mute icon visiblity related to android (#17485)
+		- feat(breakout-rooms): unify components into BreakoutRoom
+		- feat(time-timer): meeting pace timer in the conference info bar (#17468)
+		- feat(speaker-stats) Allow selecting & copying participant names from Participant Status list
+
+	- Fixes:
+		- fix(audio-mode): don't change the audio mode with low bandwidth mode
+		- fix(rn-sdk): make android/src gitignore negations effective
+		- fix(rn-sdk): drop reference to removed NAT64AddrInfoModule
+		- fix(external-api): regression in virtual background toggle command (#17657)
+		- fix(audio-translation): reset translation state on any request failure
+		- fix(audio-translation): support translation in breakout rooms
+		- returns JSDoc for promise types
+		- fix(i18n): force links in translated HTML to open in a new tab
+		- fix(lang): Update Latvian language translation
+		- fix(participants-pane): close context menus on outside click (#17604)
+		- fix(reactions,polls,subtitles): handle unexpected field types in endpoint messages
+		- fix(welcome): disable animated meeting name once user input is present
+		- fix(recording): show transcription toggle when feature available (#17602)
+		- fix(breakout-rooms): prevent double-track-add crash when switching rooms with tab audio
+		- Make sure we deliver videoConferenceLeft.
+		- fix(audio-translation): fall back to default ducked volume for invalid config
+		- fix(audio-translation): make original-audio ducking work on iOS
+		- fix(multi-screen): gate the whiteboard second screen on isWhiteboardOpen (#17598)
+		- fix(android): ignore benign missing-viewState mount race (RN #57181)
+		- fix(reactions): remove emoji after animation finishes to avoid native node race
+		- fix(config) Adds the audioTranslation option.
+		- fix(participants-pane): manage focus when participants pane opens and closes
+		- fix(chat): render native GIFs via GiphyMediaView
+		- fix(recording): play the off sound when a local recording stops
+		- fix(recording): base the dialog title on the transcription capability
+		- fix(recording): allow stopping a local recording without the jwt recording feature
+		- fix(recording): enable start button when local recording is preselected
+		- fix(ios): bump react-native-video to 6.19.1
+		- fix(authentication): close inline token auth popup when admitted to conference
+		- fix(reactions): ignore unknown reaction keys in endpoint messages
+		- fix(polls): validate answer structure from participants
+		- fix(prosody): Updates filtering set command in non-moderated rooms for allowners.
+		- Only send transcription httpHeaders to jicofo. (#17564)
+		- fix(recording): update dialog primary button copy when services idle (#17558)
+		- fix(tracks): resubscribe streaming status on p2p<->jvb track swap (#17495)
+		- fix(react/conference): media session is not established for lonely meetings
+		- fix(tests): give overflow menu a generous wait for slow renders
+		- fix(audio-mode): re-assert in-communication mode when the system resets it mid-call
+		- fix(tests): retry swallowed thumbnail click in virtual background dialog (#17548)
+		- fix(recording): make record/transcribe button, dialog and nudge capability-aware, and notify remotes
+		- fix(tests): complete recording/transcription e2e fixes (extends #17544) (#17545)
+		- fix(tests): wait for iframe to exist before switching in iFrame API tests
+		- fix(tests): increase VB thumbnail aria-checked wait to 5s
+		- fix(prosody): Fixes prosody compat with 0.12.
+		- fix(android): derive SDK autolinked deps from settings.gradle manifest
+		- fix(tests): resolve active candidate pair from transport selected pair
+		- fix(overlay): avoid RN reload loop on display name required lobby error
+		- fix(tests): tolerate transient Firefox ICE disconnect in waitForIceConnected
+		- fix(subtitles): address review comments
+		- fix(subtitles): resolve on-stage speaker name from the store
+		- fix(subtitles): display source-language subtitles on stage
+		- fix(subtitles): keep CC button title in sync with subtitles state
+		- fix(subtitles): toggle subtitles directly when translation is disabled
+		- fix(subtitles): open recording dialog via navigation on native for async transcription (#17510)
+		- Fixes connectivity tests (#17509)
+		- fix(mobile) clamp computed avatar sizes to positive values
+		- fix(polls): call useKeyboardVisible unconditionally
+		- fix(ui): drop stale createRoot when its container is replaced
+		- fix(ui): guard createRoot/isVisible against missing DOM containers
+		- fix(time-timer): anchor elapsed to scheduled start, not join time
+		- Cleans some rayo headers.
+
+	- Translation updates:
+		- Add translations to Portuguese (#17642)
+		- Add missing Russian (ru) translations for mobile (#17645)
+		- update German translation
+		- Update Dutch translations
+		- update German translation (#17534)
+		- update German translation (#17478)
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(JitsiConference): add batch presence setter
+		- feat(audio-translation): bridge + component signals for translation indicators (#3066)
+		- feat(RTC): demux forwarded media by bridge-stamped mid under SSRC rewriting (#3053)
+		- feat(RTC): recover wedged remote audio sources under SSRC rewriting (#3051)
+		- feat(translation) Support realtime translations in conferences (#3056)
+
+	- Fixes:
+		- correct 'Unkown' to 'Unknown' typo in ELECTRON_DESKTOP_PICKER_ERROR message
+		- fix(RTCStats): buffer stats entries emitted before the trace connects (#3074)
+		- fix(xmpp): Detects room does not exist error.
+		- fix(xmpp): Fixes passing xmpp options.
+		- fix(RTC): Gate the Firefox audio-active workaround on a browser capability. (#3068)
+		- fix(xmpp): validate source ownership in SourceInfo presence (#3063)
+		- fix(RTC): repair wedged-audio recovery track re-add and fold detection into StatsCollector (#3062)
+		- fix(rtc): stop Firefox sending over the suspended JVB connection during P2P (#3060)
+		- fix(RTC): Drop malformed EndpointMessage frames at the bridge channel boundary.
+		- fix(RTC): Fill missing video sub-constraints from defaults in getConstraints. (#3049)
+		- fix(breakout): route a not-allowed reconnect back to the main room
+
+- [jicofo 1.0-1189](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_11146)
+	- New features:
+		- add audio-translation feature (#1293)
+		- signal per-endpoint diarize to the bridge via Colibri2 (#1291)
+		- Live audio translation support (#1286)
+
+	- Fixes:
+		- ensure to leave chatRoom on failure (#1290)
+
+- [jitsi-videobridge 2.3-307-g4bb0aead1](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_11146)
+	- New features:
+		- notify clients when synthetic sources start/stop sending (#2432)
+		- set per-endpoint diarize on the transcriber start event (#2431)
+		- Export sender-reported audio level and VAD in mediajson media events (#2430)
+		- Exchange InfoEvent with the transcriber on connect (#2423)
+
+	- Fixes:
+		- colibri-ws after Jetty update (#2426)
+		- Pin Jackson via jackson-bom; align to a single version (#2424)
+
 ##  2.0.11031 (2026-06-08)
 - [jitsi-meet 1.0.9268](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_11031)
 	- New features:
