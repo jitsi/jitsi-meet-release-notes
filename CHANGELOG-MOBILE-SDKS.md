@@ -4,35 +4,7 @@
 
 ## Changes
 
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-13.1.0...mobile-sdk-13.1.1)
-
-### Common
-
-- N/A
-
-### Android
-
-- Add instantiateReactNative and destroyReactNative APIs, mirroring iOS.
-- Honor LIBRE_BUILD when excluding non-free autolinked modules.
-
-### iOS
-
-- N/A
-
-### React Native
-
-- Drop reference to removed NAT64AddrInfoModule.
-- Fix android/src gitignore negations so packaging works correctly.
-
-### Flutter
-
-- N/A
-
-# [13.1.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.1.0) (2026-07-27)
-
-## Changes
-
-[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-13.0.0...mobile-sdk-13.1.0)
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-13.0.0...mobile-sdk-13.1.1)
 
 ### Common
 
@@ -41,7 +13,8 @@
 
 ### Android
 
-- N/A
+- Add instantiateReactNative and destroyReactNative APIs, mirroring iOS.
+- Honor LIBRE_BUILD when excluding non-free autolinked modules.
 
 ### iOS
 
@@ -50,7 +23,8 @@
 
 ### React Native
 
-- N/A
+- Drop reference to removed NAT64AddrInfoModule.
+- Fix android/src gitignore negations so packaging works correctly.
 
 ### Flutter
 
