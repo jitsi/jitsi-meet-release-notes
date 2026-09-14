@@ -2,6 +2,135 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.11248 (2026-09-14)
+- [jitsi-meet 1.0.9442](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_11248)
+	- New features:
+		- feat(config): Document testing.disableAV1DecodeForFF.
+		- feat(tests): add a standalone tests/package.json for the e2e suite (#17800)
+		- feat(subtitles): Allow picking a translation language with async transcription (#17782)
+		- feat(chat): apply message moderation, editing and retraction on the server (#17763)
+		- feat(client-requirements): notify the user when the client needs an update. (#17730)
+		- feat(recording): redesign the record & transcribe dialog (#17746)
+		- feat(chat): add support for moderator message deletion (XEP-0425) (#17610)
+		- feat(chat): add support for message retraction in group and private chat (#17554)
+		- feat(chat): add message editing for group and private chat (#17451)
+		- feat(chat): add message search (#17644)
+		- iframe document pip on tab switch  (#17587)
+		- document pip (#17707)
+		- feat(multi-screen): in-app triggers for the second screen (#17666)
+		- Request an in-place ICE restart when the network changes (#17720)
+		- feat(android): Add CHANGE_NETWORK_STATE, so WebRTC can hold cellular open (#17724)
+		- Add enableIceRestart config option (#17700)
+		- feat(time-timer): React Native port of the meeting-pace timer (#17690)
+		- feat(audio-translation): ring and listener count for speakers whose translation is still playing (#17683)
+		- feat(breakout-rooms): add isHidden field to getRoomsInfo response (#17692)
+		- feat(android): add instantiateReactNative and destroyReactNative APIs (#17680)
+		- feat(rayo): limit transcription dials to one per room per 10 seconds
+		- feat(multi-screen): shared video as a second-screen source (#17615)
+
+	- Fixes:
+		- fix(tests): resolve fileSharing.spec's upload path relative to itself, not the CWD
+		- fix(tests): detect teardown crashes via suite completion, not log text
+		- fix(prosody): room claim patterns, metrics and tests (#17803)
+		- fix(prosody): Restore the features of a session when owner is revoked (#17802)
+		- fix(notifications): keep a notification that is re-added while unmounting
+		- fix(av-moderation): whitelist moderators whose affiliation was set before joining
+		- fix(authentication): warn when an external login is abandoned on mobile
+		- fix(lang) Update Catalan translation (400 strings) (#17793)
+		- fix(prosody): propagate room metadata to visitor nodes, forward visitor-initiated recording metadata to main room
+		- fix(recording): recompute the default recording service if unset after mount
+		- fix(tests): fix recordingDialogConfig and recordingTranscription test suites
+		- fix(chat): prefer the tracked participant's display name over the message's visitor flag (#17777)
+		- fix(virtual-background): vendor the TF.js selfie segmentation model
+		- fix(prosody): scope refreshed token claims to the joined conference (#17769)
+		- fix(conference): Remove the window hook for the legacy Electron picker.
+		- fix(time-restricted): Time limited module and updates to use the UI timer (#17494)
+		- fix(whiteboard): prevent reopening closed whiteboard on unrelated metadata updates
+		- fix(lang) update Spanish translation
+		- fix(av-moderation): send reject before mute request (#17755)
+		- fix(tests): Wrong selector.
+		- fix(base/popover): check contextMenuRef in outside click handler (#15559)
+		- fix(base/responsive-ui): add hysteresis to aspect ratio to prevent layout thrashing (#17741)
+		- fix(prosody): do not rate limit s2s sessions (#17739)
+		- fix(base/tracks) prevent back camera preview from being mirrored (#17626)
+		- fix(lang): fix translation errors reported by eloqnt lint
+		- fix(breakout-rooms): reply with an error for an invalid breakout room (#17740)
+		- fix(external-api): add useRawKeys param for participant properties
+		- fix(recording): decouple transcription from live stream and local recording visibility
+		- fix(auth-token): guard c2s-session-updated cross-host handler against foreign VirtualHosts
+		- fix(chat): bump react-native-pager-view to 8.0.3
+		- fix(lang): improve German translation quality in main-de.json
+		- fix(breakout-rooms): don't clear jitsi_breakout_main_jid on smacks resume
+		- fix(deep-linking): hide join in app on iOS without a custom scheme
+		- fix(breakout-rooms): Add admin user to prosody configuration example (#17695)
+		- fix(android): honor LIBRE_BUILD in the autolinking manifest
+		- fix(tests): switch to main frame before navigating away in hangup() (#17681)
+		- fix(i18n): show days in duration formatter after 24h
+
+	- Translation updates:
+		- Update Latvian language translation (#17791)
+		- Dutch language file updated.
+		- Add missing Hindi translations
+		- Update Dutch language file
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(qualitycontrol): Add testing.disableAV1DecodeForFF.
+		- feat(xmpp): surface a room time limit join error (#3097)
+		- feat(xmpp): handle the client-requirements IQ from jicofo. (#3091)
+		- feat(chat): add support for XEP-0425 moderator message deletion (#3065)
+		- feat(chat): add support for XEP-0424 message retraction (#3059)
+		- feat(JitsiConference): Add useRawKeys param (#3092)
+		- Expose IceRestartReason on JitsiMeetJS.constants (#3090)
+		- Add in-place ICE restart of the JVB session (#3083)
+		- feat(chat): add explicit messageId support for group messages (#3078)
+
+	- Fixes:
+		- Tag the ICE restart answer on React Native, where lastElementChild does not exist. (#3105)
+		- fix(e2ee): pass empty frames through (#3104)
+		- validate the sender before trusting the visitor display-name extension (#3101)
+		- Include bridgeSessionId in the session-initiate receive log (#3100)
+		- fix(ScreenObtainer): remove the legacy Electron desktop picker path (#3096)
+		- fix(qualitycontrol): Use the p2p codec order on the p2p session.
+		- fix(connectivity): Stop reading a restarted decoder as a frozen track.
+		- fix(sdp) keep low profile codecs that omit the profile parameter
+		- fix(RTC): avoid invalid maxBitrate=0 on full-SVC encodings
+		- fix(RTC): stop the remote audio wedge watchdog firing when nothing is being sent (#3087)
+		- fix(sdp): Validate signaled ssrc/semantics and drop RegExp source removal. (#3084)
+		- fix(xmpp): strip XML-invalid characters from chat messages
+		- fix(xmpp): only process etherpad node from focus
+
+- [jicofo 1.0-1205](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_11248)
+	- New features:
+		- Signal the requested text-translation languages to the bridge (#1312)
+		- Prefix bridge session ID with the bridge name (#1311)
+		- Check that endpoints advertise required capabilities. (#1303)
+		- add jibri_no_instance_failures metric (#1306)
+		- Support in-place ICE restart (#1299)
+		- Limit the rate at which a conference adds endpoints to a bridge. (#1298)
+
+	- Fixes:
+		- reject transcriber dial-out when room is configured for async transcription
+		- Tag the endpoint's ICE restart answer with the generation (#1313)
+		- increment jibri_no_instance_failures on AllBusy too (#1310)
+		- Fix ktlint violation in JsonMessage.kt (#1309)
+		- Redact HTTP header and URL param values in room metadata logs (#1308)
+		- Handle a visitor node restarting. (#1307)
+		- Do not relay a transport the bridge did not restart (#1302)
+		- retry brewery MUC join after a transient failure on reconnect (#1297)
+
+- [jitsi-videobridge 2.3-318-gbf271b11f](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_11248)
+	- New features:
+		- For screen sharing, prefer full resolution over full frame rate (#2444)
+		- expose unmatched transport-cc feedback in statistics (#2440)
+		- Support in-place ICE restart with a new Agent (#2438)
+
+	- Fixes:
+		- apply the source-wide limit to unattributed keyframe requests (#2442)
+		- Screenshare bandwidth allocation: starvation, oversend gating, burst-proof measurement (#2443)
+		- Do not replace the DTLS role when the same role is re-applied (#2445)
+
 ##  2.0.11146 (2026-08-03)
 - [jitsi-meet 1.0.9365](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_11146)
 	- New features:
