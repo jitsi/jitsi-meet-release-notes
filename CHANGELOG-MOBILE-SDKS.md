@@ -1,5 +1,40 @@
 # Mobile SDKs Changelog
 
+# [13.2.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.2.0) (2026-09-25)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-13.1.1...mobile-sdk-13.2.0)
+
+### Common
+
+- Add audio-translation.enabled feature flag and realtime audio translation UI.
+- Stop readyToClose re-trigger loop.
+- Chat message search, message retraction and private chat restriction.
+- Meeting-pace timer.
+- Update @react-navigation to 7, react-native-tab-view to 4.3.2, react-native-gesture-handler to 3.2.1, react-native-pager-view to 9.0.4, react-native-screens to 4.23.0, react-native-safe-area-context to 5.9.1.
+- Update react-native-worklets-core.
+- Fixes around reactions, authentication, back camera mirroring and layout on foldables and tablets.
+
+### Android
+
+- Add CHANGE_NETWORK_STATE permission so WebRTC can keep cellular open.
+- Fix out-of-memory crash caused by reaction animations.
+- Fix text sizing and keep the call when moving to an external display (DeX).
+
+### iOS
+
+- N/A
+
+### React Native
+
+- Add iOS screen sharing support.
+- Add reselect as a peer dependency.
+
+### Flutter
+
+- N/A
+
 # [13.1.1](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.1.1) (2026-08-06)
 
 ## Changes
