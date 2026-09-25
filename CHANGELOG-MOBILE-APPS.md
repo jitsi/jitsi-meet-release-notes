@@ -1,6 +1,35 @@
 # Mobile apps Changelog
 
 
+# [26.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.3.0) (2026-09-28)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-26.2.0...mobile-app-26.3.0)
+
+### Common
+
+- Realtime audio translation with language selector, original-audio ducking and participant indicators.
+- Chat message search.
+- Show retracted and moderator-deleted chat messages.
+- Private chat restriction for moderators.
+- Pick a translation language for subtitles with async transcription.
+- Meeting-pace timer.
+- Notify the user when the app needs an update.
+- @react-navigation, gesture-handler and pager-view updates.
+- Fixes around reactions, authentication, back camera mirroring and layout on foldables and tablets.
+- Translation updates.
+
+### Android
+
+- Fix out-of-memory crash caused by reaction animations.
+- Fix text sizing and keep the call when moving to an external display (DeX).
+- Allow WebRTC to keep cellular data open on network changes.
+
+### iOS
+
+- N/A
+
 # [26.2.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.2.0) (2026-07-01)
 
 ## Changes
