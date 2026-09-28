@@ -15,8 +15,6 @@
 - Private chat restriction for moderators.
 - Pick a translation language for subtitles with async transcription.
 - Meeting-pace timer.
-- Notify the user when the app needs an update.
-- @react-navigation, gesture-handler and pager-view updates.
 - Fixes around reactions, authentication, back camera mirroring and layout on foldables and tablets.
 - Translation updates.
 
@@ -24,7 +22,6 @@
 
 - Fix out-of-memory crash caused by reaction animations.
 - Fix text sizing and keep the call when moving to an external display (DeX).
-- Allow WebRTC to keep cellular data open on network changes.
 
 ### iOS
 
