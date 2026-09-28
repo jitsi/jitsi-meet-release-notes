@@ -9,14 +9,7 @@
 
 ### Common
 
-- Realtime audio translation with language selector, original-audio ducking and participant indicators.
-- Chat message search.
-- Show retracted and moderator-deleted chat messages.
-- Private chat restriction for moderators.
-- Pick a translation language for subtitles with async transcription.
-- Meeting-pace timer.
-- Fixes around reactions, authentication, back camera mirroring and layout on foldables and tablets.
-- Translation updates.
+- UI updates and fixes.
 
 ### Android
 
