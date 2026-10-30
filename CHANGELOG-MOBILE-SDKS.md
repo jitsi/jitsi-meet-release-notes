@@ -1,5 +1,35 @@
 # Mobile SDKs Changelog
 
+# [13.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.3.0) (2026-10-30)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-13.2.0...mobile-sdk-13.3.0)
+
+### Common
+
+- Shared video fixes: error state resets on input change, allowed domains enforced.
+- Chat: deleted and moderated messages are cleared and excluded, the new-messages pill is dismissed on scroll, and group chat and poll creation follow room permissions.
+- Polls: handle answers that exceed the poll options.
+- Custom panel(AI Assist) support on web and native.
+- App selected language now persists across launches.
+- Authentication edge-case fixes.
+- Conference join no longer hangs when the SDK is launched in the background.
+- Recent list shows the year correctly.
+- JWT signatures are no longer written to logs.
+- Native notifications settings toggle removed.
+- react-native-webrtc and JitsiWebRTC updated to 155.0.1.
+- Translation updates.
+
+### Android
+
+- Keep autolinking manifest outside the build directory.
+- R8 rules updated for WebRTC 155.
+
+### iOS
+
+- N/A
+
 # [13.2.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.2.0) (2026-09-25)
 
 ## Changes
