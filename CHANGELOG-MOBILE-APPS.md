@@ -9,7 +9,6 @@
 
 ### Common
 
-- Moderators can restrict video sharing to participants with permission.
 - Shared video fixes.
 - Translation indicator moved to the conference label.
 - Chat: deleted and moderated messages are cleared and excluded, the new-messages pill is dismissed on scroll, and group chat and poll creation follow room permissions.
