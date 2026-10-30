@@ -1,6 +1,31 @@
 # Mobile apps Changelog
 
 
+# [26.4.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.4.0) (2026-10-16)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-app-26.3.0...mobile-app-26.4.0)
+
+### Common
+
+- Moderators can restrict video sharing to participants with permission.
+- Shared video fixes.
+- Translation indicator moved to the conference label.
+- Chat: deleted and moderated messages are cleared and excluded, the new-messages pill is dismissed on scroll, and group chat and poll creation follow room permissions.
+- Polls: handle answers that exceed the poll options.
+- App selected language now persists across launches.
+- Authentication edge-case fixes.
+- Translation updates.
+
+### Android
+
+- N/A
+
+### iOS
+
+- N/A
+
 # [26.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.3.0) (2026-09-28)
 
 ## Changes
