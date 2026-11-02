@@ -30,6 +30,14 @@
 
 - N/A
 
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [13.2.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.2.0) (2026-09-25)
 
 ## Changes
