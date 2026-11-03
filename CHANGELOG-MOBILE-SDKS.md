@@ -28,7 +28,7 @@
 
 ### iOS
 
-- N/A
+- Reverted Center Stage.
 
 ### React Native
 
