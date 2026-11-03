@@ -23,7 +23,7 @@
 
 ### iOS
 
-- N/A
+- Reverted Center Stage.
 
 # [26.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-app-26.3.0) (2026-09-28)
 
