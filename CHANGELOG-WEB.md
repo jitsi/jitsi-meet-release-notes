@@ -2,6 +2,386 @@
 
 Full changelogs are available in each project's release page: click on one of the releases below, click on Assets and there's the CHANGELOG. 
 
+##  2.0.11509 (2026-11-16)
+- [jitsi-meet 1.0.9644](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_11509)
+	- New features:
+		- feat(media-connectivity): notify media connectivity problems
+		- feat(prosody): check access in auth ban also by the sub claim of the token (#18292)
+		- feat(polls): let the creator or a moderator close a poll (#17994)
+		- feat(prosody): take the room from the stanza in limit messages and display name filter (#18234)
+		- feat(config): tackle disableInitialGUM when prejoin is disabled
+		- feat(participants-pane): add the live visitors list to native (#18156)
+		- feat(participants-pane): add screen-share moderation to the native moderator menu (#18155)
+		- feat(recording): Show a specific error when the request is invalid (#18166)
+		- feat(recording): make live-streaming dialog service-agnostic (#8955) (#17870)
+		- feat(polls): add single answer polls (#17993)
+		- feat(breakout-rooms): let moderators restrict joining breakout rooms to the rooms they assign (#17985)
+		- feat(prosody): reject reserved MUC resources in muc_resource_validate (#18161)
+		- feat(audio-translation): make the offered target languages configurable (#18142)
+		- feat(ci): show the PR torture check on the PR as soon as a run starts
+		- feat(settings): add an Experimental tab with a Picture-in-Picture switch
+		- feat(pip): honour the user's choice for browser Picture-in-Picture
+		- feat(settings): remember config values the user chose in the browser
+		- feat(ci): add the CLA check
+		- feat(prosody): use sip-outbound-call for jibri sip gateway requests
+		- feat(ci): run the PR tests on the self-hosted runner (#18083)
+		- feat(settings): remove toggle from native notifications
+		- feat(flags): remove unused flag
+		- feat(voice-agents): voice agents in meetings, provisioned through prosody (#17869)
+		- feat(welcome): set menu border width to 0
+		- feat(shared-video): let moderators restrict video sharing to participants with permission (#17981)
+		- feat(e2ee): keep E2EE and server-side transcription/translation exclusive
+		- feat(time-restricted): Add an option to unblock room names after a period
+		- feat(virtual-background): report V2 startup config and init failures to analytics
+		- feat(live-translation): move the translation indicator to the conference label
+		- feat(system-wide-user-notification): show a notification configured in config.js (#17946)
+		- feat(custom-panel): implement web and native
+		- feat(prosody): block clients from setting recordingParams metadata (#17907)
+		- feat(room-metadata): let other modules add blocked metadata keys
+		- feat(base/i18n): make app language persist
+		- feat(chat): align message search with chat input
+		- feat(conference): notify moderators when settings could not be loaded
+		- feat(dynamic-branding): hold the first paint until the branding is applied
+		- feat(dynamic-branding): expose when the branded look is still being applied
+		- feat(preload): bound the config.js and branding requests with a timeout
+		- feat(preload): fetch config.js and dynamic branding before the app bundle
+		- feat(dynamic-branding): reuse branding data and icons fetched by the preload script
+		- feat(base/config): reuse config.js when the preload script already fetched it
+		- feat(preload): add the contract for resources fetched before the app bundle
+		- feat(react-native-sdk): add iOS screen sharing support
+		- feat(tests): port malleus, the load tester, from jitsi-meet-torture (#17846)
+		- Hide only the video of a participant from the recorder (#17816)
+		- feat(chat): add a private chat restriction and keep client messages on MUC routes (#17838)
+		- feat(dynamic-branding): accept inline SVG markup as customIcons values
+
+	- Fixes:
+		- fix(tracks): remove only the app's own listeners when a track is removed
+		- fix(prosody): drop stanzas from visitor clients to the main prosody (#18331)
+		- fix(prosody): strip client-supplied display-name from a groupchat message before it is delivered (#18333)
+		- fix(tracks): classify gUM failures by error name and requested media
+		- fix(i18n): do not render translations as HTML
+		- fix(polls): move the End poll button to its own line (#18318)
+		- fix(sounds): do not play sounds on the recorder, except reactions
+		- fix(prosody): refuse s2s joins on the main prosody (#18315)
+		- fix(prosody): match the focus occupant by its exact resource
+		- fix(settings): add accessibility label to native server URL input
+		- fix(authentication): add accessibility labels to native login inputs
+		- fix(calendar-sync): add accessibility role and label to native permission button
+		- fix(prejoin): round the outer corners of the join options button
+		- fix(prejoin): keep Enter working on the join and options buttons
+		- fix(prejoin): make the join options arrow a sibling of the join button
+		- fix(large-video): keep the stage avatar in step with the name label for screen shares
+		- fix(avatar): resolve the announced name only for avatars that announce it
+		- fix(avatar): do not announce the default local name
+		- fix(large-video): keep the stage avatar decorative while the name badge is shown
+		- fix(avatar): announce the name the rest of the UI shows for a participant
+		- fix(avatar): announce the name on the large video and second screen avatars
+		- fix(external-api): make iframe requests return the documented result (#18283)
+		- fix(external-api): reject on failure invite and captureLargeVideoScreenshot  (#18296)
+		- fix(tests): wait for the file's chat message after the upload
+		- fix(whiteboard): detect new collaboration session when roomKey changes in conference metadata
+		- fix(virtual-background): preserve aspect ratio for custom background images (#18200)
+		- fix(shared-video): support YouTube Shorts URLs in shared video (#18277)
+		- fix(external-api): restore toggleShareAudio and fix resizeLargeVideo and getParticipantsInfo (#18286)
+		- fix(participants-pane): give drawer-mode context menus an accessible name
+		- fix(participants-pane): name the lobby participant drawer
+		- fix(gifs): name the GIPHY drawer
+		- fix(toolbox): name the overflow menu drawer
+		- fix(context-menu): name the drawer the same way as the inline menu
+		- fix(drawer): let callers name the dialog with headingLabel
+		- fix(drawer): reference the heading by its bare id in aria-labelledby
+		- fix(visitors): bind a generated jid node for a promoted visitor (#18298)
+		- fix(tests): look up the file message before the file is removed
+		- fix(ci): fail the PR torture check when the checks after the tests fail
+		- fix(chat): notify the embedder when the side panel opens or closes on any tab (#18287)
+		- fix(polls): avoid in-place state mutation in RECEIVE_ANSWER
+		- fix(tests): wait longer for the screenshare tile
+		- fix(file-sharing): preserve file deletion state in chat (#18269)
+		- fix(settings): switch the dialog layout on the viewport, not the video space
+		- fix(settings): consume Space and Enter on the mobile Settings section list
+		- fix(settings): consume the arrow keys handled by the Settings tab list
+		- fix(settings): keep only the tabs inside the Settings dialog tab list
+		- fix(breakout-rooms): avoid marking synchronized messages as edited (#18197)
+		- fix(calendar-sync): clear the event list when the calendar has no events
+		- fix(calendar-sync): preserve default state on persistence rehydration (#18263)
+		- fix(welcome): honor disabled room name generation after the field is cleared (#18251)
+		- fix(display-name): make the local display name editable from the keyboard (#18159)
+		- fix(base/ui): resolve aria-labelledby ID mismatch in DialogWithTabs
+		- fix(invite): add accessibility label to native invite search input
+		- fix(av-moderation): remove occupants from the whitelists when they leave (#18162)
+		- fix(polls): take the room and voter of a visitor vote from its sender (#18250)
+		- fix(settings): add accessibility labels to native profile inputs (#18274)
+		- fix(chat): add accessibility label to native chat search input
+		- fix(chat/web): make chat message actions usable from the keyboard (#18121)
+		- fix(participants-pane): add accessibility label to native participant search input
+		- fix(polls): add accessibility labels to native poll switches
+		- fix(native): add accessibility labels to prejoin and lobby inputs
+		- fix(recording): add accessibility roles and states to stream key picker
+		- fix(avatar): apply the same announcement rule to native avatars
+		- fix(avatar): announce the participant's name on the pre-join avatar
+		- fix(recording): preselect a storage service that is actually offered (#17877)
+		- fix(visitors): deduplicate promotion requests by visitor JID (#18221)
+		- fix(i18n): map region language codes to their day.js locales (#18124)
+		- fix(prejoin): give the join options dialog an accessible name
+		- fix(prejoin): name the join options arrow after what it does
+		- fix(prejoin): expose the join options arrow's open state
+		- fix(prejoin): take the disabled join button out of the tab order
+		- fix(filmstrip): don't mutate participantsVolume on participant left
+		- fix(google-api): wait for the Google Identity script and reject when loading fails (#18179)
+		- fix(google-api): ignore the second token result and handle popup errors
+		- fix(google-api): don't hang when the Google sign-in popup fails
+		- fix(settings): complete the mobile DOM-order comment
+		- fix(settings): move the desktop Close button to the end of the focus order
+		- fix(tests): skip the camera mirror iframe spec when the iframe API is disabled
+		- fix(settings): stop the tab list container from taking keyboard focus
+		- fix(tests): wait for the knocking notification to settle before admit or reject
+		- fix(prosody): drop the <conference> room rewrite from the domain mapper
+		- fix(prosody): match roomless IQ replies to their request in the domain mapper
+		- fix(conference): keep the local mic until its replacement is in use (#18172)
+		- fix(keyboard-shortcuts): prevent crash when opening settings
+		- fix(base/ui): fall back to labelKey for native Button accessibility label
+		- fix(visitors): reset demote actor state on conference leave
+		- fix(native): add accessibility labels to filmstrip indicators
+		- fix(ui): add accessibility label support to switch component
+		- fix(dialog): add accessibility label support to native input dialog
+		- fix(visitors): require a live room for visitor auto promotion
+		- fix(shared-video): handle only commands for the shared video participant (#18139)
+		- fix(external-api): handle the toggleNoiseSuppression command (#18110)
+		- fix(av-moderation): block native screen share when moderation is on
+		- fix(native): add accessibility labels to SpeakerStatsItem and TimeElapsed
+		- fix(native): add accessibility labels to language selector items
+		- fix(conference): add accessibility roles and labels to indicator buttons
+		- fix(native): add accessibility role and state to participant list items
+		- fix(native): add accessibility label to volume slider
+		- fix(prosody): limit room claim patterns to one ".*" (#18168)
+		- fix(settings): hide the chat permission settings on native like on web (#18013)
+		- fix(polls-history): correct poll ID extraction and persist deletions (#18145)
+		- fix(accessibility): add static lang attribute to root html element (#18063)
+		- fix(settings): save the reaction sounds and follow me toggles like they show (#18152)
+		- fix(keyboard-shortcuts): clean up stale keyboard shortcut help entries (#18053)
+		- fix(debian): default tenant variables in nginx template
+		- fix(a11y): make web controls keyboard accessible (#18112)
+		- fix(calendar-sync): don't prompt Google sign-in until the user asks (#18098)
+		- getCurrentDevices call from external api (#17410)
+		- fix(prosody): use only the system key server after set_asap_key_server (#18160)
+		- fix(prosody): check refreshed token claims against every joined room
+		- fix(popover): lock only the focus, not pointer events and scrolling
+		- fix(base/ui): add aria-invalid to Select component
+		- fix(i18n): keep config.defaultLanguage as the last fallback on web (#18146)
+		- fix(conference): add the recorder tracks which arrive before presence
+		- fix(tests): join the pipSetting spec as moderator
+		- fix(prosody): resume the connection after a token check that waits on resume
+		- fix(a11y): move focus into popover menus and back to their trigger (#17979)
+		- fix(pip): do not clear an unsupported MediaSession action on cleanup
+		- fix(pip): close Picture-in-Picture when it should no longer be shown
+		- fix(prosody): clear the token of anonymous sessions that bind a resource (#18122)
+		- fix(carmode): add accessibility label and state to microphone button (#18095)
+		- fix(audio-translation): add accessibility role and selected state to language items (#18104)
+		- fix(breakout-rooms): add accessibility role and expanded state to breakout room accordion (#18107)
+		- fix(native): add accessibility labels to chat send and reaction gif buttons (#18091)
+		- fix(ci): post a failed PR torture check when the tests did not run
+		- fix(native): fix year not being shown in recent-list, but "gggg" instead (#18080)
+		- fix(native): add accessibility labels, roles and states to invite dialog (#18076)
+		- fix(native): add accessibility labels to poll results and create options (#18078)
+		- fix(prosody): replay voice-agent events of rooms that are gone
+		- fix(prosody): voice-agent token scoping for breakout rooms, tenants and streams
+		- fix(prosody): scope voice-agent tokens to their room and tenant claims
+		- fix(shared-video): reset native error on input change and enforce allowed domains
+		- fix(shared-video): reset error state on input change
+		- fix(native): add accessibility labels and roles to breakout room context menu (#18061)
+		- fix(native): add accessibility roles, labels and states to settings and language selectors (#18048)
+		- fix(config): Fix missing comma.
+		- fix(authentication): improve edge case handling
+		- fix(native): add accessibility labels to more moderation actions and context menus (#18043)
+		- fix(native): add accessibility labels to header navigation and chat recipient buttons (#18040)
+		- fix(lang) Update Catalan translation (16 strings) (#18055)
+		- fix(chat): restrict group chat and poll creation by the room permissions too
+		- fix(polls): handle answers exceeding poll options (#18026)
+		- fix(lang): Update Spanish translation (#18027)
+		- fix(native): add accessibility labels to search navigation and clear input buttons (#18038)
+		- fix(analytics): send unpinned event with id when a pinned participant leaves (#18035)
+		- fix(ios): backport RN nativeProps mutex to fix folly::dynamic crash
+		- fix(android): keep jni_zero classes for webrtc 155 in R8
+		- fix(chat): dismiss new-messages pill on scroll
+		- fix(chat): follow-ups for deleted and moderated messages (#18007)
+		- fix(native): add accessibility labels to notification dismiss and poll close buttons (#18021)
+		- fix(prosody): apply max_number_outgoing_calls to transcription dials (#18011)
+		- fix(tests): join muteSelf iframe spec as moderator
+		- fix(android): keep autolinking manifest outside build directory
+		- fix(chat): clear and exclude deleted and moderated messages
+		- fix(api): mute instead of toggle when muteRemoteParticipant targets the local participant
+		- fix(premeeting): match join options hover corners to button radius
+		- fix(participants-pane): add accessible labels to participant state indicators (#17973)
+		- fix(tests): replace silent return exits with explicit Mocha skip calls (#17989)
+		- fix(tests): load iframe external API from the room name suffix release
+		- fix(icons): keep branded svg icons stable across re-renders
+		- fix(ui): translate accessibility label in tertiary buttons
+		- fix(lobby): allow toggleLobby without target state, add isLobbyEnabled and lobbyModeChanged event (#17784) (#17860)
+		- fix(tests): replace arbitrary pauses in activeSpeaker spec with condition polling (#17925)
+		- fix(tests): eliminate silent pass anti-patterns and fix test inconsistencies (#17902)
+		- fix(tests): add missing assertion in polls edit step
+		- fix(prosody): set the recording session_id from the client's jibri iq (#17975)
+		- fix(API): remove unconditional endConference dispatch in end-conference command
+		- fix(speaker-stats): translate aria-label for timeline segments and markers
+		- fix(prosody): drop stored corrections when a message is moderated or retracted (#17965)
+		- fix(audio-settings): dispose audio tracks on picker close to prevent Bluetooth profile leak (#17667)
+		- fix(virtual-background): trip the inference failure breaker for every effect.
+		- fix(virtual-background): exit insertable-streams loop when the writer closes
+		- fix(tracks): show warning when mic stops sending data in conference
+		- fix(prosody): replace lua-inspect with util.serialization (#17928)
+		- fix(live-translation): drive the meeting label from metadata.
+		- fix(tests): rejoin a participant in a fresh window
+		- fix(tests): retry a lost prejoin Join click from inside the page
+		- fix(live-translation): drop the enableSendingChangeEvents flag.
+		- fix(chat): don't show editing notice on messages without an id
+		- fix(logging): strip JWT signatures before logging (#17900)
+		- fix(debian): restrict the internal MUC to the auth domain (#17901)
+		- fix(tests): attach the BiDi trace of each browser to a failed test
+		- fix(tests): recover from an iframe API frame that never answers
+		- fix(tests): verify the prejoin Join click reached the app before waiting to join
+		- fix(chat): stop cutting web chat messages at 500 characters
+		- fix(mobile/navigation): fix conference join hang when SDK launched in background (#17180)
+		- fix(prosody-plugins): document HTTP endpoints, require system key server
+		- fix(prosody): do not write JWT tokens to the logs
+		- fix(i18n): translate hardcoded accessibility labels
+		- fix(mobile/external-api): stop readyToClose re-trigger loop
+		- fix(toolbox): translate accessibility label in HangupMenuButton (#17851)
+		- fix(chat): add missing translation keys for message menu (#17864)
+		- fix(build): raise the webpack heap limit to 10 GB
+		- fix(lang): add missing translation keys and fix wrong key paths
+		- fix(preload): fail quietly on synchronous errors and document the no-polyfill rule
+		- fix(android): correct text sizing and keep the call when moving to an external display (DeX) (#17844)
+		- fix(lang) update Catalan translation
+		- fix(authentication): keep the new token when the refresh fails
+		- fix(prosody): keep the token claims when a session resumes on an anonymous host
+		- fix(config): allow overriding prejoinConfig.showHangUp
+		- fix(tests): verify hangup() actually reaches /base.html before returning
+		- fix(tests): scope file-sharing action-button selectors to the panel
+		- fix(conference): do not commit a local track the conference rejected (#17776)
+		- fix(dynamic-branding): load custom icons in parallel with a per-icon timeout
+		- fix(dynamic-branding): apply branding data once, deliver icons separately
+		- fix(prejoin): make join-options arrow hover color themeable
+		- fix(audio-translation): hide the UI when the component is not deployed (#17834)
+		- fix(tests): re-verify iframe context after switchToIFrame() before trusting it
+		- fix(tests): account for config.js localRecording.disable in recordingDialogConfig matrix
+		- fix(large-video): apply alpha to configured background
+		- fix(reactions): prevent Android OOM from repeated animated node creation
+		- fix(lang): Update Spanish translation (#17824)
+		- fix(tests): give the persisted Ctrl+Alt shortcut check a longer timeout
+		- fix(tests): survive the browser dropping a frame context or element handle
+		- fix(tests): wait for interactability before clicking participant more-options button
+		- fix(keyboard-shortcuts): add Ctrl+Alt reaction aliases for Firefox
+
+	- Translation updates:
+		- Update Catalan translation
+		- Update Azerbaijani localization
+		- Update Azerbaijani translations
+		- Update Catalan translation
+		- Update Catalan translation
+		- Update Azerbaijani localization
+		- Create main-az.json for Azerbaijani (#18137)
+		- Dutch language file updated.
+		- Update Catalan translation
+		- Add missing Persian (Farsi) translations
+		- Dutch language file updated.
+		- Dutch language file updated.
+
+
+	lib-jitsi-meet
+	- New features:
+		- feat(connectivity): assess media connectivity during ICE establishment (#3152)
+		- feat(xmpp): expose the features that the server advertises (#3140)
+		- feat(polls): add closePoll and a POLL_CLOSED event (#3139)
+		- feat(TraceablePeerConnection): log ICE candidate errors, rtcstats 9.7.2 (#3163)
+		- feat(polls): add a single answer option to createPoll (#3138)
+		- feat(recording): Add a constant for the bad-request error. (#3162)
+		- feat(ci): add the CLA check
+		- feat(audio-control): per-service synthetic-audio subscriptions for voice agents
+		- Add a video-hidden-from-recorder identity flag (#3109)
+		- fall back to the JVB when p2p is not fit to carry the call
+		- feat(translation): expose whether audio translation is supported
+		- feat(e2ee): authenticate Olm curve25519 keys and bind them to SAS
+
+	- Fixes:
+		- fix(qualitycontrol): do not resend unchanged receiver constraints to the p2p peer
+		- fix(RTC): stop late gUM streams, fix permission cache and gDM errors
+		- fix(RTC): keep the effect output as the track in stopStream (#3173)
+		- fix(xmpp): preserve reservation errors during moderator authentication (#3166)
+		- fix(RTC): keep a local track with an active effect bound to its device (#3164)
+		- fix(RTC): keep remote track relays and mute state right across SSRC remaps.
+		- fix(RTC): avoid needless setSinkId calls and recover aborted ones.
+		- fix(SignalingLayer): parse source names whose language suffix contains a hyphen (#3159)
+		- fix(sdp): use media level msid for cached simulcast SSRCs when a=ssrc msid is missing
+		- fix(xmpp): disconnect on pagehide instead of unload
+		- fix(SendVideoController): keep bridge sender constraints on the JVB session
+		- fix(e2ee): enable and key the shared context in the worker
+		- fix(RTC): stop the stream effect in stopStream
+		- fix(sdp): add media-level a=msid to remote m-lines
+		- fix(qualitycontrol): hardcode dropping AV1 receive on Firefox 156
+		- fix(xmpp): redact token in keep-alive failure log (#3124)
+		- fix(RTC): derive scalability mode from browser support, not config.js
+		- stop the p2p fallback from leaving the JVB sender suspended (#3117)
+		- fix(xmpp): give the token refresh resume time to complete on slow links
+		- fix(xmpp): do not let a hung keep-alive request stall the WebSocket keep-alive loop
+		- reduce ICE candidate logging (#3112)
+		- fix(qualitycontrol): dispose the controller after each codec selection test
+
+- [jicofo 1.0-1233](https://github.com/jitsi/jicofo/releases/tag/stable%2Fjitsi-meet_11509)
+	- New features:
+		- feat(xmpp): Add an option to disable stream management, disabled by default (#1338)
+		- Add the CLA check.
+		- Run the PR tests on the self-hosted runner.
+		- feat(agent): voice-agent orchestration from room metadata (#1320)
+		- Allow SIP Jibri to use the Service XMPP connection (#1327)
+		- Pass the recording parameters of a room to Jibri (#1321)
+		- Rate limit jibri start requests and honor a bad-request response (#1316)
+
+	- Fixes:
+		- Use the conference's bridge when no bridge is available (#1342)
+		- Ignore ICE restart responses for a replaced allocation (#1345)
+		- Ignore stale transport-info and source-remove after leave or re-invite (#1344)
+		- Remove the colibri endpoint before an ICE-failed re-invite (#1343)
+		- Hold participantLock across the bridge update for session-accept (#1339)
+		- Reject rate-limited Jibri start requests with policy-violation (#1337)
+		- Do not refuse new participants when the conference's bridge is not operational (#1340)
+		- Ignore stale session-accept and source-add after leave or re-invite (#1336)
+		- Log expected, recoverable conditions below SEVERE. (#1329)
+		- Compare transcriber URLs by value (#1328)
+		- fix(colibri): redact connect header values in request and packet logs (#1331)
+		- Send error reply when a transcriber is already in the room (#1330)
+		- Handle conference_not_found from the bridge as out-of-sync state, not an error. (#1326)
+		- Decrement the conference count when joining the room fails (#1325)
+		- Keep a lone participant's bridge session while the conference has connects (#1323)
+
+- [jitsi-videobridge 2.3-358-gf8efaa72c](https://github.com/jitsi/jitsi-videobridge/releases/tag/stable%2Fjitsi-meet_11509)
+	- New features:
+		- Add the CLA check.
+		- Run the PR tests on the self-hosted runner.
+		- feat(colibri2): synthetic transport-less endpoints for injected (agent) audio (#2455)
+		- Write the ssrc-audio-level extension onto injected synthetic-source audio (#2454)
+		- Bound the keyframe request rate by the cost of a keyframe to the source (#2448)
+
+	- Fixes:
+		- Reconnect an exporter once for each lost connection.
+		- Receive SSRC filter follow-ups: synthetic sources, encodings, visibility (#2490)
+		- Keep the RTP numbering of injected audio continuous when its producer starts again.
+		- Keep audio sequence numbers contiguous across dropped packets. (#2487)
+		- Drop received RTP packets with an SSRC the endpoint did not signal (#2489)
+		- Expire conferences and relays that jicofo lost track of. (#2486)
+		- Do not forward endpoint messages from an endpoint with the transcriber ID. (#2485)
+		- fix(debian): drop the dh-systemd build dependency (#2484)
+		- Order sender constraint re-sends with constraint updates. (#2483)
+		- fix(colibri2): redact connect headers in the unsupported-request warning
+		- Keep sending a packet to other handlers when one handler's wants() throws (#2473)
+		- Limit the age of retransmitted packets, assign TCC numbers atomically (#2470)
+		- Forget the received SSRCs of removed sources (#2472)
+		- Handle AV1 dependency descriptors parsed with a stale structure (#2471)
+		- Drop audio packets that SSRC rewriting does not accept (#2469)
+		- Apply the heights of VP8 keyframes to a source's layers in place (#2458)
+		- Always answer colibri requests when a conference expires. (#2463)
+		- Fix race condition in Exporter ping/pong handling (#2446) (#2457)
+		- Do not accept SHA-1 DTLS fingerprints by default (#2459)
+
 ##  2.0.11248 (2026-09-14)
 - [jitsi-meet 1.0.9442](https://github.com/jitsi/jitsi-meet/releases/tag/stable%2Fjitsi-meet_11248)
 	- New features:
