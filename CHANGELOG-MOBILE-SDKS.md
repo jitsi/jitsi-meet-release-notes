@@ -1,5 +1,35 @@
 # Mobile SDKs Changelog
 
+# [13.3.3](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.3.3) (2026-11-17)
+
+## Changes
+
+[Full changelog](https://github.com/jitsi/jitsi-meet/compare/mobile-sdk-13.3.0...mobile-sdk-13.3.3)
+
+### Common
+
+- Fix hide self view and show a notification with a button that opens the Settings screen.
+- Fix when the user moves the meeting to another device, first device now gets the CONFERENCE_TERMINATED event and readyToClose deduplicated.
+- Dynamic branding: custom icons now use the theme icon color.
+- Update @react-native-google-signin/google-signin to 12.2.1 and react-native-worklets-core.
+- Fix crash when a new meeting starts after a previous one ended in the same app session.
+
+### Android
+
+- N/A
+
+### iOS
+
+- Google Sign-In URL handling now uses the GoogleSignIn SDK directly, because google-signin 12 dropped the old call.
+
+### React Native
+
+- N/A
+
+### Flutter
+
+- N/A
+
 # [13.3.0](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.3.0) (2026-10-30)
 
 ## Changes
