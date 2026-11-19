@@ -12,11 +12,11 @@
 
 ### Android
 
-- N/A (iOS-only release; Android stays on 13.3.3).
+- N/A
 
 ### iOS
 
-- Fix sheets and other host app views being hidden behind the Jitsi view. The view now stays on top only while in Picture-in-Picture.
+- Fix sheets and other host app views being hidden behind the Jitsi view.
 
 ### React Native
 
@@ -24,7 +24,7 @@
 
 ### Flutter
 
-- jitsi_meet_flutter_sdk 13.3.4 uses JitsiMeetSDK 13.3.4 on iOS and jitsi-meet-sdk 13.3.3 on Android.
+- N/A
 
 # [13.3.3](https://github.com/jitsi/jitsi-meet/releases/tag/mobile-sdk-13.3.3) (2026-11-17)
 
